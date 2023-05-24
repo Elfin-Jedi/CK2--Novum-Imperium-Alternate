@@ -5,7 +5,11 @@ Base:
 "HIP - Historical Immersion Project" - everything but ARKOpackInterface, ARKOpack Armoiries, MiniSWMH, and CPRPlus.
 "HIP - Comprehensive Annals of Five Dynasties"
 
-Add-Ons:
+Medium Mods:
 
 "African Religions Overhaul"
 "Ancient Religions Reborn and Expanded"
+
+Small Mods:
+
+"Visible Health And Fertility"

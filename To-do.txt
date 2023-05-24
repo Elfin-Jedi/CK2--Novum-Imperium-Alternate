@@ -11,12 +11,11 @@
 11. Pharoah's and Consuls
 12. Umbra Sapiens
 
-Zunbils still have 2 caste types.
+Zunbils still have 2 caste types. (They shouldn't now but it is untested).
 Need to test joining the coven as a hellenic male or gay female
 
 Next:
 
-Visible Health & Vertility
 Warrior Lodges (HIP)
 
 Patrum Scuta (HIP)
