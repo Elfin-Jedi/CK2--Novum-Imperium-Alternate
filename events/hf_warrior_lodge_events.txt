@@ -551,9 +551,19 @@ letter_event = { #SUCCESS: Welcome to the society!
 
         if = { # Give Sympathy trait if appropriate...
             limit = {
-				OR = {
-					NOT = { religion_group = pagan_group }
-					NOT = { event_target:warrior_lodge_to_join = { is_society = warrior_lodge_west_african } }
+				NOR = { 
+					religion_group = pagan_group
+					event_target:warrior_lodge_to_join = {
+						is_society = warrior_lodge_west_african
+					}
+					event_target:warrior_lodge_to_join = { 
+						leader = { 
+							is_member_of_non_pagan_warrior_lodge_trigger = yes
+						} 
+					}
+					event_target:hero_character = {
+						is_member_of_non_pagan_warrior_lodge_trigger = yes
+					}
 				}
             }
             #Give Sympathy trait
@@ -2915,6 +2925,41 @@ character_event = {
                 can_join_society = warrior_lodge_tengri
             }
             join_society = warrior_lodge_tengri
+        }
+		else_if = {
+            limit = {
+                religion_group = christian
+                can_join_society = warrior_lodge_cws_christian
+            }
+            join_society = warrior_lodge_cws_christian
+        }
+		else_if = {
+            limit = {
+                religion_group = zoroastrian_group
+                can_join_society = warrior_lodge_ws_mazdan
+            }
+            join_society = warrior_lodge_ws_mazdan
+        }
+		else_if = {
+            limit = {
+                religion_group = indian_group
+                can_join_society = warrior_lodge_ws_eastern
+            }
+            join_society = warrior_lodge_ws_eastern
+        }
+		else_if = {
+            limit = {
+                religion_group = muslim
+                can_join_society = warrior_lodge_ws_muslim
+            }
+            join_society = warrior_lodge_ws_muslim
+        }
+		else_if = {
+            limit = {
+                religion_group = jewish_group
+                can_join_society = warrior_lodge_ws_jewish
+            }
+            join_society = warrior_lodge_ws_jewish
         }
 		else_if = {
             limit = {
