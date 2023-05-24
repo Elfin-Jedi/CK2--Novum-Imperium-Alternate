@@ -90,6 +90,8 @@ african_group = {
     a_tag_roog_reformed = {
         graphical_culture = africangfx
         interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+		
+		alternate_start = { always = no }
 
 		secondary_event_pictures = west_african_pagan
 
@@ -224,6 +226,8 @@ african_group = {
     amazigh_reformed = {
         graphical_culture = africangfx
         interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+		
+		alternate_start = { always = no }
     
 		secondary_event_pictures = west_african_pagan
 
