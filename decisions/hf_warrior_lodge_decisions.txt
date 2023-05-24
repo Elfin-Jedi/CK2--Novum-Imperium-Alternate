@@ -696,6 +696,8 @@ targeted_decisions = {
 				limit = { is_landed = yes }
 				OR = {
 					has_tribal_or_nomadic_government_trigger = yes
+					is_feudal = yes
+					government = merchant_republic_government
 					custom_tooltip = {
 						text = has_mission_to_recruit_tt
 						FROM = {
@@ -716,6 +718,8 @@ targeted_decisions = {
 							quest_target = { character = ROOT }
 						}
 					}
+					FROM = { is_feudal = yes }
+					FROM = { government = merchant_republic_government }
 				}
 			}
 		}
@@ -840,7 +844,7 @@ targeted_decisions = {
 			has_current_warrior_lodge_leader_trait_trigger = no #to keep it hidden once you're done
 		}
 		allow = {
-			can_have_more_leadership_traits = yes
+			# can_have_more_leadership_traits = yes
 			has_society_currency_medium_trigger = yes
 			custom_tooltip = {
 				text = has_no_warrior_training_with_current_society_tt
@@ -1838,7 +1842,7 @@ society_decisions = {
 				factor = 0
 				trait = zealous
 				OR = {
-					novum_imperium_is_pagan = yes
+					novum_imperium_is_pagan = no
 					religion = hellenic_pagan
 					religion = bon
 				}
@@ -1864,11 +1868,17 @@ society_decisions = {
 			has_dlc = "Holy Fury"
 			is_playable = yes
 			is_adult = yes
-			society_member_of = warrior_lodge_zun
+			OR = {
+				society_member_of = warrior_lodge_zun
+				society_member_of = warrior_lodge_ws_mazdan
+				society_member_of = warrior_lodge_ws_eastern
+			}
 			society_rank >= 2
 			OR = {
 				religion = zun_pagan
 				religion = zun_pagan_reformed
+				religion_group = zoroastrian_group
+				religion_group = indian_group
 			}
 		}
 		allow = {

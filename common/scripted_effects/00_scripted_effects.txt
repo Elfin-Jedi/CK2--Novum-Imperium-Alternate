@@ -5531,6 +5531,26 @@ join_prev_warrior_lodge_society_effect = {
 		limit = { PREV = { society_member_of = warrior_lodge_aztec } }
 		join_society = warrior_lodge_aztec
 	}
+	if = {
+		limit = { PREV = { society_member_of = warrior_lodge_cws_christian } }
+		join_society = warrior_lodge_cws_christian
+	}
+	if = {
+		limit = { PREV = { society_member_of = warrior_lodge_ws_mazdan } }
+		join_society = warrior_lodge_ws_mazdan
+	}
+	if = {
+		limit = { PREV = { society_member_of = warrior_lodge_ws_eastern } }
+		join_society = warrior_lodge_ws_eastern
+	}
+	if = {
+		limit = { PREV = { society_member_of = warrior_lodge_ws_muslim } }
+		join_society = warrior_lodge_ws_muslim
+	}
+	if = {
+		limit = { PREV = { society_member_of = warrior_lodge_ws_jewish } }
+		join_society = warrior_lodge_ws_jewish
+	}
 }
 
 give_this_warrior_lodge_religion_effect = { #Mostly for spawned characters.
@@ -34987,6 +35007,36 @@ add_warrior_lodge_leader_trait_effect = {
 		}
 		warrior_lodge_aztec = {
 			add_trait = aztec_leader
+		}
+		# warrior_lodge_cws_christian = {
+			# add_trait = cws_christian_leader
+		# }
+		warrior_lodge_cws_christian = {
+			add_trait = hellenic_leader
+		}
+		# warrior_lodge_ws_mazdan = {
+			# add_trait = ws_mazdan_leader
+		# }
+		warrior_lodge_ws_mazdan = {
+			add_trait = tengri_leader
+		}
+		# warrior_lodge_ws_eastern = {
+			# add_trait = ws_eastern_leader
+		# }
+		warrior_lodge_ws_eastern = {
+			add_trait = bon_leader
+		}
+		# warrior_lodge_ws_muslim = {
+			# add_trait = ws_muslim_leader
+		# }
+		warrior_lodge_ws_muslim = {
+			add_trait = zun_leader
+		}
+		# warrior_lodge_ws_jewish = {
+			# add_trait = ws_jewish_leader
+		# }
+		warrior_lodge_ws_jewish = {
+			add_trait = zun_leader
 		}
 		
 		### ACR ###
