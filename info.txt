@@ -8,3 +8,4 @@ Base:
 Add-Ons:
 
 "African Religions Overhaul"
+"Ancient Religions Reborn and Expanded"

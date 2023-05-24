@@ -2880,7 +2880,6 @@ pagan_group = {
 		raised_vassal_opinion_loss = no
 		max_consorts = 3
 		caste_opinions = yes
-		castes = yes
 		
 		aggression = 2.0 # Set based on Warmongering's aggression setting 
 
@@ -2938,7 +2937,6 @@ pagan_group = {
 		max_consorts = 3
 		reformed = zun_pagan_reformed
 		caste_opinions = yes
-		castes = yes
 
 		religious_clothing_head = 5
 		religious_clothing_priest = 4
