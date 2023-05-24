@@ -33,6 +33,7 @@ Unlimited Lifestyle Events
 Forge Unlimited Bloodlines + Bloodline fix (compare with HIP version of Forge Unlimited Bloodlines)
 Extended Bloodlines (HF)
 Societies: Guilds, Chivalry, Imperial Court, Sufis.
+Rowan's mod thingy (I forgot the name, Buildings and Resources?)
 
 Republic Equality for HIP
 Enatic Kingdoms
