@@ -8201,6 +8201,8 @@ character_event = { # Generate 'Fake Family' for characters without any
                 OR = {
                     religion = a_tag_roog
                     religion = a_tag_roog_reformed
+					religion = zun_pagan
+					religion = zun_pagan_reformed
                 }
                 trait = foro
             }
@@ -8209,6 +8211,8 @@ character_event = { # Generate 'Fake Family' for characters without any
                     OR = {
                         religion = a_tag_roog
                         religion = a_tag_roog_reformed
+						religion = zun_pagan
+						religion = zun_pagan_reformed
                     }
                     NOT = { trait = foro }
                 }

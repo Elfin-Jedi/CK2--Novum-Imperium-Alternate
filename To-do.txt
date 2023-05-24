@@ -11,8 +11,12 @@
 11. Pharoah's and Consuls
 12. Umbra Sapiens
 
-Zunbils still have 2 caste types. (They shouldn't now but it is untested).
+Zunbils still have 2 caste types. Check?
 Need to test joining the coven as a hellenic male or gay female
+Add basic coats of arms
+Make African GHWs unlocked if Pagan GHWs would be
+I noticed African religions can start reformed, allow that for pagans too? Or disallow for Africans?
+Does it notify me if I develop sympathy for African religions?
 
 Next:
 
