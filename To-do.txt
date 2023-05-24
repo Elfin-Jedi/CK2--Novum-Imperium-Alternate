@@ -1,0 +1,71 @@
+*1. African Religions Overhaul
+%2. Ancient Religions Reborn and Expanded
+3. Lux Invicta
+4. WTWSMS
+5. HIP More Cultures and Religions 
+6. Dido's Legacy 
+7. Diadochi Kings 
+8. Winter King 
+9. Tianxia
+10. Sons of Vinland
+11. Pharoah's and Consuls
+12. Umbra Sapiens
+	
+Adding ACR
+
+	At events\mnm_devil_worshipers_events.txt
+	Need to test joining the coven as a hellenic male or gay female
+
+Visible Health & Vertility
+Warrior Lodges (HIP)
+
+Patrum Scuta (HIP)
+Aztec Dynasty Flags
+Color Galore
+Better Looking Garbs (HIP)
+Normal Retreat
+Combat Rebalance
+More Council Members
+Friend Mod
+Performance by Trexeth
+Way of Play
+No republic or theocracy limit
+Unlimited Lifestyle Events
+Forge Unlimited Bloodlines + Bloodline fix (compare with HIP version of Forge Unlimited Bloodlines)
+Extended Bloodlines (HF)
+Societies: Guilds, Chivalry, Imperial Court, Sufis.
+
+Republic Equality for HIP
+Enatic Kingdoms
+Better Gender Law
+
+VIET Events Reborn
+Rise to Power
+Trexeth's Landless mod
+
+Lux Invicta
+
+An Indo-Rome Mod: Renovatio Imperii
+Usurpation Fix
+Dark Ages
+The Rise of the New Churches
+Easy Heresy
+
+Try to find Assassins societies.
+
+WTWSMS
+
+Novum Imperium
+
+	New trigger: novum_imperium_is_pagan, updated for African
+	emf_unreformed_pagan updated to include novum_imperium_is_pagan unless is_organized_religion_trigger
+	
+CleanSlate
+
+	Don't want to do buildings or cb_types CleanSlate style
+	At cb_types
+
+Edited Old Stuff
+
+	gfx\flags not done yet
+	got to CPRPlus stuff - common\graphicalculturetypes

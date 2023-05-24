@@ -1,0 +1,10 @@
+Contains
+
+Base:
+
+"HIP - Historical Immersion Project" - everything but ARKOpackInterface, ARKOpack Armoiries, MiniSWMH, and CPRPlus.
+"HIP - Comprehensive Annals of Five Dynasties"
+
+Add-Ons:
+
+"African Religions Overhaul"
