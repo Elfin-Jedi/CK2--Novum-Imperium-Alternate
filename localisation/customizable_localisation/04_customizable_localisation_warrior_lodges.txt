@@ -44,6 +44,26 @@ defined_text = { #Used in HF.10040 (Power: Warrior Training)
 		localisation_key = string_aztec_training
 	}
 	text = {
+		trigger = { society_member_of = warrior_lodge_cws_christian }
+		localisation_key = string_christian_training
+	}
+	text = {
+		trigger = { society_member_of = warrior_lodge_ws_mazdan }
+		localisation_key = string_mazdan_training
+	}
+	text = {
+		trigger = { society_member_of = warrior_lodge_ws_eastern }
+		localisation_key = string_eastern_training
+	}
+	text = {
+		trigger = { society_member_of = warrior_lodge_ws_muslim }
+		localisation_key = string_muslim_training
+	}
+	text = {
+		trigger = { society_member_of = warrior_lodge_ws_jewish }
+		localisation_key = string_jewish_training
+	}
+	text = {
         trigger = { society_member_of = warrior_lodge_celtic }
         localisation_key = string_celtic_training
     }
@@ -112,6 +132,25 @@ defined_text = { #Used in HFP.11028 (battle event)
 		localisation_key = string_aztec_symbol
 	}
 	text = {
+		trigger = { society_member_of = warrior_lodge_cws_christian }
+		localisation_key = string_christian_symbol
+	}
+	text = {
+		trigger = { society_member_of = warrior_lodge_ws_mazdan }
+		localisation_key = string_mazdan_symbol
+	}
+	text = {
+		trigger = { society_member_of = warrior_lodge_ws_eastern }
+		localisation_key = string_eastern_symbol
+	}
+	text = {
+		trigger = { society_member_of = warrior_lodge_ws_muslim }
+		localisation_key = string_muslim_symbol
+	}
+	text = {
+		trigger = { society_member_of = warrior_lodge_ws_jewish }
+		localisation_key = string_jewish_symbol
+	}
         trigger = { society_member_of = warrior_lodge_celtic }
         localisation_key = string_celtic_symbol
     }
@@ -175,6 +214,26 @@ defined_text = { #Used here and there? Made *singular*, on purpose...
 		localisation_key = string_aztec_symbol_short
 	}
 	text = {
+		trigger = { society_member_of = warrior_lodge_cws_christian }
+		localisation_key = string_christian_symbol_short
+	}
+	text = {
+		trigger = { society_member_of = warrior_lodge_ws_mazdan }
+		localisation_key = string_mazdan_symbol_short
+	}
+	text = {
+		trigger = { society_member_of = warrior_lodge_ws_eastern }
+		localisation_key = string_eastern_symbol_short
+	}
+	text = {
+		trigger = { society_member_of = warrior_lodge_ws_muslim }
+		localisation_key = string_muslim_symbol_short
+	}
+	text = {
+		trigger = { society_member_of = warrior_lodge_ws_jewish }
+		localisation_key = string_jewish_symbol_short
+	}
+	text = {
         trigger = { society_member_of = warrior_lodge_celtic }
         localisation_key = string_celtic_symbol_short
     }
@@ -236,6 +295,26 @@ defined_text = { #Used here and there? Made *singular*, on purpose...
 	text = {
 		trigger = { society_member_of = warrior_lodge_aztec }
 		localisation_key = string_aztec_symbol_short_cap
+	}
+	text = {
+		trigger = { society_member_of = warrior_lodge_cws_christian }
+		localisation_key = string_christian_symbol_short_cap
+	}
+	text = {
+		trigger = { society_member_of = warrior_lodge_ws_mazdan }
+		localisation_key = string_mazdan_symbol_short_cap
+	}
+	text = {
+		trigger = { society_member_of = warrior_lodge_ws_eastern }
+		localisation_key = string_eastern_symbol_short_cap
+	}
+	text = {
+		trigger = { society_member_of = warrior_lodge_ws_muslim }
+		localisation_key = string_muslim_symbol_short_cap
+	}
+	text = {
+		trigger = { society_member_of = warrior_lodge_ws_jewish }
+		localisation_key = string_jewish_symbol_short_cap
 	}
 	text = {
         trigger = { society_member_of = warrior_lodge_celtic }
@@ -314,6 +393,26 @@ defined_text = { #Used in HFP.11038 (battle event)
 	text = {
 		trigger = { society_member_of = warrior_lodge_aztec }
 		localisation_key = string_battle_nick_aztec_symbol
+	}
+	text = {
+		trigger = { society_member_of = warrior_lodge_cws_christian }
+		localisation_key = string_battle_nick_christian_symbol
+	}
+	text = {
+		trigger = { society_member_of = warrior_lodge_ws_mazdan }
+		localisation_key = string_battle_nick_mazdan_symbol
+	}
+	text = {
+		trigger = { society_member_of = warrior_lodge_ws_eastern }
+		localisation_key = string_battle_nick_eastern_symbol
+	}
+	text = {
+		trigger = { society_member_of = warrior_lodge_ws_muslim }
+		localisation_key = string_battle_nick_muslim_symbol
+	}
+	text = {
+		trigger = { society_member_of = warrior_lodge_ws_jewish }
+		localisation_key = string_battle_nick_jewish_symbol
 	}
 	text = {
         trigger = { society_member_of = warrior_lodge_celtic }
@@ -423,6 +522,26 @@ defined_text = { #Used in HFP.11038 (battle event)
 	text = {
 		trigger = { FROM = { is_society = warrior_lodge_aztec } }
 		localisation_key = string_WL_aztec_religion
+	}
+	text = {
+		trigger = { FROM = { is_society = warrior_lodge_cws_christian } }
+		localisation_key = string_WL_cws_christian_religion
+	}
+	text = {
+		trigger = { FROM = { is_society = warrior_lodge_ws_mazdan } }
+		localisation_key = string_WL_ws_mazdan_religion
+	}
+	text = {
+		trigger = { FROM = { is_society = warrior_lodge_ws_eastern } }
+		localisation_key = string_WL_ws_eastern_religion
+	}
+	text = {
+		trigger = { FROM = { is_society = warrior_lodge_ws_muslim } }
+		localisation_key = string_WL_ws_muslim_religion
+	}
+	text = {
+		trigger = { FROM = { is_society = warrior_lodge_ws_jewish } }
+		localisation_key = string_WL_ws_jewish_religion
 	}
 	text = {
         trigger = { FROM = { is_society = warrior_lodge_celtic } }
@@ -1908,6 +2027,7 @@ defined_text = { #Used to refer to a type of "warrior", initial cap...
 				society_member_of = warrior_lodge_bon
 				society_member_of = warrior_lodge_hellenic
 				society_member_of = warrior_lodge_promethean
+				society_member_of = warrior_lodge_cws_christian
 			}
 		}
 	}

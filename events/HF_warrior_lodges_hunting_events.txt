@@ -11,15 +11,20 @@
 #Norse: Hunting Great Wolf (male).
 #Baltic: Hunting She-wolf (Medeina).
 #Hellenics: Hunting Werewolf.
+#Christians: Hunting Werewolf.
+#Jewish: Hunting Werewolf.
 
 #Slavic: Hunting Eagle (Perun).
 #Tengri: Hunting Eagle.
 #Bon: Hunting Eagle.
+#Aztec: Hunting Eagle.
 
 #Finnish: Hunting Bear (Otso)
 
 #WAfrican,EAfrican: Hunting Lion (River Warriors)
 #Zunists: Hunting Lion (Fire Warriors)
+#Mazdan: Hunting Lion
+#Eastern: Hunting Lion
 
 #############################################
 
@@ -66,8 +71,24 @@ character_event = {
 	desc = {
 		trigger = {
 			has_character_flag = flag_hunting_wolf_hellenic
+			NOR = { 
+				society_member_of = warrior_lodge_cws_christian
+				society_member_of = warrior_lodge_ws_muslim
+				society_member_of = warrior_lodge_ws_jewish
+			}
 		}
 		text = EVTDESCCHF25600
+	}
+	desc = {
+		trigger = {
+			has_character_flag = flag_hunting_wolf_hellenic
+			OR = { 
+				society_member_of = warrior_lodge_cws_christian
+				society_member_of = warrior_lodge_ws_muslim
+				society_member_of = warrior_lodge_ws_jewish
+			}
+		}
+		text = EVTDESCCHFCWS25600
 	}
 	desc = {
 		trigger = {
@@ -102,8 +123,22 @@ character_event = {
 	desc = {
 		trigger = {
 			has_character_flag = flag_hunting_lion_zun
+			NOR = { 
+				society_member_of = warrior_lodge_ws_mazdan
+				society_member_of = warrior_lodge_ws_eastern
+			}
 		}
 		text = EVTDESCIHF25600
+	}
+	desc = {
+		trigger = {
+			has_character_flag = flag_hunting_lion_zun
+			OR = {
+				society_member_of = warrior_lodge_ws_mazdan
+				society_member_of = warrior_lodge_ws_eastern
+			}
+		}
+		text = EVTDESCWSEAST25600
 	}
 	desc = {
 		trigger = {
@@ -217,6 +252,18 @@ character_event = {
 				set_character_flag = flag_hunting_wolf_hellenic
 			}
 			else_if = { 
+				limit = { society_member_of = warrior_lodge_cws_christian }
+				set_character_flag = flag_hunting_wolf_hellenic
+			}
+			else_if = { 
+				limit = { society_member_of = warrior_lodge_ws_muslim }
+				set_character_flag = flag_hunting_wolf_hellenic
+			}
+			else_if = { 
+				limit = { society_member_of = warrior_lodge_ws_jewish }
+				set_character_flag = flag_hunting_wolf_hellenic
+			}
+			else_if = { 
 				limit = { society_member_of = warrior_lodge_slavic } 
 				set_character_flag = flag_hunting_eagle_slavic
 			}
@@ -238,6 +285,14 @@ character_event = {
 			}
 			else_if = { 
 				limit = { society_member_of = warrior_lodge_zun } 
+				set_character_flag = flag_hunting_lion_zun
+			}
+			else_if = { 
+				limit = { society_member_of = warrior_lodge_ws_mazdan } 
+				set_character_flag = flag_hunting_lion_zun
+			}
+			else_if = { 
+				limit = { society_member_of = warrior_lodge_ws_eastern } 
 				set_character_flag = flag_hunting_lion_zun
 			}
 			else_if = { 
@@ -5531,7 +5586,12 @@ character_event = {
 	}
 	option = { #Tengri finds eagle.
 		name = EVTOPTDHF25620
-		trigger = { has_character_flag = flag_hunting_eagle_tengri }
+		trigger = { 
+			OR = {
+				has_character_flag = flag_hunting_eagle_tengri
+				has_character_flag = flag_hunting_eagle_aztec
+			}
+		}
 		custom_tooltip = { text = TT_EVTOPTDHF252620 }
 		hidden_tooltip = { character_event = { id = HF.25629 } } #Give pet.
 		ai_chance = { factor = 50 }

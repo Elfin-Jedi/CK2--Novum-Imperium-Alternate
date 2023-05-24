@@ -5587,6 +5587,7 @@ character_event = {
 			has_dlc = "Holy Fury"
 			is_member_of_any_warrior_lodge_trigger = yes
 			has_religion_matching_joined_warrior_lodge_trigger = yes
+			is_member_of_non_pagan_warrior_lodge_trigger = no
 		}
 	}
 	# Non-Warrior Lodge members only...
@@ -5624,7 +5625,10 @@ character_event = {
 		}
 
 		trigger = {
-			is_member_of_any_warrior_lodge_trigger = no
+			OR = { 
+				is_member_of_any_warrior_lodge_trigger = no
+				is_member_of_non_pagan_warrior_lodge_trigger = yes
+			}
 		}
 	}
 	option = {
