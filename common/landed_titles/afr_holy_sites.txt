@@ -1,6 +1,3 @@
-e_kanem = {
-    capital = 1739 # Djimi
-}
 c_djenne = {
     holy_site = a_tag_roog
     holy_site = a_tag_roog_reformed
@@ -29,9 +26,9 @@ c_kano = {
 c_kebbi = {
     holy_site = bori
 }
-c_djimi = {
+c_bagirmi = {
     holy_site = bori
-    b_auno = {
+    b_bagirmi = {
         pentarchy = bori
     }
 }
