@@ -9,8 +9,10 @@ Medium Mods:
 
 "African Religions Overhaul"
 "Ancient Religions Reborn and Expanded"
+"BoSB Patrum Scuta+ for HIP"
 "Warrior Societies (HIP)"
 
 Small Mods:
 
+"Aztec Dynasty Flags"
 "Visible Health And Fertility"
