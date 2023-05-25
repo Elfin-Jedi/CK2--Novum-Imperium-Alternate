@@ -314,25 +314,11 @@ k_baluchistan = {
 	aten_pagan = 400		
 }
 
-k_afghanistan = {
-	celtic_pagan_reformed = 0
-	hellenic_pagan_reformed = 300
-	egyptian_pagan_reformed = 400
-	aten_pagan = 400	
-}
-
 k_syria = {
 	celtic_pagan_reformed = 0
 	hellenic_pagan_reformed = 600
 	egyptian_pagan_reformed = 600
 	aten_pagan = 600
-}
-
-k_khiva = {
-	celtic_pagan_reformed = 0
-	hellenic_pagan_reformed = 300
-	egyptian_pagan_reformed = 200
-	aten_pagan = 200
 }
 
 ################################
