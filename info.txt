@@ -15,5 +15,4 @@ Medium Mods:
 Small Mods:
 
 "Aztec Dynasty Flags"
-"Color Galore"
 "Visible Health And Fertility"
