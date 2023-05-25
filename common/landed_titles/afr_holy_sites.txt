@@ -28,7 +28,7 @@ c_kebbi = {
 }
 c_bagirmi = {
     holy_site = bori
-    b_bagirmi = {
+    b_kuka = {
         pentarchy = bori
     }
 }
