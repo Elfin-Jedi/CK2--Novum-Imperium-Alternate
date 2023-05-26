@@ -19,12 +19,12 @@ Make Egyptian pagan and African religions have African shield in character view.
 Next:
 
 Better Looking Garbs (HIP)
+
 Normal Retreat
 Combat Rebalance
 More Council Members
 Friend Mod
 Favor Improve
-Performance by Trexeth
 Way of Play
 No republic or theocracy limit
 Unlimited Lifestyle Events
@@ -54,6 +54,8 @@ Easy Heresy
 Try to find Assassins societies.
 
 WTWSMS
+
+Performance by Trexeth - When adding Umbra Sapiens?
 
 Novum Imperium
 
