@@ -18,18 +18,13 @@ Make Egyptian pagan and African religions have African shield in character view.
 
 Next:
 
-Normal Retreat
-Combat Rebalance
-More Council Members
-Friend Mod
-Favor Improve
-
 Way of Play
 No republic or theocracy limit
 
 Unlimited Lifestyle Events
 Forge Unlimited Bloodlines + Bloodline fix (compare with HIP version of Forge Unlimited Bloodlines)
 Extended Bloodlines (HF)
+VIET Events Reborn
 
 Societies: Guilds, Chivalry, Imperial Court, Sufis.
 
@@ -41,7 +36,6 @@ Enatic Kingdoms
 Better Gender Law
 Make it so with game rule full equality of women they can take consorts if men can
 
-VIET Events Reborn
 Rise to Power
 Trexeth's Landless mod
 

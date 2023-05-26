@@ -17,4 +17,9 @@ Medium Mods:
 Small Mods:
 
 "Color Galore"
+"Combat Rebalance"
+"Favor Improve"
+"Friend Mod"
+"More Council Members"
+"Normal Retreat"
 "Visible Health And Fertility"
