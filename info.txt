@@ -7,12 +7,36 @@ Base:
 
 Medium Mods:
 
-"African Religions Overhaul"
-"Ancient Religions Reborn and Expanded"
-"BoSB Patrum Scuta+ for HIP"
-"Warrior Societies (HIP)"
+African Religions Overhaul
+Ancient Religions Reborn and Expanded
+BoSB Patrum Scuta+ for HIP
+Warrior Societies (HIP)
 
 Small Mods:
 
-"Aztec Dynasty Flags"
-"Visible Health And Fertility"
+99 more books Slots
+Akiritai
+Add Holdings
+Cadet Dynasty Tool
+Change Character
+CK2 House Motto
+Crusader Amazons
+Debug
+Dark Ages Event Pack
+Demigod Trait
+Epic Music Pack
+Gift Troops
+Harranian Pagan Immersion Pack
+HRE Imperial Knights
+Hellenic Bodpa Fix
+Imperial Court
+Invite Locals
+Indo Rome
+Viceroy Government Type
+The Order of Chivalry
+Vassal Management
+RDU
+Sarc's Titular Titles
+All Sketchy Cheat menu Mods
+Rolls Additonal Traits
+Visible Health And Fertility
