@@ -8,13 +8,40 @@ Base:
 Medium Mods:
 
 "African Religions Overhaul"
+"An Indo-Rome Mod: Renovatio Imperii"
 "Ancient Religions Reborn and Expanded"
 "Better Looking Garbs"
 "Better Looking Garbs (HIP)"
 "BoSB Patrum Scuta+ for HIP"
+"Crusader Amazons"
 "Warrior Societies (HIP)"
 
 Small Mods:
 
+"99 More Book Slots"
+"Akiritai" - Unknown Mod Name
+"Add Holdings"
+"Bloodlines Sketchy Ccheat Submod"
+"Cadet Dynasty Tool"
+"Change Character"
+"CK2 House Motto"
 "Color Galore"
+"Visible Health And Fertility"
+"Debug"
+"Dark Ages v.1.2.51"
+"Demigod Trait"
+"Epic Music Pack"
+"Gift Troops"
+"Harranian Immersion Pack: The Last Hellenic Pagans"
+"Hellenic Bödpa Temple Fix"
+"Invite Locals ++"
+"Rolls Additonal Traits"
+"Ruler Designer Unlocked"
+"Sarc's Titular Titles"
+"Sketchy Cheat Menu"
+"The Imperial Court Societies"
+"The Imperial Knights"
+"The Orders of Chivalry"
+"Vassal Management" - Unknown Mod Name
+"Unique Government Type for Viceroys"?
 "Visible Health And Fertility"

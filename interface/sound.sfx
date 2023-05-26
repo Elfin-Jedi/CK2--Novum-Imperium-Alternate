@@ -1827,16 +1827,7 @@ quest_success =
 {
 	file = "money_in.wav"
 	volume = 65
-}
-
-### ACR ###
-death_lost_desert = {
-	file = "death_lost_desert.wav"
-	on_demand = yes
-	volume = 75
-}
-
-
+}	
 ################ SOCIETIES ################
 
 society_rank_up =
@@ -2760,3 +2751,57 @@ wonder_complete_third_tier = {
 	volume = 70
 	on_demand = yes
 }
+
+
+#########Imperial Court
+
+imperial_court_christian_interface =
+{
+	file = "imperial_court_christian.wav"
+	volume = 80
+	on_demand = yes
+}
+
+imperial_court_muslim_interface =
+{
+	file = "imperial_court_muslim.wav"
+	volume = 80
+	on_demand = yes
+}
+
+imperial_court_pagan_interface =
+{
+	file = "imperial_court_pagan.wav"
+	volume = 80
+	on_demand = yes
+}
+
+imperial_court_eastern_interface =
+{
+	file = "imperial_court_eastern.wav"
+	volume = 80
+	on_demand = yes
+}
+
+imperial_court_byzantine_interface =
+{
+	file = "imperial_court_byzantine.wav"
+	volume = 80
+	on_demand = yes
+}
+
+imperial_court_hre_interface =
+{
+	file = "imperial_court_hre.wav"
+	volume = 80
+	on_demand = yes
+}
+
+imperial_court_roman_interface =
+{
+	file = "imperial_court_roman.wav"
+	volume = 80
+	on_demand = yes
+}
+
+
