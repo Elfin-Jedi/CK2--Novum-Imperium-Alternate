@@ -225,6 +225,14 @@ culture = {
 			emblem = no
 			random = no # Do not use for random CoAs
 		}
+		texture = { #texture = ACR
+			file = "gfx\\coats_of_arms\ACR\pattern_hellenic.tga"
+			size = { x = 10 y = 4 }
+			noOfFrames = 40
+			color = 3
+			emblem = no
+		}
+	}
 		# WHEN ADDING NEW, ALWAYS ADD AT THE END !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11111
 	}
 }
