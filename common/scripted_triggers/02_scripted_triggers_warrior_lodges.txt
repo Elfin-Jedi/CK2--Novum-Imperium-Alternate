@@ -91,6 +91,7 @@ has_any_warrior_lodge_training_trait_trigger = {
 		# trait = ws_eastern_leader
 		# trait = ws_muslim_leader
 		# trait = ws_jewish_leader
+		trait = amazonian_leader
 		
 		### ACR ###
 		trait = celtic_leader
@@ -184,6 +185,10 @@ has_current_warrior_lodge_leader_trait_trigger = {
 			AND = {
 				trait = zun_leader
 				society_member_of = warrior_lodge_ws_jewish
+			}
+			AND = {
+				trait = amazonian_leader
+				society_member_of = warrior_lodge_amazonian
 			}
 			### ACR ###
 			AND = {

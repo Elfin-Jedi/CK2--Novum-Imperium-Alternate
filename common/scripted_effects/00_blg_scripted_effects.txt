@@ -1712,20 +1712,3 @@ blg_child_upbringing = {
 refresh_portrait = {
 	remove_trait = blgspawn
 }
-
-# Append portrait refresh to duel events.
-evaluate_duel_result_score_effect = {
-	event_target:combatant_1 = {
-		refresh_portrait = yes
-	}
-	event_target:combatant_2 = {
-		refresh_portrait = yes
-	}
-}
-
-# Append bear setup to creature duel.
-spawn_creature_champion_effect = { # Too messy with bear clothes.
-	new_character = {
-		set_graphical_culture = bear
-	}
-}

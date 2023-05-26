@@ -3241,7 +3241,7 @@ title_hermetics_apprentice = {
 		if = {
 			limit = {
 				ai = yes
-				is_in_society = hermetics
+				society_member_of = hermetics
 				society_rank == 1
 				NAND = {
 					controls_religion = no

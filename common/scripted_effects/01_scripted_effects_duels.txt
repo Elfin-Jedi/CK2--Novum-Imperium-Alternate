@@ -450,6 +450,12 @@ evaluate_duel_result_score_effect = {
 		which = duel_result_score #(50 + X)
 		which = combat_rating_combatant_2 # (50 + X) - Y
 	}
+	event_target:combatant_1 = {
+		refresh_portrait = yes
+	}
+	event_target:combatant_2 = {
+		refresh_portrait = yes
+	}
 }
 
 evaluate_extra_duel_result_score_effect = { # [SPECIAL CIRCUMSTANCES - OPTIONAL]

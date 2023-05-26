@@ -113,8 +113,31 @@ defender_pledge_crusade_trigger = {
 }
 
 # Referenced by the "Leave Crusade" button in the Crusade defender view for Crusades using the new Crusade system
-defender_unpledge_crusade_trigger = {
+defender_unpledge_crusade_trigger = { #empty in vanilla, force HO to stay
+	conditional_tooltip = {
+		trigger = {
+			has_character_flag = forced_to_crusade
+		}
 
+		custom_tooltip = { 
+			text = forced_to_defend_crusade_TT 
+
+			always = no
+		}
+	}
+
+	conditional_tooltip = {
+		trigger = {
+			NOT = {
+				has_character_flag = forced_to_crusade
+			}
+		}
+
+		custom_tooltip = {
+			text = unpledge_crusade_trigger_TT
+			NOT = { any_war = { using_cb = new_crusade } }
+		}
+	}
 }
 
 contribute_to_crusade_pot_trigger = {

@@ -1477,34 +1477,6 @@ chivalry_animal_culture_trigger = {
 	}
 }
 
-# Referenced by the "Leave Crusade" button in the Crusade defender view for Crusades using the new Crusade system
-defender_unpledge_crusade_trigger = { #empty in vanilla, force HO to stay
-	conditional_tooltip = {
-		trigger = {
-			has_character_flag = forced_to_crusade
-		}
-
-		custom_tooltip = { 
-			text = forced_to_defend_crusade_TT 
-
-			always = no
-		}
-	}
-
-	conditional_tooltip = {
-		trigger = {
-			NOT = {
-				has_character_flag = forced_to_crusade
-			}
-		}
-
-		custom_tooltip = {
-			text = unpledge_crusade_trigger_TT
-			NOT = { any_war = { using_cb = new_crusade } }
-		}
-	}
-}
-
 #CROSS MOD STUFF
 #has_global_flag = the_great_trade_league_active
 # is_fighter_societies_trigger = {
