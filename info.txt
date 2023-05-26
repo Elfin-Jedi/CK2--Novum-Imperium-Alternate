@@ -9,6 +9,8 @@ Medium Mods:
 
 "African Religions Overhaul"
 "Ancient Religions Reborn and Expanded"
+"Better Looking Garbs"
+"Better Looking Garbs (HIP)"
 "BoSB Patrum Scuta+ for HIP"
 "Warrior Societies (HIP)"
 
