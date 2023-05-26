@@ -95,6 +95,10 @@ character_event = {
 			at_location = ROOT
 			trait = shieldmaiden
 			is_incapable = no
+			NOT = { trait = is_amazonian }
+			NOT = { trait = is_amazonian_immortal }
+			NOT = { has_character_flag = gallu_warrior }
+			NOT = { society_member_of = warrior_lodge_amazonian }
 			prisoner = no
 			has_minor_title = title_commander
 		}

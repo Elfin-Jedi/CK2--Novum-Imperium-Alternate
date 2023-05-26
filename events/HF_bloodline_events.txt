@@ -6547,6 +6547,10 @@ character_event = {
 			factor = 0.6
 			intrigue = 20
 		}
+		modifier = {
+			factor = 0.5
+			trait = amazonian_leader
+		}
 	}
 	
 	immediate = {

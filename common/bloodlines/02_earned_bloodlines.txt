@@ -37,7 +37,7 @@ saoshyant_male = {
 	inheritance = patrilineal
 	allow_bastards = yes
 	picture = GFX_bloodlines_symbol_zoroastrian
-	flags = { created_bloodline }
+	flags = { created_bloodline bloodline_saoshyant }
 	active = {
 		religion = zoroastrian
 	}
@@ -52,7 +52,7 @@ saoshyant_female = {
 	inheritance = matrilineal
 	allow_bastards = yes
 	picture = GFX_bloodlines_symbol_zoroastrian
-	flags = { created_bloodline }
+	flags = { created_bloodline bloodline_saoshyant }
 	active = {
 		religion = zoroastrian
 	}
@@ -304,7 +304,7 @@ lcr_male = {
 	inheritance = patrilineal
 	allow_bastards = yes
 	picture = GFX_bloodlines_placeholder_symbol_2
-	flags = { created_bloodline }
+	flags = { created_bloodline bloodline_lcr }
 	active = {
 		OR = {
 			culture_group = west_slavic
@@ -321,7 +321,7 @@ lcr_female = {
 	inheritance = matrilineal
 	allow_bastards = yes
 	picture = GFX_bloodlines_placeholder_symbol_2
-	flags = { created_bloodline }
+	flags = { created_bloodline bloodline_lcr }
 	active = {
 		OR = {
 			culture_group = west_slavic
@@ -637,7 +637,7 @@ pure_peace_bloodline_01 = {
 	vassal_opinion = 4
 	global_revolt_risk = -0.01
 	bloodline_effect_less_factions = 1
-	flags = { created_bloodline bloodline_less_factions }
+	flags = { created_bloodline bloodline_less_factions peace_bloodline_1 }
 }
 pure_peace_bloodline_02 = {
 	picture = GFX_bloodlines_symbol_peace
@@ -647,7 +647,7 @@ pure_peace_bloodline_02 = {
 	vassal_opinion = 4
 	global_revolt_risk = -0.01
 	bloodline_effect_less_factions = 1
-	flags = { created_bloodline bloodline_less_factions }
+	flags = { created_bloodline bloodline_less_factions peace_bloodline_2 }
 }
 pure_peace_bloodline_03 = {
 	picture = GFX_bloodlines_symbol_munificent
@@ -674,7 +674,7 @@ pure_architect_bloodline_01 = {
 			is_tribal = yes
 		}
 	}
-	flags = { created_bloodline bloodline_architect }
+	flags = { created_bloodline bloodline_architect bloodline_building_1 }
 }
 pure_castellan_bloodline_01 = {
 	picture = GFX_bloodlines_symbol_castellan
@@ -689,7 +689,7 @@ pure_castellan_bloodline_01 = {
 			is_tribal = yes
 		}
 	}
-	flags = { created_bloodline bloodline_castellan }
+	flags = { created_bloodline bloodline_castellan bloodline_building_2 }
 }
 pure_monumental_bloodline_01 = {
 	picture = GFX_bloodlines_symbol_monumental
@@ -704,7 +704,7 @@ pure_monumental_bloodline_01 = {
 			is_tribal = yes
 		}
 	}
-	flags = { created_bloodline bloodline_monumental }
+	flags = { created_bloodline bloodline_monumental bloodline_building_3 }
 }
 
 #Hybrids
@@ -746,7 +746,7 @@ hybrid_builder_bloodline_01 = {
 			is_tribal = yes
 		}
 	}
-	flags = { created_bloodline }
+	flags = { created_bloodline bloodline_builder_combo }
 }
 
 #Murder Builder Hybrid
@@ -852,7 +852,7 @@ event_benevolent_bloodline_01 = {
 	#kind_opinion = 10
 	monthly_character_prestige = 0.1
 	monthly_character_piety = 0.05
-	flags = { created_bloodline }
+	flags = { created_bloodline bloodline_event_3 }
 }
 event_ruthless_bloodline_01 = {
 	picture = GFX_bloodlines_symbol_ruthless
@@ -1200,7 +1200,7 @@ chinese_imperial_bloodline_01 = {
 	taoist_opinion = 5
 	tech_growth_modifier_culture = 0.01
 	monthly_character_prestige = 0.2
-	flags = { created_bloodline }
+	flags = { created_bloodline bloodline_chinese_imperial }
 	active = {
 		emf_is_chinese_imperial_culture = yes
 	}

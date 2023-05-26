@@ -315,6 +315,9 @@ has_attractive_trait_trigger = {
 		trait = powerful_voice
 		trait = calm_voice
 		trait = hurufi_diwan
+		trait = base_fair_1
+		trait = base_fair_2
+		trait = silver_tongue
 	}
 }
 
@@ -371,6 +374,8 @@ has_unattractive_trait_trigger = {
 		trait = vomiting
 		trait = diarrhea
 		trait = cough
+		trait = negative_fair_1
+		trait = negative_fair_2
 	}
 }
 
@@ -388,6 +393,10 @@ is_smart_trigger = {
 		trait = quick
 		trait = bright
 		trait = shrewd
+		trait = base_1
+		trait = base_2
+		trait = quick_1
+		trait = genius_1
 	}
 }
 
@@ -397,6 +406,10 @@ is_dumb_trigger = {
 		trait = slow
 		trait = dim
 		trait = dull
+		trait = minus_1
+		trait = minus_2
+		trait = minus_4
+		trait = minus_6
 	}
 }
 
@@ -405,6 +418,7 @@ is_strong_trigger = {
 		trait = strong
 		trait = burly
 		trait = robust
+		trait = strong_1
 	}
 }
 
@@ -413,6 +427,7 @@ is_weak_trigger = {
 		trait = weak
 		trait = delicate
 		trait = feeble
+		trait = weak_1
 	}
 }
 
@@ -607,6 +622,7 @@ has_fertile_trait_trigger = {
 		trait = beauty
 		trait = fian
 		trait = celtic_knight
+		trait = strong_1
 	}
 }
 
@@ -642,6 +658,9 @@ has_infertile_trait_trigger = {
 		trait = infertile
 		emf_is_sterile_trigger = yes
 		trait = learning_druidic_arts
+		trait = weak_1
+		trait = infertile_1
+		trait = infertile_2
 	}
 }
 
@@ -3180,6 +3199,18 @@ has_positive_congenital_trigger = {
 		trait = bright
 		trait = tall
 		trait = agile
+		trait = base_1
+		trait = base_2
+		trait = quick_1
+		trait = genius_1
+		trait = fertile
+		trait = fertile_1
+		trait = fertile_2
+		trait = base_fair_1
+		trait = base_fair_2
+		trait = strong_1
+		trait = booming_voice
+		trait = silver_tongue
 	}
 }
 
@@ -3205,6 +3236,17 @@ has_negative_congenital_trigger = {
 		trait = wrymouth
 		trait = deaf
 		trait = absentminded
+		trait = minus_1
+		trait = minus_2
+		trait = minus_4
+		trait = minus_6
+		trait = infertile
+		trait = infertile_1
+		trait = infertile_2
+		trait = negative_fair_1
+		trait = negative_fair_2
+		trait = weak_1
+		trait = mute
 	}
 }
 
