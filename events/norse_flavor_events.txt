@@ -93,7 +93,7 @@ character_event = {
 
 		any_courtier_or_vassal = {
 			trait = shieldmaiden
-			NOT = { trait = incapable }		
+			is_incapable = no
 			NOT = { trait = is_amazonian }
 			NOT = { trait = is_amazonian_immortal }
 			NOT = { has_character_flag = gallu_warrior }
