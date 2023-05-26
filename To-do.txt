@@ -19,17 +19,20 @@ Make Egyptian pagan and African religions have African shield in character view.
 Next:
 
 Normal Retreat
-
 Combat Rebalance
 More Council Members
 Friend Mod
 Favor Improve
+
 Way of Play
 No republic or theocracy limit
+
 Unlimited Lifestyle Events
 Forge Unlimited Bloodlines + Bloodline fix (compare with HIP version of Forge Unlimited Bloodlines)
 Extended Bloodlines (HF)
+
 Societies: Guilds, Chivalry, Imperial Court, Sufis.
+
 Rowan's mod thingy (I forgot the name, Buildings and Resources?)
 Medieval Trade Routes
 
