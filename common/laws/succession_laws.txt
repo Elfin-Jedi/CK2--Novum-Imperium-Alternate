@@ -963,9 +963,8 @@ succession_laws = {
 					NOT = { any_liege = { holy_order = yes } }
 				}
 				NOT = {
-						any_demesne_title = {
-							is_vice_royalty = yes
-						}
+					any_demesne_title = {
+						is_vice_royalty = yes
 					}
 				}
 				NOR = {
