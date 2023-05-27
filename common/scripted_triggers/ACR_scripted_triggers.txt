@@ -129,20 +129,6 @@ is_ancient_religion_trigger = {
 	}
 }
 
-is_organized_religion_trigger = {
-	OR = {
-		NOR = {
-			religion_group = pagan_group
-			religion_group = african_group
-		}
-		is_reformed_religion = yes
-		religion = britannic_pagan
-		religion = aten_pagan
-		religion = promethean_pagan
-		religion = bori
-	}
-}
-
 supernatural_events_trigger = {
 	OR = {
 		has_game_rule = { name = supernatural_events value = unrestricted }
