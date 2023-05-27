@@ -326,6 +326,13 @@ succession_laws = {
 				emf_laws_crownlaw_title_high_ca_plus = yes
 				emf_laws_holder_has_late_administration_plus = yes
 			}
+			OR = {
+				holder_scope = { # Viceroyalties can always have primogeniture if not muslim
+					any_demesne_title = {
+						is_vice_royalty = yes
+					}
+				}
+			}
 			emf_laws_allow_switch_away_from_hre_elective = yes
 		}
 		effect = {
@@ -954,6 +961,12 @@ succession_laws = {
 					independent = yes
 					is_feudal = no
 					NOT = { any_liege = { holy_order = yes } }
+				}
+				NOT = {
+						any_demesne_title = {
+							is_vice_royalty = yes
+						}
+					}
 				}
 				NOR = {
 					government = confucian_bureaucracy

@@ -46,6 +46,7 @@ republic_governments = {
 				religion = waldensian
 				religion = yazidi
 			}
+			NOT = { government = playable_republic_government }
 			#is_female = no
 			OR = {
 				AND = {
