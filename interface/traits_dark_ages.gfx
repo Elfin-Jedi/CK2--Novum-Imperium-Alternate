@@ -28,13 +28,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_silver_tongue"
-		texturefile = "gfx/traits/silver_tongue.tga"
-		noOfFrames = 1
-		norefcount = yes
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-	spriteType = {
 		name = "GFX_trait_cheerful"
 		texturefile = "gfx/traits/cheerful.tga"
 		noOfFrames = 1

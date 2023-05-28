@@ -1219,7 +1219,7 @@ bastard = {
 		legit_bastard
 	}
 
-	customizer = no
+	#customizer = no
 
 	male_insult = INSULT_BASTARD
 	male_insult_adj = INSULT_BASEBORN
@@ -1251,7 +1251,7 @@ excommunicated = {
 	same_religion_opinion = -15
 
 	religious = yes
-	customizer = no
+	#customizer = no
 
 	potential = {
 		NOT = { controls_religion = yes }
@@ -1292,7 +1292,7 @@ homosexual = {
 
 	fertility = -0.15
 
-	ruler_designer_cost = 0
+	#ruler_designer_cost = 0
 
 	male_insult = INSULT_SODOMITE
 	male_insult_adj = INSULT_EFFEMINATE
@@ -1751,7 +1751,7 @@ gardener = {
 	male_insult = INSULT_TREEHUGGER
 	female_insult = INSULT_TREEHUGGER
 
-	ruler_designer_cost = 0
+	#ruler_designer_cost = 0
 }
 mystic = {
 	lifestyle = yes
@@ -1777,7 +1777,7 @@ mystic = {
 	female_insult_adj = INSULT_GODLESS
 	child_insult_adj = INSULT_WEIRD
 
-	ruler_designer_cost = 0
+	#ruler_designer_cost = 0
 }
 impaler = {
 	lifestyle = yes
@@ -1807,7 +1807,7 @@ impaler = {
 	female_insult_adj = INSULT_EVIL
 	child_insult_adj = INSULT_WICKED
 
-	ruler_designer_cost = 0
+	#ruler_designer_cost = 0
 }
 duelist = {
 	lifestyle = yes
@@ -1820,7 +1820,7 @@ duelist = {
 	male_compliment = COMPL_BLADEMASTER
 	female_compliment = COMPL_CHAMPION
 
-	ruler_designer_cost = 0
+	#ruler_designer_cost = 0
 }
 hunter = {
 	lifestyle = yes
@@ -1842,7 +1842,7 @@ hunter = {
 
 	male_compliment = COMPL_HUNTMASTER
 
-	ruler_designer_cost = 0
+	#ruler_designer_cost = 0
 }
 
 # Way of Life DLC: No longer a lifestyle trait
@@ -1855,7 +1855,7 @@ poet = {
 	male_compliment = COMPL_POET
 	female_compliment = COMPL_POET
 
-	ruler_designer_cost = 0
+	#ruler_designer_cost = 0
 }
 
 # Way of Life DLC: No longer a lifestyle trait
@@ -1869,7 +1869,7 @@ falconer = {
 
 	same_opinion = 10
 
-	ruler_designer_cost = 0
+	#ruler_designer_cost = 0
 }
 
 #################################################################

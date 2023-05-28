@@ -840,7 +840,7 @@ great_conqueror_female = {
 	inheritance = matrilineal
 	allow_bastards = yes
 	picture = GFX_bloodlines_symbol_lion
-	flags = { bloodline_heroes }
+	flags = { bloodline_heroes bloodline_alter }
 }
 
 random_world_bloodline_male_1 = {

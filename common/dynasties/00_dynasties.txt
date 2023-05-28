@@ -25802,11 +25802,11 @@ used_for_random = no
 	culture = manden
 }
 1030003 = {
-	name="Bereté"
+	name="Berete"
 	culture = manden
 }
 1030004 = {
-	name="Kédjou"
+	name="Kedjou"
 	culture = manden
 }
 1030005 = {

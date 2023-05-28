@@ -1454,7 +1454,7 @@ spawn_creature_champion_effect = {
 		}
 	}
 	new_character = {
-		set_graphical_culture = event_target:target_ruler
+		set_graphical_culture = bear
 		remove_trait = dull
 		remove_trait = craven
 		remove_trait = paranoid

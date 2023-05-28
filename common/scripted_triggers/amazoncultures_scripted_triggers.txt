@@ -19,28 +19,6 @@
 #			}
 #		}
 
-
-		has_any_warrior_lodge_training_trait_trigger = {
-			OR = {
-
-				trait = amazonian_leader
-			}
-		}
-
-		has_current_warrior_lodge_leader_trait_trigger = {
-			custom_tooltip = {
-				text = has_warrior_training_with_current_society_tt
-				OR = {
-					
-					AND = {
-						trait = amazonian_leader
-						society_member_of = warrior_lodge_amazonian
-					}
-				}
-			}
-		}
-
-
 #		#Can be used on a character too -- will then default to look at the society a character is member of.
 #		this_society_is_a_warrior_lodge_trigger = {
 #			OR = {
