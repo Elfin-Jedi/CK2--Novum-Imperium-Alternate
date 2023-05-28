@@ -1,9 +1,0 @@
-novum_imperium_is_pagan = {
-	custom_tooltip = {
-		text = RELIGION_IS_PAGAN
-		OR = {
-            religion_group = pagan_group
-			religion_group = african_group
-        }
-	}
-}

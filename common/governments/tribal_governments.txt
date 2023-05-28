@@ -15,7 +15,7 @@ tribal_governments = {
 			merchant_republic_government
 			muslim_merchant_republic_government
 			bogomilist_merchant_republic_government
-			theocracy_government
+			playable_theocracy_government
 			muslim_government
 			imperial_government
 			muslim_imperial_government

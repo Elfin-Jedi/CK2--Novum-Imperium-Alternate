@@ -1,4 +1,497 @@
 # -*- ck2.scripted_effects -*-
+monastic_feudal_time = {
+	any_character = {
+		limit = {
+			is_landed = yes
+			any_demesne_title = {
+				tier = COUNT
+			}
+			NOR = {
+				is_merchant_republic = yes
+				is_theocracy = yes
+				holy_order = yes
+				controls_religion = yes
+				government = theocratic_feudal_government 
+			}
+			OR = { 
+				religion = bon
+				religion = bon_reformed
+				religion = buddhist
+				religion = hindu
+				religion = taoist
+				religion = jain
+			}
+		}
+		preferred_limit = {
+			tier = COUNT
+			is_adult = yes
+		}
+		preferred_limit = {
+			tier = DUKE
+			is_adult = yes
+		}
+		preferred_limit = {
+			tier = KING
+			is_adult = yes
+		}
+		preferred_limit = {
+			tier = EMPEROR
+			is_adult = yes
+		}
+		preferred_limit = {
+			tier = COUNT
+		}
+
+		if = { 
+			limit = {
+				NOT = { culture_group = tibetan_group }
+				NOR = { 
+					religion = bon
+					religion = buddhist
+				}
+			}
+			culture = bodpa
+		}
+
+		if = { 
+			limit = {
+				NOR = { 
+					religion = bon
+					religion = buddhist
+				}
+			}
+			religion = bon
+		}
+
+		if = { 
+			limit = {
+				OR = { 
+					religion = bon
+					religion = buddhist
+				}
+				NOT = { culture_group = tibetan_group }
+			}
+			culture = bodpa
+		}
+		
+		save_event_target_as = target_theocracy
+		set_government_type = theocratic_feudal_government 
+		any_demesne_province = {
+			any_province_holding = {
+				limit = {
+					holding_type = temple
+				}
+				grant_title = event_target:target_theocracy
+				make_capital_holding = yes
+			}
+		}
+		any_demesne_title = {
+			limit = {
+				tier = BARON
+				NOT = {
+					holding_type = temple
+				}
+			}
+			save_event_target_as = target_barony
+			create_random_soldier = {
+				random_traits = yes
+				dynasty = random
+				religion = event_target:target_theocracy
+				culture = event_target:target_theocracy
+				female = no
+				age = 25
+			}
+			new_character = {
+				grant_title = event_target:target_barony
+			}
+		}
+	}
+}
+
+big_repub = {
+	any_character = {
+		limit = {
+			is_landed = yes
+			any_demesne_title = {
+				tier = COUNT
+			}
+			NOR = {
+				is_merchant_republic = yes
+				holy_order = yes
+				controls_religion = yes
+				government_type = playable_republic_government
+				government_type = theocratic_feudal_government 
+				is_nomadic = yes
+			}
+		}
+		preferred_limit = {
+			tier = COUNT
+			is_adult = yes
+		}
+		preferred_limit = {
+			tier = DUKE
+			is_adult = yes
+		}
+		preferred_limit = {
+			tier = KING
+			is_adult = yes
+			NOT = {
+				any_character = {
+					is_landed = yes
+					tier = KING 
+					NOT = {
+						distance = { value = 1000 where = PREV }
+					}
+				}
+			}
+		}
+		preferred_limit = {
+			tier = EMPEROR
+			is_adult = yes
+			NOT = {
+				any_character = {
+					is_landed = yes
+					tier = EMPEROR
+					NOT = {
+						distance = { value = 1000 where = PREV }
+					}
+				}
+			}
+		}
+		
+		save_event_target_as = target_theocracy
+		
+		if = {
+			limit = {
+				tier = EMPEROR
+			}
+			if = {
+				limit = {
+					is_government_potential = bogomilist_merchant_republic_government
+				}
+				set_government_type = bogomilist_merchant_republic_government
+			}
+			else_if = {
+				limit = {
+					is_government_potential = muslim_merchant_republic_government
+				}
+				set_government_type = muslim_merchant_republic_government
+			}
+			else = {
+				set_government_type = merchant_republic_government
+			}
+		}
+		else = {
+			set_government_type = playable_republic_government
+		}
+		any_demesne_province = {
+			any_province_holding = {
+				limit = {
+					holding_type = city
+				}
+				grant_title = event_target:target_theocracy
+				make_capital_holding = yes
+			}
+		}
+		any_demesne_title = {
+			limit = {
+				tier = BARON
+				NOT = {
+					holding_type = city
+				}
+			}
+			save_event_target_as = target_barony
+			create_random_soldier = {
+				random_traits = yes
+				dynasty = random
+				religion = event_target:target_theocracy
+				culture = event_target:target_theocracy
+				female = no
+				age = 25
+			}
+			new_character = {
+				grant_title = event_target:target_barony
+			}
+		}
+	}
+	if = {
+		any_character = {
+			limit = {
+				government_type = republic_government
+			}
+			set_government_type = playable_republic_government
+		}
+	}
+}
+
+big_theocracies_effect = {
+	any_character = {
+		limit = {
+			is_landed = yes
+			is_government_potential = playable_theocracy_government
+			any_demesne_title = {
+				tier = COUNT
+			}
+			NOR = {
+				is_merchant_republic = yes
+				holy_order = yes
+				government_type = playable_theocracy_government
+				controls_religion = yes
+				religion_group = muslim
+				government = theocratic_feudal_government 
+				is_nomadic = yes
+			}
+		}
+		preferred_limit = {
+			tier = COUNT
+			is_adult = yes
+		}
+		preferred_limit = {
+			tier = DUKE
+			is_adult = yes
+		}
+		preferred_limit = {
+			tier = KING
+			is_adult = yes
+			NOT = {
+				any_character = {
+					is_landed = yes
+					is_theocracy = yes
+					tier = KING 
+					NOT = {
+						distance = { value = 1000 where = PREV }
+					}
+				}
+			}
+		}
+		preferred_limit = {
+			tier = EMPEROR
+			is_adult = yes
+			NOT = {
+				any_character = {
+					is_landed = yes
+					is_theocracy = yes
+					tier = EMPEROR
+					NOT = {
+						distance = { value = 1000 where = PREV }
+					}
+				}
+			}
+		}
+		
+		save_event_target_as = target_theocracy
+		
+		set_government_type = playable_theocracy_government
+		remove_spouse = spouse
+		any_demesne_province = {
+			any_province_holding = {
+				limit = {
+					holding_type = temple
+				}
+				grant_title = event_target:target_theocracy
+				make_capital_holding = yes
+			}
+		}
+		any_demesne_title = {
+			limit = {
+				tier = BARON
+				NOT = {
+					holding_type = temple
+				}
+			}
+			save_event_target_as = target_barony
+			create_random_soldier = {
+				random_traits = yes
+				dynasty = random
+				religion = event_target:target_theocracy
+				culture = event_target:target_theocracy
+				female = no
+				age = 25
+			}
+			new_character = {
+				grant_title = event_target:target_barony
+			}
+		}
+	}
+	if = {
+		any_character = {
+			limit = {
+				government_type = theocracy_government
+			}
+		set_government_type = playable_theocracy_government
+		}
+	}
+}
+
+random_government_effect = {
+	any_character = {
+		limit = {
+			is_landed = yes
+			any_demesne_title = {
+				tier = COUNT
+			}
+			NOR = {
+				is_merchant_republic = yes
+				holy_order = yes
+				controls_religion = yes
+				has_title_flag = alternate_hre
+				has_title_flag = alternate_byz
+				government = theocratic_feudal_government
+			}
+		}
+		preferred_limit = {
+			tier = COUNT
+			is_adult = yes
+		}
+		preferred_limit = {
+			tier = DUKE
+			is_adult = yes
+		}
+		preferred_limit = {
+			tier = KING
+			is_adult = yes
+			NOT = {
+				any_character = {
+					is_landed = yes
+					is_republic = yes
+					tier = KING 
+					NOT = {
+						distance = { value = 1000 where = PREV }
+					}
+				}
+			}
+		}
+		preferred_limit = {
+			tier = EMPEROR
+			is_adult = yes
+			NOT = {
+				any_character = {
+					is_landed = yes
+					is_republic = yes
+					tier = EMPEROR
+					NOT = {
+						distance = { value = 1000 where = PREV }
+					}
+				}
+			}
+		}
+		save_event_target_as = target_theocracy
+		random_list = {
+			16 = {
+				if = {
+					limit = {
+						is_government_potential = muslim_government
+					}
+					set_government_type = muslim_government
+				}
+				else_if = {
+					limit = {
+						is_government_potential = bogomilist_government
+					}
+					set_government_type = bogomilist_government
+				}
+				else_if = {
+					limit = {
+						is_government_potential = bureaucratic_government
+					}
+					set_government_type = bureaucratic_government
+				}
+				else_if = {
+					limit = {
+						is_government_potential = theocratic_feudal_government
+					}
+					set_government_type = theocratic_feudal_government
+				}
+				else = {
+					set_government_type = feudal_government
+				}
+			}
+			16 = {
+				set_government_type = tribal_government
+			}
+			16 = {
+				set_government_type = nomadic_government
+			}
+			16 = {
+				any_demesne_province = {
+					any_province_holding = {
+						limit = {
+							holding_type = city
+						}
+						grant_title = event_target:target_theocracy
+						make_capital_holding = yes
+					}
+				}
+				set_government_type = playable_republic_government
+			}
+			16 = {
+				remove_spouse = spouse
+				any_demesne_province = {
+					any_province_holding = {
+						limit = {
+							holding_type = temple
+						}
+						grant_title = event_target:target_theocracy
+						make_capital_holding = yes
+					}
+				}
+				set_government_type = playable_theocracy_government
+			}
+			16 = {
+				if = {
+					limit = {
+						is_government_potential = bogomilist_merchant_republic_government
+					}
+					set_government_type = bogomilist_merchant_republic_government
+				}
+				else_if = {
+					limit = {
+						is_government_potential = muslim_merchant_republic_government
+					}
+					set_government_type = muslim_merchant_republic_government
+				}
+				else = {
+					set_government_type = merchant_republic_government
+				}
+			}
+			4 = {
+				remove_spouse = spouse
+				any_demesne_province = {
+					any_province_holding = {
+						limit = {
+							holding_type = temple
+						}
+						grant_title = event_target:target_theocracy
+						make_capital_holding = yes
+					}
+				}
+				set_government_type = playable_theocracy_government
+			}
+		}
+	}
+	any_demesne_province = {
+		any_province_holding = {
+			grant_title = event_target:target_theocracy
+			make_capital_holding = yes
+		}
+	}
+	any_demesne_title = {
+		limit = {
+			tier = BARON
+		}
+		save_event_target_as = target_barony
+		create_random_soldier = {
+			random_traits = yes
+			dynasty = random
+			religion = event_target:target_theocracy
+			culture = event_target:target_theocracy
+			age = 25
+		}
+		new_character = {
+			grant_title = event_target:target_barony
+		}
+	}
+}
 
 shattered_conqueror_spawn_effect = {
 	random_independent_ruler = {
@@ -331,6 +824,24 @@ shattered_conqueror_spawn_effect = {
 			20 = {
 				give_nickname = nick_the_mythological_creature
 			}
+		}
+	}
+}
+
+iqta_temples = {
+	any_character = {
+		limit = {
+			OR = { 
+				religion_group = muslim
+				government = theocratic_feudal_government 
+			}
+			is_feudal = yes
+		}
+		any_demesne_title = {
+			limit = {
+				holding_type = castle
+			}
+			convert_to = temple
 		}
 	}
 }
@@ -944,14 +1455,13 @@ spawn_theocracies_effect = {
 spawn_theocracy_effect = {
 	random_character = {
 		limit = {
-			is_government_potential = theocracy_government
+			is_government_potential = playable_theocracy_government
 			is_landed = yes
 			any_demesne_title = {
 				tier = COUNT
 			}
 			NOR = {
 				is_merchant_republic = yes
-				is_theocracy = yes
 				holy_order = yes
 				mercenary = yes
 				controls_religion = yes
@@ -972,7 +1482,6 @@ spawn_theocracy_effect = {
 				location = {
 					any_character = {
 						is_landed = yes
-						is_theocracy = yes
 						NOT = {
 							distance = { value = 200 where = PREV }
 						}
@@ -990,7 +1499,7 @@ spawn_theocracy_effect = {
 		
 		save_event_target_as = target_theocracy
 		
-		set_government_type = theocracy_government
+		set_government_type = playable_theocracy_government
 		remove_spouse = spouse
 		any_demesne_province = {
 			any_province_holding = {

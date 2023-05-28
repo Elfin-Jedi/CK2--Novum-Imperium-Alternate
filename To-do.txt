@@ -18,19 +18,6 @@ Make Egyptian pagan and African religions have African shield in character view.
 
 Next:
 
-Acid's Mods:
-
-"Crusader Amazons" - Add 'gfx\interface\society_quest\mission_bg_the_warrior_lodge_amazonian'.
-"Dark Ages" - Remove 'zzzzzz_dark_ages_defines' and replace with the edited 'emf_defines' I will provide.
-"Sketchy Cheat Menu" - What all did you add? Have basic and bloodlines working. decisions\cheats_menu.txt has a parse failure error (missing an equals sign on line 695.
-"Bloodlines Sketchy Cheat Submod" - Add edited 00_bloodlines.txt and 02_earned_bloodlines.txt. I will provide these.
-"Harranian Immersion Pack: The Last Hellenic Pagans" - Remove history\characters\harranian. Unless you want to rework it to fit into HIP.
-"Hellenic Bödpa Temple Fix" - Is it still a problem in HIP? Test. If it is notify and await further instruction. If not, remove interface\province.gfx.
-"The Orders of Chivalry" - events\chivalry_socities_events and common\societies\chivalry_socities have parse errors.
-
-Way of Play
-No republic or theocracy limit
-
 Unlimited Lifestyle Events
 Forge Unlimited Bloodlines + Bloodline fix (compare with HIP version of Forge Unlimited Bloodlines)
 Extended Bloodlines (HF)
@@ -50,6 +37,7 @@ Rise to Power
 Landless Courts and Kings?
 
 Reformation Reform
+Monastic Feudal for Pagan Temporal Heads
 
 Lux Invicta
 

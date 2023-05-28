@@ -16,6 +16,7 @@
 "Cultures+"
 "Easy Heresy" [Religions Added]
 "Enatic Kingdoms"
+"Everything Playable! China Edition!" [no offmap China]
 "Expanded Traits"
 "Extended Bloodlines (HF)"
 "Extra Bloodlines 1.4"
@@ -70,7 +71,6 @@
 "Unlimited Lifestyle Traits"
 "Visible Health And Fertility"
 "Warrior Societies (HIP)"
-"Way of Play"
 "WOWGAG's More Artifacts & Bloodlines" [Contains "Historical and Fantastical Artifacts" & "Mythic Artifacts"]
 
 1. Vassal Culture Spread

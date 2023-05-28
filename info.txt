@@ -1,3 +1,7 @@
+Recommended Mods:
+
+"No Republic or Theocracy Limit"
+
 Contains
 
 Base:
@@ -32,12 +36,14 @@ Small Mods:
 "Debug"
 "Demigod Trait"
 "Epic Music Pack"
+"Everything Playable! China Edition!" [no offmap China]
 "Favor Improve"
 "Friend Mod"
 "Gift Troops"
 "Hellenic Bodpa Temple Fix"
 "Invite Locals ++"
 "More Council Members"
+"No Republic or Theocracy Limit"
 "Normal Retreat"
 "Rolls Additonal Traits"
 "Ruler Designer Unlocked"
@@ -47,5 +53,6 @@ Small Mods:
 "The Imperial Court Societies"
 "The Imperial Knights"
 "The Orders of Chivalry"
+"Theocratic Kings"
 "Unique Government Type for Viceroys"
 "Visible Health And Fertility"
