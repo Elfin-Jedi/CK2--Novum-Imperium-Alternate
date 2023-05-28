@@ -30,14 +30,22 @@ Small Mods:
 "Combat Rebalance"
 "Debug"
 "Demigod Trait"
+<<<<<<< Updated upstream
 "Everything Playable! China Edition!" [no offmap China]
+=======
+"Everything Playable! China Edition!"
+>>>>>>> Stashed changes
 "Favor Improve"
 "Friend Mod"
 "Gift Troops"
 "Hellenic Bodpa Temple Fix"
 "Invite Locals ++"
 "More Council Members"
+<<<<<<< Updated upstream
 "No republic or theocracy limit"
+=======
+"No Republic or Theocracy Limit"
+>>>>>>> Stashed changes
 "Normal Retreat"
 "Rolls Additonal Traits"
 "Ruler Designer Unlocked"
