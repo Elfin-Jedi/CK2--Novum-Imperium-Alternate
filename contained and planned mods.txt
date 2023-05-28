@@ -16,11 +16,7 @@
 "Cultures+"
 "Easy Heresy" [Religions Added]
 "Enatic Kingdoms"
-<<<<<<< Updated upstream
 "Everything Playable! China Edition!" [no offmap China]
-=======
-"Everything Playable! China Edition!"
->>>>>>> Stashed changes
 "Expanded Traits"
 "Extended Bloodlines (HF)"
 "Extra Bloodlines 1.4"
