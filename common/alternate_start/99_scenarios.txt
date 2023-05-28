@@ -233,9 +233,7 @@ random_scenario_random_governments = {
 	#priority = 48
 	
 	potential = {
-		OR = {
-			is_random_world = yes
-		}
+		is_random_world = yes
 	}
 
 	checked = {
