@@ -19,7 +19,6 @@
 #			}
 #		}
 
-
 #		#Can be used on a character too -- will then default to look at the society a character is member of.
 #		this_society_is_a_warrior_lodge_trigger = {
 #			OR = {

@@ -12,6 +12,7 @@ Base:
 Medium Mods:
 
 "African Religions Overhaul"
+"An Indo-Rome Mod: Renovatio Imperii"
 "Ancient Religions Reborn and Expanded"
 "Better Looking Garbs"
 "Better Looking Garbs (HIP)"
@@ -34,6 +35,7 @@ Small Mods:
 "Combat Rebalance"
 "Debug"
 "Demigod Trait"
+"Epic Music Pack"
 "Everything Playable! China Edition!" [no offmap China]
 "Favor Improve"
 "Friend Mod"
