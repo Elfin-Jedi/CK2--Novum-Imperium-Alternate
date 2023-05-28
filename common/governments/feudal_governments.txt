@@ -526,7 +526,7 @@ feudal_governments = {
 		}
 		accepts_liege_governments = { # Gets the wrong religion modifier instead
 			muslim_government
-			theocracy_government
+			playable_theocracy_government
 			feudal_government
 			bogomilist_government
 			imperial_government
@@ -954,7 +954,7 @@ feudal_governments = {
 		}
 		accepts_liege_governments = { # Gets the wrong religion modifier instead
 			muslim_government
-			theocracy_government
+			playable_theocracy_government
 			feudal_government
 			bogomilist_government
 			theocratic_feudal_government
@@ -1131,7 +1131,7 @@ feudal_governments = {
 			feudal_government
 			muslim_government
 			bogomilist_government
-			theocracy_government
+			playable_theocracy_government
 			theocratic_feudal_government
 			imperial_government
 			muslim_imperial_government

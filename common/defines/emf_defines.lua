@@ -98,7 +98,10 @@ NDefines.NTitle.GAME_RULES_DEJURE_SHORT_EMPIRE = 40
 NDefines.NTitle.GAME_RULES_DEJURE_SHORTEST = 20
 NDefines.NTitle.GAME_RULES_DEJURE_SHORTEST_EMPIRE = 20
 NDefines.NTitle.REQ_KINGDOMS_FOR_EMPIRE_CREATION = 3
+<<<<<<< Updated upstream
 NDefines.NTitle.ENFORCE_ONE_OF_EACH_HOLDING = 0
+=======
+>>>>>>> Stashed changes
 NDefines.NTitle.EMPIRE_DEJURE_COUNTY_LIMIT_TO_CREATE = 0.667
 NDefines.NTitle.EMPIRE_DEJURE_COUNTY_LIMIT_TO_USURP = 0.667
 NDefines.NTitle.CUSTOM_TITLE_COLOR_OFFSET = 0.2
@@ -144,7 +147,6 @@ NDefines.NEconomy.PATRICIAN_AGE_RESPECT_FACTOR = 0
 NDefines.NEconomy.DOGE_SUCC_RANDOM_FACTOR = 0
 
 -- Nomad
-NDefines.NNomad.MAX_POPULATION_EMPTY_HOLDING_MULTIPLIER = 500 -- < v10.6: 1250; vanilla: 1000; now compensated for with terrain-based province modifiers; [Base population per empty holding for grazing]
 NDefines.NNomad.MANPOWER_INCREASE_MULTIPLIER = 0.075        -- < v10.6: 0.1 (vanilla); [The rate current manpower grows or declines to max manpower]
 NDefines.NNomad.POPULATION_TAX_MULTIPLIER = 0.0005          -- < v10.6: 0.0005 (vanilla); [Monthly tax income determined by the current population]
 NDefines.NNomad.STARTING_HORDE_MAX_FRACTION = 1

@@ -30,7 +30,11 @@ Small Mods:
 "Combat Rebalance"
 "Debug"
 "Demigod Trait"
+<<<<<<< Updated upstream
 "Everything Playable! China Edition!" [no offmap China]
+=======
+"Everything Playable! China Edition!"
+>>>>>>> Stashed changes
 "Favor Improve"
 "Friend Mod"
 "Gift Troops"
@@ -47,5 +51,6 @@ Small Mods:
 "The Imperial Court Societies"
 "The Imperial Knights"
 "The Orders of Chivalry"
+"Theocratic Kings"
 "Unique Government Type for Viceroys"
 "Visible Health And Fertility"

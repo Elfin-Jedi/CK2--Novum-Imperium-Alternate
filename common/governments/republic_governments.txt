@@ -16,7 +16,7 @@ republic_governments = {
 			TRIBAL
 		}
 		accepts_liege_governments = { # Accepts other republics
-			republic_government
+			playable_republic_government
 			muslim_merchant_republic_government
 			bogomilist_merchant_republic_government
 		}
@@ -128,7 +128,7 @@ republic_governments = {
 			TRIBAL
 		}
 		accepts_liege_governments = { # Accepts other republics
-			republic_government
+			playable_republic_government
 			muslim_merchant_republic_government
 			bogomilist_merchant_republic_government
 		}
@@ -237,7 +237,7 @@ republic_governments = {
 			TRIBAL
 		}
 		accepts_liege_governments = { # Accepts other republics
-			republic_government
+			playable_republic_government
 			merchant_republic_government
 			bogomilist_merchant_republic_government
 		}
@@ -371,6 +371,7 @@ republic_governments = {
 				is_government_potential = merchant_republic_government
 				is_government_potential = muslim_merchant_republic_government
 				is_government_potential = bogomilist_merchant_republic_government
+				is_government_potential = playable_republic_government
 				is_government_potential = bureaucratic_government
 			}
 			holy_order = no
