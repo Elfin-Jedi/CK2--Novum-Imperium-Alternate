@@ -1,3 +1,7 @@
+Recommended Mods:
+
+"No Republic or Theocracy Limit"
+
 Contains
 
 Base:
@@ -30,11 +34,7 @@ Small Mods:
 "Combat Rebalance"
 "Debug"
 "Demigod Trait"
-<<<<<<< Updated upstream
 "Everything Playable! China Edition!" [no offmap China]
-=======
-"Everything Playable! China Edition!"
->>>>>>> Stashed changes
 "Favor Improve"
 "Friend Mod"
 "Gift Troops"
