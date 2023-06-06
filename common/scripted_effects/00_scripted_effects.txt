@@ -5779,6 +5779,18 @@ remove_education_effect = {
 	remove_trait = martial_cleric
 	remove_trait = scholarly_theologian
 	remove_trait = mastermind_theologian
+	remove_trait = shameful_builder
+	remove_trait = efficient_worker
+	remove_trait = master_mason
+	remove_trait = royal_craftsman
+	remove_trait = common_soldier
+	remove_trait = experienced_captain
+	remove_trait = seasoned_commander
+	remove_trait = great_general
+	remove_trait = beginner_backstabber
+	remove_trait = cunning_conspirator
+	remove_trait = political_maneuverer
+	remove_trait = machiavellian_manipulator
 }
 
 remove_lifestyle_trait_effect = {
@@ -26310,6 +26322,57 @@ upgrade_education_effect = {
 		mastermind_theologian = {
 			# already maxed
 		}
+		
+		### Sketchy's Builder ###
+		shameful_builder = {
+			remove_trait = shameful_builder
+			add_trait = efficient_worker
+		}
+		efficient_worker = {
+			remove_trait = efficient_worker
+			add_trait = master_mason
+		}
+		master_mason = {
+			remove_trait = master_mason
+			add_trait = royal_craftsman
+		}
+		royal_craftsman = {
+			# already maxed
+		}
+		
+		### Sketchy's Military ###
+		common_soldier = {
+			remove_trait = common_soldier
+			add_trait = experienced_captain
+		}
+		experienced_captain = {
+			remove_trait = experienced_captain
+			add_trait = seasoned_commander
+		}
+		seasoned_commander = {
+			remove_trait = seasoned_commander
+			add_trait = great_general
+		}
+		great_general = {
+			# already maxed
+		}
+		
+		### Sketchy's Politics ###
+		beginner_backstabber = {
+			remove_trait = beginner_backstabber
+			add_trait = cunning_conspirator
+		}
+		cunning_conspirator = {
+			remove_trait = cunning_conspirator
+			add_trait = political_maneuverer
+		}
+		political_maneuverer = {
+			remove_trait = political_maneuverer
+			add_trait = machiavellian_manipulator
+		}
+		machiavellian_manipulator = {
+			# already maxed
+		}
 	}
 }
 
@@ -37270,6 +37333,9 @@ stable_attribute_improvement_effect = {
 								trait = naive_appeaser
 								trait = underhanded_rogue
 								trait = charismatic_negotiator
+								trait = beginner_backstabber
+								trait = cunning_conspirator
+								trait = political_maneuverer
 							}
 						}
 						modifier = { 
@@ -37392,6 +37458,9 @@ stable_attribute_improvement_effect = {
 								trait = misguided_warrior
 								trait = tough_soldier
 								trait = skilled_tactician
+								trait = common_soldier
+								trait = experienced_captain
+								trait = seasoned_commander
 							}
 						}
 						modifier = { 
@@ -37583,6 +37652,9 @@ stable_attribute_improvement_effect = {
 								trait = indulgent_wastrel
 								trait = thrifty_clerk
 								trait = fortune_builder
+								trait = shameful_builder
+								trait = efficient_worker
+								trait = master_mason
 							}
 						}
 						modifier = { 
@@ -37773,6 +37845,9 @@ stable_attribute_improvement_effect = {
 								trait = amateurish_plotter
 								trait = flamboyant_schemer
 								trait = intricate_webweaver
+								trait = beginner_backstabber
+								trait = cunning_conspirator
+								trait = political_maneuverer
 							}
 						}
 						modifier = { 

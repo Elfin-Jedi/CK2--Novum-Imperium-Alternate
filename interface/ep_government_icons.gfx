@@ -1,6 +1,6 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_playable_republic_government"
+		name = "GFX_icon_playable_republic_government"
 		texturefile = "gfx\\interface\\government_icon_republic.dds"
 	}
 	spriteType = {

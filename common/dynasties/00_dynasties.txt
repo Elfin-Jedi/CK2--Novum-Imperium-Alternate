@@ -1,6 +1,6 @@
 1=
 {
-	name="Gårdske"
+	name="Gardske"
 	culture = "swedish"
 }
 2=
@@ -1760,7 +1760,7 @@
 	coat_of_arms = {	template = 0	layer = {	texture = 14		texture_internal = 161	emblem = 0	color = 0	color = 0	color = 0	}	}
 }
 259 = {
-	name="von Württemberg"
+	name="von Wurttemberg"
 	culture ="german"
 }
 260 = {
@@ -6642,7 +6642,7 @@
 	culture ="norse"
 }
 1168 = {
-	name = "Gárdske"
+	name = "Gardske"
 	culture ="norse"
 }
 1169 = {
@@ -13070,7 +13070,7 @@ used_for_random = no
 	coat_of_arms = {	template = 0	layer = {	texture = 14	texture_internal = 73	emblem = 0	color = 0	color = 0	color = 0	}	}
 }
 12448 = {
-	name="von Grüningen"
+	name="von Gruningen"
 	culture ="german"
 	coat_of_arms = {	template = 0	layer = {	texture = 14	texture_internal = 180	emblem = 0	color = 0	color = 0	color = 0	}	}
 }
@@ -15598,7 +15598,7 @@ used_for_random = no
 	culture = prussian
 }
 20054 = {
-	name="von Königsberg"
+	name="von Konigsberg"
 	culture = prussian
 }
 20055 = {
@@ -15630,7 +15630,7 @@ used_for_random = no
 	culture ="castillan"
 }
 20062 = {
-	name="de Montlhéry"
+	name="de Montlhery"
 	culture = "frankish"
 }
 20063 = {
@@ -19048,7 +19048,7 @@ used_for_random = no
 	culture ="croatian"
 }
 100463 = {
-	name="Feštetic"
+	name="Festetic"
 	culture ="croatian"
 }
 100464 = {
@@ -28826,7 +28826,7 @@ used_for_random = no
 	culture = sephardi
 }
 1041064 = {
-	name = "Ya’akov"
+	name = "Ya'akov"
 	culture = sephardi
 }
 1041065 = {
@@ -33487,7 +33487,7 @@ used_for_random = no
 	religion="tengri_pagan"
 }
 1051108 = {
-	name="Günaydin"
+	name="Gunaydin"
 	culture="kirghiz"
 	religion="manichean"
 }
@@ -36314,7 +36314,7 @@ used_for_random = no
 	religion="bon"
 }
 105895 = {
-	name="Rigö"
+	name="Rigo"
 	culture="sumpa"
 	religion="bon"
 }
@@ -41360,7 +41360,7 @@ used_for_random = no
 	culture="slovieni"
 }
 1069054 = {
-	name="Ostrihomský"
+	name="Ostrihomsky"
 	culture="slovieni"
 }
 1069055 = {

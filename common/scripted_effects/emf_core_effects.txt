@@ -224,7 +224,7 @@ emf_set_government_to_match_PREV = {
 			set_government_type = confucian_bureaucracy
 		}
 		else = {
-			set_government_type = republic_government
+			set_government_type = playable_republic_government
 		}
 	}
 }

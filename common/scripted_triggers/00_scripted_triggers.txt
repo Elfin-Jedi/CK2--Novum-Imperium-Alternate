@@ -685,6 +685,10 @@ has_education_diplomacy_trigger = {
 		trait = underhanded_rogue
 		trait = charismatic_negotiator
 		trait = grey_eminence
+		trait = beginner_backstabber
+		trait = cunning_conspirator
+		trait = political_maneuverer
+		trait = machiavellian_manipulator
 	}
 }
 
@@ -721,6 +725,10 @@ has_education_martial_trigger = {
 		trait = tough_soldier
 		trait = skilled_tactician
 		trait = brilliant_strategist
+		trait = common_soldier
+		trait = experienced_captain
+		trait = seasoned_commander
+		trait = great_general
 	}
 }
 
@@ -757,6 +765,10 @@ has_education_stewardship_trigger = {
 		trait = thrifty_clerk
 		trait = fortune_builder
 		trait = midas_touched
+		trait = shameful_builder
+		trait = efficient_worker
+		trait = master_mason
+		trait = royal_craftsman
 	}
 }
 
@@ -785,6 +797,10 @@ has_education_intrigue_trigger = {
 		trait = flamboyant_schemer
 		trait = intricate_webweaver
 		trait = elusive_shadow
+		trait = beginner_backstabber
+		trait = cunning_conspirator
+		trait = political_maneuverer
+		trait = machiavellian_manipulator
 	}
 }
 
@@ -1099,6 +1115,14 @@ change_council_job_potential_trigger = {
 	OR = {
 		AND = {
 			OR = {
+				has_minor_title = title_councilmember_everything1
+				has_minor_title = title_councilmember_everything2
+				has_minor_title = title_councilmember_everything3
+				has_minor_title = title_extra_king
+				has_minor_title = title_extra_emperor
+				has_minor_title = title_extra_senator1
+				has_minor_title = title_extra_senator2
+				has_minor_title = title_extra_senator3
 				has_minor_title = title_councilmember_king
 				has_minor_title = title_councilmember_emperor
 			}
@@ -1239,7 +1263,7 @@ can_be_chancellor_trigger = {
 	# Chancellor must be not Waldensian, or not a theocrat, or not a ruler
 	OR = {
 		NOT = { religion = waldensian }
-		is_theocracy = no
+		rtp_is_theocracy_government = no
 		is_ruler = no
 	}
 	# Chancellor must be not Bogomilist, or not a Perfecti nor theocrat, or the liege is also Bogomilist and that faith
@@ -1248,7 +1272,7 @@ can_be_chancellor_trigger = {
 		NOT = { religion = bogomilist }
 		NOR = {
 			trait = perfecti
-			is_theocracy = yes
+			rtp_is_theocracy_government = yes
 		}
 		custom_tooltip = {
 			text = emf_ctt_bogomilist_organized
@@ -1304,7 +1328,7 @@ can_be_marshal_even_if_independent_trigger = {
 		NOT = { religion = bogomilist }
 		NOR = {
 			trait = perfecti
-			is_theocracy = yes
+			rtp_is_theocracy_government = yes
 		}
 		custom_tooltip = {
 			text = emf_ctt_bogomilist_organized
@@ -1406,14 +1430,14 @@ can_be_treasurer_trigger = {
 	}
 	OR = {
 		NOT = { religion = waldensian }
-		is_theocracy = no
+		rtp_is_theocracy_government = no
 		is_ruler = no
 	}
 	OR = {
 		NOT = { religion = bogomilist }
 		NOR = {
 			trait = perfecti
-			is_theocracy = yes
+			rtp_is_theocracy_government = yes
 		}
 		custom_tooltip = {
 			text = emf_ctt_bogomilist_organized
@@ -1531,7 +1555,7 @@ can_be_spymaster_trigger = {
 		NOT = { religion = bogomilist }
 		NOR = {
 			trait = perfecti
-			is_theocracy = yes
+			rtp_is_theocracy_government = yes
 		}
 		custom_tooltip = {
 			text = emf_ctt_bogomilist_organized
@@ -1583,11 +1607,11 @@ can_be_spiritual_trigger = {
 	OR = {
 		has_autocephaly = no
 		is_ruler = yes
-		NOT = { liege = { any_vassal = { is_theocracy = yes } } }
+		NOT = { liege = { any_vassal = { rtp_is_theocracy_government = yes } } }
 	}
 	OR = {
 		religion_group = muslim
-		is_theocracy = yes
+		rtp_is_theocracy_government = yes
 		has_flag = needs_fake_feudal_government # Makes sure theocracy religion switch won't cause people to get fired
 		AND = {
 			liege = {
@@ -1608,7 +1632,7 @@ can_be_spiritual_trigger = {
 	}
 	OR = {
 		NOT = { religion = cathar }
-		is_theocracy = yes
+		rtp_is_theocracy_government = yes
 		has_flag = needs_fake_feudal_government # Makes sure theocracy religion switch won't cause people to get fired
 		trait = perfecti
 		has_character_flag = special_spiritual
@@ -1617,7 +1641,7 @@ can_be_spiritual_trigger = {
 		NOT = { religion = bogomilist }
 		NOR = {
 			trait = perfecti
-			is_theocracy = yes
+			rtp_is_theocracy_government = yes
 		}
 		custom_tooltip = {
 			text = emf_ctt_bogomilist_formalized
@@ -1696,7 +1720,7 @@ can_be_councilmember_king_trigger = {
 		NOT = { religion = bogomilist }
 		NOR = {
 			trait = perfecti
-			is_theocracy = yes
+			rtp_is_theocracy_government = yes
 		}
 		custom_tooltip = {
 			text = emf_ctt_bogomilist_organized
@@ -1763,7 +1787,7 @@ can_be_councilmember_emperor_trigger = {
 		NOT = { religion = bogomilist }
 		NOR = {
 			trait = perfecti
-			is_theocracy = yes
+			rtp_is_theocracy_government = yes
 		}
 		custom_tooltip = {
 			text = emf_ctt_bogomilist_organized
@@ -5408,6 +5432,9 @@ has_bottom_tier_education_trait_trigger = {
 		trait = indulgent_wastrel
 		trait = amateurish_plotter
 		trait = detached_priest
+		trait = shameful_builder
+		trait = common_soldier
+		trait = beginner_backstabber
 	}
 }
 
@@ -5418,6 +5445,9 @@ has_2nd_tier_education_trait_trigger = {
 		trait = thrifty_clerk
 		trait = flamboyant_schemer
 		trait = martial_cleric
+		trait = efficient_worker
+		trait = experienced_captain
+		trait = cunning_conspirator
 	}
 }
 
@@ -5431,6 +5461,9 @@ has_3rd_tier_education_trait_trigger = {
 				trait = fortune_builder
 				trait = intricate_webweaver
 				trait = scholarly_theologian
+				trait = master_mason
+				trait = seasoned_commander
+				trait = political_maneuverer
 			}
 		}
 	}
@@ -5446,6 +5479,9 @@ has_top_tier_education_trait_trigger = {
 				trait = midas_touched
 				trait = brilliant_strategist
 				trait = mastermind_theologian
+				trait = royal_craftsman
+				trait = great_general
+				trait = machiavellian_manipulator
 			}
 		}
 	}
@@ -9146,14 +9182,14 @@ parent_for_elective_succession_trigger = {
 			is_landed = yes
 			is_republic = no
 			is_merchant_republic = no
-			is_theocracy = no
+			rtp_is_theocracy_government = no
 		}
 		NOT = {
 			any_heir_title = {
 				OR = {
 					is_republic = yes
 					is_merchant_republic = yes
-					is_theocracy = yes
+					rtp_is_theocracy_government = yes
 				}
 			}
 		}
@@ -9165,7 +9201,7 @@ parent_for_elective_succession_trigger = {
 	emf_can_inherit = yes
 	NOR = {
 		is_ascetic_trigger = yes
-		is_theocracy = yes
+		rtp_is_theocracy_government = yes
 		is_republic = yes
 		is_merchant_republic = yes
 	}

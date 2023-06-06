@@ -93,7 +93,7 @@ spriteTypes = {
 	# IMPORTED TRAITS FROM CRIMSON'S IMPROVED GENETICS 2.0:
 	spriteType = {
 		name = "GFX_trait_short"
-		texturefile = "gfx/traits/short.dds"
+		texturefile = "gfx/traits/short.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"

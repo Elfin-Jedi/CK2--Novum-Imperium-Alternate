@@ -336,7 +336,14 @@ character_event = {
 		trigger = {
 			has_character_flag = education_outcome_level_1
 		}
-		add_trait = naive_appeaser
+		random_list = {
+			90 = {
+				add_trait = naive_appeaser
+			}
+			10 = {
+				add_trait = beginner_backstabber
+			}
+		}
 		clr_character_flag = education_outcome_level_1
 	}
 	option = {
@@ -344,7 +351,14 @@ character_event = {
 		trigger = {
 			has_character_flag = education_outcome_level_2
 		}
-		add_trait = underhanded_rogue
+		random_list = {
+			90 = {
+				add_trait = underhanded_rogue
+			}
+			10 = {
+				add_trait = cunning_conspirator
+			}
+		}
 		clr_character_flag = education_outcome_level_2
 	}
 	option = {
@@ -352,7 +366,14 @@ character_event = {
 		trigger = {
 			has_character_flag = education_outcome_level_3
 		}
-		add_trait = charismatic_negotiator
+		random_list = {
+			90 = {
+				add_trait = charismatic_negotiator
+			}
+			10 = {
+				add_trait = political_maneuverer
+			}
+		}
 		clr_character_flag = education_outcome_level_3
 	}
 	option = {
@@ -360,7 +381,14 @@ character_event = {
 		trigger = {
 			has_character_flag = education_outcome_level_4
 		}
-		add_trait = grey_eminence
+		random_list = {
+			90 = {
+				add_trait = grey_eminence
+			}
+			10 = {
+				add_trait = machiavellian_manipulator
+			}
+		}
 		clr_character_flag = education_outcome_level_4
 	}
 
@@ -416,9 +444,21 @@ character_event = {
 		}
 	}
 	desc = {
+		text = EVTDESCA_ZE_14110
+		trigger = {
+			FROM = { trait = beginner_backstabber }
+		}
+	}
+	desc = {
 		text = EVTDESCB_ZE_14110
 		trigger = {
 			FROM = { trait = underhanded_rogue }
+		}
+	}
+	desc = {
+		text = EVTDESCB_ZE_14110
+		trigger = {
+			FROM = { trait = cunning_conspirator }
 		}
 	}
 	desc = {
@@ -428,9 +468,21 @@ character_event = {
 		}
 	}
 	desc = {
+		text = EVTDESCC_ZE_14110
+		trigger = {
+			FROM = { trait = political_maneuverer }
+		}
+	}
+	desc = {
 		text = EVTDESCD_ZE_14110
 		trigger = {
 			FROM = { trait = grey_eminence }
+		}
+	}
+	desc = {
+		text = EVTDESCD_ZE_14110
+		trigger = {
+			FROM = { trait = machiavellian_manipulator }
 		}
 	}
 
@@ -444,11 +496,25 @@ character_event = {
 		tooltip = { FROM = { add_trait = naive_appeaser } }
 	}
 	option = {
+		name = EVTOPTA_ZE_14110
+		trigger = {
+			FROM = { trait = beginner_backstabber }
+		}
+		tooltip = { FROM = { add_trait = beginner_backstabber } }
+	}
+	option = {
 		name = EVTOPTB_ZE_14110
 		trigger = {
 			FROM = { trait = underhanded_rogue }
 		}
 		tooltip = { FROM = { add_trait = underhanded_rogue } }
+	}
+	option = {
+		name = EVTOPTB_ZE_14110
+		trigger = {
+			FROM = { trait = cunning_conspirator }
+		}
+		tooltip = { FROM = { add_trait = cunning_conspirator } }
 	}
 	option = {
 		name = EVTOPTC_ZE_14110
@@ -458,11 +524,25 @@ character_event = {
 		tooltip = { FROM = { add_trait = charismatic_negotiator } }
 	}
 	option = {
+		name = EVTOPTC_ZE_14110
+		trigger = {
+			FROM = { trait = political_maneuverer }
+		}
+		tooltip = { FROM = { add_trait = political_maneuverer } }
+	}
+	option = {
 		name = EXCELLENT
 		trigger = {
 			FROM = { trait = grey_eminence }
 		}
 		tooltip = { FROM = { add_trait = grey_eminence } }
+	}
+	option = {
+		name = EXCELLENT
+		trigger = {
+			FROM = { trait = machiavellian_manipulator }
+		}
+		tooltip = { FROM = { add_trait = machiavellian_manipulator } }
 	}
 }
 
@@ -791,7 +871,14 @@ character_event = {
 		trigger = {
 			has_character_flag = education_outcome_level_1
 		}
-		add_trait = misguided_warrior
+		random_list = {
+			75 = {
+				add_trait = misguided_warrior
+			}
+			25 = {
+				add_trait = common_soldier
+			}
+		}
 		clr_character_flag = education_outcome_level_1
 	}
 	option = {
@@ -799,7 +886,14 @@ character_event = {
 		trigger = {
 			has_character_flag = education_outcome_level_2
 		}
-		add_trait = tough_soldier
+		random_list = {
+			75 = {
+				add_trait = tough_soldier
+			}
+			25 = {
+				add_trait = experienced_captain
+			}
+		}
 		clr_character_flag = education_outcome_level_2
 	}
 	option = {
@@ -807,7 +901,14 @@ character_event = {
 		trigger = {
 			has_character_flag = education_outcome_level_3
 		}
-		add_trait = skilled_tactician
+		random_list = {
+			75 = {
+				add_trait = skilled_tactician
+			}
+			25 = {
+				add_trait = seasoned_commander
+			}
+		}
 		clr_character_flag = education_outcome_level_3
 	}
 	option = {
@@ -815,7 +916,14 @@ character_event = {
 		trigger = {
 			has_character_flag = education_outcome_level_4
 		}
-		add_trait = brilliant_strategist
+		random_list = {
+			75 = {
+				add_trait = brilliant_strategist
+			}
+			25 = {
+				add_trait = great_general
+			}
+		}
 		hidden_tooltip = {
 			random_list = {
 				10 = { add_trait = light_foot_leader }
@@ -926,9 +1034,21 @@ character_event = {
 		}
 	}
 	desc = {
+		text = EVTDESCA_ZE_14210
+		trigger = {
+			FROM = { trait = common_soldier }
+		}
+	}
+	desc = {
 		text = EVTDESCB_ZE_14210
 		trigger = {
 			FROM = { trait = tough_soldier }
+		}
+	}
+	desc = {
+		text = EVTDESCB_ZE_14210
+		trigger = {
+			FROM = { trait = experienced_captain }
 		}
 	}
 	desc = {
@@ -938,9 +1058,21 @@ character_event = {
 		}
 	}
 	desc = {
+		text = EVTDESCC_ZE_14210
+		trigger = {
+			FROM = { trait = seasoned_commander }
+		}
+	}
+	desc = {
 		text = EVTDESCD_ZE_14210
 		trigger = {
 			FROM = { trait = brilliant_strategist }
+		}
+	}
+	desc = {
+		text = EVTDESCD_ZE_14210
+		trigger = {
+			FROM = { trait = great_general }
 		}
 	}
 
@@ -954,11 +1086,25 @@ character_event = {
 		tooltip = { FROM = { add_trait = misguided_warrior } }
 	}
 	option = {
+		name = EVTOPTA_ZE_14110
+		trigger = {
+			FROM = { trait = common_soldier }
+		}
+		tooltip = { FROM = { add_trait = common_soldier } }
+	}
+	option = {
 		name = EVTOPTB_ZE_14110
 		trigger = {
 			FROM = { trait = tough_soldier }
 		}
 		tooltip = { FROM = { add_trait = tough_soldier } }
+	}
+	option = {
+		name = EVTOPTB_ZE_14110
+		trigger = {
+			FROM = { trait = experienced_captain }
+		}
+		tooltip = { FROM = { add_trait = experienced_captain } }
 	}
 	option = {
 		name = EVTOPTC_ZE_14110
@@ -968,11 +1114,25 @@ character_event = {
 		tooltip = { FROM = { add_trait = skilled_tactician } }
 	}
 	option = {
+		name = EVTOPTC_ZE_14110
+		trigger = {
+			FROM = { trait = seasoned_commander }
+		}
+		tooltip = { FROM = { add_trait = seasoned_commander } }
+	}
+	option = {
 		name = EXCELLENT
 		trigger = {
 			FROM = { trait = brilliant_strategist }
 		}
 		tooltip = { FROM = { add_trait = brilliant_strategist } }
+	}
+	option = {
+		name = EXCELLENT
+		trigger = {
+			FROM = { trait = great_general }
+		}
+		tooltip = { FROM = { add_trait = great_general } }
 	}
 }
 
@@ -1301,7 +1461,14 @@ character_event = {
 		trigger = {
 			has_character_flag = education_outcome_level_1
 		}
-		add_trait = indulgent_wastrel
+		random_list = {
+			75 = {
+				add_trait = indulgent_wastrel
+			}
+			25 = {
+				add_trait = shameful_builder
+			}
+		}
 		clr_character_flag = education_outcome_level_1
 	}
 	option = {
@@ -1309,7 +1476,14 @@ character_event = {
 		trigger = {
 			has_character_flag = education_outcome_level_2
 		}
-		add_trait = thrifty_clerk
+		random_list = {
+			75 = {
+				add_trait = thrifty_clerk
+			}
+			25 = {
+				add_trait = efficient_worker
+			}
+		}
 		clr_character_flag = education_outcome_level_2
 	}
 	option = {
@@ -1317,7 +1491,14 @@ character_event = {
 		trigger = {
 			has_character_flag = education_outcome_level_3
 		}
-		add_trait = fortune_builder
+		random_list = {
+			75 = {
+				add_trait = fortune_builder
+			}
+			25 = {
+				add_trait = master_mason
+			}
+		}
 		clr_character_flag = education_outcome_level_3
 	}
 	option = {
@@ -1325,7 +1506,14 @@ character_event = {
 		trigger = {
 			has_character_flag = education_outcome_level_4
 		}
-		add_trait = midas_touched
+		random_list = {
+			75 = {
+				add_trait = midas_touched
+			}
+			25 = {
+				add_trait = royal_craftsman
+			}
+		}
 		clr_character_flag = education_outcome_level_4
 	}
 
@@ -1381,9 +1569,21 @@ character_event = {
 		}
 	}
 	desc = {
+		text = EVTDESCA_ZE_14310
+		trigger = {
+			FROM = { trait = shameful_builder }
+		}
+	}
+	desc = {
 		text = EVTDESCB_ZE_14310
 		trigger = {
 			FROM = { trait = thrifty_clerk }
+		}
+	}
+	desc = {
+		text = EVTDESCB_ZE_14310
+		trigger = {
+			FROM = { trait = efficient_worker }
 		}
 	}
 	desc = {
@@ -1393,9 +1593,21 @@ character_event = {
 		}
 	}
 	desc = {
+		text = EVTDESCC_ZE_14310
+		trigger = {
+			FROM = { trait = master_mason }
+		}
+	}
+	desc = {
 		text = EVTDESCD_ZE_14310
 		trigger = {
 			FROM = { trait = midas_touched }
+		}
+	}
+	desc = {
+		text = EVTDESCD_ZE_14310
+		trigger = {
+			FROM = { trait = royal_craftsman }
 		}
 	}
 
@@ -1409,11 +1621,25 @@ character_event = {
 		tooltip = { FROM = { add_trait = indulgent_wastrel } }
 	}
 	option = {
+		name = EVTOPTA_ZE_14110
+		trigger = {
+			FROM = { trait = shameful_builder }
+		}
+		tooltip = { FROM = { add_trait = shameful_builder } }
+	}
+	option = {
 		name = EVTOPTB_ZE_14110
 		trigger = {
 			FROM = { trait = thrifty_clerk }
 		}
 		tooltip = { FROM = { add_trait = thrifty_clerk } }
+	}
+	option = {
+		name = EVTOPTB_ZE_14110
+		trigger = {
+			FROM = { trait = efficient_worker }
+		}
+		tooltip = { FROM = { add_trait = efficient_worker } }
 	}
 	option = {
 		name = EVTOPTC_ZE_14110
@@ -1423,11 +1649,25 @@ character_event = {
 		tooltip = { FROM = { add_trait = fortune_builder } }
 	}
 	option = {
+		name = EVTOPTC_ZE_14110
+		trigger = {
+			FROM = { trait = master_mason }
+		}
+		tooltip = { FROM = { add_trait = master_mason } }
+	}
+	option = {
 		name = EXCELLENT
 		trigger = {
 			FROM = { trait = midas_touched }
 		}
 		tooltip = { FROM = { add_trait = midas_touched } }
+	}
+	option = {
+		name = EXCELLENT
+		trigger = {
+			FROM = { trait = royal_craftsman }
+		}
+		tooltip = { FROM = { add_trait = royal_craftsman } }
 	}
 }
 
@@ -1754,7 +1994,14 @@ character_event = {
 		trigger = {
 			has_character_flag = education_outcome_level_1
 		}
-		add_trait = amateurish_plotter
+		random_list = {
+			75 = {
+				add_trait = amateurish_plotter
+			}
+			25 = {
+				add_trait = beginner_backstabber
+			}
+		}
 		clr_character_flag = education_outcome_level_1
 	}
 	option = {
@@ -1762,7 +2009,14 @@ character_event = {
 		trigger = {
 			has_character_flag = education_outcome_level_2
 		}
-		add_trait = flamboyant_schemer
+		random_list = {
+			75 = {
+				add_trait = flamboyant_schemer
+			}
+			25 = {
+				add_trait = cunning_conspirator
+			}
+		}
 		clr_character_flag = education_outcome_level_2
 	}
 	option = {
@@ -1770,7 +2024,14 @@ character_event = {
 		trigger = {
 			has_character_flag = education_outcome_level_3
 		}
-		add_trait = intricate_webweaver
+		random_list = {
+			75 = {
+				add_trait = intricate_webweaver
+			}
+			25 = {
+				add_trait = political_maneuverer
+			}
+		}
 		clr_character_flag = education_outcome_level_3
 	}
 	option = {
@@ -1778,7 +2039,14 @@ character_event = {
 		trigger = {
 			has_character_flag = education_outcome_level_4
 		}
-		add_trait = elusive_shadow
+		random_list = {
+			75 = {
+				add_trait = elusive_shadow
+			}
+			25 = {
+				add_trait = machiavellian_manipulator
+			}
+		}
 		clr_character_flag = education_outcome_level_4
 	}
 
@@ -1834,9 +2102,21 @@ character_event = {
 		}
 	}
 	desc = {
+		text = EVTDESCA_ZE_14410
+		trigger = {
+			FROM = { trait = beginner_backstabber }
+		}
+	}
+	desc = {
 		text = EVTDESCB_ZE_14410
 		trigger = {
 			FROM = { trait = flamboyant_schemer }
+		}
+	}
+	desc = {
+		text = EVTDESCB_ZE_14410
+		trigger = {
+			FROM = { trait = cunning_conspirator }
 		}
 	}
 	desc = {
@@ -1846,9 +2126,21 @@ character_event = {
 		}
 	}
 	desc = {
+		text = EVTDESCC_ZE_14410
+		trigger = {
+			FROM = { trait = political_maneuverer }
+		}
+	}
+	desc = {
 		text = EVTDESCD_ZE_14410
 		trigger = {
 			FROM = { trait = elusive_shadow }
+		}
+	}
+	desc = {
+		text = EVTDESCD_ZE_14410
+		trigger = {
+			FROM = { trait = machiavellian_manipulator }
 		}
 	}
 
@@ -1862,11 +2154,25 @@ character_event = {
 		tooltip = { FROM = { add_trait = amateurish_plotter } }
 	}
 	option = {
+		name = EVTOPTA_ZE_14110
+		trigger = {
+			FROM = { trait = beginner_backstabber }
+		}
+		tooltip = { FROM = { add_trait = beginner_backstabber } }
+	}
+	option = {
 		name = EVTOPTB_ZE_14110
 		trigger = {
 			FROM = { trait = flamboyant_schemer }
 		}
 		tooltip = { FROM = { add_trait = flamboyant_schemer } }
+	}
+	option = {
+		name = EVTOPTB_ZE_14110
+		trigger = {
+			FROM = { trait = cunning_conspirator }
+		}
+		tooltip = { FROM = { add_trait = cunning_conspirator } }
 	}
 	option = {
 		name = EVTOPTC_ZE_14110
@@ -1876,11 +2182,25 @@ character_event = {
 		tooltip = { FROM = { add_trait = intricate_webweaver } }
 	}
 	option = {
+		name = EVTOPTC_ZE_14110
+		trigger = {
+			FROM = { trait = political_maneuverer }
+		}
+		tooltip = { FROM = { add_trait = political_maneuverer } }
+	}
+	option = {
 		name = EXCELLENT
 		trigger = {
 			FROM = { trait = elusive_shadow }
 		}
 		tooltip = { FROM = { add_trait = elusive_shadow } }
+	}
+	option = {
+		name = EXCELLENT
+		trigger = {
+			FROM = { trait = machiavellian_manipulator }
+		}
+		tooltip = { FROM = { add_trait = machiavellian_manipulator } }
 	}
 }
 
@@ -2407,6 +2727,18 @@ character_event = {
 			trait = martial_cleric
 			trait = scholarly_theologian
 			trait = mastermind_theologian
+			trait = shameful_builder
+			trait = efficient_worker
+			trait = master_mason
+			trait = royal_craftsman
+			trait = common_soldier
+			trait = experienced_captain
+			trait = seasoned_commander
+			trait = great_general
+			trait = beginner_backstabber
+			trait = cunning_conspirator
+			trait = political_maneuverer
+			trait = machiavellian_manipulator
 		}
 		NOT ={
 			has_character_flag = is_child_of_destiny

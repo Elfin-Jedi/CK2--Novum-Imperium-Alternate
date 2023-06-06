@@ -1,7 +1,3 @@
-Recommended Mods:
-
-"No Republic or Theocracy Limit"
-
 Contains
 
 Base:
@@ -27,6 +23,7 @@ Small Mods:
 "99 More Book Slots"
 "Add Holdings"
 "Akritai - Orthodox Holy Order"
+"Artifact Search"
 "Bloodlines Sketchy Cheat Submod"
 "Cadet Dynasty Tool"
 "Change Character"
@@ -43,6 +40,7 @@ Small Mods:
 "Hellenic Bodpa Temple Fix"
 "Invite Locals ++"
 "More Council Members"
+"No Pregnancy Cravings"
 "No Republic or Theocracy Limit"
 "Normal Retreat"
 "Rolls Additonal Traits"
@@ -56,3 +54,4 @@ Small Mods:
 "Theocratic Kings"
 "Unique Government Type for Viceroys"
 "Visible Health And Fertility"
+"Wedding Anniversaries"

@@ -1263,7 +1263,6 @@ feudal_governments = {
 	    NOT = { government = merchant_republic_government }
 	    NOT = { is_government_potential = merchant_republic_government }
             NOT = {tier = baron}
-            NOT = {tier = king}
 		}
 	
 		color = { 209 125 130 }
@@ -1300,7 +1299,6 @@ feudal_governments = {
 			NOT = {	religion_group = muslim }
 			is_patrician = no
             NOT = {	tier = baron }
-			NOT = {	tier = king	}
 
 		}
 		

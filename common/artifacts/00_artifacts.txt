@@ -5651,7 +5651,8 @@ skull_cup = {
 #### Warrior Lodge African fetishes ###
 
 crown_african_mask_1 = { #Top tier Mask - Inspiring
-	monthly_character_piety = 0.50
+	monthly_character_piety = 0.25
+	monthly_character_piety = 0.25
 	west_african_pagan_opinion = 10
 	west_african_pagan_reformed_opinion = 10
 	quality = 3

@@ -8,6 +8,13 @@ settlement_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		
 		from_potential = {
+			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		
 		potential = {
@@ -27,6 +34,13 @@ settlement_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		
 		from_potential = {
+			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		
 		potential = {
@@ -65,6 +79,13 @@ settlement_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		
 		from_potential = {
+			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		
 		potential = {
@@ -113,6 +134,13 @@ settlement_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		
 		from_potential = {
+			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		
 		potential = {
@@ -161,6 +189,13 @@ settlement_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		
 		from_potential = {
+			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		
 		potential = {
@@ -183,8 +218,15 @@ settlement_decisions = {
 		filter = all
 		ai_target_filter = owned
 		diplomacy_icon = GFX_debug_decision
+		
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 			NOT = { religion = FROM }
@@ -205,8 +247,15 @@ settlement_decisions = {
 		filter = all
 		ai_target_filter = owned
 		diplomacy_icon = GFX_debug_decision
+		
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 			NOT = { culture = FROM }

@@ -293,6 +293,54 @@ emf_promote_education_trait = {
 		remove_trait = detached_priest
 		add_trait = martial_cleric
 	}
+	# Sketchy's builder
+	if = {
+		limit = { trait = master_mason }
+		remove_trait = master_mason
+		add_trait = royal_craftsman
+	}
+	if = {
+		limit = { trait = efficient_worker }
+		remove_trait = efficient_worker
+		add_trait = master_mason
+	}
+	if = {
+		limit = { trait = shameful_builder }
+		remove_trait = shameful_builder
+		add_trait = efficient_worker
+	}
+	# Sketchy's military
+	if = {
+		limit = { trait = seasoned_commander }
+		remove_trait = seasoned_commander
+		add_trait = great_general
+	}
+	if = {
+		limit = { trait = experienced_captain }
+		remove_trait = experienced_captain
+		add_trait = seasoned_commander
+	}
+	if = {
+		limit = { trait = common_soldier }
+		remove_trait = common_soldier
+		add_trait = experienced_captain
+	}
+	# Sketchy's politics
+	if = {
+		limit = { trait = political_maneuverer }
+		remove_trait = political_maneuverer
+		add_trait = machiavellian_manipulator
+	}
+	if = {
+		limit = { trait = cunning_conspirator }
+		remove_trait = cunning_conspirator
+		add_trait = political_maneuverer
+	}
+	if = {
+		limit = { trait = beginner_backstabber }
+		remove_trait = beginner_backstabber
+		add_trait = cunning_conspirator
+	}
 }
 
 emf_demote_education_trait = {
@@ -375,6 +423,54 @@ emf_demote_education_trait = {
 		limit = { trait = mastermind_theologian }
 		remove_trait = mastermind_theologian
 		add_trait = scholarly_theologian
+	}
+	# Sketchy's builder
+	if = {
+		limit = { trait = efficient_worker }
+		remove_trait = efficient_worker
+		add_trait = shameful_builder
+	}
+	if = {
+		limit = { trait = master_mason }
+		remove_trait = master_mason
+		add_trait = efficient_worker
+	}
+	if = {
+		limit = { trait = royal_craftsman }
+		remove_trait = royal_craftsman
+		add_trait = master_mason
+	}
+	# Sketchy's military
+	if = {
+		limit = { trait = experienced_captain }
+		remove_trait = experienced_captain
+		add_trait = common_soldier
+	}
+	if = {
+		limit = { trait = seasoned_commander }
+		remove_trait = seasoned_commander
+		add_trait = experienced_captain
+	}
+	if = {
+		limit = { trait = great_general }
+		remove_trait = great_general
+		add_trait = seasoned_commander
+	}
+	# Sketchy's politics
+	if = {
+		limit = { trait = cunning_conspirator }
+		remove_trait = cunning_conspirator
+		add_trait = beginner_backstabber
+	}
+	if = {
+		limit = { trait = political_maneuverer }
+		remove_trait = political_maneuverer
+		add_trait = cunning_conspirator
+	}
+	if = {
+		limit = { trait = machiavellian_manipulator }
+		remove_trait = machiavellian_manipulator
+		add_trait = political_maneuverer
 	}
 }
 
