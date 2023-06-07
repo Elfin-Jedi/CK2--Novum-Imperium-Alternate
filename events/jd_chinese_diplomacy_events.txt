@@ -4830,7 +4830,7 @@ character_event = {
             NOT = { any_courtier_or_vassal = { has_minor_title = title_administrator } }
             NOT = { any_courtier_or_vassal = { has_minor_title = title_master_engineer } }
             AND = {
-                has_dlc = Reapers
+                has_dlc = "Reapers"
                 NOT = { any_courtier_or_vassal = { has_minor_title = title_court_physician } }
             }
         }
@@ -4900,7 +4900,7 @@ character_event = {
 							has_minor_title = title_court_physician
 						}
 					}
-					has_dlc = Reapers
+					has_dlc = "Reapers"
 					OR = {
 						has_game_rule = { name = gender value = all }
 						NOT = { has_religion_feature = religion_matriarchal }
@@ -5414,12 +5414,12 @@ character_event = {
                         71 = { } #Nothing
                         20 = { add_scarred_tiered_effect = yes }
                         5 = { 
-                            trigger = { has_dlc = Reapers }
+                            trigger = { has_dlc = "Reapers" }
                             add_trait = one_eyed 
                             change_martial = 1
                         }
                         2 = { 
-                            trigger = { has_dlc = Reapers }
+                            trigger = { has_dlc = "Reapers" }
                             add_trait = one_handed
                             change_martial = 1
                         }
@@ -5727,11 +5727,11 @@ character_event = {
                             random_list = {
                                 60 = { } #Nothing
                                 20 = { 
-                                    trigger = { has_dlc = Reapers }
+                                    trigger = { has_dlc = "Reapers" }
                                     add_trait = one_legged 
                                 }
                                 20 = { 
-                                    trigger = { has_dlc = Reapers }
+                                    trigger = { has_dlc = "Reapers" }
                                     add_trait = one_eyed 
                                 }
                             }
@@ -5778,7 +5778,7 @@ character_event = {
                                     set_name = Wu #House
                                 }
                                 20 = {
-                                    trigger = { has_dlc = Reapers }
+                                    trigger = { has_dlc = "Reapers" }
                                     add_trait = one_legged
                                     set_name = Wu #House
                                 }

@@ -183,7 +183,7 @@ action_statecraft = {
 	attribute = diplomacy
 
 	potential = {
-		has_dlc = Mystics
+		has_dlc = "Mystics"
 	}
 
 	liege_modifier = statecraft_liege_mod
@@ -354,7 +354,7 @@ action_administer_realm = {
 	attribute = stewardship
 
 	potential = {
-		has_dlc = Mystics
+		has_dlc = "Mystics"
 	}
 
 	offmap = yes
@@ -367,7 +367,7 @@ action_uncover_plots = {
 	attribute = intrigue
 
 	potential = {
-		NOT = { has_dlc = Mystics }
+		NOT = { has_dlc = "Mystics" }
 	}
 
 	trigger = {
@@ -388,7 +388,7 @@ action_uncover_plots_offmap = {
 	attribute = intrigue
 
 	potential = {
-		has_dlc = Mystics
+		has_dlc = "Mystics"
 	}
 
 	offmap = yes
@@ -466,7 +466,7 @@ action_sabotage_province = {
 	attribute = intrigue
 
 	potential = {
-		has_dlc = Mystics
+		has_dlc = "Mystics"
 	}
 
 	trigger = {
@@ -592,7 +592,7 @@ action_organize_army = {
 	attribute = martial
 
 	potential = {
-		has_dlc = Mystics
+		has_dlc = "Mystics"
 	}
 
 	offmap = yes
@@ -727,7 +727,7 @@ action_hunt_heretics = {
 	attribute = learning
 
 	potential = {
-		has_dlc = Mystics
+		has_dlc = "Mystics"
 	}
 
 	liege_modifier = apostate_liege_mod

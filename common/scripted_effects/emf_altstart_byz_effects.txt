@@ -394,7 +394,7 @@ emf_spawn_byz = {
 			add_law = centralization_3
 			if = {
 				limit = {
-					has_dlc = Zeus
+					has_dlc = "Zeus"
 				}
 				add_law = ze_revokation_2 # Free Infidel Revocation
 				# Abolished council power:

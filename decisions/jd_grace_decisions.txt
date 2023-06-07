@@ -2918,7 +2918,7 @@ offmap_decisions = {
 				OR = {
 					conditional_tooltip = {
 						trigger = {
-							has_dlc = Reapers
+							has_dlc = "Reapers"
 						}
 						has_minor_title = title_court_physician 
 					}
@@ -4032,7 +4032,7 @@ offmap_decisions = {
 
 		from_potential = {
 			has_dlc = "Jade Dragon"
-			has_dlc = Reapers
+			has_dlc = "Reapers"
 			mercenary = no
 			holy_order = no
 			OR = {

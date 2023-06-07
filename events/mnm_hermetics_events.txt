@@ -1600,7 +1600,7 @@ character_event = {
     			10 = { trigger = { religion_group = muslim } add_trait = faqih }
     			10 = { add_trait = mystic }
     			10 = { add_trait = gardener }
-    			10 = { trigger = { has_dlc = Reapers} add_trait = physician }
+    			10 = { trigger = { has_dlc = "Reapers" } add_trait = physician }
     			40 = { } #Nothing
     		}
 

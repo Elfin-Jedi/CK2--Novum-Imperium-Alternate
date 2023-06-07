@@ -231,6 +231,7 @@ blg_ethnicity_romanobalkan = {
 	OR = {
 		graphical_culture = vlachgfx
 		graphical_culture = romanobalkangfx
+		graphical_culture = romanoindianfx
 	}
 }
 
