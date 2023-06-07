@@ -11028,7 +11028,10 @@ pagan_county_conquest = {
 	can_use = {
 		emf_cb_can_use = yes
 		ROOT = {
-			novum_imperium_is_pagan
+			OR = {
+				religion_group = pagan_group
+				religion_group = african_group
+			}
 			OR = {
 				AND = {
 					is_nomadic = yes
@@ -11072,7 +11075,10 @@ pagan_county_conquest = {
 			ROOT = { is_nomadic = yes }
 			AND = {
 				ROOT = {
-					novum_imperium_is_pagan
+					OR = {
+						religion_group = pagan_group
+						religion_group = african_group
+					}
 					NOT = { same_realm = FROM }
 					NOT = { emf_syncretized_religion_with_FROM = yes }
 				}
@@ -11322,7 +11328,14 @@ pagan_county_conquest = {
 				}
 			}
 			has_global_flag = viking_age_started
-			FROM = { NOT = { novum_imperium_is_pagan } }
+			FROM = {
+				NOT = {
+					OR = {
+						religion_group = pagan_group
+						religion_group = african_group
+					}
+				}
+			}
 			location = { port = yes }
 		}
 		modifier = {
@@ -13950,7 +13963,10 @@ tributary_cb = {
 				trigger_else = {
 					culture = hungarian
 				}
-				novum_imperium_is_pagan
+				OR = {
+					religion_group = pagan_group
+					religion_group = african_group
+				}
 				capital_scope = { kingdom = { title = k_hungary } }
 			}
 			has_global_flag = emf_magyar_migration_completed
@@ -13968,7 +13984,10 @@ tributary_cb = {
 					trigger_else = {
 						culture = hungarian
 					}
-					novum_imperium_is_pagan
+					OR = {
+						religion_group = pagan_group
+						religion_group = african_group
+					}
 				}
 			}
 			NOT = { has_global_flag = emf_magyar_migration_completed }
