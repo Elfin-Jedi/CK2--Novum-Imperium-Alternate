@@ -23,7 +23,7 @@ spriteTypes = {
   }
   spriteType = {
    name = "GFX_trait_fertile"
-   texturefile = "gfx/traits/fertile.dds"
+   texturefile = "gfx/traits/fertile.tga"
    noOfFrames = 1
    norefcount = yes
    effectFile = "gfx/FX/buttonstate.lua"
@@ -37,14 +37,14 @@ spriteTypes = {
   }
   spriteType = {
    name = "GFX_trait_tall"
-   texturefile = "gfx/traits/tall.dds"
+   texturefile = "gfx/traits/tall.tga"
    noOfFrames = 1
    norefcount = yes
    effectFile = "gfx/FX/buttonstate.lua"
   }
   spriteType = {
    name = "GFX_trait_short"
-   texturefile = "gfx/traits/short.dds"
+   texturefile = "gfx/traits/short.tga"
    noOfFrames = 1
    norefcount = yes
    effectFile = "gfx/FX/buttonstate.lua"

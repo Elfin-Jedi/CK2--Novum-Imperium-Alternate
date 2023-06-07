@@ -5,8 +5,15 @@ targetted_decisions = {
 	debug_play_as = {
 		ai_target_filter = self
 		diplomacy_icon = GFX_debug_decision
+		
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 		}
@@ -25,8 +32,15 @@ targetted_decisions = {
 	debug_vassalize = {
 		ai_target_filter = self
 		diplomacy_icon = GFX_debug_decision
+		
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 			lower_tier_than = FROM
@@ -47,6 +61,12 @@ targetted_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 			is_landed = yes
@@ -67,6 +87,12 @@ targetted_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 		}
@@ -86,6 +112,12 @@ targetted_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 			
@@ -105,6 +137,12 @@ targetted_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 			OR = { 
@@ -130,6 +168,12 @@ targetted_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 			NOT = { religion = FROM }
@@ -149,6 +193,12 @@ targetted_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 			NOT = { culture = FROM }
@@ -168,6 +218,12 @@ targetted_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 		}
@@ -186,6 +242,12 @@ targetted_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 		}
@@ -205,6 +267,12 @@ targetted_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 		}
@@ -231,6 +299,12 @@ targetted_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 		}
@@ -256,6 +330,12 @@ targetted_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 			dynasty = none
@@ -294,6 +374,12 @@ targetted_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 			NOT = { is_rival = FROM }
@@ -313,6 +399,12 @@ targetted_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 			NOT = { is_friend = FROM }
@@ -333,6 +425,12 @@ targetted_decisions = {
 		
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 		}
@@ -356,6 +454,12 @@ targetted_decisions = {
 		
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 		}
@@ -379,6 +483,12 @@ targetted_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 		}
@@ -399,6 +509,12 @@ targetted_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 		}
@@ -419,6 +535,12 @@ targetted_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 		}
@@ -439,6 +561,12 @@ targetted_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 		}
@@ -459,6 +587,12 @@ targetted_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 		}
@@ -479,6 +613,12 @@ targetted_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 		}
@@ -498,6 +638,12 @@ targetted_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 			NOT = { religion_authority = 1 }
@@ -516,6 +662,12 @@ targetted_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 			NOT = { religion_authority = 1 }
@@ -534,6 +686,12 @@ targetted_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 			religion_authority = 0.01
@@ -552,6 +710,12 @@ targetted_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 			religion_authority = 0.01
@@ -572,6 +736,12 @@ targetted_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 			tier = DUKE
@@ -655,6 +825,12 @@ targetted_decisions = {
 		diplomacy_icon = GFX_debug_decision
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 			tier = KING
@@ -730,6 +906,12 @@ targetted_decisions = {
 		
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		allow = {}
 		effect = {
@@ -749,6 +931,12 @@ targetted_decisions = {
 		
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		allow = {}
 		effect = {
@@ -768,6 +956,12 @@ targetted_decisions = {
 		
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		allow = {}
 		effect = {
@@ -787,6 +981,12 @@ targetted_decisions = {
 		
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		allow = {}
 		effect = {

@@ -27,6 +27,7 @@ narrative_event = {
 	hide_new = yes
 
 	trigger = {
+		rtp_is_landless = no
 		OR = {
 			ai = no
 			has_game_rule = {
@@ -1232,7 +1233,12 @@ narrative_event = {
 			}
 		}
 		if = {
-			limit = { OR = { trait = mystic trait = mastermind_theologian } }
+			limit = {
+				OR = {
+					trait = theravada_buddhist
+					trait = mastermind_theologian
+				}
+			}
 			FROM = {
 				narrative_event = { id = RIP.21400 days = 150 } 
 			}

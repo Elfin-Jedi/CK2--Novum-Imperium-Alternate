@@ -4968,7 +4968,7 @@ new_crusade = {
 							crusade_beneficiary = {
 								if = {
 									limit = {
-										limit = { emf_has_swmh = yes }
+										emf_has_swmh = yes
 										c_nicosia = {
 											holder_scope = {
 												ai = yes

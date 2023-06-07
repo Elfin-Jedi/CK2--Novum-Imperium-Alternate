@@ -3541,6 +3541,7 @@ decisions = {
 	observe_bema_feast = {
 		only_playable = yes
 		potential = {
+			rtp_is_lower_baron = no
 			religion = manichean
 			NOR = {
 				is_inaccessible_trigger = yes
@@ -3555,6 +3556,9 @@ decisions = {
 			}
 		}
 		allow = {
+			wealth = 25
+			rtp_is_capable_adult = yes
+			rtp_no_loans_st = yes
 			war = no
 			wealth = 50
 			prestige = 100
@@ -3574,6 +3578,15 @@ decisions = {
 		effect = {
 			wealth = -50
 			set_flag = planning_bema_feast
+			any_player = {
+				limit = {
+					has_landed_title = c_landless_t
+					vassal_of = ROOT
+				}
+				character_event = {
+					id = RTPfestivities.18 #Bema
+				}
+			}
 			custom_tooltip = {
 				text = prepare_bema_feast
 				hidden_tooltip = {

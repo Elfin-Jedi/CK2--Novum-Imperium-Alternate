@@ -606,6 +606,8 @@ blg_weapon_flail = {
 blg_weapon_greatsword = {
 	OR = {
 		has_artifact_flag = greatsword
+		artifact_type = rtp_greatsword_a
+		AND = { has_artifact_flag = cleaver has_artifact_flag = twohand }
 		artifact_type = zweihander_sword
 	}
 }
@@ -636,6 +638,8 @@ blg_weapon_scimitar_1 = {
 		has_artifact_flag = scimitar
 		artifact_type = scimitar_tier_1_new
 		artifact_type = scimitar_tier_2_new
+		artifact_type = rtp_scimitar_a
+		artifact_type = rtp_scimitar_off_a
 	}
 }
 
@@ -649,11 +653,17 @@ blg_weapon_scimitar_2 = {
 		artifact_type = scimitar_tier_4_golden
 		artifact_type = scimitar_tier_4_fortune
 		artifact_type = scimitar_tier_4_conquest
+		artifact_type = rtp_falchion_a
+		artifact_type = rtp_falchion_off_a
 	}
 }
 
 blg_weapon_staff = {
-	has_artifact_flag = staff
+	OR = {
+		has_artifact_flag = staff
+		artifact_type = rtp_woodenstick_a
+		artifact_type = rtp_woodenstick_off_a
+	}
 }
 
 blg_weapon_trident = {
@@ -661,5 +671,7 @@ blg_weapon_trident = {
 		has_artifact_flag = trident
 		artifact_type = lance_tier_3_trident
 		artifact_type = lance_tier_4_trident
+		artifact_type = rtp_warfork_a
+		artifact_type = rtp_spetum_a
 	}
 }

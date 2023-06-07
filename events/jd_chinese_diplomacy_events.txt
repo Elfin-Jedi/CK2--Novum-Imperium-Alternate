@@ -299,7 +299,11 @@ letter_event = {
     
     is_triggered_only = yes
 
-    #Welcome!
+    trigger = {
+        rtp_is_landless = no
+    }
+	
+	#Welcome!
     option = { 
         name = EVTOPTA_JD_20002
 		sound_effect = china_grace_gain
@@ -6162,7 +6166,10 @@ character_event = {
     trigger = {
         any_tributary = {
             ai = no
-            is_tributary = { type = default }
+            OR = {
+                is_tributary = { type = default }
+                is_tributary = { type = rtp_confederation_tt }
+            }
         }
     }
 
@@ -6170,7 +6177,10 @@ character_event = {
         any_tributary = {
             limit = {
                 ai = no
-                is_tributary = { type = default }
+				OR = {
+					is_tributary = { type = default }
+					is_tributary = { type = rtp_confederation_tt }
+				}
             }
             character_event = { id = JD.60016 }
         }

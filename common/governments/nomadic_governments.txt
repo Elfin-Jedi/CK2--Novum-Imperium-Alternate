@@ -14,6 +14,30 @@ nomadic_governments = {
 		ignore_in_vassal_limit_calculation = {
 			nomadic_government
 		}
+		
+		forced_contract = {
+			feudal_government
+			muslim_government
+			bogomilist_government
+			theocratic_feudal_government
+			order_government
+			rtp_mercenary_g
+
+			merchant_republic_government
+			muslim_merchant_republic_government
+			bogomilist_merchant_republic_government
+			playable_republic_government
+			rtp_privateer_g
+			republic_government
+
+			playable_theocracy_government
+			theocracy_government
+
+			tribal_government
+
+			nomadic_government
+		}
+		
 		frame_suffix = "_nomadic"
 		title_prefix = "nomadic_"
 		potential = {
@@ -48,6 +72,12 @@ nomadic_governments = {
 		character_modifier = {
 			vassal_opinion = -10
 			max_population = 1550 # Compensates for the capital taking up one holding slot
+		}
+		
+		character_modifier = {
+			martial = 1
+
+			diplomacy = -1
 		}
 
 		color = { 201 179 36 }

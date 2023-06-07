@@ -1130,6 +1130,7 @@ age_child = {
 	health = -1
 	general_opinion = 10
 	vassal_opinion = -10
+	combat_rating = -5
 }
 
 # 16-19

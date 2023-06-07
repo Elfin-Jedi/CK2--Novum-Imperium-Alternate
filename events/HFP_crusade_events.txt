@@ -311,6 +311,11 @@ narrative_event = {
     ai = no
     is_triggered_only = yes
 
+	trigger = {
+		NOT = {
+			has_landed_title = c_landless_t
+		}
+	}
 	immediate = {
 		sound_effect = crusade_view_ambience
 	}
@@ -376,6 +381,10 @@ character_event = {
     			OR = {
     				independent = yes
     				higher_real_tier_than = COUNT
+					OR = {
+                        holy_order = yes
+                        is_landed = yes
+                    }
     			}
 				holy_order = no
 				NOT = { character = ROOT }
@@ -3189,6 +3198,9 @@ letter_event = {
     is_triggered_only = yes
     ai = no
     trigger = {
+		NOT = {
+			has_landed_title = c_landless_t
+		}
     	is_preparing_crusade = yes
     	religion = FROM
     	mercenary = no

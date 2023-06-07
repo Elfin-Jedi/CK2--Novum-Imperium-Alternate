@@ -36943,7 +36943,7 @@ emf_notify_remove_emf_cadet_dynasty_founder = {
 	}
 }
 
-#### [1540] Sympathy for [african_group.GetGroupName] religions: sympathy_african ####
+#### [540] Sympathy for [african_group.GetGroupName] religions: sympathy_african ####
 emf_notify_add_sympathy_african = {
 	if = {
 		limit = { NOT = { trait = sympathy_african } }
@@ -36952,7 +36952,7 @@ emf_notify_add_sympathy_african = {
 			if = {
 				limit = { ai = no }
 				save_event_target_as = emf_notify_char
-				character_event = { id = emf_notify.1540 }
+				character_event = { id = emf_notify.540 }
 				clear_event_target = emf_notify_char
 			}
 			ROOT = {
@@ -36962,7 +36962,7 @@ emf_notify_add_sympathy_african = {
 						NOT = { character = PREV }
 					}
 					save_event_target_as = emf_notify_char
-					PREV = { character_event = { id = emf_notify.1540 } }
+					PREV = { character_event = { id = emf_notify.540 } }
 					clear_event_target = emf_notify_char
 				}
 			}
@@ -36974,7 +36974,7 @@ emf_notify_add_sympathy_african = {
 						NOT = { character = ROOT }
 					}
 					save_event_target_as = emf_notify_char
-					PREV = { character_event = { id = emf_notify.1540 } }
+					PREV = { character_event = { id = emf_notify.540 } }
 					clear_event_target = emf_notify_char
 				}
 			}
@@ -37012,6 +37012,918 @@ emf_notify_remove_sympathy_african = {
 					}
 					save_event_target_as = emf_notify_char
 					PREV = { character_event = { id = emf_notify.1541 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+		}
+	}
+}
+
+#### [541] Shameful Builder: shameful_builder ####
+emf_notify_add_shameful_builder = {
+	if = {
+		limit = { NOT = { trait = shameful_builder } }
+		add_trait = shameful_builder
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				save_event_target_as = emf_notify_char
+				character_event = { id = emf_notify.541 }
+				clear_event_target = emf_notify_char
+			}
+			ROOT = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.541 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+			event_target:emf_notify_receiver = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+						NOT = { character = ROOT }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.541 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+		}
+	}
+}
+emf_notify_remove_shameful_builder = {
+	if = {
+		limit = { trait = shameful_builder }
+		remove_trait = shameful_builder
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				save_event_target_as = emf_notify_char
+				character_event = { id = emf_notify.1542 }
+				clear_event_target = emf_notify_char
+			}
+			ROOT = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.1542 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+			event_target:emf_notify_receiver = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+						NOT = { character = ROOT }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.1542 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+		}
+	}
+}
+
+#### [542] Efficient Worker: efficient_worker ####
+emf_notify_add_efficient_worker = {
+	if = {
+		limit = { NOT = { trait = efficient_worker } }
+		add_trait = efficient_worker
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				save_event_target_as = emf_notify_char
+				character_event = { id = emf_notify.542 }
+				clear_event_target = emf_notify_char
+			}
+			ROOT = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.542 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+			event_target:emf_notify_receiver = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+						NOT = { character = ROOT }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.542 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+		}
+	}
+}
+emf_notify_remove_efficient_worker = {
+	if = {
+		limit = { trait = efficient_worker }
+		remove_trait = efficient_worker
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				save_event_target_as = emf_notify_char
+				character_event = { id = emf_notify.1543 }
+				clear_event_target = emf_notify_char
+			}
+			ROOT = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.1543 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+			event_target:emf_notify_receiver = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+						NOT = { character = ROOT }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.1543 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+		}
+	}
+}
+
+### [543] Master Mason: master_mason ####
+emf_notify_add_master_mason = {
+	if = {
+		limit = { NOT = { trait = master_mason } }
+		add_trait = master_mason
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				save_event_target_as = emf_notify_char
+				character_event = { id = emf_notify.543 }
+				clear_event_target = emf_notify_char
+			}
+			ROOT = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.543 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+			event_target:emf_notify_receiver = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+						NOT = { character = ROOT }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.543 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+		}
+	}
+}
+emf_notify_remove_master_mason = {
+	if = {
+		limit = { trait = master_mason }
+		remove_trait = master_mason
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				save_event_target_as = emf_notify_char
+				character_event = { id = emf_notify.1544 }
+				clear_event_target = emf_notify_char
+			}
+			ROOT = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.1544 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+			event_target:emf_notify_receiver = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+						NOT = { character = ROOT }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.1544 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+		}
+	}
+}
+
+### [544] Royal Craftsman: royal_craftsman ####
+emf_notify_add_royal_craftsman = {
+	if = {
+		limit = { NOT = { trait = royal_craftsman } }
+		add_trait = royal_craftsman
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				save_event_target_as = emf_notify_char
+				character_event = { id = emf_notify.544 }
+				clear_event_target = emf_notify_char
+			}
+			ROOT = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.544 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+			event_target:emf_notify_receiver = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+						NOT = { character = ROOT }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.544 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+		}
+	}
+}
+emf_notify_remove_royal_craftsman = {
+	if = {
+		limit = { trait = royal_craftsman }
+		remove_trait = royal_craftsman
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				save_event_target_as = emf_notify_char
+				character_event = { id = emf_notify.1545 }
+				clear_event_target = emf_notify_char
+			}
+			ROOT = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.1545 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+			event_target:emf_notify_receiver = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+						NOT = { character = ROOT }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.1545 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+		}
+	}
+}
+
+### [545] Common Soldier: common_soldier ####
+emf_notify_add_common_soldier = {
+	if = {
+		limit = { NOT = { trait = common_soldier } }
+		add_trait = common_soldier
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				save_event_target_as = emf_notify_char
+				character_event = { id = emf_notify.545 }
+				clear_event_target = emf_notify_char
+			}
+			ROOT = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.545 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+			event_target:emf_notify_receiver = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+						NOT = { character = ROOT }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.545 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+		}
+	}
+}
+emf_notify_remove_common_soldier = {
+	if = {
+		limit = { trait = common_soldier }
+		remove_trait = common_soldier
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				save_event_target_as = emf_notify_char
+				character_event = { id = emf_notify.1546 }
+				clear_event_target = emf_notify_char
+			}
+			ROOT = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.1546 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+			event_target:emf_notify_receiver = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+						NOT = { character = ROOT }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.1546 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+		}
+	}
+}
+
+### [546] Experienced Captain: experienced_captain ####
+emf_notify_add_experienced_captain = {
+	if = {
+		limit = { NOT = { trait = experienced_captain } }
+		add_trait = experienced_captain
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				save_event_target_as = emf_notify_char
+				character_event = { id = emf_notify.546 }
+				clear_event_target = emf_notify_char
+			}
+			ROOT = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.546 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+			event_target:emf_notify_receiver = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+						NOT = { character = ROOT }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.546 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+		}
+	}
+}
+emf_notify_remove_experienced_captain = {
+	if = {
+		limit = { trait = experienced_captain }
+		remove_trait = experienced_captain
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				save_event_target_as = emf_notify_char
+				character_event = { id = emf_notify.1547 }
+				clear_event_target = emf_notify_char
+			}
+			ROOT = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.1547 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+			event_target:emf_notify_receiver = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+						NOT = { character = ROOT }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.1547 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+		}
+	}
+}
+
+### [547] Seasoned Commander: seasoned_commander ####
+emf_notify_add_seasoned_commander = {
+	if = {
+		limit = { NOT = { trait = seasoned_commander } }
+		add_trait = seasoned_commander
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				save_event_target_as = emf_notify_char
+				character_event = { id = emf_notify.547 }
+				clear_event_target = emf_notify_char
+			}
+			ROOT = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.547 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+			event_target:emf_notify_receiver = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+						NOT = { character = ROOT }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.547 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+		}
+	}
+}
+emf_notify_remove_seasoned_commander = {
+	if = {
+		limit = { trait = seasoned_commander }
+		remove_trait = seasoned_commander
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				save_event_target_as = emf_notify_char
+				character_event = { id = emf_notify.1548 }
+				clear_event_target = emf_notify_char
+			}
+			ROOT = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.1548 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+			event_target:emf_notify_receiver = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+						NOT = { character = ROOT }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.1548 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+		}
+	}
+}
+
+### [548] Great General: great_general ####
+emf_notify_add_great_general = {
+	if = {
+		limit = { NOT = { trait = great_general } }
+		add_trait = great_general
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				save_event_target_as = emf_notify_char
+				character_event = { id = emf_notify.548 }
+				clear_event_target = emf_notify_char
+			}
+			ROOT = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.548 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+			event_target:emf_notify_receiver = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+						NOT = { character = ROOT }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.548 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+		}
+	}
+}
+emf_notify_remove_great_general = {
+	if = {
+		limit = { trait = great_general }
+		remove_trait = great_general
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				save_event_target_as = emf_notify_char
+				character_event = { id = emf_notify.1549 }
+				clear_event_target = emf_notify_char
+			}
+			ROOT = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.1549 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+			event_target:emf_notify_receiver = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+						NOT = { character = ROOT }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.1549 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+		}
+	}
+}
+
+### [549] Beginner Backstabber: beginner_backstabber ####
+emf_notify_add_beginner_backstabber = {
+	if = {
+		limit = { NOT = { trait = beginner_backstabber } }
+		add_trait = beginner_backstabber
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				save_event_target_as = emf_notify_char
+				character_event = { id = emf_notify.549 }
+				clear_event_target = emf_notify_char
+			}
+			ROOT = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.549 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+			event_target:emf_notify_receiver = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+						NOT = { character = ROOT }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.549 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+		}
+	}
+}
+emf_notify_remove_beginner_backstabber = {
+	if = {
+		limit = { trait = beginner_backstabber }
+		remove_trait = beginner_backstabber
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				save_event_target_as = emf_notify_char
+				character_event = { id = emf_notify.1550 }
+				clear_event_target = emf_notify_char
+			}
+			ROOT = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.1550 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+			event_target:emf_notify_receiver = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+						NOT = { character = ROOT }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.1550 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+		}
+	}
+}
+
+### [550] Cunning Conspirator: cunning_conspirator ####
+emf_notify_add_cunning_conspirator = {
+	if = {
+		limit = { NOT = { trait = cunning_conspirator } }
+		add_trait = cunning_conspirator
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				save_event_target_as = emf_notify_char
+				character_event = { id = emf_notify.550 }
+				clear_event_target = emf_notify_char
+			}
+			ROOT = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.550 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+			event_target:emf_notify_receiver = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+						NOT = { character = ROOT }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.550 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+		}
+	}
+}
+emf_notify_remove_cunning_conspirator = {
+	if = {
+		limit = { trait = cunning_conspirator }
+		remove_trait = cunning_conspirator
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				save_event_target_as = emf_notify_char
+				character_event = { id = emf_notify.1551 }
+				clear_event_target = emf_notify_char
+			}
+			ROOT = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.1551 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+			event_target:emf_notify_receiver = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+						NOT = { character = ROOT }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.1551 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+		}
+	}
+}
+
+### [551] Political Maneuverer: political_maneuverer ####
+emf_notify_add_political_maneuverer = {
+	if = {
+		limit = { NOT = { trait = political_maneuverer } }
+		add_trait = political_maneuverer
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				save_event_target_as = emf_notify_char
+				character_event = { id = emf_notify.551 }
+				clear_event_target = emf_notify_char
+			}
+			ROOT = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.551 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+			event_target:emf_notify_receiver = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+						NOT = { character = ROOT }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.551 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+		}
+	}
+}
+emf_notify_remove_political_maneuverer = {
+	if = {
+		limit = { trait = political_maneuverer }
+		remove_trait = political_maneuverer
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				save_event_target_as = emf_notify_char
+				character_event = { id = emf_notify.1552 }
+				clear_event_target = emf_notify_char
+			}
+			ROOT = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.1552 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+			event_target:emf_notify_receiver = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+						NOT = { character = ROOT }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.1552 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+		}
+	}
+}
+
+### [552] Machiavellian Manipulator: machiavellian_manipulator ####
+emf_notify_add_machiavellian_manipulator = {
+	if = {
+		limit = { NOT = { trait = machiavellian_manipulator } }
+		add_trait = machiavellian_manipulator
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				save_event_target_as = emf_notify_char
+				character_event = { id = emf_notify.552 }
+				clear_event_target = emf_notify_char
+			}
+			ROOT = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.552 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+			event_target:emf_notify_receiver = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+						NOT = { character = ROOT }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.552 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+		}
+	}
+}
+emf_notify_remove_machiavellian_manipulator = {
+	if = {
+		limit = { trait = machiavellian_manipulator }
+		remove_trait = machiavellian_manipulator
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				save_event_target_as = emf_notify_char
+				character_event = { id = emf_notify.1553 }
+				clear_event_target = emf_notify_char
+			}
+			ROOT = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.1553 } }
+					clear_event_target = emf_notify_char
+				}
+			}
+			event_target:emf_notify_receiver = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = PREV }
+						NOT = { character = ROOT }
+					}
+					save_event_target_as = emf_notify_char
+					PREV = { character_event = { id = emf_notify.1553 } }
 					clear_event_target = emf_notify_char
 				}
 			}

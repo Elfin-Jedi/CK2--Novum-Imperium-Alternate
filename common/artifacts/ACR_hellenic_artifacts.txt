@@ -158,7 +158,7 @@ odysseus_bow = {
     allowed_gift = {
         religion_openly_in_hellenic_subgroup_trigger = yes
     }
-    flags = { religious hellenic_pagan troops_morale combat_weapon bow unique }
+    flags = { religious hellenic_pagan troops_morale combat_weapon weapon bow unique }
     picture = GFX_strange_chest
     slot = weapon
 }

@@ -3922,6 +3922,10 @@ targeted_decisions = {
 				is_councillor = yes
 				vassal_of = FROM
 			}
+			FROM = {
+				rtp_is_capable_adult = yes
+			}
+			rtp_is_capable_adult = yes
 		}
 
 		effect = {

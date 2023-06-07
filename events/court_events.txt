@@ -427,6 +427,7 @@ character_event = {
 	religion_group = christian
 
 	trigger = {
+		rtp_is_landless = no
 		war = no
 		in_command = no
 		tier = COUNT
@@ -1143,6 +1144,7 @@ character_event = {
 	prisoner = no
 
 	trigger = {
+		is_landed = yes
 		capital_scope = { TECH_NOBLE_CUSTOMS = 4 }
 	}
 
@@ -1687,6 +1689,7 @@ character_event = {
 letter_event = {
 	id = 73201
 	desc = EVTDESC73201
+	border = GFX_event_letter_frame_war
 
 	is_triggered_only = yes
 
@@ -1716,6 +1719,7 @@ letter_event = {
 			clr_character_flag = asked_for_job
 			remove_opinion = { who = ROOT modifier = opinion_fired_from_council }
 			give_job_title = job_marshal
+			hidden_tooltip = {  letter_event = { id = 73205  } }
 		}
 		clr_character_flag = asked_marshal_petition
 	}
@@ -1792,6 +1796,7 @@ letter_event = {
 letter_event = {
 	id = 73202
 	desc = EVTDESC73202
+	border = GFX_event_letter_frame_war
 
 	is_triggered_only = yes
 
@@ -1877,6 +1882,7 @@ letter_event = {
 			clr_character_flag = asked_for_job
 			remove_opinion = { who = ROOT modifier = opinion_fired_from_council }
 			give_job_title = job_marshal
+			hidden_tooltip = {  letter_event = { id = 73205  } }
 		}
 		clr_character_flag = asked_marshal_petition
 	}
@@ -1906,6 +1912,20 @@ letter_event = {
 		}
 		clr_character_flag = asked_marshal_petition
 		set_character_flag = no_council_requests
+	}
+}
+
+#We are replaced
+letter_event = {
+	id = 73205
+	desc = EVTDESC73205
+	border = GFX_event_letter_frame_war
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA73205
+		prestige = -5
 	}
 }
 
@@ -2026,6 +2046,7 @@ letter_event = {
 			clr_character_flag = asked_for_job
 			remove_opinion = { who = ROOT modifier = opinion_fired_from_council }
 			give_job_title = job_spymaster
+			hidden_tooltip = {  letter_event = { id = 73215  } }
 		}
 		clr_character_flag = asked_spymaster_petition
 	}
@@ -2183,6 +2204,7 @@ letter_event = {
 			clr_character_flag = asked_for_job
 			remove_opinion = { who = ROOT modifier = opinion_fired_from_council }
 			give_job_title = job_spymaster
+			hidden_tooltip = {  letter_event = { id = 73215  } }
 		}
 		clr_character_flag = asked_spymaster_petition
 	}
@@ -2212,6 +2234,19 @@ letter_event = {
 		}
 		clr_character_flag = asked_spymaster_petition
 		set_character_flag = no_council_requests
+	}
+}
+
+#We are replaced
+letter_event = {
+	id = 73215
+	desc = EVTDESC73215
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA73215
+		prestige = -5
 	}
 }
 
@@ -2328,6 +2363,7 @@ letter_event = {
 			clr_character_flag = asked_for_job
 			remove_opinion = { who = ROOT modifier = opinion_fired_from_council }
 			give_job_title = job_treasurer
+			hidden_tooltip = {  letter_event = { id = 73225  } }
 		}
 		clr_character_flag = asked_treasurer_petition
 	}
@@ -2487,6 +2523,7 @@ letter_event = {
 			clr_character_flag = asked_for_job
 			remove_opinion = { who = ROOT modifier = opinion_fired_from_council }
 			give_job_title = job_treasurer
+			hidden_tooltip = { letter_event = { id = 73225 } }
 		}
 		clr_character_flag = asked_treasurer_petition
 
@@ -2517,6 +2554,19 @@ letter_event = {
 		}
 		clr_character_flag = asked_treasurer_petition
 		set_character_flag = no_council_requests
+	}
+}
+
+#We are replaced
+letter_event = {
+	id = 73225
+	desc = EVTDESC73225
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA73225 
+		prestige = -5
 	}
 }
 
@@ -2641,6 +2691,7 @@ letter_event = {
 			clr_character_flag = asked_for_job
 			remove_opinion = { who = ROOT modifier = opinion_fired_from_council }
 			give_job_title = job_spiritual
+			hidden_tooltip = {  letter_event = { id = 73235  } }
 		}
 		clr_character_flag = asked_lord_spiritual_petition
 
@@ -2801,6 +2852,7 @@ letter_event = {
 			clr_character_flag = asked_for_job
 			remove_opinion = { who = ROOT modifier = opinion_fired_from_council }
 			give_job_title = job_spiritual
+			hidden_tooltip = {  letter_event = { id = 73235  } }
 		}
 		clr_character_flag = asked_lord_spiritual_petition
 
@@ -2831,6 +2883,19 @@ letter_event = {
 		}
 		clr_character_flag = asked_lord_spiritual_petition
 		set_character_flag = no_council_requests
+	}
+}
+
+#We are replaced
+letter_event = {
+	id = 73235
+	desc = EVTDESC73235
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA73235
+		prestige = -5
 	}
 }
 
@@ -2947,6 +3012,7 @@ letter_event = {
 			clr_character_flag = asked_for_job
 			remove_opinion = { who = ROOT modifier = opinion_fired_from_council }
 			give_job_title = job_chancellor
+			hidden_tooltip = {  letter_event = { id = 73245  } }
 		}
 		clr_character_flag = asked_chancellor_petition
 
@@ -3106,6 +3172,7 @@ letter_event = {
 			clr_character_flag = asked_for_job
 			remove_opinion = { who = ROOT modifier = opinion_fired_from_council }
 			give_job_title = job_chancellor
+			hidden_tooltip = {  letter_event = { id = 73245  } }
 		}
 		clr_character_flag = asked_chancellor_petition
 
@@ -3136,6 +3203,19 @@ letter_event = {
 		}
 		clr_character_flag = asked_chancellor_petition
 		set_character_flag = no_council_requests
+	}
+}
+
+#We are replaced
+letter_event = {
+	id = 73245
+	desc = EVTDESC73245
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA73245
+		prestige = -5
 	}
 }
 

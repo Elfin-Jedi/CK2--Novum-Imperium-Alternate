@@ -25,6 +25,7 @@ blg_devout = {
 		has_minor_title = title_chief_qadi
 		has_character_flag = guru
 		trait = doctores
+		has_minor_title = preacher_mt
 	}
 }
 
@@ -55,13 +56,22 @@ blg_fashionable = {
 # Character of a guard order.
 blg_guard = {
 	OR = {
-		has_minor_title = title_champion
-		has_minor_title = title_paramount_knight
-		has_minor_title = title_castellan
 		trait = varangian
 		trait = shieldmaiden
 		trait = gladiator
 		trait = imperial_guard
+		has_character_flag = rtp_temporary_soldier
+		has_character_flag = rtp_temporary_mercenary
+		has_character_flag = rtp_temporary_crusader
+		has_minor_title = title_champion
+		has_minor_title = title_paramount_knight
+		has_minor_title = sellsword_mt
+		has_minor_title = holy_warrior_mt
+		has_minor_title = guard_mt
+		has_minor_title = veteran_mt
+		has_minor_title = bailif_mt
+		has_minor_title = officer_mt
+		has_minor_title = title_castellan
 	}
 }
 
@@ -80,6 +90,8 @@ blg_learned = {
 		trait = theologian
 		trait = physician
 		trait = hurufi_mystic_c
+		has_minor_title = scribe_mt
+		has_minor_title = librarian_mt
 		has_minor_title = title_administrator
 		has_minor_title = title_master_engineer
 		has_minor_title = title_guardian_of_knowledge
@@ -177,12 +189,31 @@ blg_socializer = {
 		trait = gregarious
 		trait = socializer
 		trait = gamer
+		trait = rtp_chef_tr
+		has_minor_title = server_mt
+		has_minor_title = minstrel_mt
 	}
 }
 
 # Urban town oriented.
 blg_townsfolk = {
-	employer = { is_republic = yes }
+	OR = {
+		employer = {
+			OR = {
+				is_republic = yes
+				government = playable_republic_government
+				government = rtp_baron_republic_g
+			}
+		}
+		has_minor_title = barterer_mt
+		has_minor_title = beggar_mt
+		has_minor_title = shop_assistant_mt
+		has_minor_title = pickpocket_mt
+		has_minor_title = town_crier_mt
+		has_minor_title = peddler_mt
+		has_minor_title = diplomat_mt
+		has_minor_title = shop_keeper_mt
+	}
 }
 
 # Ugly face.
@@ -246,6 +277,9 @@ blg_outdoors = {
 	OR = {
 		trait = hunter
 		trait = falconer
+		has_minor_title = poacher_mt
+		has_minor_title = brigand_mt
+		has_minor_title = bandit_mt
 		has_character_modifier = holding_grand_hunt
 		has_character_flag = hunting_tigers
 		has_character_flag = khagan_holding_nerge
@@ -268,6 +302,12 @@ blg_pilgrimage = {
 # In a tournament.
 blg_tournament = {
 	OR = {
+		has_minor_title = veteran_mt
+		has_minor_title = officer_mt
+		has_character_flag = attending_tournament
+		has_character_flag = attending_tournament_furusiyya
+		has_character_modifier = holding_nomad_wargames
+		has_character_flag = attending_nomad_tournament
 		has_character_flag = emf_fighting_in_tournament
 		has_character_flag = emf_spectator_at_tournament
 		has_character_flag = flag_preparing_blood_games

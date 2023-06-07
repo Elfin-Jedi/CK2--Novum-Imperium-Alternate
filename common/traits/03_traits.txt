@@ -20,6 +20,7 @@ kailash_guardian  = {
 		child_of_garki_baba
         shield_of_roog
         heir_of_dihya
+		rtp_maharathi_tr
 	}
 	
 	martial = 2

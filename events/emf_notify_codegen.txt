@@ -79745,10 +79745,256 @@ character_event = {
 	option = { name = OK }
 }
 
-# emf_notify.3540 -- added sympathy_african (Sympathy for [african_group.GetGroupName] religions)
+# emf_notify.540 -- added sympathy_african (Sympathy for [african_group.GetGroupName] religions)
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.540
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		event_target:emf_notify_char = { character_event = { id = emf_notify.2540 } }
+	}
+}
+
+# emf_notify.2540 -- added sympathy_african (Sympathy for [african_group.GetGroupName] religions) to FROM [notification]
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.2540
+	picture = GFX_evt_emissary
+
+	desc = {
+		text = emf_notify.2540.desc_self
+		trigger = { character = FROM }
+	}
+	desc = {
+		text = emf_notify.2540.desc_councillor
+		trigger = {
+			FROM = {
+				is_councillor = yes
+				vassal_of = ROOT
+			}
+			NOR = {
+				character = FROM
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2540.desc_relation
+		trigger = {
+			OR = {
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2540.desc
+		trigger = {
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+				OR = {
+					is_close_relative = FROM
+					is_married = FROM
+					any_ward = { character = FROM }
+					guardian = { character = FROM }
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	notification = yes
+
+	option = { name = OK }
+}
+
+# emf_notify.1541 -- removed sympathy_african (Sympathy for [african_group.GetGroupName] religions)
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.1541
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		event_target:emf_notify_char = { character_event = { id = emf_notify.3540 } }
+	}
+}
+
+# emf_notify.3540 -- removed sympathy_african (Sympathy for [african_group.GetGroupName] religions) from FROM [notification]
 # Audax Validator "." Ignore_1005
 character_event = {
 	id = emf_notify.3540
+	picture = GFX_evt_emissary
+
+	desc = {
+		text = emf_notify.3540.desc_self
+		trigger = { character = FROM }
+	}
+	desc = {
+		text = emf_notify.3540.desc_councillor
+		trigger = {
+			FROM = {
+				is_councillor = yes
+				vassal_of = ROOT
+			}
+			NOR = {
+				character = FROM
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.3540.desc_relation
+		trigger = {
+			OR = {
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.3540.desc
+		trigger = {
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+				OR = {
+					is_close_relative = FROM
+					is_married = FROM
+					any_ward = { character = FROM }
+					guardian = { character = FROM }
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	notification = yes
+
+	option = { name = OK }
+}
+
+# emf_notify.541 -- added shameful_builder (Shameful Builder)
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.541
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		event_target:emf_notify_char = { character_event = { id = emf_notify.2541 } }
+	}
+}
+
+# emf_notify.2541 -- added shameful_builder (Shameful Builder) to FROM [notification]
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.2541
+	picture = GFX_evt_emissary
+
+	desc = {
+		text = emf_notify.2541.desc_self
+		trigger = { character = FROM }
+	}
+	desc = {
+		text = emf_notify.2541.desc_councillor
+		trigger = {
+			FROM = {
+				is_councillor = yes
+				vassal_of = ROOT
+			}
+			NOR = {
+				character = FROM
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2541.desc_relation
+		trigger = {
+			OR = {
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2541.desc
+		trigger = {
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+				OR = {
+					is_close_relative = FROM
+					is_married = FROM
+					any_ward = { character = FROM }
+					guardian = { character = FROM }
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	notification = yes
+
+	option = { name = OK }
+}
+
+# emf_notify.1542 -- removed shameful_builder (Shameful Builder)
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.1543
 
 	is_triggered_only = yes
 	hide_window = yes
@@ -79758,7 +80004,7 @@ character_event = {
 	}
 }
 
-# emf_notify.3541 -- added sympathy_african (Sympathy for [african_group.GetGroupName] religions) to FROM [notification]
+# emf_notify.3541 -- removed shameful_builder (Shameful Builder) from FROM [notification]
 # Audax Validator "." Ignore_1005
 character_event = {
 	id = emf_notify.3541
@@ -79827,10 +80073,92 @@ character_event = {
 	option = { name = OK }
 }
 
-# emf_notify.1542 -- removed sympathy_african (Sympathy for [african_group.GetGroupName] religions)
+# emf_notify.542 -- added efficient_worker (Efficient Worker)
 # Audax Validator "." Ignore_1005
 character_event = {
-	id = emf_notify.1542
+	id = emf_notify.542
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		event_target:emf_notify_char = { character_event = { id = emf_notify.2542 } }
+	}
+}
+
+# emf_notify.2542 -- added efficient_worker (Efficient Worker) to FROM [notification]
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.2542
+	picture = GFX_evt_emissary
+
+	desc = {
+		text = emf_notify.2542.desc_self
+		trigger = { character = FROM }
+	}
+	desc = {
+		text = emf_notify.2542.desc_councillor
+		trigger = {
+			FROM = {
+				is_councillor = yes
+				vassal_of = ROOT
+			}
+			NOR = {
+				character = FROM
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2542.desc_relation
+		trigger = {
+			OR = {
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2542.desc
+		trigger = {
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+				OR = {
+					is_close_relative = FROM
+					is_married = FROM
+					any_ward = { character = FROM }
+					guardian = { character = FROM }
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	notification = yes
+
+	option = { name = OK }
+}
+
+# emf_notify.1543 -- removed efficient_worker (Efficient Worker)
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.1543
 
 	is_triggered_only = yes
 	hide_window = yes
@@ -79840,7 +80168,7 @@ character_event = {
 	}
 }
 
-# emf_notify.3543 -- removed sympathy_african (Sympathy for [african_group.GetGroupName] religions) from FROM [notification]
+# emf_notify.3542 -- removed efficient_worker (Efficient Worker) from FROM [notification]
 # Audax Validator "." Ignore_1005
 character_event = {
 	id = emf_notify.3542
@@ -79886,6 +80214,1646 @@ character_event = {
 	}
 	desc = {
 		text = emf_notify.3542.desc
+		trigger = {
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+				OR = {
+					is_close_relative = FROM
+					is_married = FROM
+					any_ward = { character = FROM }
+					guardian = { character = FROM }
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	notification = yes
+
+	option = { name = OK }
+}
+
+# emf_notify.543 -- added master_mason (Master Mason)
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.543
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		event_target:emf_notify_char = { character_event = { id = emf_notify.2543 } }
+	}
+}
+
+# emf_notify.2543 -- added master_mason (Master Mason) to FROM [notification]
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.2543
+	picture = GFX_evt_emissary
+
+	desc = {
+		text = emf_notify.2543.desc_self
+		trigger = { character = FROM }
+	}
+	desc = {
+		text = emf_notify.2543.desc_councillor
+		trigger = {
+			FROM = {
+				is_councillor = yes
+				vassal_of = ROOT
+			}
+			NOR = {
+				character = FROM
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2543.desc_relation
+		trigger = {
+			OR = {
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2543.desc
+		trigger = {
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+				OR = {
+					is_close_relative = FROM
+					is_married = FROM
+					any_ward = { character = FROM }
+					guardian = { character = FROM }
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	notification = yes
+
+	option = { name = OK }
+}
+
+# emf_notify.1544 -- removed master_mason (Master Mason)
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.1544
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		event_target:emf_notify_char = { character_event = { id = emf_notify.3543 } }
+	}
+}
+
+# emf_notify.3543 -- removed master_mason (Master Mason) from FROM [notification]
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.3543
+	picture = GFX_evt_emissary
+
+	desc = {
+		text = emf_notify.3543.desc_self
+		trigger = { character = FROM }
+	}
+	desc = {
+		text = emf_notify.3543.desc_councillor
+		trigger = {
+			FROM = {
+				is_councillor = yes
+				vassal_of = ROOT
+			}
+			NOR = {
+				character = FROM
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.3543.desc_relation
+		trigger = {
+			OR = {
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.3543.desc
+		trigger = {
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+				OR = {
+					is_close_relative = FROM
+					is_married = FROM
+					any_ward = { character = FROM }
+					guardian = { character = FROM }
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	notification = yes
+
+	option = { name = OK }
+}
+
+# emf_notify.544 -- added royal_craftsman (Royal Craftsman)
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.544
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		event_target:emf_notify_char = { character_event = { id = emf_notify.2544 } }
+	}
+}
+
+# emf_notify.2544 -- added royal_craftsman (Royal Craftsman) to FROM [notification]
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.2544
+	picture = GFX_evt_emissary
+
+	desc = {
+		text = emf_notify.2544.desc_self
+		trigger = { character = FROM }
+	}
+	desc = {
+		text = emf_notify.2544.desc_councillor
+		trigger = {
+			FROM = {
+				is_councillor = yes
+				vassal_of = ROOT
+			}
+			NOR = {
+				character = FROM
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2544.desc_relation
+		trigger = {
+			OR = {
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2544.desc
+		trigger = {
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+				OR = {
+					is_close_relative = FROM
+					is_married = FROM
+					any_ward = { character = FROM }
+					guardian = { character = FROM }
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	notification = yes
+
+	option = { name = OK }
+}
+
+# emf_notify.1545 -- removed royal_craftsman (Royal Craftsman)
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.1545
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		event_target:emf_notify_char = { character_event = { id = emf_notify.3544 } }
+	}
+}
+
+# emf_notify.3544 -- removed royal_craftsman (Royal Craftsman) from FROM [notification]
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.3544
+	picture = GFX_evt_emissary
+
+	desc = {
+		text = emf_notify.3544.desc_self
+		trigger = { character = FROM }
+	}
+	desc = {
+		text = emf_notify.3544.desc_councillor
+		trigger = {
+			FROM = {
+				is_councillor = yes
+				vassal_of = ROOT
+			}
+			NOR = {
+				character = FROM
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.3544.desc_relation
+		trigger = {
+			OR = {
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.3544.desc
+		trigger = {
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+				OR = {
+					is_close_relative = FROM
+					is_married = FROM
+					any_ward = { character = FROM }
+					guardian = { character = FROM }
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	notification = yes
+
+	option = { name = OK }
+}
+
+# emf_notify.545 -- added common_soldier (Common Soldier)
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.545
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		event_target:emf_notify_char = { character_event = { id = emf_notify.2545 } }
+	}
+}
+
+# emf_notify.2545 -- added common_soldier (Common Soldier) to FROM [notification]
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.2545
+	picture = GFX_evt_emissary
+
+	desc = {
+		text = emf_notify.2545.desc_self
+		trigger = { character = FROM }
+	}
+	desc = {
+		text = emf_notify.2545.desc_councillor
+		trigger = {
+			FROM = {
+				is_councillor = yes
+				vassal_of = ROOT
+			}
+			NOR = {
+				character = FROM
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2545.desc_relation
+		trigger = {
+			OR = {
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2545.desc
+		trigger = {
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+				OR = {
+					is_close_relative = FROM
+					is_married = FROM
+					any_ward = { character = FROM }
+					guardian = { character = FROM }
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	notification = yes
+
+	option = { name = OK }
+}
+
+# emf_notify.1546 -- removed common_soldier (Common Soldier)
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.1546
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		event_target:emf_notify_char = { character_event = { id = emf_notify.3545 } }
+	}
+}
+
+# emf_notify.3545 -- removed common_soldier (Common Soldier) from FROM [notification]
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.3545
+	picture = GFX_evt_emissary
+
+	desc = {
+		text = emf_notify.3545.desc_self
+		trigger = { character = FROM }
+	}
+	desc = {
+		text = emf_notify.3545.desc_councillor
+		trigger = {
+			FROM = {
+				is_councillor = yes
+				vassal_of = ROOT
+			}
+			NOR = {
+				character = FROM
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.3545.desc_relation
+		trigger = {
+			OR = {
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.3545.desc
+		trigger = {
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+				OR = {
+					is_close_relative = FROM
+					is_married = FROM
+					any_ward = { character = FROM }
+					guardian = { character = FROM }
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	notification = yes
+
+	option = { name = OK }
+}
+
+# emf_notify.545 -- added experienced_captain (Experienced Captain)
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.545
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		event_target:emf_notify_char = { character_event = { id = emf_notify.2546 } }
+	}
+}
+
+# emf_notify.2546 -- added experienced_captain (Experienced Captain) to FROM [notification]
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.2546
+	picture = GFX_evt_emissary
+
+	desc = {
+		text = emf_notify.2546.desc_self
+		trigger = { character = FROM }
+	}
+	desc = {
+		text = emf_notify.2546.desc_councillor
+		trigger = {
+			FROM = {
+				is_councillor = yes
+				vassal_of = ROOT
+			}
+			NOR = {
+				character = FROM
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2546.desc_relation
+		trigger = {
+			OR = {
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2546.desc
+		trigger = {
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+				OR = {
+					is_close_relative = FROM
+					is_married = FROM
+					any_ward = { character = FROM }
+					guardian = { character = FROM }
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	notification = yes
+
+	option = { name = OK }
+}
+
+# emf_notify.1547 -- removed experienced_captain (Experienced Captain)
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.1547
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		event_target:emf_notify_char = { character_event = { id = emf_notify.3546 } }
+	}
+}
+
+# emf_notify.3546 -- removed experienced_captain (Experienced Captain) from FROM [notification]
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.3546
+	picture = GFX_evt_emissary
+
+	desc = {
+		text = emf_notify.3546.desc_self
+		trigger = { character = FROM }
+	}
+	desc = {
+		text = emf_notify.3546.desc_councillor
+		trigger = {
+			FROM = {
+				is_councillor = yes
+				vassal_of = ROOT
+			}
+			NOR = {
+				character = FROM
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.3546.desc_relation
+		trigger = {
+			OR = {
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.3546.desc
+		trigger = {
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+				OR = {
+					is_close_relative = FROM
+					is_married = FROM
+					any_ward = { character = FROM }
+					guardian = { character = FROM }
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	notification = yes
+
+	option = { name = OK }
+}
+
+# emf_notify.546 -- added seasoned_commander (Seasoned Commander)
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.546
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		event_target:emf_notify_char = { character_event = { id = emf_notify.2547 } }
+	}
+}
+
+# emf_notify.2547 -- added seasoned_commander (Seasoned Commander) to FROM [notification]
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.2547
+	picture = GFX_evt_emissary
+
+	desc = {
+		text = emf_notify.2547.desc_self
+		trigger = { character = FROM }
+	}
+	desc = {
+		text = emf_notify.2547.desc_councillor
+		trigger = {
+			FROM = {
+				is_councillor = yes
+				vassal_of = ROOT
+			}
+			NOR = {
+				character = FROM
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2547.desc_relation
+		trigger = {
+			OR = {
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2547.desc
+		trigger = {
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+				OR = {
+					is_close_relative = FROM
+					is_married = FROM
+					any_ward = { character = FROM }
+					guardian = { character = FROM }
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	notification = yes
+
+	option = { name = OK }
+}
+
+# emf_notify.1548 -- removed seasoned_commander (Seasoned Commander)
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.1548
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		event_target:emf_notify_char = { character_event = { id = emf_notify.3547 } }
+	}
+}
+
+# emf_notify.3547 -- removed seasoned_commander (Seasoned Commander) from FROM [notification]
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.3547
+	picture = GFX_evt_emissary
+
+	desc = {
+		text = emf_notify.3547.desc_self
+		trigger = { character = FROM }
+	}
+	desc = {
+		text = emf_notify.3547.desc_councillor
+		trigger = {
+			FROM = {
+				is_councillor = yes
+				vassal_of = ROOT
+			}
+			NOR = {
+				character = FROM
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.3547.desc_relation
+		trigger = {
+			OR = {
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.3547.desc
+		trigger = {
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+				OR = {
+					is_close_relative = FROM
+					is_married = FROM
+					any_ward = { character = FROM }
+					guardian = { character = FROM }
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	notification = yes
+
+	option = { name = OK }
+}
+
+# emf_notify.547 -- added great_general (Great General)
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.547
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		event_target:emf_notify_char = { character_event = { id = emf_notify.2548 } }
+	}
+}
+
+# emf_notify.2548 -- added great_general (Great General) to FROM [notification]
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.2548
+	picture = GFX_evt_emissary
+
+	desc = {
+		text = emf_notify.2548.desc_self
+		trigger = { character = FROM }
+	}
+	desc = {
+		text = emf_notify.2548.desc_councillor
+		trigger = {
+			FROM = {
+				is_councillor = yes
+				vassal_of = ROOT
+			}
+			NOR = {
+				character = FROM
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2548.desc_relation
+		trigger = {
+			OR = {
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2548.desc
+		trigger = {
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+				OR = {
+					is_close_relative = FROM
+					is_married = FROM
+					any_ward = { character = FROM }
+					guardian = { character = FROM }
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	notification = yes
+
+	option = { name = OK }
+}
+
+# emf_notify.1549 -- removed great_general (Great General)
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.1549
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		event_target:emf_notify_char = { character_event = { id = emf_notify.3548 } }
+	}
+}
+
+# emf_notify.3548 -- removed great_general (Great General) from FROM [notification]
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.3548
+	picture = GFX_evt_emissary
+
+	desc = {
+		text = emf_notify.3548.desc_self
+		trigger = { character = FROM }
+	}
+	desc = {
+		text = emf_notify.3548.desc_councillor
+		trigger = {
+			FROM = {
+				is_councillor = yes
+				vassal_of = ROOT
+			}
+			NOR = {
+				character = FROM
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.3548.desc_relation
+		trigger = {
+			OR = {
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.3548.desc
+		trigger = {
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+				OR = {
+					is_close_relative = FROM
+					is_married = FROM
+					any_ward = { character = FROM }
+					guardian = { character = FROM }
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	notification = yes
+
+	option = { name = OK }
+}
+
+# emf_notify.548 -- added beginner_backstabber (Beginner Backstabber)
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.548
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		event_target:emf_notify_char = { character_event = { id = emf_notify.2549 } }
+	}
+}
+
+# emf_notify.2549 -- added beginner_backstabber (Beginner Backstabber) to FROM [notification]
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.2549
+	picture = GFX_evt_emissary
+
+	desc = {
+		text = emf_notify.2549.desc_self
+		trigger = { character = FROM }
+	}
+	desc = {
+		text = emf_notify.2549.desc_councillor
+		trigger = {
+			FROM = {
+				is_councillor = yes
+				vassal_of = ROOT
+			}
+			NOR = {
+				character = FROM
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2549.desc_relation
+		trigger = {
+			OR = {
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2549.desc
+		trigger = {
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+				OR = {
+					is_close_relative = FROM
+					is_married = FROM
+					any_ward = { character = FROM }
+					guardian = { character = FROM }
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	notification = yes
+
+	option = { name = OK }
+}
+
+# emf_notify.1550 -- removed beginner_backstabber (Beginner Backstabber)
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.1550
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		event_target:emf_notify_char = { character_event = { id = emf_notify.3549 } }
+	}
+}
+
+# emf_notify.3549 -- removed beginner_backstabber (Beginner Backstabber) from FROM [notification]
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.3549
+	picture = GFX_evt_emissary
+
+	desc = {
+		text = emf_notify.3549.desc_self
+		trigger = { character = FROM }
+	}
+	desc = {
+		text = emf_notify.3549.desc_councillor
+		trigger = {
+			FROM = {
+				is_councillor = yes
+				vassal_of = ROOT
+			}
+			NOR = {
+				character = FROM
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.3549.desc_relation
+		trigger = {
+			OR = {
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.3549.desc
+		trigger = {
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+				OR = {
+					is_close_relative = FROM
+					is_married = FROM
+					any_ward = { character = FROM }
+					guardian = { character = FROM }
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	notification = yes
+
+	option = { name = OK }
+}
+
+# emf_notify.549 -- added cunning_conspirator (Cunning Conspirator)
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.549
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		event_target:emf_notify_char = { character_event = { id = emf_notify.2550 } }
+	}
+}
+
+# emf_notify.2550 -- added cunning_conspirator (Cunning Conspirator) to FROM [notification]
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.2550
+	picture = GFX_evt_emissary
+
+	desc = {
+		text = emf_notify.2550.desc_self
+		trigger = { character = FROM }
+	}
+	desc = {
+		text = emf_notify.2550.desc_councillor
+		trigger = {
+			FROM = {
+				is_councillor = yes
+				vassal_of = ROOT
+			}
+			NOR = {
+				character = FROM
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2550.desc_relation
+		trigger = {
+			OR = {
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2550.desc
+		trigger = {
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+				OR = {
+					is_close_relative = FROM
+					is_married = FROM
+					any_ward = { character = FROM }
+					guardian = { character = FROM }
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	notification = yes
+
+	option = { name = OK }
+}
+
+# emf_notify.1551 -- removed cunning_conspirator (Cunning Conspirator)
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.1551
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		event_target:emf_notify_char = { character_event = { id = emf_notify.3550 } }
+	}
+}
+
+# emf_notify.3550 -- removed cunning_conspirator (Cunning Conspirator) from FROM [notification]
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.3550
+	picture = GFX_evt_emissary
+
+	desc = {
+		text = emf_notify.3550.desc_self
+		trigger = { character = FROM }
+	}
+	desc = {
+		text = emf_notify.3550.desc_councillor
+		trigger = {
+			FROM = {
+				is_councillor = yes
+				vassal_of = ROOT
+			}
+			NOR = {
+				character = FROM
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.3550.desc_relation
+		trigger = {
+			OR = {
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.3550.desc
+		trigger = {
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+				OR = {
+					is_close_relative = FROM
+					is_married = FROM
+					any_ward = { character = FROM }
+					guardian = { character = FROM }
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	notification = yes
+
+	option = { name = OK }
+}
+
+# emf_notify.550 -- added political_maneuverer (Political Maneuverer)
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.550
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		event_target:emf_notify_char = { character_event = { id = emf_notify.2551 } }
+	}
+}
+
+# emf_notify.2551 -- added political_maneuverer (Political Maneuverer) to FROM [notification]
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.2551
+	picture = GFX_evt_emissary
+
+	desc = {
+		text = emf_notify.2551.desc_self
+		trigger = { character = FROM }
+	}
+	desc = {
+		text = emf_notify.2551.desc_councillor
+		trigger = {
+			FROM = {
+				is_councillor = yes
+				vassal_of = ROOT
+			}
+			NOR = {
+				character = FROM
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2551.desc_relation
+		trigger = {
+			OR = {
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2551.desc
+		trigger = {
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+				OR = {
+					is_close_relative = FROM
+					is_married = FROM
+					any_ward = { character = FROM }
+					guardian = { character = FROM }
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	notification = yes
+
+	option = { name = OK }
+}
+
+# emf_notify.1552 -- removed political_maneuverer (Political Maneuverer)
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.1552
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		event_target:emf_notify_char = { character_event = { id = emf_notify.3551 } }
+	}
+}
+
+# emf_notify.3551 -- removed political_maneuverer (Political Maneuverer) from FROM [notification]
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.3551
+	picture = GFX_evt_emissary
+
+	desc = {
+		text = emf_notify.3551.desc_self
+		trigger = { character = FROM }
+	}
+	desc = {
+		text = emf_notify.3551.desc_councillor
+		trigger = {
+			FROM = {
+				is_councillor = yes
+				vassal_of = ROOT
+			}
+			NOR = {
+				character = FROM
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.3551.desc_relation
+		trigger = {
+			OR = {
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.3551.desc
+		trigger = {
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+				OR = {
+					is_close_relative = FROM
+					is_married = FROM
+					any_ward = { character = FROM }
+					guardian = { character = FROM }
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	notification = yes
+
+	option = { name = OK }
+}
+
+# emf_notify.550 -- added political_maneuverer (Political Maneuverer)
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.550
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		event_target:emf_notify_char = { character_event = { id = emf_notify.2551 } }
+	}
+}
+
+# emf_notify.2551 -- added political_maneuverer (Political Maneuverer) to FROM [notification]
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.2551
+	picture = GFX_evt_emissary
+
+	desc = {
+		text = emf_notify.2551.desc_self
+		trigger = { character = FROM }
+	}
+	desc = {
+		text = emf_notify.2551.desc_councillor
+		trigger = {
+			FROM = {
+				is_councillor = yes
+				vassal_of = ROOT
+			}
+			NOR = {
+				character = FROM
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2551.desc_relation
+		trigger = {
+			OR = {
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.2551.desc
+		trigger = {
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+				OR = {
+					is_close_relative = FROM
+					is_married = FROM
+					any_ward = { character = FROM }
+					guardian = { character = FROM }
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	notification = yes
+
+	option = { name = OK }
+}
+
+# emf_notify.1553 -- removed machiavellian_manipulator (Machiavellian Manipulator)
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.1553
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		event_target:emf_notify_char = { character_event = { id = emf_notify.3552 } }
+	}
+}
+
+# emf_notify.3552 -- removed machiavellian_manipulator (Machiavellian Manipulator) from FROM [notification]
+# Audax Validator "." Ignore_1005
+character_event = {
+	id = emf_notify.3552
+	picture = GFX_evt_emissary
+
+	desc = {
+		text = emf_notify.3552.desc_self
+		trigger = { character = FROM }
+	}
+	desc = {
+		text = emf_notify.3552.desc_councillor
+		trigger = {
+			FROM = {
+				is_councillor = yes
+				vassal_of = ROOT
+			}
+			NOR = {
+				character = FROM
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.3552.desc_relation
+		trigger = {
+			OR = {
+				is_close_relative = FROM
+				is_married = FROM
+				any_ward = { character = FROM }
+				guardian = { character = FROM }
+			}
+			NOR = {
+				character = FROM
+				FROM = {
+					is_councillor = yes
+					vassal_of = ROOT
+				}
+			}
+		}
+	}
+	desc = {
+		text = emf_notify.3552.desc
 		trigger = {
 			NOR = {
 				character = FROM

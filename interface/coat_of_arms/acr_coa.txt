@@ -4,6 +4,9 @@ culture = {
 		"hellenic_pagan_reformed"
 		"titan_pagan"
 		"promethean_pagan"
+		"vieti_mithras_pagan"
+		"hereclemasculist_pagan"
+		"romist_pagan"
 	}
 	
 	templates = { 

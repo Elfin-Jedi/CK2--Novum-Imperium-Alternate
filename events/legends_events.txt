@@ -1417,6 +1417,7 @@ narrative_event = {
 	war = no
 	
 	trigger = {
+		rtp_is_landless = no
 		in_command = no
 
 		primary_title = { temporary = no }

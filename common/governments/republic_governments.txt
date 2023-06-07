@@ -17,15 +17,20 @@ republic_governments = {
 		}
 		accepts_liege_governments = { # Accepts other republics
 			playable_republic_government
+			merchant_republic_government
 			muslim_merchant_republic_government
 			bogomilist_merchant_republic_government
+			chinese_imperial_government
+			bureaucratic_government
 		}
+		
 		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
 			tribal_government
 		}
 		frame_suffix = "_merchantrepublic"
 		title_prefix = "city_"
 		potential = {
+			rtp_has_title = no
 			NOT = { religion_group = muslim }
 			OR = {
 				NOT = { religion = bogomilist }
@@ -47,6 +52,9 @@ republic_governments = {
 				religion = yazidi
 			}
 			NOT = { government = playable_republic_government }
+			NOT = {
+				is_government_potential = bureaucratic_government
+			}
 			#is_female = no
 			OR = {
 				AND = {
@@ -85,6 +93,18 @@ republic_governments = {
 					}
 				}
 			}
+		}
+		
+		vassal_call_to_arms = {
+			tribal_government
+			rtp_mercenary_g
+			rtp_baron_mercenary_g
+		}
+		
+		character_modifier = {
+			stewardship = 1
+
+			learning = -1
 		}
 
 		color = { 250 0 0 }
@@ -129,8 +149,11 @@ republic_governments = {
 		}
 		accepts_liege_governments = { # Accepts other republics
 			playable_republic_government
+			merchant_republic_government
 			muslim_merchant_republic_government
 			bogomilist_merchant_republic_government
+			chinese_imperial_government
+			bureaucratic_government
 		}
 		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
 			tribal_government
@@ -155,6 +178,10 @@ republic_governments = {
 				religion = paulician
 				religion = waldensian
 				religion = yazidi
+			}
+			NOT = { government = playable_republic_government }
+			NOT = {
+				is_government_potential = bureaucratic_government
 			}
 			#is_female = no
 			OR = {
@@ -194,6 +221,18 @@ republic_governments = {
 					}
 				}
 			}
+		}
+		
+		vassal_call_to_arms = {
+			tribal_government
+			rtp_mercenary_g
+			rtp_baron_mercenary_g
+		}
+		
+		character_modifier = {
+			stewardship = 1
+
+			learning = -1
 		}
 
 		color = { 250 0 0 }
@@ -239,7 +278,10 @@ republic_governments = {
 		accepts_liege_governments = { # Accepts other republics
 			playable_republic_government
 			merchant_republic_government
+			muslim_merchant_republic_government
 			bogomilist_merchant_republic_government
+			chinese_imperial_government
+			bureaucratic_government
 		}
 		free_revoke_on_tiers = {
 			duke
@@ -269,6 +311,10 @@ republic_governments = {
 				religion = paulician
 				religion = waldensian
 				religion = yazidi
+			}
+			NOT = { government = playable_republic_government }
+			NOT = {
+				is_government_potential = bureaucratic_government
 			}
 			#is_female = no
 			OR = {
@@ -308,6 +354,18 @@ republic_governments = {
 					}
 				}
 			}
+		}
+		
+		vassal_call_to_arms = {
+			tribal_government
+			rtp_mercenary_g
+			rtp_baron_mercenary_g
+		}
+		
+		character_modifier = {
+			stewardship = 1
+
+			learning = -1
 		}
 
 		color = { 50 205 50 }
@@ -356,6 +414,7 @@ republic_governments = {
 			merchant_republic_government
 			muslim_merchant_republic_government
 			bogomilist_merchant_republic_government
+			playable_republic_government
 		}
 		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
 			tribal_government
@@ -363,6 +422,8 @@ republic_governments = {
 		frame_suffix = "_republic"
 		title_prefix = "city_"
 		potential = {
+			ai = yes
+			is_patrician = no
 			NAND = {
 				controls_religion = yes
 				NOT = { religion_group = muslim }
@@ -375,6 +436,18 @@ republic_governments = {
 				is_government_potential = bureaucratic_government
 			}
 			holy_order = no
+		}
+		
+		vassal_call_to_arms = {
+			tribal_government
+			rtp_mercenary_g
+			rtp_baron_mercenary_g
+		}
+		
+		character_modifier = {
+			stewardship = 1
+
+			intrigue = -1
 		}
 
 		color = { 209 125 130 }

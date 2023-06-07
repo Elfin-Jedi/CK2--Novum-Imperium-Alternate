@@ -9,6 +9,12 @@ title_decisions = {
 		
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 		}
@@ -34,6 +40,12 @@ title_decisions = {
 		
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 		}
@@ -64,6 +76,12 @@ title_decisions = {
 		
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 		}
@@ -100,6 +118,12 @@ title_decisions = {
 		
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 		}
@@ -123,6 +147,12 @@ title_decisions = {
 		
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 			tier = COUNT
@@ -147,6 +177,12 @@ title_decisions = {
 		
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 			is_title_active = yes
@@ -171,6 +207,12 @@ title_decisions = {
 		
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		potential = {
 		}
@@ -194,6 +236,12 @@ title_decisions = {
 		
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		
 		potential = {
@@ -245,6 +293,12 @@ title_decisions = {
 		
 		from_potential = {
 			ai = no
+			check_variable = { which = global_debug_cheats value = 1 }
+			OR = {
+				is_multiplayer_host_character = yes
+				check_variable = { which = global_debug_cheats_all_MP value = 1 }
+				multiplayer = no
+			}
 		}
 		
 		potential = {

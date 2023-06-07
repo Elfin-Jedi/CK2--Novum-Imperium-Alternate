@@ -1067,7 +1067,45 @@ character_event = {
     immediate = {
         ### Room for any existing pre-conditions (is this an initiation duel? Is this a Challenge for a title?):
         # -- set here, or in previous event/decision...
+		
+		random_artifact = {
+            limit = {
+                is_artifact_equipped = yes
+                has_artifact_flag = weapon
+            }
+            save_event_target_as = rtp_combatant1_weapon #My weapon
+        }
+        random_artifact = {
+            limit = {
+                is_artifact_equipped = yes
+                has_artifact_flag = armor
+            }
+            save_event_target_as = rtp_combatant1_armor #My armor
+        }
+
+        event_target:combatant_2 = {
+            random_artifact = {
+                limit = {
+                    is_artifact_equipped = yes
+                    has_artifact_flag = weapon
+                }
+                save_event_target_as = rtp_combatant2_weapon #My weapon
+            }
+            random_artifact = {
+                limit = {
+                    is_artifact_equipped = yes
+                    has_artifact_flag = armor
+                }
+                save_event_target_as = rtp_combatant2_armor #My armor
+            }
+        }
         
+		#Checks Weapon vs Armor - RtP Added
+        rtp_evaluate_weapon_vs_armor_se = yes
+
+        #Checks Weapon vs Weapon - RtP Added
+        rtp_evaluate_weapon_vs_weapon_se = yes
+		
         #Chooses a weapon for mainly loc purposes (but has a tiny effect on outcomes, too)...
         set_dueling_weapon_effect = yes #You get a weapon!
         event_target:combatant_2 = { set_dueling_weapon_effect = yes } #and YOU get a weapon!

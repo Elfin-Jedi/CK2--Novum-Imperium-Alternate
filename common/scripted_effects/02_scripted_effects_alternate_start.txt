@@ -8,7 +8,7 @@ monastic_feudal_time = {
 			}
 			NOR = {
 				is_merchant_republic = yes
-				is_theocracy = yes
+				rtp_is_theocracy_government = yes
 				holy_order = yes
 				controls_religion = yes
 				government = theocratic_feudal_government 
@@ -256,7 +256,7 @@ big_theocracies_effect = {
 			NOT = {
 				any_character = {
 					is_landed = yes
-					is_theocracy = yes
+					rtp_is_theocracy_government = yes
 					tier = KING 
 					NOT = {
 						distance = { value = 1000 where = PREV }
@@ -270,7 +270,7 @@ big_theocracies_effect = {
 			NOT = {
 				any_character = {
 					is_landed = yes
-					is_theocracy = yes
+					rtp_is_theocracy_government = yes
 					tier = EMPEROR
 					NOT = {
 						distance = { value = 1000 where = PREV }
@@ -334,9 +334,15 @@ random_government_effect = {
 				is_merchant_republic = yes
 				holy_order = yes
 				controls_religion = yes
-				has_title_flag = alternate_hre
-				has_title_flag = alternate_byz
 				government = theocratic_feudal_government
+				limit = {
+					any_province = {
+						empire = {
+							has_title_flag = alternate_hre
+							has_title_flag = alternate_byz
+						}
+					}
+				}
 			}
 		}
 		preferred_limit = {
@@ -455,17 +461,28 @@ random_government_effect = {
 				}
 			}
 			4 = {
-				remove_spouse = spouse
-				any_demesne_province = {
-					any_province_holding = {
-						limit = {
-							holding_type = temple
+				random_list = {
+					25 = {
+						set_government_type = order_government
+					}
+					25 = {
+						set_government_type = rtp_confederation_g
+					}
+					25 = {
+						set_government_type = rtp_mercenary_g
+					}
+					25 = {
+						if = {
+							limit = {
+								is_government_potential = rtp_privateer_g
+							}
+							set_government_type = rtp_privateer_g
 						}
-						grant_title = event_target:target_theocracy
-						make_capital_holding = yes
+						else = {
+							set_government_type = merchant_republic_government
+						}
 					}
 				}
-				set_government_type = playable_theocracy_government
 			}
 		}
 	}
@@ -1153,7 +1170,7 @@ spawn_merchant_republic_effect = {
 			}
 			NOR = {
 				is_merchant_republic = yes
-				is_theocracy = yes
+				rtp_is_theocracy_government = yes
 				holy_order = yes
 				mercenary = yes
 				controls_religion = yes 
@@ -1269,7 +1286,7 @@ spawn_merchant_republic_effect = {
 				is_government_potential = republic_government
 				NOR = {
 					is_merchant_republic = yes
-					is_theocracy = yes
+					rtp_is_theocracy_government = yes
 					holy_order = yes
 					mercenary = yes
 					controls_religion = yes 

@@ -119,8 +119,10 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		rtp_is_landless = no
 		has_dlc = "Horse Lords"
 		liege = {
+			independent = yes
 			is_nomadic = yes
 			in_revolt = no
 		}

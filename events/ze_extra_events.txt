@@ -212,6 +212,7 @@ long_character_event = {
 			trait = gregarious
 			trait = wounded
 			can_be_maimed_trigger = yes
+			government = nomadic_government
 		}
 		any_vassal = {
 			is_incapable = no
@@ -721,6 +722,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		rtp_is_lower_baron = no
 		is_nomadic = no
 		NOT = { is_inaccessible_trigger = yes }
 	}

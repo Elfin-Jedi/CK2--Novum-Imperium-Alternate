@@ -3887,11 +3887,107 @@ emf_notify.3539.desc;§Y[From.GetTitledFirstName]§! lost the trait §YFounder of C
 emf_notify.3539.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, lost the trait §YFounder of Cadet House [Root.GetOnlyDynastyName]§!.;;;;;;;;;;;;;x
 emf_notify.3539.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, lost the trait §YFounder of Cadet House [Root.GetOnlyDynastyName]§!.;;;;;;;;;;;;;x
 emf_notify.3539.desc_self;You lost the trait §YFounder of Cadet House [Root.GetOnlyDynastyName]§!.;;;;;;;;;;;;;x
-emf_notify.3541.desc;§Y[From.GetTitledFirstName]§! gained the trait §YSympathy for [african_group.GetGroupName] religions§!.;;;;;;;;;;;;;x
-emf_notify.3541.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, gained the trait §YSympathy for [african_group.GetGroupName] religions§!.;;;;;;;;;;;;;x
-emf_notify.3541.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, gained the trait §YSympathy for [african_group.GetGroupName] religions§!.;;;;;;;;;;;;;x
-emf_notify.3541.desc_self;You gained the trait §YSympathy for [african_group.GetGroupName] religions§!.;;;;;;;;;;;;;x
-emf_notify.3542.desc;§Y[From.GetTitledFirstName]§! lost the trait §YSympathy for [indian_group.GetGroupName] religions§!.;;;;;;;;;;;;;x
-emf_notify.3542.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, lost the trait §YSympathy for [african_group.GetGroupName] religions§!.;;;;;;;;;;;;;x
-emf_notify.3542.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, lost the trait §YSympathy for [african_group.GetGroupName] religions§!.;;;;;;;;;;;;;x
-emf_notify.3542.desc_self;You lost the trait §YSympathy for [african_group.GetGroupName] religions§!.;;;;;;;;;;;;;x
+emf_notify.2540.desc;§Y[From.GetTitledFirstName]§! gained the trait §YSympathy for [african_group.GetGroupName] religions§!.;;;;;;;;;;;;;x
+emf_notify.2540.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, gained the trait §YSympathy for [african_group.GetGroupName] religions§!.;;;;;;;;;;;;;x
+emf_notify.2540.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, gained the trait §YSympathy for [african_group.GetGroupName] religions§!.;;;;;;;;;;;;;x
+emf_notify.2540.desc_self;You gained the trait §YSympathy for [african_group.GetGroupName] religions§!.;;;;;;;;;;;;;x
+emf_notify.3540.desc;§Y[From.GetTitledFirstName]§! lost the trait §YSympathy for [african_group.GetGroupName] religions§!.;;;;;;;;;;;;;x
+emf_notify.3540.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, lost the trait §YSympathy for [african_group.GetGroupName] religions§!.;;;;;;;;;;;;;x
+emf_notify.3540.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, lost the trait §YSympathy for [african_group.GetGroupName] religions§!.;;;;;;;;;;;;;x
+emf_notify.3540.desc_self;You lost the trait §YSympathy for [african_group.GetGroupName] religions§!.;;;;;;;;;;;;;x
+emf_notify.2541.desc;§Y[From.GetTitledFirstName]§! gained the trait §YShameful Builder§!.;;;;;;;;;;;;;x
+emf_notify.2541.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, gained the trait §YShameful Builder§!.;;;;;;;;;;;;;x
+emf_notify.2541.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, gained the trait §YShameful Builder§!.;;;;;;;;;;;;;x
+emf_notify.2541.desc_self;You gained the trait §YShameful Builder§!.;;;;;;;;;;;;;x
+emf_notify.3541.desc;§Y[From.GetTitledFirstName]§! lost the trait §YShameful Builder§!.;;;;;;;;;;;;;x
+emf_notify.3541.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, lost the trait §YShameful Builder§!.;;;;;;;;;;;;;x
+emf_notify.3541.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, lost the trait §YShameful Builder§!.;;;;;;;;;;;;;x
+emf_notify.3541.desc_self;You lost the trait §YShameful Builder§!.;;;;;;;;;;;;;x
+emf_notify.2542.desc;§Y[From.GetTitledFirstName]§! gained the trait §YEfficient Worker§!.;;;;;;;;;;;;;x
+emf_notify.2542.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, gained the trait §YEfficient Worker§!.;;;;;;;;;;;;;x
+emf_notify.2542.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, gained the trait §YEfficient Worker§!.;;;;;;;;;;;;;x
+emf_notify.2542.desc_self;You gained the trait §YEfficient Worker§!.;;;;;;;;;;;;;x
+emf_notify.3542.desc;§Y[From.GetTitledFirstName]§! lost the trait §YEfficient Worker§!.;;;;;;;;;;;;;x
+emf_notify.3542.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, lost the trait §YEfficient Worker§!.;;;;;;;;;;;;;x
+emf_notify.3542.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, lost the trait §YEfficient Worker§!.;;;;;;;;;;;;;x
+emf_notify.3542.desc_self;You lost the trait §YEfficient Worker§!.;;;;;;;;;;;;;x
+emf_notify.2543.desc;§Y[From.GetTitledFirstName]§! gained the trait §YMaster Mason§!.;;;;;;;;;;;;;x
+emf_notify.2543.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, gained the trait §YMaster Mason§!.;;;;;;;;;;;;;x
+emf_notify.2543.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, gained the trait §YMaster Mason§!.;;;;;;;;;;;;;x
+emf_notify.2543.desc_self;You gained the trait §YMaster Mason§!.;;;;;;;;;;;;;x
+emf_notify.3543.desc;§Y[From.GetTitledFirstName]§! lost the trait §YMaster Mason§!.;;;;;;;;;;;;;x
+emf_notify.3543.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, lost the trait §YMaster Mason§!.;;;;;;;;;;;;;x
+emf_notify.3543.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, lost the trait §YMaster Mason§!.;;;;;;;;;;;;;x
+emf_notify.3543.desc_self;You lost the trait §YMaster Mason§!.;;;;;;;;;;;;;x
+emf_notify.2544.desc;§Y[From.GetTitledFirstName]§! gained the trait §YRoyal Craftsman§!.;;;;;;;;;;;;;x
+emf_notify.2544.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, gained the trait §YRoyal Craftsman§!.;;;;;;;;;;;;;x
+emf_notify.2544.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, gained the trait §YRoyal Craftsman§!.;;;;;;;;;;;;;x
+emf_notify.2544.desc_self;You gained the trait §YRoyal Craftsman§!.;;;;;;;;;;;;;x
+emf_notify.3544.desc;§Y[From.GetTitledFirstName]§! lost the trait §YRoyal Craftsman§!.;;;;;;;;;;;;;x
+emf_notify.3544.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, lost the trait §YRoyal Craftsman§!.;;;;;;;;;;;;;x
+emf_notify.3544.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, lost the trait §YRoyal Craftsman§!.;;;;;;;;;;;;;x
+emf_notify.3544.desc_self;You lost the trait §YRoyal Craftsman§!.;;;;;;;;;;;;;x
+emf_notify.2545.desc;§Y[From.GetTitledFirstName]§! gained the trait §YCommon Soldier§!.;;;;;;;;;;;;;x
+emf_notify.2545.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, gained the trait §YCommon Soldier§!.;;;;;;;;;;;;;x
+emf_notify.2545.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, gained the trait §YCommon Soldier§!.;;;;;;;;;;;;;x
+emf_notify.2545.desc_self;You gained the trait §YCommon Soldier§!.;;;;;;;;;;;;;x
+emf_notify.3545.desc;§Y[From.GetTitledFirstName]§! lost the trait §YCommon Soldier§!.;;;;;;;;;;;;;x
+emf_notify.3545.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, lost the trait §YCommon Soldier§!.;;;;;;;;;;;;;x
+emf_notify.3545.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, lost the trait §YCommon Soldier§!.;;;;;;;;;;;;;x
+emf_notify.3545.desc_self;You lost the trait §YCommon Soldier§!.;;;;;;;;;;;;;x
+emf_notify.2546.desc;§Y[From.GetTitledFirstName]§! gained the trait §YExperienced Captain§!.;;;;;;;;;;;;;x
+emf_notify.2546.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, gained the trait §YExperienced Captain§!.;;;;;;;;;;;;;x
+emf_notify.2546.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, gained the trait §YExperienced Captain§!.;;;;;;;;;;;;;x
+emf_notify.2546.desc_self;You gained the trait §YExperienced Captain§!.;;;;;;;;;;;;;x
+emf_notify.3546.desc;§Y[From.GetTitledFirstName]§! lost the trait §YExperienced Captain§!.;;;;;;;;;;;;;x
+emf_notify.3546.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, lost the trait §YExperienced Captain§!.;;;;;;;;;;;;;x
+emf_notify.3546.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, lost the trait §YExperienced Captain§!.;;;;;;;;;;;;;x
+emf_notify.3546.desc_self;You lost the trait §YExperienced Captain§!.;;;;;;;;;;;;;x
+emf_notify.2547.desc;§Y[From.GetTitledFirstName]§! gained the trait §YSeasoned Commander§!.;;;;;;;;;;;;;x
+emf_notify.2547.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, gained the trait §YSeasoned Commander§!.;;;;;;;;;;;;;x
+emf_notify.2547.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, gained the trait §YSeasoned Commander§!.;;;;;;;;;;;;;x
+emf_notify.2547.desc_self;You gained the trait §YSeasoned Commander§!.;;;;;;;;;;;;;x
+emf_notify.3547.desc;§Y[From.GetTitledFirstName]§! lost the trait §YSeasoned Commander§!.;;;;;;;;;;;;;x
+emf_notify.3547.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, lost the trait §YSeasoned Commander§!.;;;;;;;;;;;;;x
+emf_notify.3547.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, lost the trait §YSeasoned Commander§!.;;;;;;;;;;;;;x
+emf_notify.3547.desc_self;You lost the trait §YSeasoned Commander§!.;;;;;;;;;;;;;x
+emf_notify.2548.desc;§Y[From.GetTitledFirstName]§! gained the trait §YGreat General§!.;;;;;;;;;;;;;x
+emf_notify.2548.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, gained the trait §YGreat General§!.;;;;;;;;;;;;;x
+emf_notify.2548.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, gained the trait §YGreat General§!.;;;;;;;;;;;;;x
+emf_notify.2548.desc_self;You gained the trait §YGreat General§!.;;;;;;;;;;;;;x
+emf_notify.3548.desc;§Y[From.GetTitledFirstName]§! lost the trait §YGreat General§!.;;;;;;;;;;;;;x
+emf_notify.3548.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, lost the trait §YGreat General§!.;;;;;;;;;;;;;x
+emf_notify.3548.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, lost the trait §YGreat General§!.;;;;;;;;;;;;;x
+emf_notify.3548.desc_self;You lost the trait §YGreat General§!.;;;;;;;;;;;;;x
+emf_notify.2549.desc;§Y[From.GetTitledFirstName]§! gained the trait §YBeginner Backstabber§!.;;;;;;;;;;;;;x
+emf_notify.2549.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, gained the trait §YBeginner Backstabber§!.;;;;;;;;;;;;;x
+emf_notify.2549.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, gained the trait §YBeginner Backstabber§!.;;;;;;;;;;;;;x
+emf_notify.2549.desc_self;You gained the trait §YBeginner Backstabber§!.;;;;;;;;;;;;;x
+emf_notify.3549.desc;§Y[From.GetTitledFirstName]§! lost the trait §YBeginner Backstabber§!.;;;;;;;;;;;;;x
+emf_notify.3549.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, lost the trait §YBeginner Backstabber§!.;;;;;;;;;;;;;x
+emf_notify.3549.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, lost the trait §YBeginner Backstabber§!.;;;;;;;;;;;;;x
+emf_notify.3549.desc_self;You lost the trait §YBeginner Backstabber§!.;;;;;;;;;;;;;x
+emf_notify.2550.desc;§Y[From.GetTitledFirstName]§! gained the trait §YCunning Conspirator§!.;;;;;;;;;;;;;x
+emf_notify.2550.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, gained the trait §YCunning Conspirator§!.;;;;;;;;;;;;;x
+emf_notify.2550.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, gained the trait §Cunning Conspirator§!.;;;;;;;;;;;;;x
+emf_notify.2550.desc_self;You gained the trait §YCunning Conspirator§!.;;;;;;;;;;;;;x
+emf_notify.3550.desc;§Y[From.GetTitledFirstName]§! lost the trait §YCunning Conspirator§!.;;;;;;;;;;;;;x
+emf_notify.3550.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, lost the trait §YCunning Conspirator§!.;;;;;;;;;;;;;x
+emf_notify.3550.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, lost the trait §YCunning Conspirator§!.;;;;;;;;;;;;;x
+emf_notify.3550.desc_self;You lost the trait §YCunning Conspirator§!.;;;;;;;;;;;;;x
+emf_notify.2551.desc;§Y[From.GetTitledFirstName]§! gained the trait §YPolitical Maneuverer§!.;;;;;;;;;;;;;x
+emf_notify.2551.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, gained the trait §YPolitical Maneuverer§!.;;;;;;;;;;;;;x
+emf_notify.2551.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, gained the trait §Political Maneuverer§!.;;;;;;;;;;;;;x
+emf_notify.2551.desc_self;You gained the trait §YPolitical Maneuverer§!.;;;;;;;;;;;;;x
+emf_notify.3551.desc;§Y[From.GetTitledFirstName]§! lost the trait §YPolitical Maneuverer§!.;;;;;;;;;;;;;x
+emf_notify.3551.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, lost the trait §YPolitical Maneuverer§!.;;;;;;;;;;;;;x
+emf_notify.3551.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, lost the trait §YPolitical Maneuverer§!.;;;;;;;;;;;;;x
+emf_notify.3551.desc_self;You lost the trait §YPolitical Maneuverer§!.;;;;;;;;;;;;;x
+emf_notify.2552.desc;§Y[From.GetTitledFirstName]§! gained the trait §YMachiavellian Manipulator§!.;;;;;;;;;;;;;x
+emf_notify.2552.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, gained the trait §YMachiavellian Manipulator§!.;;;;;;;;;;;;;x
+emf_notify.2552.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, gained the trait §Machiavellian Manipulator§!.;;;;;;;;;;;;;x
+emf_notify.2552.desc_self;You gained the trait §YMachiavellian Manipulator§!.;;;;;;;;;;;;;x
+emf_notify.3552.desc;§Y[From.GetTitledFirstName]§! lost the trait §YMachiavellian Manipulator§!.;;;;;;;;;;;;;x
+emf_notify.3552.desc_councillor;Your [From.GetJobTitle], §Y[From.GetTitledFirstName]§!, lost the trait §YMachiavellian Manipulator§!.;;;;;;;;;;;;;x
+emf_notify.3552.desc_relation;Your [GetFromRelation], §Y[From.GetDynName]§!, lost the trait §YMachiavellian Manipulator§!.;;;;;;;;;;;;;x
+emf_notify.3552.desc_self;You lost the trait §YMachiavellian Manipulator§!.;;;;;;;;;;;;;x

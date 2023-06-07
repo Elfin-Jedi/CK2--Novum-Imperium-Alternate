@@ -50,6 +50,18 @@ amateurish_plotter = {
 		martial_cleric
 		scholarly_theologian
 		mastermind_theologian
+		shameful_builder
+		efficient_worker
+		master_mason
+		royal_craftsman
+		common_soldier
+		experienced_captain
+		seasoned_commander
+		great_general
+		beginner_backstabber
+		cunning_conspirator
+		political_maneuverer
+		machiavellian_manipulator
 	}
 }
 flamboyant_schemer = {
@@ -85,6 +97,18 @@ flamboyant_schemer = {
 		martial_cleric
 		scholarly_theologian
 		mastermind_theologian
+		shameful_builder
+		efficient_worker
+		master_mason
+		royal_craftsman
+		common_soldier
+		experienced_captain
+		seasoned_commander
+		great_general
+		beginner_backstabber
+		cunning_conspirator
+		political_maneuverer
+		machiavellian_manipulator
 	}
 }
 intricate_webweaver = {
@@ -124,6 +148,18 @@ intricate_webweaver = {
 		martial_cleric
 		scholarly_theologian
 		mastermind_theologian
+		shameful_builder
+		efficient_worker
+		master_mason
+		royal_craftsman
+		common_soldier
+		experienced_captain
+		seasoned_commander
+		great_general
+		beginner_backstabber
+		cunning_conspirator
+		political_maneuverer
+		machiavellian_manipulator
 	}
 }
 elusive_shadow = {
@@ -165,6 +201,18 @@ elusive_shadow = {
 		martial_cleric
 		scholarly_theologian
 		mastermind_theologian
+		shameful_builder
+		efficient_worker
+		master_mason
+		royal_craftsman
+		common_soldier
+		experienced_captain
+		seasoned_commander
+		great_general
+		beginner_backstabber
+		cunning_conspirator
+		political_maneuverer
+		machiavellian_manipulator
 	}
 }
 
@@ -201,6 +249,18 @@ naive_appeaser = {
 		martial_cleric
 		scholarly_theologian
 		mastermind_theologian
+		shameful_builder
+		efficient_worker
+		master_mason
+		royal_craftsman
+		common_soldier
+		experienced_captain
+		seasoned_commander
+		great_general
+		beginner_backstabber
+		cunning_conspirator
+		political_maneuverer
+		machiavellian_manipulator
 	}
 }
 underhanded_rogue = {
@@ -236,6 +296,18 @@ underhanded_rogue = {
 		martial_cleric
 		scholarly_theologian
 		mastermind_theologian
+		shameful_builder
+		efficient_worker
+		master_mason
+		royal_craftsman
+		common_soldier
+		experienced_captain
+		seasoned_commander
+		great_general
+		beginner_backstabber
+		cunning_conspirator
+		political_maneuverer
+		machiavellian_manipulator
 	}
 }
 charismatic_negotiator = {
@@ -277,6 +349,18 @@ charismatic_negotiator = {
 		martial_cleric
 		scholarly_theologian
 		mastermind_theologian
+		shameful_builder
+		efficient_worker
+		master_mason
+		royal_craftsman
+		common_soldier
+		experienced_captain
+		seasoned_commander
+		great_general
+		beginner_backstabber
+		cunning_conspirator
+		political_maneuverer
+		machiavellian_manipulator
 	}
 }
 grey_eminence = {
@@ -319,6 +403,18 @@ grey_eminence = {
 		martial_cleric
 		scholarly_theologian
 		mastermind_theologian
+		shameful_builder
+		efficient_worker
+		master_mason
+		royal_craftsman
+		common_soldier
+		experienced_captain
+		seasoned_commander
+		great_general
+		beginner_backstabber
+		cunning_conspirator
+		political_maneuverer
+		machiavellian_manipulator
 	}
 }
 
@@ -355,6 +451,18 @@ indulgent_wastrel = {
 		martial_cleric
 		scholarly_theologian
 		mastermind_theologian
+		shameful_builder
+		efficient_worker
+		master_mason
+		royal_craftsman
+		common_soldier
+		experienced_captain
+		seasoned_commander
+		great_general
+		beginner_backstabber
+		cunning_conspirator
+		political_maneuverer
+		machiavellian_manipulator
 	}
 }
 thrifty_clerk = {
@@ -390,6 +498,18 @@ thrifty_clerk = {
 		martial_cleric
 		scholarly_theologian
 		mastermind_theologian
+		shameful_builder
+		efficient_worker
+		master_mason
+		royal_craftsman
+		common_soldier
+		experienced_captain
+		seasoned_commander
+		great_general
+		beginner_backstabber
+		cunning_conspirator
+		political_maneuverer
+		machiavellian_manipulator
 	}
 }
 fortune_builder = {
@@ -430,6 +550,18 @@ fortune_builder = {
 		martial_cleric
 		scholarly_theologian
 		mastermind_theologian
+		shameful_builder
+		efficient_worker
+		master_mason
+		royal_craftsman
+		common_soldier
+		experienced_captain
+		seasoned_commander
+		great_general
+		beginner_backstabber
+		cunning_conspirator
+		political_maneuverer
+		machiavellian_manipulator
 	}
 }
 midas_touched = {
@@ -472,6 +604,18 @@ midas_touched = {
 		martial_cleric
 		scholarly_theologian
 		mastermind_theologian
+		shameful_builder
+		efficient_worker
+		master_mason
+		royal_craftsman
+		common_soldier
+		experienced_captain
+		seasoned_commander
+		great_general
+		beginner_backstabber
+		cunning_conspirator
+		political_maneuverer
+		machiavellian_manipulator
 	}
 }
 
@@ -507,6 +651,18 @@ misguided_warrior = {
 		martial_cleric
 		scholarly_theologian
 		mastermind_theologian
+		shameful_builder
+		efficient_worker
+		master_mason
+		royal_craftsman
+		common_soldier
+		experienced_captain
+		seasoned_commander
+		great_general
+		beginner_backstabber
+		cunning_conspirator
+		political_maneuverer
+		machiavellian_manipulator
 	}
 }
 tough_soldier = {
@@ -541,6 +697,18 @@ tough_soldier = {
 		martial_cleric
 		scholarly_theologian
 		mastermind_theologian
+		shameful_builder
+		efficient_worker
+		master_mason
+		royal_craftsman
+		common_soldier
+		experienced_captain
+		seasoned_commander
+		great_general
+		beginner_backstabber
+		cunning_conspirator
+		political_maneuverer
+		machiavellian_manipulator
 	}
 }
 skilled_tactician = {
@@ -577,6 +745,18 @@ skilled_tactician = {
 		martial_cleric
 		scholarly_theologian
 		mastermind_theologian
+		shameful_builder
+		efficient_worker
+		master_mason
+		royal_craftsman
+		common_soldier
+		experienced_captain
+		seasoned_commander
+		great_general
+		beginner_backstabber
+		cunning_conspirator
+		political_maneuverer
+		machiavellian_manipulator
 	}
 }
 brilliant_strategist = {
@@ -617,6 +797,18 @@ brilliant_strategist = {
 		martial_cleric
 		scholarly_theologian
 		mastermind_theologian
+		shameful_builder
+		efficient_worker
+		master_mason
+		royal_craftsman
+		common_soldier
+		experienced_captain
+		seasoned_commander
+		great_general
+		beginner_backstabber
+		cunning_conspirator
+		political_maneuverer
+		machiavellian_manipulator
 	}
 }
 
@@ -653,6 +845,18 @@ detached_priest = {
 		martial_cleric
 		scholarly_theologian
 		mastermind_theologian
+		shameful_builder
+		efficient_worker
+		master_mason
+		royal_craftsman
+		common_soldier
+		experienced_captain
+		seasoned_commander
+		great_general
+		beginner_backstabber
+		cunning_conspirator
+		political_maneuverer
+		machiavellian_manipulator
 	}
 }
 martial_cleric = {
@@ -689,6 +893,18 @@ martial_cleric = {
 		#martial_cleric
 		scholarly_theologian
 		mastermind_theologian
+		shameful_builder
+		efficient_worker
+		master_mason
+		royal_craftsman
+		common_soldier
+		experienced_captain
+		seasoned_commander
+		great_general
+		beginner_backstabber
+		cunning_conspirator
+		political_maneuverer
+		machiavellian_manipulator
 	}
 }
 scholarly_theologian = {
@@ -733,6 +949,18 @@ scholarly_theologian = {
 		martial_cleric
 		#scholarly_theologian
 		mastermind_theologian
+		shameful_builder
+		efficient_worker
+		master_mason
+		royal_craftsman
+		common_soldier
+		experienced_captain
+		seasoned_commander
+		great_general
+		beginner_backstabber
+		cunning_conspirator
+		political_maneuverer
+		machiavellian_manipulator
 	}
 }
 mastermind_theologian = {
@@ -776,6 +1004,18 @@ mastermind_theologian = {
 		martial_cleric
 		scholarly_theologian
 		#mastermind_theologian
+		shameful_builder
+		efficient_worker
+		master_mason
+		royal_craftsman
+		common_soldier
+		experienced_captain
+		seasoned_commander
+		great_general
+		beginner_backstabber
+		cunning_conspirator
+		political_maneuverer
+		machiavellian_manipulator
 	}
 }
 

@@ -6,11 +6,8 @@
 
 
 ######## To check for weapon types used...
-is_dueling_weapon_artifact_and_equipped = { #meaning ranged weapons (including handguns) and lances are excluded 
-	has_artifact_flag = combat_weapon
-	NOT = { #Currently, we are not using ranged weapons - for future reference, that'd go here
-		has_artifact_flag = ranged_weapon
-	}
+is_dueling_weapon_artifact_and_equipped = {
+	has_artifact_flag = weapon
 	is_artifact_equipped = yes
 }
 is_using_blunt_weapon_trigger = { #blunt weapon!
@@ -21,7 +18,7 @@ is_using_blunt_weapon_trigger = { #blunt weapon!
 			OR = {
 				has_artifact_flag = mace
 				has_artifact_flag = hammer
-				has_artifact_flag = staff
+				has_artifact_flag = flail
 			}
 			artifact_owner = { character = PREVPREV }
 		}
@@ -29,7 +26,7 @@ is_using_blunt_weapon_trigger = { #blunt weapon!
 			OR = {
 				has_artifact_flag = mace
 				has_artifact_flag = hammer
-				has_artifact_flag = staff
+				has_artifact_flag = flail
 			}
 			artifact_owner = { character = PREVPREV }
 		}
@@ -43,34 +40,46 @@ is_using_sharp_weapon_trigger = { #Sharp weapon!
 		has_character_flag = weapon_is_spear
 		event_target:dueling_weapon_1 = {
 			OR = {
+				has_artifact_flag = dagger
 				has_artifact_flag = sword
 				has_artifact_flag = axe
 				has_artifact_flag = spear
+				has_artifact_flag = polearm
+				has_artifact_flag = cleaver
 			}
 			artifact_owner = { character = PREVPREV }
 		}
 		event_target:dueling_weapon_2 = {
 			OR = {
+				has_artifact_flag = dagger
 				has_artifact_flag = sword
 				has_artifact_flag = axe
 				has_artifact_flag = spear
+				has_artifact_flag = polearm
+				has_artifact_flag = cleaver
 			}
 			artifact_owner = { character = PREVPREV }
 		}
 	}
 }
-is_using_piercing_weapon_trigger = { #Sharp, but not an axe
+is_using_piercing_weapon_trigger = { #Piercing weapon!
 	is_using_sharp_weapon_trigger = yes
 	NOT = { has_character_flag = weapon_is_axe }
 	NOT = {
 		event_target:dueling_weapon_1 = {
-			has_artifact_flag = axe
+			OR = {
+				has_artifact_flag = axe
+				has_artifact_flag = cleaver
+			}
 			artifact_owner = { character = PREVPREV }
 		}
 	}
 	NOT = {
 		event_target:dueling_weapon_2 = {
-			has_artifact_flag = axe
+			OR = {
+				has_artifact_flag = axe
+				has_artifact_flag = cleaver
+			}
 			artifact_owner = { character = PREVPREV }
 		}
 	}
@@ -79,24 +88,40 @@ is_using_spear_weapon_trigger = { #A spear!
 	OR = {
 		has_character_flag = weapon_is_spear
 		event_target:dueling_weapon_1 = {
-			has_artifact_flag = spear
+			OR = {
+				has_artifact_flag = spear
+				has_artifact_flag = polearm
+			}
 			artifact_owner = { character = PREVPREV }
 		}
 		event_target:dueling_weapon_2 = {
-			has_artifact_flag = spear
+			OR = {
+				has_artifact_flag = spear
+				has_artifact_flag = polearm
+			}
 			artifact_owner = { character = PREVPREV }
 		}
 	}
 }
 
-is_using_gun_trigger = { #A gun!
+is_using_gun_trigger = { #A ranged weapon!
 	OR = {
 		event_target:dueling_weapon_1 = {
-			has_artifact_flag = gun
+			OR = {
+				has_artifact_flag = gun
+				has_artifact_flag = throwing
+				has_artifact_flag = bow
+				has_artifact_flag = crossbow
+			}
 			artifact_owner = { character = PREVPREV }
 		}
 		event_target:dueling_weapon_2 = {
-			has_artifact_flag = gun
+			OR = {
+				has_artifact_flag = gun
+				has_artifact_flag = throwing
+				has_artifact_flag = bow
+				has_artifact_flag = crossbow
+			}
 			artifact_owner = { character = PREVPREV }
 		}
 	}
@@ -296,7 +321,7 @@ duel_result_score_low_group_trigger = {
 		duel_result_score_terrible_trigger = yes
 		duel_result_score_bad_trigger = yes
 		duel_result_score_ok_trigger = yes
-	}	
+	}
 }
 duel_result_score_medium_group_trigger = {
 	duel_result_score_decent_trigger = yes

@@ -48,8 +48,32 @@ TECH_GROUP_MILITARY = {
 	}
 	TECH_SIEGE_EQUIPMENT = {
 		modifier = {
-			siege_speed = 1.0
-			siege_defence = 1.0
+			siege_speed = 0.24
+			custom_modifier_text = rtp_siege_equipment_tech_ct
+		}
+		1 = {
+			add_building = rtp_ladders_b
+		}
+		2 = {
+			add_building = rtp_catapult_b
+		}
+		3 = {
+			add_building = rtp_battering_ram_b
+		}
+		4 = {
+			add_building = rtp_bricole_b
+		}
+		5 = {
+			add_building = rtp_siege_towers_b
+		}
+		6 = {
+			add_building = rtp_ballistas_b
+		}
+		7 = {
+			add_building = rtp_trebuchet_b
+		}
+		8 = {
+			add_building = rtp_bombard_b
 		}
 	}
 	TECH_RECRUITMENT = {
@@ -197,6 +221,8 @@ TECH_GROUP_ECONOMY = {
 	}
 	TECH_FORTIFICATIONS_CONSTRUCTION = { # walls and levy buildings
 		modifier = {
+			SIEGE_DEFENCE = 0.24
+			custom_modifier_text = rtp_improved_keeps_tech_ct
 		}
 		1 = {
 			add_building = ca_keep_2
@@ -370,10 +396,90 @@ TECH_GROUP_CULTURE = {
 		modifier = {
 			town_opinion = 16
 		}
+		1 = {
+			add_decision = rtp_slavery_0_l
+			add_decision = rtp_slavery_1_l
+			add_decision = rtp_slavery_2_l
+		}
+		2 = {
+			add_decision = rtp_trade_0_l
+			add_decision = rtp_trade_1_l
+			add_decision = rtp_trade_2_l
+		}
+		3 = {
+			add_decision = rtp_resettlement_0_l
+			add_decision = rtp_resettlement_1_l
+			add_decision = rtp_resettlement_2_l
+		}
+		4 = {
+			add_decision = rtp_welfare_0_l
+			add_decision = rtp_welfare_1_l
+			add_decision = rtp_welfare_2_l
+		}
+		5 = {
+			add_decision = rtp_production_0_l
+			add_decision = rtp_production_1_l
+			add_decision = rtp_production_2_l
+		}
+		6 = {
+			add_decision = rtp_property_0_l
+			add_decision = rtp_property_1_l
+			add_decision = rtp_property_2_l
+		}
+		7 = {
+			add_decision = rtp_banking_0_l
+			add_decision = rtp_banking_1_l
+			add_decision = rtp_banking_2_l
+		}
+		8 = {
+			add_decision = rtp_holidays_0_l
+			add_decision = rtp_holidays_1_l
+			add_decision = rtp_holidays_2_l
+		}
 	}
 	TECH_RELIGIOUS_CUSTOMS = {
 		modifier = {
 			church_opinion = 16
+		}
+		1 = {
+			add_decision = rtp_role_0_l
+			add_decision = rtp_role_1_l
+			add_decision = rtp_role_2_l
+		}
+		2 = {
+			add_decision = rtp_consecrated_grounds_0_l
+			add_decision = rtp_consecrated_grounds_1_l
+			add_decision = rtp_consecrated_grounds_2_l
+		}
+		3 = {
+			add_decision = rtp_membership_0_l
+			add_decision = rtp_membership_1_l
+			add_decision = rtp_membership_2_l
+		}
+		4 = {
+			add_decision = rtp_sanctuary_0_l
+			add_decision = rtp_sanctuary_1_l
+			add_decision = rtp_sanctuary_2_l
+		}
+		5 = {
+			add_decision = rtp_tithe_0_l
+			add_decision = rtp_tithe_1_l
+			add_decision = rtp_tithe_2_l
+		}
+		6 = {
+			add_decision = rtp_attendance_0_l
+			add_decision = rtp_attendance_1_l
+			add_decision = rtp_attendance_2_l
+		}
+		7 = {
+			add_decision = rtp_glossolalia_0_l
+			add_decision = rtp_glossolalia_1_l
+			add_decision = rtp_glossolalia_2_l
+		}
+		8 = {
+			add_decision = rtp_conversion_0_l
+			add_decision = rtp_conversion_1_l
+			add_decision = rtp_conversion_2_l
 		}
 	}
 	TECH_MAJESTY = {
@@ -410,6 +516,9 @@ TECH_GROUP_CULTURE = {
 	}
 	TECH_LEGALISM = {
 		modifier = {
+			SHORT_REIGN_LENGTH = -24
+			GLOBAL_SUPPLY_LIMIT = 0.24
+			custom_modifier_text = rtp_legalism_tech_ct
 		}
 		1 = {
 			add_decision = crown_authority_1

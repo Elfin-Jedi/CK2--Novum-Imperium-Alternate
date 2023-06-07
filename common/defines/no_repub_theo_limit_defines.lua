@@ -1,2 +1,0 @@
-	MAX_REPUBLIC_COUNTIES_IN_REALM = 1,		-- 100% of a feudal realm is allowed to be under vassal republics (affects title grants)
-	MAX_THEOCRACY_COUNTIES_IN_REALM = 1,		-- 100% of a feudal realm is allowed to be under vassal theocracies/bishoprics (affects title grants)

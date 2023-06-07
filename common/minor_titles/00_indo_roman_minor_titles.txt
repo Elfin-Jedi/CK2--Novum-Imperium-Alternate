@@ -41,7 +41,7 @@ title_indoroman_champion = {
 			male_can_hold_minor_title_trigger = yes
 			female_can_hold_minor_commander_title_trigger = yes
 		}
-		NOT = { trait = incapable } 
+		is_incapable = no 
 	}
 
 	allowed_to_grant = {
@@ -91,7 +91,7 @@ title_indoroman_personal_praetorian = {
 			male_can_hold_minor_title_trigger = yes
 			female_can_hold_minor_commander_title_trigger = yes
 		}
-		NOT = { trait = incapable } 
+		is_incapable = no
 	}
 
 	allowed_to_grant = {
