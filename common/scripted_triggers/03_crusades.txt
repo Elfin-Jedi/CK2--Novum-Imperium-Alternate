@@ -190,7 +190,7 @@ check_if_crusader_trigger = {
 								has_landed_title = d_fraticelli
 							}
 							trigger_else = {
-								limit = { britannic_pagan }
+								limit = { religion = britannic_pagan }
 								has_landed_title = k_britannic_pagan
 							}
 						}
