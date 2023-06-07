@@ -98,18 +98,16 @@ unpledge_crusade_trigger = {
 defender_pledge_crusade_trigger = {
 	custom_tooltip = {
 		text = defense_pledge_crusade_target_TT_2
-		AND = {
-			is_organized_religion_trigger = yes
-			crusade_target_char = { is_within_diplo_range = ROOT }
-		}
+		is_organized_religion_trigger = yes
+		crusade_target_char = { is_within_diplo_range = ROOT }
 	}
-	custom_tooltip = {
-		text = defense_pledge_crusade_target_TT
-		NAND = {
-			is_organized_religion_trigger = yes
-			crusade_target_char = { character = PREVPREV }
-		}
-	}
+	#custom_tooltip = {
+	#	text = defense_pledge_crusade_target_TT
+	#	NAND = {
+	#		is_organized_religion_trigger = yes
+	#		crusade_target_char = { character = PREVPREV }
+	#	}
+	#}
 }
 
 # Referenced by the "Leave Crusade" button in the Crusade defender view for Crusades using the new Crusade system
@@ -165,6 +163,7 @@ check_if_crusader_trigger = {
 				NOR = {
 					has_landed_title = k_papal_state
 					has_landed_title = d_fraticelli
+					has_landed_title = k_britannic_pagan
 				}
 			}
 		}
@@ -185,7 +184,7 @@ check_if_crusader_trigger = {
 								limit = { religion = catholic }
 								has_landed_title = k_papal_state
 							}
-							trigger_else = {
+							trigger_if = {
 								limit = { religion = fraticelli }
 								has_landed_title = d_fraticelli
 							}
