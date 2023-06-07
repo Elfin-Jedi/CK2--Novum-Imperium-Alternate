@@ -48,6 +48,9 @@ latin = {
 	outremer = {
 		graphical_cultures = { outremergfx holygfx italiangfx levantinegfx southerngfx }
 	}
+	romanoindian = {
+		graphical_cultures = { romanoindianfx romangfx southerngfx }
+	}
 }
 
 iberian = {
