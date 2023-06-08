@@ -531,6 +531,7 @@ rtp_is_feudal_government = {
 		government = rtp_baron_monastic_g
 		government = feudal_government
 		government = muslim_government
+		government = bogomilist_government
 		government = theocratic_feudal_government
 	}
 }
@@ -556,7 +557,9 @@ rtp_is_theocracy_government = {
 #Checks if the player is of a empire government
 rtp_is_empire_government = {
 	OR = {
-		government = roman_imperial_government
+		government = imperial_government
+		government = muslim_imperial_government
+		government = bogomilist_imperial_government
 		government = chinese_imperial_government
 		government = confucian_bureaucracy
 		government = rtp_confederation_g

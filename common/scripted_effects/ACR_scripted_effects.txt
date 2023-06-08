@@ -909,16 +909,16 @@ lower_temple_tax_obligation_effect = {
 
 lower_temple_levy_obligation_effect = {
 	if = {
-		limit = { has_law = temple_contract_1 }
-		add_law = temple_contract_0
+		limit = { has_law = temple_obligations_1 }
+		add_law = temple_obligations_0
 	}
 	if = {
-		limit = { has_law = temple_contract_2 }
-		add_law = temple_contract_1
+		limit = { has_law = temple_obligations_2 }
+		add_law = temple_obligations_1
 	}
 	if = {
-		limit = { has_law = temple_contract_3 }
-		add_law = temple_contract_2
+		limit = { has_law = temple_obligations_3 }
+		add_law = temple_obligations_2
 	}
 }
 

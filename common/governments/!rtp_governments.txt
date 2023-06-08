@@ -115,7 +115,7 @@ feudal_governments = {
 				rtp_is_mercenary = yes
 			}
 			NOR = {
-				is_government_potential = roman_imperial_government
+				is_government_potential = imperial_government
 				is_government_potential = confucian_bureaucracy
 				is_government_potential = chinese_imperial_government
 				is_government_potential = rtp_baron_mercenary_g

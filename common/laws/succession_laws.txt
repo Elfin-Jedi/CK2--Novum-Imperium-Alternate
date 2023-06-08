@@ -12,10 +12,17 @@ succession_laws = {
 		potential = {
 			emf_laws_succ_basic_potential = yes
 			emf_laws_potential_not_for_byzantium = yes
+			rtp_is_landless = no
 			holder_scope = {
 				OR = {
-					is_feudal = yes
+					rtp_is_feudal_government = yes
 					is_tribal = yes
+				}
+				OR = {
+					independent = yes
+					any_liege = {
+						rtp_is_order_government = no
+					}
 				}
 				NOT = { government = confucian_bureaucracy }
 				NOT = { government = bureaucratic_government }
@@ -69,10 +76,17 @@ succession_laws = {
 		potential = {
 			emf_laws_succ_basic_potential = yes
 			emf_laws_potential_not_for_byzantium = yes
+			rtp_is_landless = no
 			holder_scope = {
 				OR = {
 					is_feudal = yes
 					is_tribal = yes
+				}
+				OR = {
+					independent = yes
+					any_liege = {
+						rtp_is_order_government = no
+					}
 				}
 				NOT = { government = confucian_bureaucracy }
 				NOT = { government = bureaucratic_government }
@@ -118,10 +132,17 @@ succession_laws = {
 		potential = {
 			emf_laws_succ_basic_potential = yes
 			emf_laws_potential_not_for_byzantium = yes
+			rtp_is_landless = no
 			holder_scope = {
 				OR = {
-					is_feudal = yes
+					rtp_is_feudal_government = yes
 					is_tribal = yes
+				}
+				OR = {
+					independent = yes
+					any_liege = {
+						rtp_is_order_government = no
+					}
 				}
 				OR = {
 					religion = west_african_pagan
@@ -286,6 +307,14 @@ succession_laws = {
 
 		potential = {
 			emf_laws_potential_not_for_byzantium = yes
+			rtp_is_landless = no
+			rtp_is_feudal_government = yes
+			OR = {
+				independent = yes
+				any_liege = {
+					rtp_is_order_government = no
+				}
+			}
 			OR = {
 				AND = {
 					emf_laws_succ_basic_potential = yes
@@ -370,7 +399,14 @@ succession_laws = {
 		potential = {
 			emf_laws_potential_not_for_byzantium = yes
 			emf_laws_succ_basic_potential = yes
-			NOT = { tier = BARON }
+			rtp_is_landless = no
+			rtp_is_feudal_government = yes
+			OR = {
+				independent = yes
+				any_liege = {
+					rtp_is_order_government = no
+				}
+			}
 			owner = {
 				is_feudal = yes
 				OR = {
@@ -383,6 +419,14 @@ succession_laws = {
 		}
 		allow = {
 			emf_laws_allow_switch_away_from_hre_elective = yes
+			rtp_is_landless = no
+			rtp_is_feudal_government = yes
+			OR = {
+				independent = yes
+				any_liege = {
+					rtp_is_order_government = no
+				}
+			}
 		}
 		effect = {
 			#tooltip = {
@@ -613,10 +657,17 @@ succession_laws = {
 		potential = {
 			emf_laws_succ_basic_potential = yes
 			emf_laws_potential_not_for_byzantium = yes
+			rtp_is_landless = no
 			holder_scope = {
 				OR = {
-					is_feudal = yes
+					rtp_is_feudal_government = yes
 					is_tribal = yes
+				}
+				OR = {
+					independent = yes
+					any_liege = {
+						rtp_is_order_government = no
+					}
 				}
 				OR = {
 					AND = {
@@ -734,6 +785,17 @@ succession_laws = {
 		potential = {
 			emf_laws_potential_not_for_byzantium = yes
 			holder_scope = {
+				rtp_is_landless = no
+				OR = {
+					rtp_is_feudal_government = yes
+					is_nomadic = yes
+				}
+				OR = {
+					independent = yes
+					any_liege = {
+						rtp_is_order_government = no
+					}
+				}
 				NOR = {
 					religion_group = muslim
 					government = confucian_bureaucracy
@@ -820,6 +882,8 @@ succession_laws = {
 		potential = {
 			emf_laws_potential_not_for_byzantium = yes
 			owner = {
+				rtp_is_landless = no
+				rtp_is_feudal_government = yes
 				OR = {
 					religion_group = muslim
 					AND = {
@@ -892,8 +956,11 @@ succession_laws = {
 			holder_scope = {
 				is_feudal = yes
 				independent = no
-				any_liege = { holy_order = yes }
 				is_merchant_republic = no
+				rtp_is_landless = no
+				any_liege = {
+					rtp_is_order_government = yes
+				}
 				NOR = {
 					government = confucian_bureaucracy
 					government = chinese_imperial_government
@@ -908,6 +975,20 @@ succession_laws = {
 	succ_open_elective = {
 		potential = {
 			emf_laws_potential_not_for_byzantium = yes
+			holder_scope = {
+				OR = {
+					government = rtp_landless_mercenary_g
+					government = rtp_landless_order_g
+					government = rtp_landless_adventurer_g
+					AND = {
+						government = rtp_landless_theocracy_g
+						NOR = {
+							religion = catholic
+							religion = fraticelli
+						}
+					}
+				}
+			}
 			NOR = {
 				title = k_papal_state
 				title = d_fraticelli
@@ -981,14 +1062,11 @@ succession_laws = {
 
 	succ_catholic_bishopric = {
 		potential = {
-			OR = {
-				AND = {
-					tier = BARON
-					is_theocracy = yes
-				}
-				holder_scope = { is_theocracy = yes }
-			}
 			holder_scope = {
+				rtp_is_theocracy_government = yes
+				any_liege = {
+					rtp_is_order_government = no
+				}
 				OR = {
 					religion = catholic
 					religion = cathar
