@@ -1470,6 +1470,7 @@ rtp_stewardship_himalayas = {
 		top_liege = {
 			capital_scope = {
 				region = world_himalayas
+				region = world_china
 			}
 		}
 	}
