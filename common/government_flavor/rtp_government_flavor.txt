@@ -96,7 +96,7 @@ government_flavor = {
 	graphics = GFX_evt_carriage
 	priority = 1
 	trigger = {
-		government = playable_republic_government
+		government = rtp_republic_g
 		capital_scope = {
 			port = no
 		}
@@ -109,7 +109,7 @@ government_flavor = {
 	graphics = GFX_evt_trade_post_republic
 	priority = 1
 	trigger = {
-		government = playable_republic_government
+		government = rtp_republic_g
 		capital_scope = {
 			port = yes
 		}
@@ -134,7 +134,7 @@ government_flavor = {
 	trigger = {
 		OR = {
 			government = rtp_baron_theocracy_g
-			government = playable_theocracy_government
+			government = rtp_theocracy_g
 		}
 		crownlaw_title = {
 			has_law = investiture_law_0
@@ -150,7 +150,7 @@ government_flavor = {
 	trigger = {
 		OR = {
 			government = rtp_baron_theocracy_g
-			government = playable_theocracy_government
+			government = rtp_theocracy_g
 		}
 		crownlaw_title = {
 			has_law = investiture_law_1
@@ -166,7 +166,7 @@ government_flavor = {
 	trigger = {
 		OR = {
 			government = rtp_baron_theocracy_g
-			government = playable_theocracy_government
+			government = rtp_theocracy_g
 		}
 	}
 }

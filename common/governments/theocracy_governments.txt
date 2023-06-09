@@ -21,12 +21,12 @@ theocracy_governments = {
 			bogomilist_government
 			muslim_government
 			theocratic_feudal_government
-			playable_republic_government
+			rtp_republic_g
 			merchant_republic_government
 			muslim_merchant_republic_government
 			bogomilist_merchant_republic_government
 			order_government
-			playable_theocracy_government
+			rtp_theocracy_g
 			imperial_government
 			muslim_imperial_government
 			bogomilist_imperial_government

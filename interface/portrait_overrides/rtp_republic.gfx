@@ -16,7 +16,7 @@ spriteTypes = {
 				portrait_in_command = no
 				OR = {
 					portrait_government = republic_government
-					portrait_government = playable_republic_government
+					portrait_government = rtp_republic_g
 					portrait_government = rtp_baron_republic_g
 				}
 				OR = {
@@ -87,7 +87,7 @@ spriteTypes = {
 				portrait_in_command = no
 				OR = {
 					portrait_government = republic_government
-					portrait_government = playable_republic_government
+					portrait_government = rtp_republic_g
 					portrait_government = rtp_baron_republic_g
 				}
 				OR = {
@@ -158,7 +158,7 @@ spriteTypes = {
 				portrait_in_command = no
 				OR = {
 					portrait_government = republic_government
-					portrait_government = playable_republic_government
+					portrait_government = rtp_republic_g
 					portrait_government = rtp_baron_republic_g
 				}
 				OR = {
@@ -232,7 +232,7 @@ spriteTypes = {
 				portrait_in_command = no
 				OR = {
 					portrait_government = republic_government
-					portrait_government = playable_republic_government
+					portrait_government = rtp_republic_g
 					portrait_government = rtp_baron_republic_g
 				}
 				OR = {
@@ -306,7 +306,7 @@ spriteTypes = {
 				portrait_in_command = no
 				OR = {
 					portrait_government = republic_government
-					portrait_government = playable_republic_government
+					portrait_government = rtp_republic_g
 					portrait_government = rtp_baron_republic_g
 				}
 				OR = {
@@ -380,7 +380,7 @@ spriteTypes = {
 				portrait_in_command = no
 				OR = {
 					portrait_government = republic_government
-					portrait_government = playable_republic_government
+					portrait_government = rtp_republic_g
 					portrait_government = rtp_baron_republic_g
 				}
 				OR = {
@@ -454,7 +454,7 @@ spriteTypes = {
 				portrait_in_command = no
 				OR = {
 					portrait_government = republic_government
-					portrait_government = playable_republic_government
+					portrait_government = rtp_republic_g
 					portrait_government = rtp_baron_republic_g
 				}
 				OR = {
@@ -539,7 +539,7 @@ spriteTypes = {
 				portrait_in_command = no
 				OR = {
 					portrait_government = republic_government
-					portrait_government = playable_republic_government
+					portrait_government = rtp_republic_g
 					portrait_government = rtp_baron_republic_g
 				}
 				OR = {
@@ -624,7 +624,7 @@ spriteTypes = {
 				portrait_in_command = no
 				OR = {
 					portrait_government = republic_government
-					portrait_government = playable_republic_government
+					portrait_government = rtp_republic_g
 					portrait_government = rtp_baron_republic_g
 				}
 				OR = {
@@ -700,7 +700,7 @@ spriteTypes = {
 				portrait_in_command = no
 				OR = {
 					portrait_government = republic_government
-					portrait_government = playable_republic_government
+					portrait_government = rtp_republic_g
 					portrait_government = rtp_baron_republic_g
 				}
 				OR = {

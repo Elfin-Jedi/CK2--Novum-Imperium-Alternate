@@ -25,7 +25,7 @@ spriteTypes = {
 				OR = {
 					portrait_in_command = no
 					portrait_government = theocracy_government
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 					portrait_government = rtp_landless_theocracy_g
 				}
@@ -86,7 +86,7 @@ spriteTypes = {
 				OR = {
 					portrait_in_command = no
 					portrait_government = theocracy_government
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 					portrait_government = rtp_landless_theocracy_g
 				}
@@ -147,7 +147,7 @@ spriteTypes = {
 				OR = {
 					portrait_in_command = no
 					portrait_government = theocracy_government
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 					portrait_government = rtp_landless_theocracy_g
 				}
@@ -204,7 +204,7 @@ spriteTypes = {
 				OR = {
 					portrait_in_command = no
 					portrait_government = theocracy_government
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 					portrait_government = rtp_landless_theocracy_g
 				}

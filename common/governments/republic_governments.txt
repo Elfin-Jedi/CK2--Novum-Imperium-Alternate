@@ -16,7 +16,7 @@ republic_governments = {
 			TRIBAL
 		}
 		accepts_liege_governments = { # Accepts other republics
-			playable_republic_government
+			rtp_republic_g
 			merchant_republic_government
 			muslim_merchant_republic_government
 			bogomilist_merchant_republic_government
@@ -51,7 +51,7 @@ republic_governments = {
 				religion = waldensian
 				religion = yazidi
 			}
-			NOT = { government = playable_republic_government }
+			NOT = { government = rtp_republic_g }
 			NOT = {
 				is_government_potential = bureaucratic_government
 			}
@@ -148,7 +148,7 @@ republic_governments = {
 			TRIBAL
 		}
 		accepts_liege_governments = { # Accepts other republics
-			playable_republic_government
+			rtp_republic_g
 			merchant_republic_government
 			muslim_merchant_republic_government
 			bogomilist_merchant_republic_government
@@ -179,7 +179,7 @@ republic_governments = {
 				religion = waldensian
 				religion = yazidi
 			}
-			NOT = { government = playable_republic_government }
+			NOT = { government = rtp_republic_g }
 			NOT = {
 				is_government_potential = bureaucratic_government
 			}
@@ -276,7 +276,7 @@ republic_governments = {
 			TRIBAL
 		}
 		accepts_liege_governments = { # Accepts other republics
-			playable_republic_government
+			rtp_republic_g
 			merchant_republic_government
 			muslim_merchant_republic_government
 			bogomilist_merchant_republic_government
@@ -312,7 +312,7 @@ republic_governments = {
 				religion = waldensian
 				religion = yazidi
 			}
-			NOT = { government = playable_republic_government }
+			NOT = { government = rtp_republic_g }
 			NOT = {
 				is_government_potential = bureaucratic_government
 			}
@@ -414,7 +414,7 @@ republic_governments = {
 			merchant_republic_government
 			muslim_merchant_republic_government
 			bogomilist_merchant_republic_government
-			playable_republic_government
+			rtp_republic_g
 		}
 		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
 			tribal_government
@@ -432,7 +432,7 @@ republic_governments = {
 				is_government_potential = merchant_republic_government
 				is_government_potential = muslim_merchant_republic_government
 				is_government_potential = bogomilist_merchant_republic_government
-				is_government_potential = playable_republic_government
+				is_government_potential = rtp_republic_g
 				is_government_potential = bureaucratic_government
 			}
 			holy_order = no

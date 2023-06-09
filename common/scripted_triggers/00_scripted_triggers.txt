@@ -1263,7 +1263,7 @@ can_be_chancellor_trigger = {
 	# Chancellor must be not Waldensian, or not a theocrat, or not a ruler
 	OR = {
 		NOT = { religion = waldensian }
-		rtp_is_theocracy_government = no
+		is_theocracy = no
 		is_ruler = no
 	}
 	# Chancellor must be not Bogomilist, or not a Perfecti nor theocrat, or the liege is also Bogomilist and that faith
@@ -1272,7 +1272,7 @@ can_be_chancellor_trigger = {
 		NOT = { religion = bogomilist }
 		NOR = {
 			trait = perfecti
-			rtp_is_theocracy_government = yes
+			is_theocracy = yes
 		}
 		custom_tooltip = {
 			text = emf_ctt_bogomilist_organized
@@ -1328,7 +1328,7 @@ can_be_marshal_even_if_independent_trigger = {
 		NOT = { religion = bogomilist }
 		NOR = {
 			trait = perfecti
-			rtp_is_theocracy_government = yes
+			is_theocracy = yes
 		}
 		custom_tooltip = {
 			text = emf_ctt_bogomilist_organized
@@ -1430,14 +1430,14 @@ can_be_treasurer_trigger = {
 	}
 	OR = {
 		NOT = { religion = waldensian }
-		rtp_is_theocracy_government = no
+		is_theocracy = no
 		is_ruler = no
 	}
 	OR = {
 		NOT = { religion = bogomilist }
 		NOR = {
 			trait = perfecti
-			rtp_is_theocracy_government = yes
+			is_theocracy = yes
 		}
 		custom_tooltip = {
 			text = emf_ctt_bogomilist_organized
@@ -1555,7 +1555,7 @@ can_be_spymaster_trigger = {
 		NOT = { religion = bogomilist }
 		NOR = {
 			trait = perfecti
-			rtp_is_theocracy_government = yes
+			is_theocracy = yes
 		}
 		custom_tooltip = {
 			text = emf_ctt_bogomilist_organized
@@ -1607,11 +1607,11 @@ can_be_spiritual_trigger = {
 	OR = {
 		has_autocephaly = no
 		is_ruler = yes
-		NOT = { liege = { any_vassal = { rtp_is_theocracy_government = yes } } }
+		NOT = { liege = { any_vassal = { is_theocracy = yes } } }
 	}
 	OR = {
 		religion_group = muslim
-		rtp_is_theocracy_government = yes
+		is_theocracy = yes
 		has_flag = needs_fake_feudal_government # Makes sure theocracy religion switch won't cause people to get fired
 		AND = {
 			liege = {
@@ -1632,7 +1632,7 @@ can_be_spiritual_trigger = {
 	}
 	OR = {
 		NOT = { religion = cathar }
-		rtp_is_theocracy_government = yes
+		is_theocracy = yes
 		has_flag = needs_fake_feudal_government # Makes sure theocracy religion switch won't cause people to get fired
 		trait = perfecti
 		has_character_flag = special_spiritual
@@ -1641,7 +1641,7 @@ can_be_spiritual_trigger = {
 		NOT = { religion = bogomilist }
 		NOR = {
 			trait = perfecti
-			rtp_is_theocracy_government = yes
+			is_theocracy = yes
 		}
 		custom_tooltip = {
 			text = emf_ctt_bogomilist_formalized
@@ -1720,7 +1720,7 @@ can_be_councilmember_king_trigger = {
 		NOT = { religion = bogomilist }
 		NOR = {
 			trait = perfecti
-			rtp_is_theocracy_government = yes
+			is_theocracy = yes
 		}
 		custom_tooltip = {
 			text = emf_ctt_bogomilist_organized
@@ -1787,7 +1787,7 @@ can_be_councilmember_emperor_trigger = {
 		NOT = { religion = bogomilist }
 		NOR = {
 			trait = perfecti
-			rtp_is_theocracy_government = yes
+			is_theocracy = yes
 		}
 		custom_tooltip = {
 			text = emf_ctt_bogomilist_organized
@@ -9182,14 +9182,14 @@ parent_for_elective_succession_trigger = {
 			is_landed = yes
 			is_republic = no
 			is_merchant_republic = no
-			rtp_is_theocracy_government = no
+			is_theocracy = no
 		}
 		NOT = {
 			any_heir_title = {
 				OR = {
 					is_republic = yes
 					is_merchant_republic = yes
-					rtp_is_theocracy_government = yes
+					is_theocracy = yes
 				}
 			}
 		}
@@ -9201,7 +9201,7 @@ parent_for_elective_succession_trigger = {
 	emf_can_inherit = yes
 	NOR = {
 		is_ascetic_trigger = yes
-		rtp_is_theocracy_government = yes
+		is_theocracy = yes
 		is_republic = yes
 		is_merchant_republic = yes
 	}

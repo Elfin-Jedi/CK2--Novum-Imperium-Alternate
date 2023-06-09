@@ -104,8 +104,8 @@ feudal_governments = {
 				is_government_potential = chinese_imperial_government
 				is_government_potential = rtp_confederation_g
 				is_government_potential = rtp_mercenary_g
-				is_government_potential = playable_republic_government
-				is_government_potential = playable_theocracy_government
+				is_government_potential = rtp_republic_g
+				is_government_potential = rtp_theocracy_g
 				is_government_potential = order_government
 				is_government_potential = rtp_baron_g
 				is_government_potential = rtp_landless_mercenary_g
@@ -276,7 +276,7 @@ feudal_governments = {
 				is_government_potential = chinese_imperial_government
 				is_government_potential = rtp_confederation_g
 				is_government_potential = rtp_mercenary_g
-				is_government_potential = playable_republic_government
+				is_government_potential = rtp_republic_g
 				is_government_potential = order_government
 				is_government_potential = rtp_baron_iqta_g
 				is_government_potential = rtp_landless_mercenary_g
@@ -480,7 +480,7 @@ feudal_governments = {
 				is_government_potential = chinese_imperial_government
 				is_government_potential = rtp_confederation_g
 				is_government_potential = rtp_mercenary_g
-				is_government_potential = playable_republic_government
+				is_government_potential = rtp_republic_g
 				is_government_potential = order_government
 				is_government_potential = rtp_baron_iqta_g
 				is_government_potential = rtp_landless_mercenary_g
@@ -621,7 +621,7 @@ feudal_governments = {
 		}
 		accepts_liege_governments = { # Gets the wrong religion modifier instead
 			muslim_government
-			playable_theocracy_government
+			rtp_theocracy_g
 			feudal_government
 			bogomilist_government
 			imperial_government
@@ -633,8 +633,7 @@ feudal_governments = {
 			merchant_republic_government
 			muslim_merchant_republic_government
 			bogomilist_merchant_republic_government
-			playable_republic_government
-			playable_theocracy_government
+			rtp_republic_g
 			tribal_government
 			nomadic_government
 		}
@@ -665,7 +664,7 @@ feudal_governments = {
 				is_government_potential = chinese_imperial_government
 				is_government_potential = rtp_confederation_g
 				is_government_potential = rtp_mercenary_g
-				is_government_potential = playable_republic_government
+				is_government_potential = rtp_republic_g
 				is_government_potential = order_government
 				is_government_potential = rtp_baron_monastic_g
 				is_government_potential = rtp_landless_mercenary_g
@@ -1099,7 +1098,7 @@ feudal_governments = {
 		}
 		accepts_liege_governments = { # Gets the wrong religion modifier instead
 			muslim_government
-			playable_theocracy_government
+			rtp_theocracy_g
 			feudal_government
 			bogomilist_government
 			theocratic_feudal_government
@@ -1288,7 +1287,7 @@ feudal_governments = {
 			feudal_government
 			muslim_government
 			bogomilist_government
-			playable_theocracy_government
+			rtp_theocracy_g
 			theocratic_feudal_government
 			imperial_government
 			muslim_imperial_government
@@ -1406,143 +1405,5 @@ feudal_governments = {
 		color = { 0 0 0 }
 
 		capital_move_delay = 600
-	}
-	#####################################################################################
-    
-    playable_republic_government = {
-		preferred_holdings = { CITY }
-		allowed_holdings = { 
-			CITY
-			CASTLE
-			FORT
-			HOSPITAL
-		}
-		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
-			TRIBAL
-		}
-		accepts_liege_governments = { # Accepts other republics
-			merchant_republic_government
-			muslim_merchant_republic_government
-			bogomilist_merchant_republic_government
-			playable_republic_government
-		}
-		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
-			tribal_government
-		}
-		frame_suffix = "_republic"
-		title_prefix = "city_"
-		potential = {
-			rtp_is_republic = yes
-			NOR = {
-				is_government_potential = bureaucratic_government
-				is_government_potential = rtp_baron_republic_g
-			}
-			NOT = { government = merchant_republic_government }
-			NOT = { is_government_potential = merchant_republic_government }
-		}
-		
-		vassal_call_to_arms = {
-			tribal_government
-			rtp_mercenary_g
-			rtp_baron_mercenary_g
-		}
-		
-		character_modifier = {
-			stewardship = 1
-
-			intrigue = -1
-		}
-		
-		color = { 209 125 130 }
-        
-		can_imprison_without_reason = no
-		can_revoke_without_reason = no
-		
-		can_build_tribal = no  
-	}
-
-   playable_theocracy_government = {
-		preferred_holdings = { TEMPLE }
-		allowed_holdings = {
-			TEMPLE
-			CASTLE
-			FORT
-			HOSPITAL
-		}
-		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
-			TRIBAL
-		}
-		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
-			tribal_government
-		}
-		accepts_liege_governments = {
-			feudal_government
-			muslim_government
-			bogomilist_government
-			playable_republic_government
-			merchant_republic_government
-			muslim_merchant_republic_government
-			bogomilist_merchant_republic_government
-		}
-		
-		accepts_liege_governments_religion = {
-			chinese_imperial_government
-			feudal_government
-			theocratic_feudal_government
-			order_government
-
-			playable_theocracy_government
-			bureaucratic_government
-
-			tribal_government
-
-			nomadic_government
-		}
-		
-		vassal_call_to_arms = {
-			tribal_government
-			rtp_mercenary_g
-			rtp_baron_mercenary_g
-		}
-
-		no_vassal_tax = {
-			order_government
-			rtp_baron_order_g
-			rtp_landless_order_g
-		}
-		
-		frame_suffix = "_theocracy"
-		title_prefix = "temple_"
-		potential = {
-			is_patrician = no
-			rtp_is_theocracy = yes
-			NOR = {
-				religion_group = muslim
-				is_government_potential = bureaucratic_government
-				is_government_potential = rtp_baron_theocracy_g
-			}
-			OR = {
-				is_female = no
-				religion_allows_female_temple_holders = yes
-			}
-			OR = {
-				is_female = yes
-				religion_allows_male_temple_holders = yes
-			}
-		}
-		
-		character_modifier = {
-			learning = 1
-
-			stewardship = -1
-		}
-		
-		color = { 220 220 220 }
-		
-		can_create_kingdoms = no
-		have_gender_laws = no
-		can_be_granted_kingdoms_and_empires_by_other_government = no
-
-		can_build_tribal = no
 	}
 }

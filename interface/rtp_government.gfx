@@ -469,7 +469,7 @@ spriteTypes = {
 
   #Republic
   spriteType = {
-    name = "GFX_icon_playable_republic_government"
+    name = "GFX_icon_rtp_republic_g"
     texturefile = "gfx\\interface\\governments\\government_icon_republic.dds"
   }
   spriteType = {
@@ -505,7 +505,7 @@ spriteTypes = {
 
   #Theocracy
   spriteType = {
-    name = "GFX_icon_playable_theocracy_government"
+    name = "GFX_icon_rtp_theocracy_g"
     texturefile = "gfx\\interface\\governments\\government_icon_theocracy.dds"
   }
   spriteType = {

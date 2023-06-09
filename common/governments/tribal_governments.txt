@@ -11,11 +11,11 @@ tribal_governments = {
 		accepts_liege_governments_culture = { # Tribals have no opinion penalty towards their liege if of the same culture
 			feudal_government
 			bogomilist_government
-			playable_republic_government
+			rtp_republic_g
 			merchant_republic_government
 			muslim_merchant_republic_government
 			bogomilist_merchant_republic_government
-			playable_theocracy_government
+			rtp_theocracy_g
 			muslim_government
 			imperial_government
 			muslim_imperial_government

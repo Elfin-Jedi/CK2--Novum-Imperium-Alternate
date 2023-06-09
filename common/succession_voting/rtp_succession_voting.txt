@@ -677,7 +677,7 @@ rtp_theocracy_election_v = {
 			OR = {
 				government = theocracy_government
 				government = rtp_baron_theocracy_g
-				government = playable_theocracy_government
+				government = rtp_theocracy_g
 			}
 		}
 	}
@@ -1122,7 +1122,7 @@ rtp_theocracy_election_v = {
 					OR = {
 						government = theocracy_government
 						government = rtp_baron_theocracy_g
-						government = playable_theocracy_government
+						government = rtp_theocracy_g
 					}
 				}
 				has_job_title = job_spiritual

@@ -13,7 +13,7 @@ spriteTypes = {
 				portrait_age > child
 				OR = {
 					portrait_government = theocracy_government
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 				}
 				portrait_tier = KING
@@ -67,7 +67,7 @@ spriteTypes = {
 				portrait_age > child
 				OR = {
 					portrait_government = theocracy_government
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 				}
 				portrait_tier = KING
@@ -117,7 +117,7 @@ spriteTypes = {
 				portrait_is_female = no
 				portrait_age > child
 				OR = {
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 				}
 				OR = {
@@ -172,7 +172,7 @@ spriteTypes = {
 				portrait_is_female = yes
 				portrait_age > child
 				OR = {
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 				}
 				OR = {
@@ -227,7 +227,7 @@ spriteTypes = {
 				portrait_is_female = no
 				portrait_age > child
 				OR = {
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 				}
 				OR = {
@@ -281,7 +281,7 @@ spriteTypes = {
 				portrait_is_female = yes
 				portrait_age > child
 				OR = {
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 				}
 				OR = {
@@ -336,7 +336,7 @@ spriteTypes = {
 				portrait_age > child
 				OR = {
 					portrait_government = theocracy_government
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 				}
 				portrait_religion = chalcedonian
@@ -389,7 +389,7 @@ spriteTypes = {
 				portrait_age > child
 				OR = {
 					portrait_government = theocracy_government
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 				}
 				portrait_religion = chalcedonian
@@ -441,7 +441,7 @@ spriteTypes = {
 				portrait_is_female = no
 				portrait_age > child
 				OR = {
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 				}
 				OR = {
@@ -490,7 +490,7 @@ spriteTypes = {
 				portrait_is_female = yes
 				portrait_age > child
 				OR = {
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 				}
 				OR = {
@@ -541,7 +541,7 @@ spriteTypes = {
 				portrait_is_female = no
 				portrait_age > child
 				OR = {
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 				}
 				OR = {
@@ -590,7 +590,7 @@ spriteTypes = {
 				portrait_is_female = yes
 				portrait_age > child
 				OR = {
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 				}
 				OR = {
@@ -639,7 +639,7 @@ spriteTypes = {
 				portrait_is_female = no
 				portrait_age > child
 				OR = {
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 				}
 				OR = {
@@ -688,7 +688,7 @@ spriteTypes = {
 				portrait_is_female = yes
 				portrait_age > child
 				OR = {
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 				}
 				OR = {
@@ -737,7 +737,7 @@ spriteTypes = {
 				portrait_is_female = no
 				portrait_age > child
 				OR = {
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 				}
 				OR = {
@@ -784,7 +784,7 @@ spriteTypes = {
 				portrait_is_female = yes
 				portrait_age > child
 				OR = {
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 				}
 				OR = {
@@ -831,7 +831,7 @@ spriteTypes = {
 				portrait_is_female = no
 				portrait_age > child
 				OR = {
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 				}
 				portrait_religion = hindu
@@ -875,7 +875,7 @@ spriteTypes = {
 				portrait_is_female = yes
 				portrait_age > child
 				OR = {
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 				}
 				portrait_religion = hindu
@@ -919,7 +919,7 @@ spriteTypes = {
 				portrait_is_female = no
 				portrait_age > child
 				OR = {
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 				}
 				portrait_religion = jain
@@ -963,7 +963,7 @@ spriteTypes = {
 				portrait_is_female = yes
 				portrait_age > child
 				OR = {
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 				}
 				portrait_religion = jain
@@ -1007,7 +1007,7 @@ spriteTypes = {
 				portrait_is_female = no
 				portrait_age > child
 				OR = {
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 				}
 				OR = {
@@ -1056,7 +1056,7 @@ spriteTypes = {
 				portrait_is_female = yes
 				portrait_age > child
 				OR = {
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 				}
 				OR = {
@@ -1105,7 +1105,7 @@ spriteTypes = {
 				portrait_is_female = no
 				portrait_age > child
 				OR = {
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 				}
 				OR = {
@@ -1152,7 +1152,7 @@ spriteTypes = {
 				portrait_is_female = yes
 				portrait_age > child
 				OR = {
-					portrait_government = playable_theocracy_government
+					portrait_government = rtp_theocracy_g
 					portrait_government = rtp_baron_theocracy_g
 				}
 				OR = {

@@ -3035,7 +3035,7 @@ character_event = {
 			}
 		}
 		hidden_tooltip = {
-			character_event = { id = egyptian.177 days = 5 random = 5 }
+			narrative_event = { id = egyptian.177 days = 5 random = 5 }
 		}
 	}
 	option = { # Publically humiliate
@@ -3053,7 +3053,7 @@ character_event = {
 			}
 		}
 		hidden_tooltip = {
-			character_event = { id = egyptian.177 days = 5 random = 5 }
+			narrative_event = { id = egyptian.177 days = 5 random = 5 }
 		}
 	}
 	option = { # Got bribed
@@ -3497,7 +3497,7 @@ character_event = {
 		name = egyptian.205.a
 		custom_tooltip = {
 			text = egyptian.205.a.tt
-			hidden_tooltip = { character_event = { id = egyptian.206 days = 1 } }
+			hidden_tooltip = { long_character_event = { id = egyptian.206 days = 1 } }
 		}
 	}
 }

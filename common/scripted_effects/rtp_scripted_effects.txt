@@ -11404,7 +11404,7 @@ rtp_assign_count_laws = {
 			holding_type = city
 		}
 		ROOT = {
-			set_government_type = playable_republic_government
+			set_government_type = rtp_republic_g
 			any_demesne_title = {
 				add_law = {
 					law = rtp_republic_election_succ
@@ -11425,7 +11425,7 @@ rtp_assign_count_laws = {
 			}
 		}
 		ROOT = {
-			set_government_type = playable_theocracy_government
+			set_government_type = rtp_theocracy_g
 			any_demesne_title = {
 				add_law = {
 					law = succ_catholic_bishopric
@@ -11446,7 +11446,7 @@ rtp_assign_count_laws = {
 			}
 		}
 		ROOT = {
-			set_government_type = playable_theocracy_government
+			set_government_type = rtp_theocracy_g
 			any_demesne_title = {
 				add_law = {
 					law = rtp_theocracy_election_succ

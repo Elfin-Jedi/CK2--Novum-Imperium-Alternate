@@ -24,7 +24,7 @@ character_event = {
 		}
 		OR = {
 			government = republic_government
-			government = playable_republic_government
+			government = rtp_republic_g
 		}
 		any_demesne_province = {
 			port = yes

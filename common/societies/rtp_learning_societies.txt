@@ -208,6 +208,9 @@ rtp_learning_reformed_pagan = {
 				religion = hellenic_pagan_reformed
 				religion = tengri_pagan_reformed
 				religion = bon_reformed
+				religion = bori
+				religion = a_tag_roog_reformed
+				religion = amazigh_reformed
 			}
 		}
 	}
@@ -259,6 +262,8 @@ rtp_learning_pagan = {
 			religion = baltic_pagan
 			religion = tengri_pagan
 			religion = bon
+			religion = a_tag_roog
+			religion = amazigh
 			religion = norse_pagan_reformed
 			religion = aztec_reformed
 			religion = zun_pagan_reformed
@@ -268,6 +273,9 @@ rtp_learning_pagan = {
 			religion = baltic_pagan_reformed
 			religion = tengri_pagan_reformed
 			religion = bon_reformed
+			religion = bori
+			religion = a_tag_roog_reformed
+			religion = amazigh_reformed
 		}
 	}
 
@@ -283,6 +291,8 @@ rtp_learning_pagan = {
 			religion = baltic_pagan
 			religion = tengri_pagan
 			religion = bon
+			religion = a_tag_roog
+			religion = amazigh
 			religion = norse_pagan_reformed
 			religion = aztec_reformed
 			religion = zun_pagan_reformed
@@ -292,6 +302,9 @@ rtp_learning_pagan = {
 			religion = baltic_pagan_reformed
 			religion = tengri_pagan_reformed
 			religion = bon_reformed
+			religion = bori
+			religion = a_tag_roog_reformed
+			religion = amazigh_reformed
 		}
 	}
 	
@@ -445,6 +458,9 @@ rtp_learning_pagan = {
 				religion = hellenic_pagan
 				religion = tengri_pagan
 				religion = bon
+				religion = bori
+				religion = a_tag_roog
+				religion = amazigh
 			}
 		}
 	}
@@ -688,6 +704,8 @@ rtp_learning_catholic = {
 			religion = fraticelli
 			religion = waldensian
 			religion = lollard
+			religion = adoptionist
+			religion = arian
 		}
 		NOR = {
 			AND = {
@@ -711,6 +729,8 @@ rtp_learning_catholic = {
 			religion = fraticelli
 			religion = waldensian
 			religion = lollard
+			religion = adoptionist
+			religion = arian
 		}
 	}
 
@@ -722,6 +742,8 @@ rtp_learning_catholic = {
 			religion = fraticelli
 			religion = waldensian
 			religion = lollard
+			religion = adoptionist
+			religion = arian
 		}
 	}
 	
@@ -870,6 +892,8 @@ rtp_learning_catholic = {
 				religion = fraticelli
 				religion = waldensian
 				religion = lollard
+				religion = adoptionist
+				religion = arian
 			}
 		}
 	}
@@ -908,7 +932,9 @@ rtp_learning_orthodox = {
 			religion = bogomilist
 			religion = monothelite
 			religion = iconoclast
+			religion = apostolic
 			religion = paulician
+			religion = tondrakian
 		}
 		NOR = {
 			AND = {
@@ -931,7 +957,9 @@ rtp_learning_orthodox = {
 			religion = bogomilist
 			religion = monothelite
 			religion = iconoclast
+			religion = apostolic
 			religion = paulician
+			religion = tondrakian
 		}
 	}
 
@@ -942,7 +970,9 @@ rtp_learning_orthodox = {
 			religion = bogomilist
 			religion = monothelite
 			religion = iconoclast
+			religion = apostolic
 			religion = paulician
+			religion = tondrakian
 		}
 	}
 	
@@ -1090,7 +1120,9 @@ rtp_learning_orthodox = {
 				religion = bogomilist
 				religion = monothelite
 				religion = iconoclast
+				religion = apostolic
 				religion = paulician
+				religion = tondrakian
 			}
 		}
 	}
@@ -1320,6 +1352,8 @@ rtp_learning_monophysite = {
 		OR = {
 			religion = miaphysite
 			religion = monophysite
+			religion = syriac
+			religion = maronite
 		}
 		NOR = {
 			AND = {
@@ -1340,6 +1374,8 @@ rtp_learning_monophysite = {
 		OR = {
 			religion = miaphysite
 			religion = monophysite
+			religion = syriac
+			religion = maronite
 		}
 	}
 
@@ -1348,6 +1384,8 @@ rtp_learning_monophysite = {
 		OR = {
 			religion = miaphysite
 			religion = monophysite
+			religion = syriac
+			religion = maronite
 		}
 	}
 	
@@ -1493,6 +1531,8 @@ rtp_learning_monophysite = {
 			OR = {
 				religion = miaphysite
 				religion = monophysite
+				religion = syriac
+				religion = maronite
 			}
 		}
 	}
@@ -1525,7 +1565,8 @@ rtp_learning_sunni = {
 		OR = {
 			religion = sunni
 			religion = zikri
-			religion = yazidi
+			religion = mahdiyya
+			religion = nabawiyya
 		}
 		NOR = {
 			AND = {
@@ -1546,7 +1587,8 @@ rtp_learning_sunni = {
 		OR = {
 			religion = sunni
 			religion = zikri
-			religion = yazidi
+			religion = mahdiyya
+			religion = nabawiyya
 		}
 	}
 
@@ -1555,7 +1597,8 @@ rtp_learning_sunni = {
 		OR = {
 			religion = sunni
 			religion = zikri
-			religion = yazidi
+			religion = mahdiyya
+			religion = nabawiyya
 		}
 	}
 	
@@ -1701,7 +1744,8 @@ rtp_learning_sunni = {
 			OR = {
 				religion = sunni
 				religion = zikri
-				religion = yazidi
+				religion = mahdiyya
+				religion = nabawiyya
 			}
 		}
 	}
@@ -1732,6 +1776,9 @@ rtp_learning_shiite = {
 			religion = druze
 			religion = hurufi
 			religion = qarmatian
+			religion = waqifi
+			religion = ismaili
+			religion = zaydi
 		}
 		NOR = {
 			AND = {
@@ -1754,6 +1801,9 @@ rtp_learning_shiite = {
 			religion = druze
 			religion = hurufi
 			religion = qarmatian
+			religion = waqifi
+			religion = ismaili
+			religion = zaydi
 		}
 	}
 
@@ -1764,6 +1814,9 @@ rtp_learning_shiite = {
 			religion = druze
 			religion = hurufi
 			religion = qarmatian
+			religion = waqifi
+			religion = ismaili
+			religion = zaydi
 		}
 	}
 	
@@ -1911,6 +1964,9 @@ rtp_learning_shiite = {
 				religion = druze
 				religion = hurufi
 				religion = qarmatian
+				religion = waqifi
+				religion = ismaili
+				religion = zaydi
 			}
 		}
 	}
@@ -1939,6 +1995,7 @@ rtp_learning_ibadi = {
 		OR = {
 			religion = ibadi
 			religion = kharijite
+			religion = haruri
 		}
 		NOR = {
 			AND = {
@@ -1959,6 +2016,7 @@ rtp_learning_ibadi = {
 		OR = {
 			religion = ibadi
 			religion = kharijite
+			religion = haruri
 		}
 	}
 
@@ -1967,6 +2025,7 @@ rtp_learning_ibadi = {
 		OR = {
 			religion = ibadi
 			religion = kharijite
+			religion = haruri
 		}
 	}
 	
@@ -2112,6 +2171,7 @@ rtp_learning_ibadi = {
 			OR = {
 				religion = ibadi
 				religion = kharijite
+				religion = haruri
 			}
 		}
 	}

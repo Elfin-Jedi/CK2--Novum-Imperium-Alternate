@@ -35,10 +35,10 @@ feudal_governments = {
 			merchant_republic_government
 			muslim_merchant_republic_government
 			bogomilist_merchant_republic_government
-			playable_republic_government
+			rtp_republic_g
 			rtp_privateer_g
 
-			playable_theocracy_government
+			rtp_theocracy_g
 
 			tribal_government
 
@@ -96,10 +96,10 @@ feudal_governments = {
 			merchant_republic_government
 			muslim_merchant_republic_government
 			bogomilist_merchant_republic_government
-			playable_republic_government
+			rtp_republic_g
 			rtp_privateer_g
 
-			playable_theocracy_government
+			rtp_theocracy_g
 
 			tribal_government
 
@@ -161,10 +161,10 @@ feudal_governments = {
 			merchant_republic_government
 			muslim_merchant_republic_government
 			bogomilist_merchant_republic_government
-			playable_republic_government
+			rtp_republic_g
 			rtp_privateer_g
 
-			playable_theocracy_government
+			rtp_theocracy_g
 
 			tribal_government
 
@@ -232,10 +232,10 @@ feudal_governments = {
 			merchant_republic_government
 			muslim_merchant_republic_government
 			bogomilist_merchant_republic_government
-			playable_republic_government
+			rtp_republic_g
 			rtp_privateer_g
 
-			playable_theocracy_government
+			rtp_theocracy_g
 
 			tribal_government
 
@@ -326,10 +326,10 @@ feudal_governments = {
 			merchant_republic_government
 			muslim_merchant_republic_government
 			bogomilist_merchant_republic_government
-			playable_republic_government
+			rtp_republic_g
 			rtp_privateer_g
 
-			playable_theocracy_government
+			rtp_theocracy_g
 
 			tribal_government
 
@@ -409,10 +409,10 @@ feudal_governments = {
 			merchant_republic_government
 			muslim_merchant_republic_government
 			bogomilist_merchant_republic_government
-			playable_republic_government
+			rtp_republic_g
 			rtp_privateer_g
 
-			playable_theocracy_government
+			rtp_theocracy_g
 
 			tribal_government
 
@@ -499,10 +499,10 @@ feudal_governments = {
 			merchant_republic_government
 			muslim_merchant_republic_government
 			bogomilist_merchant_republic_government
-			playable_republic_government
+			rtp_republic_g
 			rtp_privateer_g
 
-			playable_theocracy_government
+			rtp_theocracy_g
 
 			tribal_government
 

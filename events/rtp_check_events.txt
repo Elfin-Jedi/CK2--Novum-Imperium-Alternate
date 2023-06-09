@@ -795,7 +795,7 @@ character_event = {
 						}
 					}
 				}
-				set_government_type = playable_theocracy_government
+				set_government_type = rtp_theocracy_g
 				ROOT = {
 					set_variable = {
 						which = global_rtp_cardinals
@@ -1036,7 +1036,7 @@ character_event = {
 		OR = {
 			government = rtp_lowborn_g
 			government = rtp_noble_g
-			government = playable_theocracy_government
+			government = rtp_theocracy_g
 			government = rtp_baron_theocracy_g
 			government = order_government
 			government = rtp_baron_order_g
@@ -1057,7 +1057,7 @@ character_event = {
 		else_if = {
 			limit = {
 				OR = {
-					government = playable_theocracy_government
+					government = rtp_theocracy_g
 					government = rtp_baron_theocracy_g
 					government = order_government
 					government = rtp_baron_order_g

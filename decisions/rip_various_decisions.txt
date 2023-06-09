@@ -427,6 +427,7 @@ targeted_decisions = {
 		potential = {
 			NOT = { character = FROM }
 			vassal_of = FROM
+			is_landed = no
 		}
 		allow = {
 			FROM = {
@@ -489,110 +490,121 @@ targeted_decisions = {
 					}
 				}
 			}
-			if = {
-				limit = { religion = FROM }
-				if = {
-					limit = {
-						FROM = {
-							any_realm_lord = {
-								NOT = { character = FROM }
-							}
+			if = { # Move to a same-religion court
+				limit = {
+					any_playable_ruler = {
+						primary_title = {
+							is_landless_type_title = no
 						}
-					}
-					custom_tooltip = { text = emf_court_banishment_tt_samerel }
-				}
-				else = {
-					custom_tooltip = { text = emf_court_banishment_tt_samerel_noplace }
-				}
-			}
-			else = {
-				custom_tooltip = { text = emf_court_banishment_tt_difrel }
-			}
-			opinion = {
-				modifier = opinion_banished_from_court
-				who = FROM
-				months = 60
-			}
-			any_spouse = {
-				limit = { vassal_of = FROM }
-				opinion = {
-					modifier = opinion_disappointed
-					who = FROM
-					years = 10
-				}
-			}
-			hidden_tooltip = {
-				if = { # Same religion as liege
-					limit = { religion = FROM }
-					FROM = {
-						random_playable_ruler = {
-							limit = {
-								NOT = { character = ROOT_FROM }
-								same_realm = ROOT_FROM
-							}
-							# Go to dynasty members in realm first
-							preferred_limit = {
-								NOT = { dynasty = none }
-								dynasty = ROOT
-								their_opinion = { who = ROOT value = 10 }
-							}
-							# If no dynasty match, pick a random playable in realm
-							preferred_limit = {
-								religion = ROOT
-								their_opinion = { who = ROOT value = 10 }
-							}
-							preferred_limit = {
-								their_opinion = { who = ROOT value = 10 }
-							}
-							ROOT = {
-								move_character = PREV
-								any_spouse = {
-									limit = { vassal_of = FROM }
-									move_character = PREVPREV
-								}
-								any_child = {
-									limit = {
-										is_adult = no
-										vassal_of = FROM
-										is_primary_heir = no
-									}
-									move_character = PREVPREV
-								}
-							}
-							break = yes
-						}
-						ROOT = { banish = yes } # If all else fails, just leave
-						break = yes
-					}
-				}
-				# If different religion, go to realm with same faith if possible
-				random_playable_ruler = {
-					limit = {
-						NOT = { character = FROM }
 						religion = ROOT
-					}
-					preferred_limit = {
 						their_opinion = { who = ROOT value = 10 }
+						NOT = { character = FROM }
 					}
-					ROOT = {
-						move_character = PREV
-						any_spouse = {
-							limit = { vassal_of = FROM }
-							move_character = PREVPREV
-						}
-						any_child = {
-							limit = {
-								is_adult = no
-								vassal_of = FROM
-								is_primary_heir = no
-							}
-							move_character = PREVPREV
-						}
-					}
-					break = yes
 				}
-				banish = yes # Otherwise, just get the heck out
+				any_playable_ruler = {
+					limit = {
+						primary_title = {
+							is_landless_type_title = no
+						}
+						religion = ROOT
+						their_opinion = { who = ROOT value = 10 }
+						NOT = { character = FROM }
+					}
+					save_event_target_as = new_court
+				}
+				move_character = event_target:new_court
+				any_spouse = {
+					limit = {
+						liege = { character = FROM }
+					}
+					move_character = event_target:new_court
+				}
+				any_child = {
+					limit = {
+						is_adult = no
+						liege = { character = FROM }
+						is_primary_heir = no
+					}
+					move_character = event_target:new_court
+				}
+				break = yes
 			}
+			
+			if = { # Move to any court where the character likes me
+				limit = {
+					any_playable_ruler = {
+						primary_title = {
+							is_landless_type_title = no
+						}
+						their_opinion = { who = ROOT value = 10 }
+						NOT = { character = FROM }
+					}
+				}
+				any_playable_ruler = {
+					limit = {
+						primary_title = {
+							is_landless_type_title = no
+						}
+						their_opinion = { who = ROOT value = 10 }
+						NOT = { character = FROM }
+					}
+					save_event_target_as = new_court_secondary
+				}
+				move_character = event_target:new_court_secondary
+				any_spouse = {
+					limit = {
+						liege = { character = FROM }
+					}
+					move_character = event_target:new_court
+				}
+				any_child = {
+					limit = {
+						is_adult = no
+						liege = { character = FROM }
+						is_primary_heir = no
+					}
+					move_character = event_target:new_court
+				}
+				break = yes
+			}
+		
+			if = { # Go anywhere but here
+				limit = {
+					any_playable_ruler = {
+						primary_title = {
+							is_landless_type_title = no
+						}
+						NOT = { character = FROM }
+					}
+				}
+				any_playable_ruler = {
+					limit = {
+						primary_title = {
+							is_landless_type_title = no
+						}
+						NOT = { character = FROM }
+					}
+					save_event_target_as = new_court_backup
+				}
+				move_character = event_target:new_court_backup
+				any_spouse = {
+					limit = {
+						liege = { character = FROM }
+					}
+					move_character = event_target:new_court
+				}
+				any_child = {
+					limit = {
+						is_adult = no
+						liege = { character = FROM }
+							is_primary_heir = no
+					}
+					move_character = event_target:new_court
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
 		}
 	}
 
@@ -882,6 +894,7 @@ decisions = {
 
 		potential = {
 			has_dlc = "Reapers"
+			rtp_is_landless = no
 			NOR = {
 				is_tribal = yes
 				is_nomadic = yes
@@ -960,6 +973,7 @@ decisions = {
 		is_high_prio = yes
 
 		potential = {
+			rtp_is_landless = no
 			has_dlc = "Reapers"
 			OR = {
 				is_landed = yes
@@ -1172,6 +1186,7 @@ decisions = {
 		ai_check_interval = 3
 
 		potential = {
+			rtp_is_landless = no
 			is_ruler = yes
 			has_character_modifier = in_seclusion
 		}

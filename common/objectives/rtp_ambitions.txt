@@ -15,7 +15,6 @@ obj_diplomacy = {
 	}
 	
 	allow = {
-		has_character_flag = rtp_ambition #He has chosen an ambition
 		always = yes
 	}
 
@@ -23,19 +22,12 @@ obj_diplomacy = {
 		hidden_tooltip = {
 			always = no
 		}
-		custom_tooltip = {
-			text = rtp_obj_permanent_ct
-		}
 	}
 
 	effect = {
 		custom_tooltip = {
 			text = rtp_obj_diplomacy_ct
 		}
-	}
-	
-	chance = {
-		factor = 1
 	}
 }
 
@@ -50,7 +42,6 @@ obj_martial = {
 	}
 
 	allow = {
-		has_character_flag = rtp_ambition #He has chosen an ambition
 		always = yes
 	}
 
@@ -58,19 +49,12 @@ obj_martial = {
 		hidden_tooltip = {
 			always = no
 		}
-		custom_tooltip = {
-			text = rtp_obj_permanent_ct
-		}
 	}
 
 	effect = {
 		custom_tooltip = {
 			text = rtp_obj_martial_ct
 		}
-	}
-
-	chance = {
-		factor = 1
 	}
 }
 
@@ -85,7 +69,6 @@ obj_stewardship = {
 	}
 
 	allow = {
-		has_character_flag = rtp_ambition #He has chosen an ambition
 		always = yes
 	}
 
@@ -93,19 +76,12 @@ obj_stewardship = {
 		hidden_tooltip = {
 			always = no
 		}
-		custom_tooltip = {
-			text = rtp_obj_permanent_ct
-		}
 	}
 
 	effect = {
 		custom_tooltip = {
 			text = rtp_obj_stewardship_ct
 		}
-	}
-
-	chance = {
-		factor = 1
 	}
 }
 
@@ -120,7 +96,6 @@ obj_intrigue = {
 	}
 
 	allow = {
-		has_character_flag = rtp_ambition #He has chosen an ambition
 		always = yes
 	}
 
@@ -128,19 +103,12 @@ obj_intrigue = {
 		hidden_tooltip = {
 			always = no
 		}
-		custom_tooltip = {
-			text = rtp_obj_permanent_ct
-		}
 	}
 
 	effect = {
 		custom_tooltip = {
 			text = rtp_obj_intrigue_ct
 		}
-	}
-
-	chance = {
-		factor = 1
 	}
 }
 
@@ -155,7 +123,6 @@ obj_learning = {
 	}
 
 	allow = {
-		has_character_flag = rtp_ambition #He has chosen an ambition
 		always = yes
 	}
 
@@ -163,19 +130,12 @@ obj_learning = {
 		hidden_tooltip = {
 			always = no
 		}
-		custom_tooltip = {
-			text = rtp_obj_permanent_ct
-		}
 	}
 
 	effect = {
 		custom_tooltip = {
 			text = rtp_obj_learning_ct
 		}
-	}
-
-	chance = {
-		factor = 1
 	}
 }
 
@@ -190,7 +150,6 @@ obj_health = {
 	}
 
 	allow = {
-		has_character_flag = rtp_ambition #He has chosen an ambition
 		always = yes
 	}
 
@@ -198,19 +157,12 @@ obj_health = {
 		hidden_tooltip = {
 			always = no
 		}
-		custom_tooltip = {
-			text = rtp_obj_permanent_ct
-		}
 	}
 
 	effect = {
 		custom_tooltip = {
 			text = rtp_obj_health_ct
 		}
-	}
-
-	chance = {
-		factor = 1
 	}
 }
 
@@ -225,7 +177,6 @@ obj_fertility = {
 	}
 
 	allow = {
-		has_character_flag = rtp_ambition #He has chosen an ambition
 		always = yes
 	}
 
@@ -233,19 +184,12 @@ obj_fertility = {
 		hidden_tooltip = {
 			always = no
 		}
-		custom_tooltip = {
-			text = rtp_obj_permanent_ct
-		}
 	}
 
 	effect = {
 		custom_tooltip = {
 			text = rtp_obj_fertility_ct
 		}
-	}
-
-	chance = {
-		factor = 1
 	}
 }
 
@@ -260,7 +204,6 @@ obj_m_money = {
 	}
 
 	allow = {
-		has_character_flag = rtp_ambition #He has chosen an ambition
 		always = yes
 	}
 
@@ -268,19 +211,12 @@ obj_m_money = {
 		hidden_tooltip = {
 			always = no
 		}
-		custom_tooltip = {
-			text = rtp_obj_permanent_ct
-		}
 	}
 
 	effect = {
 		custom_tooltip = {
 			text = rtp_obj_m_money_ct
 		}
-	}
-	
-	chance = {
-		factor = 1
 	}
 }
 
@@ -295,7 +231,6 @@ obj_m_prestige = {
 	}
 
 	allow = {
-		has_character_flag = rtp_ambition #He has chosen an ambition
 		always = yes
 	}
 
@@ -303,19 +238,12 @@ obj_m_prestige = {
 		hidden_tooltip = {
 			always = no
 		}
-		custom_tooltip = {
-			text = rtp_obj_permanent_ct
-		}
 	}
 
 	effect = {
 		custom_tooltip = {
 			text = rtp_obj_m_prestige_ct
 		}
-	}
-	
-	chance = {
-		factor = 1
 	}
 }
 
@@ -330,7 +258,6 @@ obj_m_piety = {
 	}
 
 	allow = {
-		has_character_flag = rtp_ambition #He has chosen an ambition
 		always = yes
 	}
 
@@ -338,19 +265,12 @@ obj_m_piety = {
 		hidden_tooltip = {
 			always = no
 		}
-		custom_tooltip = {
-			text = rtp_obj_permanent_ct
-		}
 	}
 
 	effect = {
 		custom_tooltip = {
 			text = rtp_obj_m_piety_ct
 		}
-	}
-	
-	chance = {
-		factor = 1
 	}
 }
 
@@ -365,7 +285,6 @@ obj_combat = {
 	}
 
 	allow = {
-		has_character_flag = rtp_ambition #He has chosen an ambition
 		always = yes
 	}
 
@@ -373,19 +292,12 @@ obj_combat = {
 		hidden_tooltip = {
 			always = no
 		}
-		custom_tooltip = {
-			text = rtp_obj_permanent_ct
-		}
 	}
 
 	effect = {
 		custom_tooltip = {
 			text = rtp_obj_combat_ct
 		}
-	}
-	
-	chance = {
-		factor = 1
 	}
 }
 
@@ -400,7 +312,6 @@ obj_social = {
 	}
 
 	allow = {
-		has_character_flag = rtp_ambition #He has chosen an ambition
 		always = yes
 	}
 
@@ -408,19 +319,12 @@ obj_social = {
 		hidden_tooltip = {
 			always = no
 		}
-		custom_tooltip = {
-			text = rtp_obj_permanent_ct
-		}
 	}
 
 	effect = {
 		custom_tooltip = {
 			text = rtp_obj_social_ct
 		}
-	}
-	
-	chance = {
-		factor = 1
 	}
 }
 
@@ -435,7 +339,6 @@ obj_beauty = {
 	}
 
 	allow = {
-		has_character_flag = rtp_ambition #He has chosen an ambition
 		always = yes
 	}
 
@@ -443,19 +346,12 @@ obj_beauty = {
 		hidden_tooltip = {
 			always = no
 		}
-		custom_tooltip = {
-			text = rtp_obj_permanent_ct
-		}
 	}
 
 	effect = {
 		custom_tooltip = {
 			text = rtp_obj_beauty_ct
 		}
-	}
-	
-	chance = {
-		factor = 1
 	}
 }
 
@@ -470,7 +366,6 @@ obj_legacy = {
 	}
 
 	allow = {
-		has_character_flag = rtp_ambition #He has chosen an ambition
 		always = yes
 	}
 
@@ -478,18 +373,11 @@ obj_legacy = {
 		hidden_tooltip = {
 			always = no
 		}
-		custom_tooltip = {
-			text = rtp_obj_permanent_ct
-		}
 	}
 
 	effect = {
 		custom_tooltip = {
 			text = rtp_obj_legacy_ct
 		}
-	}
-	
-	chance = {
-		factor = 1
 	}
 }

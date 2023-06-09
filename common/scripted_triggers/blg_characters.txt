@@ -201,7 +201,7 @@ blg_townsfolk = {
 		employer = {
 			OR = {
 				is_republic = yes
-				government = playable_republic_government
+				government = rtp_republic_g
 				government = rtp_baron_republic_g
 			}
 		}

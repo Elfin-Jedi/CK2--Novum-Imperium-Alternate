@@ -552,7 +552,7 @@ society_decisions = {
 						limit = {
 							ai = no
 						}
-						set_government_type = playable_theocracy_government
+						set_government_type = rtp_theocracy_g
 					}
 					else = {
 						set_government_type = theocracy_government
@@ -573,7 +573,7 @@ society_decisions = {
 							religion = fraticelli
 						}
 					}
-					set_government_type = playable_theocracy_government
+					set_government_type = rtp_theocracy_g
 					any_demesne_title = {
 						add_law = {
 							law = rtp_theocracy_election_succ

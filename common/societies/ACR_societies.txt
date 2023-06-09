@@ -345,6 +345,10 @@ warrior_lodge_celtic = {
 			value = 1
 		}
 		has_trait = {
+			trait = kailash_guardian
+			value = 1
+		}
+		has_trait = {
 			trait = lughs_own
 			value = 1
 		}
@@ -360,6 +364,18 @@ warrior_lodge_celtic = {
 			trait = atens_chosen
 			value = 1
 		}
+		has_trait = {
+            trait = child_of_garki_baba
+            value = 1
+        }
+        has_trait = {
+            trait = shield_of_roog
+            value = 1
+        }
+        has_trait = {
+            trait = heir_of_dihya
+            value = 1
+        }
 		#NEGATIVE modifiers
 		has_trait = {
 			trait = craven
@@ -920,6 +936,10 @@ warrior_lodge_britannic = {
 			value = 1
 		}
 		has_trait = {
+			trait = kailash_guardian
+			value = 1
+		}
+		has_trait = {
 			trait = lughs_own
 			value = 1
 		}
@@ -935,6 +955,18 @@ warrior_lodge_britannic = {
 			trait = atens_chosen
 			value = 1
 		}
+		has_trait = {
+            trait = child_of_garki_baba
+            value = 1
+        }
+        has_trait = {
+            trait = shield_of_roog
+            value = 1
+        }
+        has_trait = {
+            trait = heir_of_dihya
+            value = 1
+        }
 		#NEGATIVE modifiers
 		has_trait = {
 			trait = craven
@@ -1494,6 +1526,10 @@ warrior_lodge_titan = {
 			value = 1
 		}
 		has_trait = {
+			trait = kailash_guardian
+			value = 1
+		}
+		has_trait = {
 			trait = lughs_own
 			value = 1
 		}
@@ -1509,6 +1545,18 @@ warrior_lodge_titan = {
 			trait = atens_chosen
 			value = 1
 		}
+		has_trait = {
+            trait = child_of_garki_baba
+            value = 1
+        }
+        has_trait = {
+            trait = shield_of_roog
+            value = 1
+        }
+        has_trait = {
+            trait = heir_of_dihya
+            value = 1
+        }
 		#NEGATIVE modifiers
 		has_trait = {
 			trait = craven
@@ -2063,6 +2111,10 @@ warrior_lodge_egyptian = {
 			value = 1
 		}
 		has_trait = {
+			trait = kailash_guardian
+			value = 1
+		}
+		has_trait = {
 			trait = lughs_own
 			value = 1
 		}
@@ -2078,6 +2130,18 @@ warrior_lodge_egyptian = {
 			trait = atens_chosen
 			value = 1
 		}
+		has_trait = {
+            trait = child_of_garki_baba
+            value = 1
+        }
+        has_trait = {
+            trait = shield_of_roog
+            value = 1
+        }
+        has_trait = {
+            trait = heir_of_dihya
+            value = 1
+        }
 		#NEGATIVE modifiers
 		has_trait = {
 			trait = craven

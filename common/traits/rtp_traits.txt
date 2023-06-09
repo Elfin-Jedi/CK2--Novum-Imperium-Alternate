@@ -45,18 +45,6 @@ rtp_maharathi_tr = {
 # LEADERSHIP TRAITS
 ############################
 
-#Bloodied
-aztec_leader = {
-	leader = yes
-	random = no
-
-	command_modifier = {
-		pursue = 0.1
-		flank = 0.2
-		morale_offence = 0.3
-	}
-}
-
 #Knight
 christian_leader = {
 	leader = yes

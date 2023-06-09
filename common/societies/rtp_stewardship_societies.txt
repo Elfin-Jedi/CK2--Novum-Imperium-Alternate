@@ -648,7 +648,10 @@ rtp_stewardship_india = {
 		}
 		top_liege = {
 			capital_scope = {
-				region = world_india
+				OR = {
+					region = world_india
+					region = world_china
+				}
 			}
 		}
 	}
@@ -658,7 +661,10 @@ rtp_stewardship_india = {
 			society_member_of = rtp_stewardship_india
 			top_liege = {
 				capital_scope = {
-					region = world_india
+					OR = {
+						region = world_india
+						region = world_china
+					}
 				}
 			}
 		}
@@ -809,7 +815,10 @@ rtp_stewardship_india = {
 			is_in_society = no
 			top_liege = {
 				capital_scope = {
-					region = world_india
+					OR = {
+						region = world_india
+						region = world_china
+					}
 				}
 			}
 		}

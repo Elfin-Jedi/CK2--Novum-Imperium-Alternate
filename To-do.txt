@@ -44,6 +44,8 @@ Add warrior lodge leader traits to Warrior Societies (HIP).
 Does rtp_no_loans_st include emf loans?
 Do we need domestic_law.gfx or province.gfx?
 
+Do I need have_gender_laws = yes etc. from TiaraMod in: !!!rtp_landless_governments, !!rtp_baron_governments, !rtp_governments, chivalry_governments etc.
+
 Next:
 
 Rise to Power

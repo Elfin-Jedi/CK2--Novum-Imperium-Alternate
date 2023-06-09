@@ -691,7 +691,7 @@ society_decisions = {
 					limit = {
 						ai = no
 					}
-					set_government_type = playable_republic_government
+					set_government_type = rtp_republic_g
 					any_demesne_title = {
 						add_law = {
 							law = rtp_republic_election_succ

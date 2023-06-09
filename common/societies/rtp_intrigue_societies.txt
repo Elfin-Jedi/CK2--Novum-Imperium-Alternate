@@ -1037,6 +1037,11 @@ rtp_intrigue_west_african = {
 		OR = {
 			religion = west_african_pagan
 			religion = west_african_pagan_reformed
+			religion = bori
+			religion = a_tag_roog
+			religion = a_tag_roog_reformed
+			religion = amazigh
+			religion = amazigh_reformed
 		}
 		NOR = {
 			AND = {
@@ -1057,6 +1062,11 @@ rtp_intrigue_west_african = {
 		OR = {
 			religion = west_african_pagan
 			religion = west_african_pagan_reformed
+			religion = bori
+			religion = a_tag_roog
+			religion = a_tag_roog_reformed
+			religion = amazigh
+			religion = amazigh_reformed
 		}
 	}
 
@@ -1065,6 +1075,11 @@ rtp_intrigue_west_african = {
 		OR = {
 			religion = west_african_pagan
 			religion = west_african_pagan_reformed
+			religion = bori
+			religion = a_tag_roog
+			religion = a_tag_roog_reformed
+			religion = amazigh
+			religion = amazigh_reformed
 		}
 	}
 
@@ -1211,6 +1226,11 @@ rtp_intrigue_west_african = {
 			OR = {
 				religion = west_african_pagan
 				religion = west_african_pagan_reformed
+				religion = bori
+				religion = a_tag_roog
+				religion = a_tag_roog_reformed
+				religion = amazigh
+				religion = amazigh_reformed
 			}
 		}
 	}

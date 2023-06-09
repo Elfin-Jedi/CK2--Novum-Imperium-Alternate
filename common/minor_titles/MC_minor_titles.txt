@@ -42,7 +42,7 @@ title_councilmember_everything1 = {
 			primary_title = {
 				NOT = { 
 					AND = {
-						has_law = succession_voting_power_1
+						has_law = protected_appointment_1
 						ROOT = { is_powerful_vassal = yes }
 					}
 				}
@@ -91,7 +91,7 @@ title_councilmember_everything2 = {
 			primary_title = {
 				NOT = { 
 					AND = {
-						has_law = succession_voting_power_1
+						has_law = protected_appointment_1
 						ROOT = { is_powerful_vassal = yes }
 					}
 				}
@@ -140,7 +140,7 @@ title_councilmember_everything3 = {
 			primary_title = {
 				NOT = { 
 					AND = {
-						has_law = succession_voting_power_1
+						has_law = protected_appointment_1
 						ROOT = { is_powerful_vassal = yes }
 					}
 				}
@@ -189,7 +189,7 @@ title_extra_king = {
 			primary_title = {
 				NOT = { 
 					AND = {
-						has_law = succession_voting_power_1
+						has_law = protected_appointment_1
 						ROOT = { is_powerful_vassal = yes }
 					}
 				}
@@ -222,7 +222,7 @@ title_extra_emperor = {
 		has_dlc = "Zeus"
 		primary_title = { has_law = law_voting_power_1 }
 		NOT = {
-			primary_title = { has_law = ze_administration_laws_2 }
+			primary_title = { has_law = administration_2 }
 		}
 	}
 	
@@ -243,7 +243,7 @@ title_extra_emperor = {
 			primary_title = {
 				NOT = { 
 					AND = {
-						has_law = succession_voting_power_1
+						has_law = protected_appointment_1
 						ROOT = { is_powerful_vassal = yes }
 					}
 				}
@@ -275,7 +275,7 @@ title_extra_senator1 = {
 		higher_tier_than = KING
 		has_dlc = "Zeus"
 		primary_title = { has_law = law_voting_power_1 }
-		primary_title = { has_law = ze_administration_laws_2 }
+		primary_title = { has_law = administration_2 }
 	}
 	
 	allowed_to_hold = {
@@ -295,7 +295,7 @@ title_extra_senator1 = {
 			primary_title = {
 				NOT = { 
 					AND = {
-						has_law = succession_voting_power_1
+						has_law = protected_appointment_1
 						ROOT = { is_powerful_vassal = yes }
 					}
 				}
@@ -327,7 +327,7 @@ title_extra_senator2 = {
 		higher_tier_than = KING
 		has_dlc = "Zeus"
 		primary_title = { has_law = law_voting_power_1 }
-		primary_title = { has_law = ze_administration_laws_2 }
+		primary_title = { has_law = administration_2 }
 	}
 	
 	allowed_to_hold = {
@@ -347,7 +347,7 @@ title_extra_senator2 = {
 			primary_title = {
 				NOT = { 
 					AND = {
-						has_law = succession_voting_power_1
+						has_law = protected_appointment_1
 						ROOT = { is_powerful_vassal = yes }
 					}
 				}
@@ -379,7 +379,7 @@ title_extra_senator3 = {
 		higher_tier_than = KING
 		has_dlc = "Zeus"
 		primary_title = { has_law = law_voting_power_1 }
-		primary_title = { has_law = ze_administration_laws_2 }
+		primary_title = { has_law = administration_2 }
 	}
 	
 	allowed_to_hold = {
@@ -399,7 +399,7 @@ title_extra_senator3 = {
 			primary_title = {
 				NOT = { 
 					AND = {
-						has_law = succession_voting_power_1
+						has_law = protected_appointment_1
 						ROOT = { is_powerful_vassal = yes }
 					}
 				}

@@ -56,6 +56,9 @@ rtp_diplomacy_civilized = {
 			religion = baltic_pagan_reformed
 			religion = tengri_pagan_reformed
 			religion = bon_reformed
+			religion = bori
+			religion = a_tag_roog_reformed
+			religion = amazigh_reformed
 		}
 	}
 
@@ -77,6 +80,9 @@ rtp_diplomacy_civilized = {
 			religion = baltic_pagan_reformed
 			religion = tengri_pagan_reformed
 			religion = bon_reformed
+			religion = bori
+			religion = a_tag_roog_reformed
+			religion = amazigh_reformed
 		}
 	}
 	
@@ -238,6 +244,9 @@ rtp_diplomacy_civilized = {
 				religion = baltic_pagan_reformed
 				religion = tengri_pagan_reformed
 				religion = bon_reformed
+				religion = bori
+				religion = a_tag_roog_reformed
+				religion = amazigh_reformed
 			}
 		}
 	}
@@ -290,6 +299,8 @@ rtp_diplomacy_pagan = {
 			religion = baltic_pagan
 			religion = tengri_pagan
 			religion = bon
+			religion = a_tag_roog
+			religion = amazigh
 		}
 	}
 
@@ -306,6 +317,8 @@ rtp_diplomacy_pagan = {
 			religion = baltic_pagan
 			religion = tengri_pagan
 			religion = bon
+			religion = a_tag_roog
+			religion = amazigh
 		}
 	}
 	
@@ -462,6 +475,8 @@ rtp_diplomacy_pagan = {
 				religion = baltic_pagan
 				religion = tengri_pagan
 				religion = bon
+				religion = a_tag_roog
+				religion = amazigh
 			}
 		}
 	}

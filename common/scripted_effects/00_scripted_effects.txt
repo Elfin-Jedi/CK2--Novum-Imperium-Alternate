@@ -2969,24 +2969,6 @@ increase_prosperity_effect = {
 
 decrease_prosperity_effect = {
 	if = {
-		limit = { has_province_modifier = depopulated_2	}
-		hidden_tooltip = { remove_province_modifier = depopulated_2 }
-		add_province_modifier = { name = depopulated_3 duration = -1 }
-		hidden_tooltip = {
-			clr_province_flag = recent_depopulation_2
-			set_province_flag = recent_depopulation_3
-		}
-	}
-	if = {
-		limit = { has_province_modifier = depopulated_1 }
-		hidden_tooltip = { remove_province_modifier = depopulated_1 }
-		add_province_modifier = { name = depopulated_2 duration = -1 }
-		hidden_tooltip = {
-			clr_province_flag = recent_depopulation_1
-			set_province_flag = recent_depopulation_2
-		}
-	}
-	if = {
 		limit = {
 			has_province_modifier = prosperity_modifier_3
 		}
@@ -2995,29 +2977,6 @@ decrease_prosperity_effect = {
 			set_variable = { which = prosperity_value value = 250 }
 		}
 		add_province_modifier = { name = prosperity_modifier_2 duration = -1 }
-	}
-	else_if = {
-		limit = { has_province_modifier = prosperity_modifier_2	}
-
-		hidden_tooltip = { remove_province_modifier = prosperity_modifier_2 }
-		add_province_modifier = { name = prosperity_modifier_1 duration = -1 }
-		hidden_tooltip = { set_variable = { which = prosperity_value value = 100 } }
-	}
-	else_if = {
-		limit = { has_province_modifier = prosperity_modifier_1 }
-		
-		remove_province_modifier = prosperity_modifier_1
-		hidden_tooltip = { set_variable = { which = prosperity_value value = 0 } }
-	}
-	else = {
-		limit = {
-			NOR = {
-				is_prosperous_trigger = yes
-				is_depopulated_trigger = yes
-			}
-		}
-		add_province_modifier = { name = depopulated_1 duration = -1 }
-		set_province_flag = recent_depopulation_1
 	}
 }
 
@@ -40088,7 +40047,10 @@ reformation_god_names_changes_effect = { #Reforming religion with certain Doctri
 	if = {
 		limit = { #Holy Family actually becomes Holy.
 			has_dlc = "Holy Fury"
-			has_religion_feature = religion_holy_family
+			OR = {
+				has_religion_feature = religion_holy_family
+				religion = egyptian_pagan_reformed
+			}
 		}
 		# Reset god lists because they will be changed by Holy Family
 		trigger_switch = {
