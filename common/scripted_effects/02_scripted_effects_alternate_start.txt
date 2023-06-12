@@ -8,7 +8,7 @@ monastic_feudal_time = {
 			}
 			NOR = {
 				is_merchant_republic = yes
-				is_theocracy = yes
+				rtp_is_theocracy_government = yes
 				holy_order = yes
 				controls_religion = yes
 				government = theocratic_feudal_government 
@@ -119,7 +119,7 @@ big_repub = {
 				is_merchant_republic = yes
 				holy_order = yes
 				controls_religion = yes
-				government_type = playable_republic_government
+				government_type = rtp_republic_g
 				government_type = theocratic_feudal_government 
 				is_nomadic = yes
 			}
@@ -138,6 +138,7 @@ big_repub = {
 			NOT = {
 				any_character = {
 					is_landed = yes
+					rtp_is_republic_government = yes
 					tier = KING 
 					NOT = {
 						distance = { value = 1000 where = PREV }
@@ -151,6 +152,7 @@ big_repub = {
 			NOT = {
 				any_character = {
 					is_landed = yes
+					rtp_is_republic_government = yes
 					tier = EMPEROR
 					NOT = {
 						distance = { value = 1000 where = PREV }
@@ -182,7 +184,7 @@ big_repub = {
 			}
 		}
 		else = {
-			set_government_type = playable_republic_government
+			set_government_type = rtp_republic_g
 		}
 		any_demesne_province = {
 			any_province_holding = {
@@ -219,7 +221,7 @@ big_repub = {
 			limit = {
 				government_type = republic_government
 			}
-			set_government_type = playable_republic_government
+			set_government_type = rtp_republic_g
 		}
 	}
 }
@@ -228,14 +230,14 @@ big_theocracies_effect = {
 	any_character = {
 		limit = {
 			is_landed = yes
-			is_government_potential = playable_theocracy_government
+			is_government_potential = rtp_theocracy_g
 			any_demesne_title = {
 				tier = COUNT
 			}
 			NOR = {
 				is_merchant_republic = yes
 				holy_order = yes
-				government_type = playable_theocracy_government
+				government_type = rtp_theocracy_g
 				controls_religion = yes
 				religion_group = muslim
 				government = theocratic_feudal_government 
@@ -256,7 +258,7 @@ big_theocracies_effect = {
 			NOT = {
 				any_character = {
 					is_landed = yes
-					is_theocracy = yes
+					rtp_is_theocracy_government = yes
 					tier = KING 
 					NOT = {
 						distance = { value = 1000 where = PREV }
@@ -270,7 +272,7 @@ big_theocracies_effect = {
 			NOT = {
 				any_character = {
 					is_landed = yes
-					is_theocracy = yes
+					rtp_is_theocracy_government = yes
 					tier = EMPEROR
 					NOT = {
 						distance = { value = 1000 where = PREV }
@@ -281,7 +283,7 @@ big_theocracies_effect = {
 		
 		save_event_target_as = target_theocracy
 		
-		set_government_type = playable_theocracy_government
+		set_government_type = rtp_theocracy_g
 		remove_spouse = spouse
 		any_demesne_province = {
 			any_province_holding = {
@@ -318,7 +320,7 @@ big_theocracies_effect = {
 			limit = {
 				government_type = theocracy_government
 			}
-		set_government_type = playable_theocracy_government
+		set_government_type = rtp_theocracy_g
 		}
 	}
 }
@@ -335,21 +337,6 @@ random_government_effect = {
 				holy_order = yes
 				controls_religion = yes
 				government = theocratic_feudal_government
-<<<<<<< Updated upstream
-				limit = {
-					any_province = {
-						empire = {
-							has_title_flag = alternate_hre
-							has_title_flag = alternate_byz
-						}
-=======
-				any_province = {
-					empire = {
-						has_title_flag = alternate_hre
-						has_title_flag = alternate_byz
->>>>>>> Stashed changes
-					}
-				}
 			}
 		}
 		preferred_limit = {
@@ -426,28 +413,9 @@ random_government_effect = {
 				set_government_type = nomadic_government
 			}
 			16 = {
-				any_demesne_province = {
-					any_province_holding = {
-						limit = {
-							holding_type = city
-						}
-						grant_title = event_target:target_theocracy
-						make_capital_holding = yes
-					}
-				}
 				set_government_type = playable_republic_government
 			}
 			16 = {
-				remove_spouse = spouse
-				any_demesne_province = {
-					any_province_holding = {
-						limit = {
-							holding_type = temple
-						}
-						grant_title = event_target:target_theocracy
-						make_capital_holding = yes
-					}
-				}
 				set_government_type = playable_theocracy_government
 			}
 			16 = {
@@ -468,17 +436,28 @@ random_government_effect = {
 				}
 			}
 			4 = {
-				remove_spouse = spouse
-				any_demesne_province = {
-					any_province_holding = {
-						limit = {
-							holding_type = temple
+				random_list = {
+					25 = {
+						set_government_type = order_government
+					}
+					25 = {
+						set_government_type = rtp_confederation_g
+					}
+					25 = {
+						set_government_type = rtp_mercenary_g
+					}
+					25 = {
+						if = {
+							limit = {
+								is_government_potential = rtp_privateer_g
+							}
+							set_government_type = rtp_privateer_g
 						}
-						grant_title = event_target:target_theocracy
-						make_capital_holding = yes
+						else = {
+							set_government_type = merchant_republic_government
+						}
 					}
 				}
-				set_government_type = playable_theocracy_government
 			}
 		}
 	}
@@ -1166,7 +1145,7 @@ spawn_merchant_republic_effect = {
 			}
 			NOR = {
 				is_merchant_republic = yes
-				is_theocracy = yes
+				rtp_is_theocracy_government = yes
 				holy_order = yes
 				mercenary = yes
 				controls_religion = yes 
@@ -1282,7 +1261,7 @@ spawn_merchant_republic_effect = {
 				is_government_potential = republic_government
 				NOR = {
 					is_merchant_republic = yes
-					is_theocracy = yes
+					rtp_is_theocracy_government = yes
 					holy_order = yes
 					mercenary = yes
 					controls_religion = yes 
@@ -1468,7 +1447,7 @@ spawn_theocracies_effect = {
 spawn_theocracy_effect = {
 	random_character = {
 		limit = {
-			is_government_potential = playable_theocracy_government
+			is_government_potential = theocracy_government
 			is_landed = yes
 			any_demesne_title = {
 				tier = COUNT
@@ -1512,7 +1491,7 @@ spawn_theocracy_effect = {
 		
 		save_event_target_as = target_theocracy
 		
-		set_government_type = playable_theocracy_government
+		set_government_type = theocracy_government
 		remove_spouse = spouse
 		any_demesne_province = {
 			any_province_holding = {

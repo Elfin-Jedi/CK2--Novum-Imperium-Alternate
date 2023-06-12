@@ -18,7 +18,11 @@ blg_fighting = {
 
 # Holy Order government.
 blg_holy_order = {
-	holy_order = yes
+	OR = {
+		holy_order = yes
+		government = rtp_baron_order_g
+		government = rtp_landless_order_g
+	}
 }
 
 # Engaged in war.
@@ -48,17 +52,32 @@ blg_lefthanded = {
 
 # Mercenary government.
 blg_mercenary = {
-	mercenary = yes
+	OR = {
+		mercenary = yes
+		government = rtp_mercenary_g
+		government = rtp_baron_mercenary_g
+		government = rtp_landless_mercenary_g
+		government = rtp_landless_adventurer_g
+	}
 }
 
 # Portrait override for theocracies.
 blg_portrait_theocracy = {
-	portrait_government = theocracy_government
+	OR = {
+		portrait_government = theocracy_government
+		portrait_government = rtp_theocracy_g
+		portrait_government = rtp_baron_theocracy_g
+		portrait_government = rtp_landless_theocracy_g
+	}
 }
 
 # Portrait override for holy orders.
 blg_portrait_holy_order = {
-	portrait_government = order_government
+	OR = {
+		portrait_government = order_government
+		portrait_government = rtp_baron_order_g
+		portrait_government = rtp_landless_order_g
+	}
 }
 
 # A priest in the council or a theocracy.
@@ -66,11 +85,13 @@ blg_priest = {
 	OR = {
 		has_job_title = job_spiritual
 		AND = {
+			is_ruler = yes
 			OR = {
 				government = theocracy_government
-				government = playable_theocracy_government
+				government = rtp_theocracy_g
+				government = rtp_baron_theocracy_g
+				government = rtp_landless_theocracy_g
 			}
-			is_ruler = yes
 		}
 	}
 }
@@ -85,8 +106,12 @@ blg_prisoner = {
 
 # Republic government.
 blg_republic = {
-	is_republic = yes
-	NOT = { government = confucian_bureaucracy }
+	OR = {
+		government = republic_government
+		government = merchant_republic_government
+		government = rtp_republic_g
+		government = rtp_baron_republic_g
+	}
 }
 
 # Right-handed weapon user.

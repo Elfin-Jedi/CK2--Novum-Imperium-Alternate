@@ -2115,6 +2115,10 @@ de_jure_laws = {
 
 		potential = {
 			owner = {
+				OR = {
+					rtp_is_empire_government = yes
+					rtp_is_feudal_government = yes
+				}
 				NOR = {
 					is_tribal = yes
 					is_nomadic = yes
@@ -2149,6 +2153,10 @@ de_jure_laws = {
 
 		potential = {
 			owner = {
+				OR = {
+					rtp_is_empire_government = yes
+					rtp_is_feudal_government = yes
+				}
 				NOR = {
 					is_tribal = yes
 					is_nomadic = yes
@@ -2287,6 +2295,10 @@ de_jure_laws = {
 
 		potential = {
 			owner = {
+				OR = {
+					rtp_is_empire_government = yes
+					rtp_is_feudal_government = yes
+				}
 				NOR = {
 					is_tribal = yes
 					is_nomadic = yes
@@ -2426,6 +2438,10 @@ de_jure_laws = {
 
 		potential = {
 			owner = {
+				OR = {
+					rtp_is_empire_government = yes
+					rtp_is_feudal_government = yes
+				}
 				is_tribal = no
 				is_nomadic = no
 				NOT = { government = order_government }
@@ -2454,6 +2470,10 @@ de_jure_laws = {
 
 		potential = {
 			owner = {
+				OR = {
+					rtp_is_empire_government = yes
+					rtp_is_feudal_government = yes
+				}
 				is_tribal = no
 				is_nomadic = no
 				NOT = { government = order_government }

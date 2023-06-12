@@ -88,10 +88,25 @@ blg_pale = {
 		trait = malaise
 		trait = cancer
 		trait = has_tuberculosis
+		trait = rtp_sanguinare_vampiris_tr
 		has_character_modifier = broken_spirit
 		AND = {
 			has_character_modifier = corrupting_magic_major
 			blg_visible_society = yes
+		}
+		AND = {
+			trait = rtp_shapeshifter_tr
+			any_player = {
+				OR = {
+					trait = rtp_shapeshifter_tr
+					trait = rtp_druid_tr
+					has_opinion_modifier = {
+						modifier = rtp_abomination_om
+						who = ROOT
+					}
+				}
+			}
+			NOT = { has_game_rule = { name = blg_traits value = off } }
 		}
 	}
 }
@@ -120,7 +135,12 @@ blg_rash = {
 
 # Baggy eyes.
 blg_stressed = {
-	trait = stressed
+	OR = {
+		trait = stressed
+		trait = rtp_sanies_lupinus_tr
+		trait = rtp_corruption_tr
+		trait = rtp_mana_poisoning_tr
+	}
 }
 
 # Remaining food drips.
@@ -135,22 +155,75 @@ blg_vomit = {
 
 # Demon eyes and horns.
 blg_demon = {
-	has_character_modifier = demon_horns
+	OR = {
+		has_character_modifier = demon_horns
+		AND = {
+			OR = {
+				trait = rtp_cursed_tr
+				trait = rtp_gifted_tr
+			}
+			any_player = {
+				OR = {
+					trait = rtp_cursed_tr
+					trait = rtp_gifted_tr
+					has_opinion_modifier = {
+						modifier = rtp_abomination_om
+						who = ROOT
+					}
+				}
+			}
+		}
+	}
 }
 
 # Glowing eyes.
 blg_glowing = {
-	trait = possessed
 	OR = {
-		has_character_modifier = voice_of_jesus
-		has_character_modifier = military_jesus
-		has_character_modifier = killed_an_old_one
+		AND = {
+			trait = possessed
+			OR = {
+				has_character_modifier = voice_of_jesus
+				has_character_modifier = military_jesus
+				has_character_modifier = killed_an_old_one
+			}
+		}
+		AND = {
+			OR = {
+				trait = rtp_mage_tr
+				trait = rtp_sage_tr
+			}
+			any_player = {
+				OR = {
+					trait = rtp_mage_tr
+					trait = rtp_sage_tr
+					has_opinion_modifier = {
+						modifier = rtp_abomination_om
+						who = ROOT
+					}
+				}
+			}
+		}
 	}
 }
 
 # Vampire fangs.
 blg_vampire = {
-	always = no
+	OR = {
+		trait = rtp_feral_vampire_tr
+		trait = rtp_vampire_tr
+	}
+	any_player = {
+		OR = {
+			trait = rtp_feral_vampire_tr
+			trait = rtp_vampire_tr
+			has_opinion_modifier = {
+				modifier = rtp_abomination_om
+				who = ROOT
+			}
+		}
+	}
+	blg_adult = yes
+	NOT = { has_game_rule = { name = blg_traits value = off } }
 }
 
 # Wolf eyes.
@@ -158,5 +231,21 @@ blg_werewolf = {
 	OR = {
 		has_character_modifier = wolf_blood
 		has_character_modifier = lycanthropy
+		AND = {
+			OR = {
+				trait = rtp_feral_werewolf_tr
+				trait = rtp_werewolf_tr
+			}
+			any_player = {
+				OR = {
+					trait = rtp_feral_werewolf_tr
+					trait = rtp_werewolf_tr
+					has_opinion_modifier = {
+						modifier = rtp_abomination_om
+						who = ROOT
+					}
+				}
+			}
+		}
 	}
 }

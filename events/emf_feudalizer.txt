@@ -415,7 +415,7 @@ character_event = {
 				new_character = {
 					wealth = 300
 					grant_title_no_opinion = PREVPREV # The barony
-					set_government_type = playable_theocracy_government
+					set_government_type = theocracy_government
 					set_defacto_liege = ROOT
 					emf_new_character_priest = yes
 				}

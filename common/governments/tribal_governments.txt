@@ -11,11 +11,11 @@ tribal_governments = {
 		accepts_liege_governments_culture = { # Tribals have no opinion penalty towards their liege if of the same culture
 			feudal_government
 			bogomilist_government
-			republic_government
+			rtp_republic_g
 			merchant_republic_government
 			muslim_merchant_republic_government
 			bogomilist_merchant_republic_government
-			playable_theocracy_government
+			rtp_theocracy_g
 			muslim_government
 			imperial_government
 			muslim_imperial_government
@@ -23,15 +23,25 @@ tribal_governments = {
 			theocratic_feudal_government
 			theocratic_imperial_government
 			chinese_imperial_government
+			rtp_mercenary_g
+			rtp_privateer_g
+			nomadic_government
 		}
+		
 		accepts_liege_governments_culture_and_religion = { 	# Tribals have no opinion penalty towards their liege if of the same culture and religion
 			order_government
 		}
+		
 		vassal_call_to_arms = {
 			tribal_government
+			rtp_mercenary_g
+			rtp_baron_mercenary_g
 		}
 		no_vassal_tax = {
 			tribal_government
+			order_government
+			rtp_baron_order_g
+			rtp_landless_order_g
 		}
 		builds_with_prestige = {
 			TRIBAL
@@ -62,6 +72,12 @@ tribal_governments = {
 			mercenary = no
 			holy_order = no
 			NOT = { is_government_potential = order_government }
+		}
+		
+		character_modifier = {
+			martial = 1
+
+			intrigue = -1
 		}
 
 		color = { 92 31 23 }

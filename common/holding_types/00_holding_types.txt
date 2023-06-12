@@ -104,7 +104,6 @@ family_palace = {
 tribal = {
 	trigger = {
 		emf_is_building_construction_allowed = yes
-		FROM = { NOT = { government = order_government } }
 	}
 }
 
@@ -115,8 +114,7 @@ nomad = {
 
 fort = {
 	trigger = {
-		# In theory, the AI uses forts while at war...
-		#emf_is_building_construction_allowed = yes
+		always = no
 	}
 }
 

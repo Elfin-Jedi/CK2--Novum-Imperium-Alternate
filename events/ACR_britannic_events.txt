@@ -1035,7 +1035,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		FROM = { character_event = { id = britannic.27 days = 6 } }
+		FROM = { letter_event = { id = britannic.27 days = 6 } }
 	}
 }
 
@@ -2799,8 +2799,8 @@ character_event = {
 
 		hidden_tooltip = { 
 			random_list = {
-				90 = { character_event = { id = britannic.102 days = 1 } }
-				10 = { character_event = { id = britannic.103 days = 1 } }
+				90 = { long_character_event = { id = britannic.102 days = 1 } }
+				10 = { long_character_event = { id = britannic.103 days = 1 } }
 			}
 		}
 	}
@@ -2813,7 +2813,7 @@ character_event = {
 			}
 		}
 
-		hidden_tooltip = { character_event = { id = britannic.103 days = 1 } }
+		hidden_tooltip = { long_character_event = { id = britannic.103 days = 1 } }
 	}
 }
 

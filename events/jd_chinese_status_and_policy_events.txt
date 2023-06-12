@@ -132,6 +132,7 @@ character_event = {
 			limit = { FROMFROM = { NOT = { has_offmap_flag = no_succession_news } } }
 			any_player = {
 				limit = {
+					rtp_is_lower_baron = no
 					has_offmap_news_enabled = FROMFROM
 					is_within_diplo_range = ROOT
 				}
@@ -367,6 +368,7 @@ character_event = {
     immediate = {
 		any_player = {
 			limit = {
+				rtp_is_lower_baron = no
 				has_offmap_news_enabled = FROM
 				is_within_diplo_range = ROOT
 			}
@@ -446,6 +448,7 @@ character_event = {
 			}
 			any_player = {
 				limit = {
+					rtp_is_lower_baron = no
 					has_offmap_news_enabled = FROM
 					is_within_diplo_range = ROOT
 				}
@@ -984,6 +987,7 @@ character_event = {
 		}
 		any_player = {
 			limit = {
+				rtp_is_lower_baron = no
 				has_offmap_news_enabled = FROM
 				is_within_diplo_range = ROOT
 			}
@@ -1116,6 +1120,7 @@ character_event = {
 				
 				any_player = {
 					limit = {
+						rtp_is_lower_baron = no
 						has_offmap_news_enabled = FROM
 						is_within_diplo_range = ROOT
 					}
@@ -1840,6 +1845,7 @@ character_event = {
 				
 				any_player = {
 					limit = {
+						rtp_is_lower_baron = no
 						has_offmap_news_enabled = FROM
 						is_within_diplo_range = ROOT
 					}
@@ -2085,6 +2091,7 @@ character_event = {
 		}
 		any_player = {
 			limit = {
+				rtp_is_lower_baron = no
 				has_offmap_news_enabled = FROM
 				is_within_diplo_range = ROOT
 			}
@@ -2218,6 +2225,7 @@ character_event = {
 				
 				any_player = {
 					limit = {
+						rtp_is_lower_baron = no
 						has_offmap_news_enabled = FROM
 						is_within_diplo_range = ROOT
 					}
@@ -2367,6 +2375,7 @@ character_event = {
   			
 				any_player = {
 					limit = {
+						rtp_is_lower_baron = no
 						has_offmap_news_enabled = FROM
 						is_within_diplo_range = ROOT
 					}
@@ -2693,6 +2702,7 @@ character_event = {
 		}
 		any_player = {
 			limit = {
+				rtp_is_lower_baron = no
 				has_offmap_news_enabled = FROM
 				is_within_diplo_range = ROOT
 			}
@@ -2795,6 +2805,7 @@ character_event = {
 				
 				any_player = {
 					limit = {
+						rtp_is_lower_baron = no
 						has_offmap_news_enabled = FROM
 						is_within_diplo_range = ROOT
 					}
@@ -2924,6 +2935,7 @@ character_event = {
   			
 				any_player = {
 					limit = {
+						rtp_is_lower_baron = no
 						has_offmap_news_enabled = FROM
 						is_within_diplo_range = ROOT
 					}
@@ -2986,6 +2998,7 @@ character_event = {
 				
 				any_player = {
 					limit = {
+						rtp_is_lower_baron = no
 						has_offmap_news_enabled = FROM
 						is_within_diplo_range = ROOT
 					}

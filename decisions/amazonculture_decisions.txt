@@ -919,7 +919,7 @@ decisions = {
 			}
 			modifier = {
 				factor = 1.5
-				religion = pagan_group
+				religion_group = pagan_group
 			}
 			modifier = {
 				factor = 0.2 

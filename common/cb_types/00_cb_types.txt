@@ -3539,7 +3539,7 @@ crusade = {
 				limit = { religion_group = african_group }
 				custom_tooltip = {
 					text = CTT_AFRICAN_GHWS_UNLOCKED
-					has_global_flag = african_ghws_unlockedv
+					has_global_flag = african_ghws_unlocked
 				}
 			}
 		}

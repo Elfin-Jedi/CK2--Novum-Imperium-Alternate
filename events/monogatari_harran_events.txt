@@ -3836,11 +3836,11 @@ character_event = {
 				random_list = {
 					70 = { } #Nothing
 					15 = { 
-						trigger = { has_dlc = Reapers }
+						trigger = { has_dlc = "Reapers" }
 						add_trait = one_legged 
 					}
 					15 = { 
-						trigger = { has_dlc = Reapers }
+						trigger = { has_dlc = "Reapers" }
 						add_trait = one_eyed 
 					}
 				}
@@ -3934,11 +3934,11 @@ character_event = {
 				random_list = {
 					85 = { } #Nothing
 					5 = { 
-						trigger = { has_dlc = Reapers }
+						trigger = { has_dlc = "Reapers" }
 						add_trait = one_legged 
 					}
 					10 = { 
-						trigger = { has_dlc = Reapers }
+						trigger = { has_dlc = "Reapers" }
 						add_trait = one_eyed 
 					}
 				}

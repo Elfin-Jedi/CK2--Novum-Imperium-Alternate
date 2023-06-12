@@ -1845,7 +1845,10 @@ decisions = {
 			is_landed = yes
 			independent = yes
 			NOT = { has_religion_feature = religion_peaceful } #Aztecs could reform as Peaceful.
-			emf_ritual_sacrifice_religion = yes
+			OR = {
+				emf_ritual_sacrifice_religion = yes
+				religion = titan_pagan
+			}
 		}
 		
 		allow = {

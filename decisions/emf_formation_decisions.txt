@@ -1989,7 +1989,7 @@ decisions = {
 			NOT = { has_global_flag = hre_removed }
 			independent = yes
 			has_global_flag = charlemagne_hre
-			tier = KING
+			higher_tier_than = DUKE
 			is_feudal = yes
 			is_heretic = no
 			emf_western_christian_religion = yes

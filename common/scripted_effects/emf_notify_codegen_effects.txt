@@ -37513,10 +37513,10 @@ emf_notify_add_seasoned_commander = {
 		}
 	}
 }
-emf_notify_remove_experienced_captain = {
+emf_notify_remove_seasoned_commander = {
 	if = {
-		limit = { trait = experienced_captain }
-		remove_trait = experienced_captain
+		limit = { trait = seasoned_commander }
+		remove_trait = seasoned_commander
 		hidden_tooltip = {
 			if = {
 				limit = { ai = no }

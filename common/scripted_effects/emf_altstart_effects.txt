@@ -87,7 +87,7 @@ emf_activate_randomized_relhead_title = {
 			}
 			emf_new_character_priest = yes
 			grant_title = event_target:emf_rel_title
-			set_government_type = playable_theocracy_government
+			set_government_type = rtp_theocracy_g
 		}
 	}
 	clear_event_target = emf_cul
@@ -341,7 +341,7 @@ emf_spawn_hre_theocracy = {
 				10 = { add_trait = mastermind_theologian }
 			}
 			emf_new_character_priest = yes
-			set_government_type = playable_theocracy_government
+			set_government_type = rtp_theocracy_g
 		}
 		location = {
 			random_province_holding = {
@@ -356,7 +356,7 @@ emf_spawn_hre_theocracy = {
 				set_defacto_liege = event_target:emf_theocrat
 			}
 			set_defacto_liege = event_target:emf_emperor
-			set_government_type = playable_theocracy_government
+			set_government_type = theocracy_government
 		}
 	}
 	clear_event_target = emf_theocrat

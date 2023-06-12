@@ -13,6 +13,7 @@ targetted_decisions = {
 			is_adult = yes
 			prisoner = no
 			is_incapable = no
+			rtp_is_capable_adult = yes
 		}
 
 		potential = {
@@ -349,6 +350,7 @@ targetted_decisions = {
 			is_adult = yes
 			prisoner = no
 			is_incapable = no
+			rtp_is_capable_adult = yes
 			AND = {
 				OR = {
 					trait = cruel
@@ -709,6 +711,7 @@ targetted_decisions = {
 			is_adult = yes
 			prisoner = no
 			is_incapable = no
+			rtp_is_capable_adult = yes
 		}
 
 		potential = {
@@ -942,6 +945,7 @@ targetted_decisions = {
 			is_adult = yes
 			prisoner = no
 			is_incapable = no
+			rtp_is_capable_adult = yes
 			OR = {
 				has_character_modifier = cannibal
 				trait = cannibal_trait

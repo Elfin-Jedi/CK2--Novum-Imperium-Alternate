@@ -21,10 +21,23 @@ job_chancellor = {
 	opinion_effect = 10
 
 	monthly_salary = 0.1
-	monthly_prestige = 0.75
+	monthly_prestige = 0.25
 
 	allow = {
 		can_be_chancellor_trigger = yes
+		liege = {
+			rtp_is_landless = no
+		}
+		OR = {
+			ai = yes
+			NOT = {
+				government = rtp_lowborn_g
+			}
+			AND = {
+				government = rtp_lowborn_g
+				has_character_flag = rtp_can_read #You can now read
+			}
+		}
 	}
 	dismiss_trigger = {
 		FROM = {
@@ -106,10 +119,23 @@ job_marshal = {
 	opinion_effect = 10
 
 	monthly_salary = 0.1
-	monthly_prestige = 0.75
+	monthly_prestige = 0.25
 
 	allow = {
 		can_be_marshal_trigger = yes
+		liege = {
+			rtp_is_landless = no
+		}
+		OR = {
+			ai = yes
+			NOT = {
+				government = rtp_lowborn_g
+			}
+			AND = {
+				government = rtp_lowborn_g
+				has_character_flag = rtp_can_read #You can now read
+			}
+		}
 	}
 	dismiss_trigger = {
 		FROM = {
@@ -260,10 +286,23 @@ job_treasurer = {
 	opinion_effect = 10
 
 	monthly_salary = 0.1
-	monthly_prestige = 0.75
+	monthly_prestige = 0.25
 
 	allow = {
 		can_be_treasurer_trigger = yes
+		liege = {
+			rtp_is_landless = no
+		}
+		OR = {
+			ai = yes
+			NOT = {
+				government = rtp_lowborn_g
+			}
+			AND = {
+				government = rtp_lowborn_g
+				has_character_flag = rtp_can_read #You can now read
+			}
+		}
 	}
 	dismiss_trigger = {
 		FROM = {
@@ -346,11 +385,23 @@ job_spymaster = {
 	dignity = 0.1
 	opinion_effect = 10
 
-	monthly_salary = 0.1
-	monthly_prestige = 0.75
+	monthly_salary = 0.2
 
 	allow = {
 		can_be_spymaster_trigger = yes
+		liege = {
+			rtp_is_landless = no
+		}
+		OR = {
+			ai = yes
+			NOT = {
+				government = rtp_lowborn_g
+			}
+			AND = {
+				government = rtp_lowborn_g
+				has_character_flag = rtp_can_read #You can now read
+			}
+		}
 	}
 	dismiss_trigger = {
 		FROM = {
@@ -440,6 +491,19 @@ job_spiritual = {
 
 	allow = {
 		can_be_spiritual_trigger = yes
+		liege = {
+			rtp_is_landless = no
+		}
+		OR = {
+			ai = yes
+			NOT = {
+				government = rtp_lowborn_g
+			}
+			AND = {
+				government = rtp_lowborn_g
+				has_character_flag = rtp_can_read #You can now read
+			}
+		}
 	}
 	dismiss_trigger = {
 		FROM = {
@@ -516,4 +580,18 @@ job_spiritual = {
 	action = action_build_zeal # Tribal replacement for 'action_advance_cul_tech'
 
 	lift_fow = yes
+}
+
+job_commander = {
+	is_marshal = yes
+	is_voter = no
+	dignity = 1
+
+	allow = {
+		always = no
+	}
+
+	dismiss_trigger = {
+		always = no
+	}
 }

@@ -127,6 +127,7 @@ targetted_decisions = {
 			trigger_if = {
 				limit = {
 					FROM = {
+						rtp_is_capable_adult = yes
 						NOT = {
 							any_owned_bloodline = {
 								has_bloodline_flag = bloodline_legitimize
@@ -431,6 +432,10 @@ targetted_decisions = {
 			NOT = { trait = on_hajj }
 		}
 		allow = {
+			rtp_is_capable_adult = yes
+			FROM = {
+				rtp_is_capable_adult = yes
+			}
 			OR = {
 				custom_tooltip = {
 					text = NON_RULER_PIETY_50
@@ -582,6 +587,10 @@ targetted_decisions = {
 		}
 		
 		allow = {
+			rtp_is_capable_adult = yes
+			FROM = {
+				rtp_is_capable_adult = yes
+			}
 			OR = { 
 				AND = { 
 					is_married = no
@@ -1606,12 +1615,15 @@ targetted_decisions = {
 		}
 		allow = {
 			prisoner = no
-			NOT = {
-				regent = {
-					OR = {
-						trait = deceitful
-						trait = ambitious
-						is_rival = ROOT
+			OR = {
+				rtp_is_landless = yes
+				NOT = {
+					regent = {
+						OR = {
+							trait = deceitful
+							trait = ambitious
+							is_rival = ROOT
+						}
 					}
 				}
 			}

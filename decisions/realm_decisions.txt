@@ -8,9 +8,9 @@ decisions = {
 
 		potential = {
 			independent = yes
+			higher_tier_than = DUKE
 			is_playable = yes
-			higher_real_tier_than = COUNT
-			is_nomadic = no
+			is_feudal = yes
 			OR = {
 				religion_group = christian
 				religion_group = jewish_group
@@ -29,6 +29,8 @@ decisions = {
 			emf_hiprio_decision_basic_potential = yes
 		}
 		allow = {
+			rtp_is_capable_adult = yes
+			rtp_no_loans_st = yes
 			war = no
 			prisoner = no
 			in_command = no
@@ -48,6 +50,7 @@ decisions = {
 			}
 		}
 		effect = {
+			set_character_flag = do_not_disturb
 			set_flag = emf_tournament_cooldown
 			scaled_wealth = { value = -0.5 min = -200 }
 			prestige = 100
@@ -185,6 +188,8 @@ decisions = {
 		allow = {
 			scaled_wealth = 1.0
 			is_heretic = no
+			rtp_is_capable_adult = yes
+			rtp_no_loans_st = yes
 		}
 		effect = {
 			set_flag = voluntary_charity
@@ -231,6 +236,8 @@ decisions = {
 			emf_hiprio_decision_basic_potential = yes
 		}
 		allow = {
+			rtp_is_capable_adult = yes
+			rtp_no_loans_st = yes
 			war = no
 			in_command = no
 			prisoner = no
@@ -250,6 +257,7 @@ decisions = {
 			}
 		}
 		effect = {
+			set_character_flag = do_not_disturb
 			set_flag = emf_tournament_cooldown
 			scaled_wealth = { value = -0.5 min = -200 }
 			prestige = 100
@@ -291,6 +299,8 @@ decisions = {
 		}
 		allow = {
 			is_adult = yes
+			rtp_is_capable_adult = yes
+			war = no
 			prisoner = no
 			is_incapable = no
 			has_regent = no
@@ -384,6 +394,8 @@ decisions = {
 		}
 		allow = {
 			piety = 2000
+			rtp_is_capable_adult = yes
+			war = no
 			religion_authority = 0.75 #Consistent with nerf to controlled holy sites bonus to religious authority
 			completely_controls = c_byzantion
 			b_hagiasophia = { holder_scope = { religion = ROOT } }
@@ -426,6 +438,8 @@ decisions = {
 			emf_hiprio_decision_basic_potential = yes
 		}
 		allow = {
+			prestige = 1000
+			rtp_is_capable = yes
 			NOT = { has_landed_title = c_byzantion }
 			any_realm_lord = {
 				has_landed_title = c_byzantion
@@ -594,6 +608,7 @@ decisions = {
 		ai_check_interval = 24
 
 		potential = {
+			independent = yes
 			primary_title = { emf_is_roman_empire = yes }
 			is_adult = yes
 			prisoner = no
@@ -616,6 +631,8 @@ decisions = {
 			emf_hiprio_decision_basic_potential = yes
 		}
 		allow = {
+			rtp_is_capable = yes
+			rtp_no_loans_st = yes
 			custom_tooltip = {
 				text = NEEDS_300_PRESTIGE_COST
 				prestige = 300
@@ -694,6 +711,9 @@ decisions = {
 			emf_hiprio_decision_basic_potential = yes
 		}
 		allow = {
+			piety = 1000
+			rtp_is_capable_adult = yes
+			war = no
 			has_landed_title = e_persia
 			custom_tooltip = {
 				text = emf_ctt_controls_persia_and_mesopotamia
@@ -753,6 +773,7 @@ decisions = {
 		ai_check_interval = 24
 
 		potential = {
+			independent = yes
 			has_dlc = "The Old Gods"
 			OR = {
 				religion = zoroastrian
@@ -768,6 +789,8 @@ decisions = {
 			emf_hiprio_decision_basic_potential = yes
 		}
 		allow = {
+			rtp_is_capable_adult = yes
+			war = no
 			has_landed_title = e_persia
 			custom_tooltip = {
 				text = NEEDS_300_PIETY_COST
@@ -813,6 +836,8 @@ decisions = {
 		ai_check_interval = 24
 
 		potential = {
+			independent = yes
+			higher_tier_than = DUKE
 			has_dlc = "Sons of Abraham"
 			religion_group = jewish_group
 			NOT = { has_global_flag = third_temple_built }
@@ -821,6 +846,9 @@ decisions = {
 			emf_hiprio_decision_basic_potential = yes
 		}
 		allow = {
+			rtp_is_capable_adult = yes
+			rtp_no_loans_st = yes
+			war = no
 			completely_controls = c_jerusalem
 			774 = {
 				religion = ROOT
@@ -848,11 +876,12 @@ decisions = {
 	}
 
 	restore_high_priesthood = {
-		only_playable = yes
+		only_independent = yes
 		is_high_prio = yes
 		ai_check_interval = 24
 
 		potential = {
+			independent = yes
 			has_dlc = "Sons of Abraham"
 			religion = jewish
 			has_landed_title = k_israel
@@ -864,6 +893,7 @@ decisions = {
 			emf_hiprio_decision_basic_potential = yes
 		}
 		allow = {
+			rtp_is_capable_adult = yes
 			completely_controls = c_jerusalem
 			774 = {
 				religion = jewish
@@ -908,6 +938,8 @@ decisions = {
 		ai_check_interval = 24
 
 		potential = {
+			independent = yes
+			higher_tier_than = COUNT
 			has_dlc = "Sons of Abraham"
 			religion_group = jewish_group
 			k_israel = {
@@ -924,6 +956,8 @@ decisions = {
 			}
 			piety = 500
 			prestige = 500
+			rtp_is_capable_adult = yes
+			war = no
 		}
 		effect = {
 			hidden_effect = {
@@ -964,12 +998,13 @@ decisions = {
 	}
 
 	welcome_jews = {
-		only_playable = yes
+		only_independent = yes
 		ai_check_interval = 6
 
 		potential = {
 			#has_dlc = "Sons of Abraham"
-			is_playable = yes
+			independent = yes
+			higher_tier_than = DUKE
 			NOR = {
 				religion_group = jewish_group
 				has_character_modifier = expelled_jews_timer
@@ -981,11 +1016,14 @@ decisions = {
 		}
 		allow = {
 			has_character_modifier = expelled_jewish
+			wealth = 200
+			rtp_is_capable_adult = yes
+			war = no
 		}
 		effect = {
 			clr_flag = emf_context_welcomed_jews
 			set_flag = emf_context_welcomed_jews
-			scaled_wealth = -2.5
+			wealth = -200
 			prestige = 50
 			remove_character_modifier = expelled_jewish
 			if = {
@@ -1054,6 +1092,8 @@ decisions = {
 			prisoner = no
 			has_regent = no
 			is_incapable = no
+			rtp_is_capable_adult = yes
+			war = yes
 			trigger_if = {
 				limit = { real_tier = EMPEROR }
 				custom_tooltip = {
@@ -1293,6 +1333,34 @@ decisions = {
 					hidden = yes
 				}
 			}
+			any_demesne_province = {
+				custom_tooltip = {
+					text = "rtp_will_destroy_workshop_ct"
+
+					remove_province_modifier = rtp_gems_em
+					remove_province_modifier = rtp_amber_em
+					remove_province_modifier = rtp_beer_em
+					remove_province_modifier = rtp_berries_em
+					remove_province_modifier = rtp_bread_em
+					remove_province_modifier = rtp_bricks_em
+					remove_province_modifier = rtp_cheese_em
+					remove_province_modifier = rtp_cloth_em
+					remove_province_modifier = rtp_copper_em
+					remove_province_modifier = rtp_driedfruits_em
+					remove_province_modifier = rtp_dyes_em
+					remove_province_modifier = rtp_fish_em
+					remove_province_modifier = rtp_furs_em
+					remove_province_modifier = rtp_grain_em
+					remove_province_modifier = rtp_ham_em
+					remove_province_modifier = rtp_mushrooms_em
+					remove_province_modifier = rtp_porkribs_em
+					remove_province_modifier = rtp_salt_em
+					remove_province_modifier = rtp_spirits_em
+					remove_province_modifier = rtp_venison_em
+					remove_province_modifier = rtp_wine_em
+					remove_province_modifier = rtp_wood_em
+				}
+			}
 			any_friend = {
 				limit = { religion_group = jewish_group }
 				remove_friend = ROOT
@@ -1396,6 +1464,8 @@ decisions = {
 		ai_check_interval = 24
 		
 		potential = {
+			independent = yes
+			higher_tier_than = DUKE
 			conditional_tooltip = {
 				trigger = {
 					is_alternate_start = no
@@ -1417,6 +1487,8 @@ decisions = {
 		}
 		allow = {
 			is_adult = yes
+			rtp_is_capable_adult = yes
+			war = no
 			prisoner = no
 			is_incapable = no
 			prestige = 1000
@@ -1533,6 +1605,74 @@ decisions = {
 			if = {
 				limit = { has_nickname = no }
 				give_nickname = nick_the_great
+			}
+			if = {
+				limit = {
+					holder_scope = {
+						ai = no
+						rtp_is_mercenary = no
+						num_of_count_titles == 1
+					}
+				}
+				holder_scope = {
+					if = {
+						limit = {
+							rtp_is_mercenary = yes
+						}
+						grant_title_no_opinion = c_landless_t
+						set_government_type = rtp_landless_mercenary_g
+						primary_title = {
+							gender_succ = true_cognatic
+							add_law = {
+								law = rtp_mercenary_election_succ
+								cooldown = no
+								opinion_effect = no
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							rtp_is_holy_order = yes
+						}
+						grant_title_no_opinion = c_landless_t
+						set_government_type = rtp_landless_order_g
+						primary_title = {
+							gender_succ = true_cognatic
+							add_law = {
+								law = rtp_mercenary_election_succ
+								cooldown = no
+								opinion_effect = no
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							dynasty = 19930
+						}
+						grant_title_no_opinion = c_landless_t
+						set_government_type = rtp_lowborn_g
+						primary_title = {
+							gender_succ = true_cognatic
+							add_law = {
+								law = rtp_lowborn_succ
+								cooldown = no
+								opinion_effect = no
+							}
+						}
+					}
+					else = {
+						grant_title_no_opinion = c_landless_t
+						set_government_type = rtp_noble_g
+						primary_title = {
+							gender_succ = true_cognatic
+							add_law = {
+								law = rtp_family_election_succ
+								cooldown = no
+								opinion_effect = no
+							}
+						}
+					}
+				}
 			}
 			primary_title = {
 				show_scope_change = no
@@ -1653,6 +1793,8 @@ decisions = {
 			prisoner = no
 			is_incapable = no
 			NOT = { is_inaccessible_trigger = yes }
+			rtp_is_capable_adult = yes
+			rtp_no_loans_st = yes
 			war = no
 			custom_tooltip = {
 				text = CAN_AFFORD_TOURNAMENT
@@ -1674,6 +1816,7 @@ decisions = {
 			}
 		}
 		effect = {
+			set_character_flag = do_not_disturb
 			set_flag = emf_tournament_cooldown
 			scaled_wealth = { value = -0.5 min = -50 }
 			add_character_modifier = {
@@ -1712,9 +1855,11 @@ decisions = {
 		potential = {
 			is_tribal = yes
 			independent = yes
+			rtp_is_lower_baron = no
 			emf_hiprio_decision_basic_potential = yes
 		}
 		allow = {
+			rtp_is_capable_adult = yes
 			war = no
 			primary_title = { has_law = tribal_organization_4 }
 			capital_holding = {
@@ -1973,9 +2118,11 @@ decisions = {
 		potential = {
 			is_tribal = yes
 			independent = no
+			rtp_is_lower_baron = no
 			emf_hiprio_decision_basic_potential = yes
 		}
 		allow = {
+			rtp_is_capable_adult = yes
 			war = no
 			liege = {
 				OR = {
@@ -2316,6 +2463,8 @@ decisions = {
 			emf_hiprio_decision_basic_potential = yes
 		}
 		allow = {
+			rtp_is_capable_adult = yes
+			rtp_no_loans_st = yes
 			war = no
 			is_female = no
 			higher_tier_than = COUNT
@@ -2563,6 +2712,7 @@ targetted_decisions = {
 
 		allow = {
 			piety = 50
+			rtp_is_capable_adult = yes
 		}
 
 		effect = {
@@ -2617,6 +2767,7 @@ targetted_decisions = {
 
 		allow = {
 			piety = 50
+			rtp_is_capable_adult = yes
 		}
 
 		effect = {

@@ -62,6 +62,10 @@ laws = {
 		}
 		potential = {
 			has_dlc = "Zeus"
+			holder_scope = {
+				rtp_is_landless = no
+				rtp_is_baron = no
+			}
 			OR = {
 				higher_tier_than = BARON
 				holder_scope = { is_patrician = yes }
@@ -105,6 +109,7 @@ laws = {
 				revoke_law = law_voting_power_0
 				revoke_law = law_voting_power_1
 				disable_council_voting_on_issue = enforce_peace
+				rtp_assign_decreased_council_power_se = yes
 			}
 		}
 
@@ -145,7 +150,7 @@ laws = {
 					OR = {
 						is_nomadic = yes
 						is_tribal = yes
-						is_republic = yes
+						rtp_is_republic_government = yes
 					}
 				}
 			}
@@ -163,6 +168,10 @@ laws = {
 		}
 		potential = {
 			has_dlc = "Zeus"
+			holder_scope = {
+				rtp_is_landless = no
+				rtp_is_baron = no
+			}
 			OR = {
 				higher_tier_than = BARON
 				holder_scope = { is_patrician = yes }
@@ -203,6 +212,7 @@ laws = {
 				revoke_law = law_voting_power_0
 				revoke_law = law_voting_power_1
 				enable_council_voting_on_issue = enforce_peace
+				rtp_assign_increased_council_power_se = yes
 			}
 		}
 	}
@@ -223,6 +233,10 @@ laws = {
 		}
 		potential = {
 			has_dlc = "Zeus"
+			holder_scope = {
+				rtp_is_landless = no
+				rtp_is_baron = no
+			}
 			OR = {
 				higher_tier_than = BARON
 				holder_scope = { is_patrician = yes }
@@ -266,6 +280,7 @@ laws = {
 			hidden_tooltip = {
 				revoke_law = war_voting_power_0
 				revoke_law = war_voting_power_1
+				rtp_assign_decreased_council_power_se = yes
 			}
 		}
 	}
@@ -318,6 +333,10 @@ laws = {
 		}
 		potential = {
 			has_dlc = "Zeus"
+			holder_scope = {
+				rtp_is_landless = no
+				rtp_is_baron = no
+			}
 			OR = {
 				higher_tier_than = BARON
 				holder_scope = { is_patrician = yes }
@@ -361,6 +380,7 @@ laws = {
 			hidden_tooltip = {
 				revoke_law = war_voting_power_0
 				revoke_law = war_voting_power_1
+				rtp_assign_increased_council_power_se = yes
 			}
 		}
 
@@ -398,6 +418,11 @@ laws = {
 		}
 		potential = {
 			has_dlc = "Zeus"
+			holder_scope = {
+				rtp_is_feudal_government = yes
+				rtp_is_landless = no
+				rtp_is_baron = no
+			}
 			OR = {
 				higher_tier_than = BARON
 				holder_scope = { is_patrician = yes }
@@ -429,6 +454,7 @@ laws = {
 			hidden_tooltip = {
 				revoke_law = titles_voting_power_0
 				revoke_law = titles_voting_power_1
+				rtp_assign_decreased_council_power_se = yes
 			}
 			disable_council_voting_on_issue = revoke_title_interaction
 			disable_council_voting_on_issue = grant_landed_title_interaction
@@ -497,6 +523,11 @@ laws = {
 		}
 		potential = {
 			has_dlc = "Zeus"
+			holder_scope = {
+				rtp_is_feudal_government = yes
+				rtp_is_landless = no
+				rtp_is_baron = no
+			}
 			OR = {
 				higher_tier_than = BARON
 				holder_scope = { is_patrician = yes }
@@ -525,6 +556,7 @@ laws = {
 			hidden_tooltip = {
 				revoke_law = titles_voting_power_0
 				revoke_law = titles_voting_power_1
+				rtp_assign_increased_council_power_se = yes
 			}
 			enable_council_voting_on_issue = revoke_title_interaction
 			enable_council_voting_on_issue = grant_landed_title_interaction
@@ -577,6 +609,10 @@ laws = {
 		}
 		potential = {
 			has_dlc = "Zeus"
+			holder_scope = {
+				rtp_is_landless = no
+				rtp_is_baron = no
+			}
 			OR = {
 				higher_tier_than = BARON
 				holder_scope = { is_patrician = yes }
@@ -607,6 +643,7 @@ laws = {
 			hidden_tooltip = {
 				revoke_law = justice_voting_power_0
 				revoke_law = justice_voting_power_1
+				rtp_assign_decreased_council_power_se = yes
 			}
 			disable_council_voting_on_issue = imprison_character_interaction
 			disable_council_voting_on_issue = exile_imprisoned_interaction
@@ -661,7 +698,7 @@ laws = {
 					OR = {
 						is_nomadic = yes
 						is_tribal = yes
-						is_republic = yes
+						rtp_is_republic_government = yes
 					}
 				}
 			}
@@ -678,6 +715,10 @@ laws = {
 		}
 		potential = {
 			has_dlc = "Zeus"
+			holder_scope = {
+				rtp_is_landless = no
+				rtp_is_baron = no
+			}
 			OR = {
 				higher_tier_than = BARON
 				holder_scope = { is_patrician = yes }
@@ -705,6 +746,7 @@ laws = {
 			hidden_tooltip = {
 				revoke_law = justice_voting_power_0
 				revoke_law = justice_voting_power_1
+				rtp_assign_increased_council_power_se = yes
 			}
 			enable_council_voting_on_issue = imprison_character_interaction
 			enable_council_voting_on_issue = exile_imprisoned_interaction

@@ -31,6 +31,7 @@ character_event = {
 	war = no
 	
 	trigger = {
+		rtp_is_lower_baron = no
 		tier = count
 		in_command = no
 		NOT = { religion_group = muslim }

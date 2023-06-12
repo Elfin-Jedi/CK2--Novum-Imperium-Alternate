@@ -15,6 +15,7 @@
 				blg_devout = yes
 				blg_pilgrimage = yes
 				society_member_of = monastic_order_hindu
+				society_member_of = rtp_learning_hindu
 				has_character_flag = diwali_feast_begun
 				has_character_flag = attending_diwali_feast
 			}
@@ -28,6 +29,7 @@
 			OR = {
 				blg_devout = yes
 				society_member_of = monastic_order_hindu
+				society_member_of = rtp_learning_hindu
 			}
 		}
 	}
@@ -39,6 +41,7 @@
 			OR = {
 				blg_devout = yes
 				society_member_of = monastic_order_hindu
+				society_member_of = rtp_learning_hindu
 			}
 		}
 	}
@@ -50,6 +53,7 @@
 			OR = {
 				blg_devout = yes
 				society_member_of = monastic_order_hindu
+				society_member_of = rtp_learning_hindu
 			}
 		}
 	}
@@ -61,6 +65,7 @@
 			OR = {
 				blg_devout = yes
 				society_member_of = monastic_order_hindu
+				society_member_of = rtp_learning_hindu
 			}
 		}
 	}
@@ -72,6 +77,7 @@
 			OR = {
 				blg_devout = yes
 				society_member_of = monastic_order_hindu
+				society_member_of = rtp_learning_hindu
 			}
 		}
 	}
