@@ -337,14 +337,6 @@ random_government_effect = {
 				holy_order = yes
 				controls_religion = yes
 				government = theocratic_feudal_government
-				limit = {
-					any_province = {
-						empire = {
-							has_title_flag = alternate_hre
-							has_title_flag = alternate_byz
-						}
-					}
-				}
 			}
 		}
 		preferred_limit = {
