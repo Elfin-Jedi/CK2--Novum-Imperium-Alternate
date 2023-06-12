@@ -1615,12 +1615,15 @@ targetted_decisions = {
 		}
 		allow = {
 			prisoner = no
-			NOT = {
-				regent = {
-					OR = {
-						trait = deceitful
-						trait = ambitious
-						is_rival = ROOT
+			OR = {
+				rtp_is_landless = yes
+				NOT = {
+					regent = {
+						OR = {
+							trait = deceitful
+							trait = ambitious
+							is_rival = ROOT
+						}
 					}
 				}
 			}

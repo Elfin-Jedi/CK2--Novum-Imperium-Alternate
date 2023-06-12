@@ -49,6 +49,12 @@ Do I need have_gender_laws = yes etc. from TiaraMod in: !!!rtp_landless_governme
 Next:
 
 Rise to Power
+
+Republic Equality for HIP
+Enatic Kingdoms
+Better Gender Law
+Make it so with game rule full equality of women they can take consorts if men can
+
 Landless Courts and Kings?
 
 Unlimited Lifestyle Events
@@ -60,11 +66,6 @@ Societies: Guilds, Sufis.
 
 Rowan's mod thingy (I forgot the name, Buildings and Resources?)
 Medieval Trade Routes
-
-Republic Equality for HIP
-Enatic Kingdoms
-Better Gender Law
-Make it so with game rule full equality of women they can take consorts if men can
 
 Reformation Reform
 Monastic Feudal for Pagan Temporal Heads

@@ -13,9 +13,12 @@ targetted_decisions = {
 			has_flag = emf_siege_in_hiding
 		}
 		allow = {
-			capital_holding = {
-				has_siege = no
-				is_occupied = no
+			OR = {
+				rtp_is_landless = yes
+				capital_holding = {
+					has_siege = no
+					is_occupied = no
+				}
 			}
 		}
 		effect = {

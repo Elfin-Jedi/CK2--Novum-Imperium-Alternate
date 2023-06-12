@@ -526,3 +526,96 @@ feudal_governments = {
 		commander_limit = -1
 	}
 }
+
+#Baron - Tribal
+	rtp_baron_tribal_g = {
+		potential = {
+			ai = no
+			is_patrician = no
+			rtp_is_baron = yes
+			rtp_is_landless = no
+			OR = {
+				controls_religion = no
+				religion_group = muslim
+				has_religion_feature = religion_temporal_head
+				AND = {
+					religion = norse_pagan_reformed
+					has_religion_features = no # Old saves, and campaigns without HF, need the Fylkirate to continue working
+				}
+			}
+			NOR = {
+				religion_group = muslim
+				is_government_potential = rtp_baron_order_g
+				is_government_potential = rtp_baron_mercenary_g
+				is_government_potential = rtp_baron_republic_g
+				is_government_potential = rtp_baron_theocracy_g
+				is_government_potential = rtp_baron_feudal_g
+			}
+			NAND = { 
+				culture_group = tibetan_group
+				OR = {
+					religion = bon
+					religion = bon_reformed
+					religion = buddhist
+				}
+				higher_tier_than = BARON
+			}
+			NAND = {
+				tier = EMPEROR
+				primary_title = { has_title_flag = pretender_chinese_empire }
+				OR = {
+					culture_group = chinese_group
+					culture = khitan
+					culture = tangut
+					culture = jurchen
+					has_character_flag = chinese_imperial_government_preserve
+				}
+			}
+		}
+
+		preferred_holdings = {
+			TRIBAL
+		}
+
+		allowed_holdings = {
+			TRIBAL
+			FORT
+		}
+
+		accepts_liege_governments = {
+			feudal_government
+			muslim_government
+			theocratic_feudal_government
+			order_government
+			rtp_mercenary_g
+
+			merchant_republic_government
+			muslim_merchant_republic_government
+			bogomilist_merchant_republic_government
+			rtp_republic_g
+			rtp_privateer_g
+
+			rtp_theocracy_g
+
+			tribal_government
+
+			nomadic_government
+		}
+		
+		color = { 92 31 23 }
+		frame_suffix = "_baron"
+		capital_move_delay = 600
+		can_build_holdings = no
+		can_create_kingdoms = no
+		can_usurp_kingdoms_and_empires = no
+		can_be_granted_kingdoms_and_empires_by_other_government = no
+
+		character_modifier = {
+			martial = 1
+
+			intrigue = -1
+		}
+		court_size_modifier = -5
+		commander_limit = -1
+	}
+}
