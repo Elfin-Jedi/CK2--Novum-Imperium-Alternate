@@ -1,5 +1,5 @@
 latin = {
-romanoindian = {
+	romanoindian = {
 		graphical_cultures = { romanoindianfx romangfx southerngfx }
 		
 		color = { 0.8 0.3 0.4 }
@@ -43,4 +43,4 @@ romanoindian = {
 
 		modifier = default_culture_modifier
 	}
-	}
+}

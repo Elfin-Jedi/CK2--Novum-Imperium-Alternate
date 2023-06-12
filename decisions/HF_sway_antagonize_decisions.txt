@@ -40,6 +40,7 @@ targetted_decisions = {
 				}
 				is_adult = yes
 				NOT = { trait = incapable }
+				rtp_is_capable_adult = yes
 				is_within_diplo_range = ROOT
 			}
 			FROM = {
@@ -56,6 +57,7 @@ targetted_decisions = {
 				}
 			}
 			prisoner = no
+			rtp_is_capable_adult = yes
 			NOT = { trait = incapable }
 			NOT = { trait = in_hiding }
 			NOT = { has_character_modifier = in_seclusion }
@@ -162,6 +164,7 @@ targetted_decisions = {
 				}
 				is_adult = yes
 				NOT = { trait = incapable }
+				rtp_is_capable_adult = yes
 				is_within_diplo_range = ROOT
 			}
 			FROM = {
@@ -181,6 +184,7 @@ targetted_decisions = {
 			NOT = { is_lover = FROM }
 			prisoner = no
 			NOT = { trait = incapable }
+			rtp_is_capable_adult = yes
 			NOT = { trait = in_hiding }
 			NOT = { has_character_modifier = in_seclusion }
 			is_adult = yes

@@ -12,7 +12,7 @@ skull_of_brigid = {
 				is_theocracy = yes
 				religion = catholic
 				any_demesne_title = {
-					title = c_kildare
+					title = b_kildare
 				}
 			}
 		}

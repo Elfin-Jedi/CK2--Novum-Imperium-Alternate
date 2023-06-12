@@ -33,19 +33,30 @@ Will I need to add anything to nomad bows? Crowns: crown or head slot? Also Chin
 rtp_is_theocracy = {, rtp_is_republic = {, rtp_is_holy_order = {, & rtp_is_feudal = {
 rtp_laws religious customs clergy obligations
 
-Fix 'gender_succ = agnatic'
+Fix 'gender_succ = agnatic' This might be useful:
+
+OR = {
+	is_female = no
+	gender_equality_trigger = yes
+}
+
+Add warrior lodge leader traits to Warrior Societies (HIP).
+Does rtp_no_loans_st include emf loans?
+Do we need domestic_law.gfx or province.gfx?
+
+Do I need have_gender_laws = yes etc. from TiaraMod in: !!!rtp_landless_governments, !!rtp_baron_governments, !rtp_governments, chivalry_governments etc.
 
 Next:
 
 Rise to Power
+
+Republic Equality for HIP
+Enatic Kingdoms
+Better Gender Law
+Make it so with game rule full equality of women they can take consorts if men can
+
 Landless Courts and Kings?
 
-<<<<<<< Updated upstream
-Reformation Reform
-Monastic Feudal for Pagan Temporal Heads
-
-=======
->>>>>>> Stashed changes
 Unlimited Lifestyle Events
 Forge Unlimited Bloodlines + Bloodline fix (compare with HIP version of Forge Unlimited Bloodlines)
 Extended Bloodlines (HF)
@@ -59,16 +70,9 @@ Medieval Trade Routes
 Reformation Reform
 Monastic Feudal for Pagan Temporal Heads
 
-Republic Equality for HIP
-Enatic Kingdoms
-Better Gender Law
-Make it so with game rule full equality of women they can take consorts if men can
-
 Lux Invicta
 
-An Indo-Rome Mod: Renovatio Imperii
 Usurpation Fix
-Dark Ages
 The Rise of the New Churches
 Easy Heresy
 

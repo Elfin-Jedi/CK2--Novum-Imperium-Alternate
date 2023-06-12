@@ -42,7 +42,7 @@ spatha_tier_1_new = {
 	active = {
 		is_adult = yes
 	}
-	flags = { combat_weapon sword created }
+	flags = { combat_weapon weapon sword created }
 	stacking = no
 	picture = "GFX_indoroman_spatha"
 	slot = weapon
@@ -60,7 +60,7 @@ spatha_tier_2_new = {
 	active = {
 		is_adult = yes
 	}
-	flags = { combat_weapon sword created }
+	flags = { combat_weapon weapon sword created }
 	stacking = no
 	picture = "GFX_indoroman_mastercraft_spatha"
 	slot = weapon
@@ -79,7 +79,7 @@ spatha_tier_3_walakrios = {
 	active = {
 		is_adult = yes
 	}
-	flags = { combat_weapon sword created }
+	flags = { combat_weapon weapon sword created }
 	stacking = no
 	picture = "GFX_indoroman_traitor_spatha"
 	slot = weapon
@@ -98,7 +98,7 @@ spatha_tier_3_dragonseeker = {
 	active = {
 		is_adult = yes
 	}
-	flags = { combat_weapon sword created }
+	flags = { combat_weapon weapon sword created }
 	stacking = no
 	picture = "GFX_indoroman_dragonseeker_spatha"
 	slot = weapon
@@ -116,7 +116,7 @@ spatha_tier_3_hektorios = {
 	active = {
 		is_adult = yes
 	}
-	flags = { combat_weapon sword created }
+	flags = { combat_weapon weapon sword created }
 	stacking = no
 	picture = "GFX_indoroman_stormdivider_spatha"
 	slot = weapon
@@ -130,7 +130,7 @@ spatha_toothpick_of_annihilation = {
 	active = {
 		is_adult = yes
 	}
-	flags = { combat_weapon sword created }
+	flags = { combat_weapon weapon sword created }
 	stacking = no
 	picture = "GFX_indoroman_toothpick_of_annihilation"
 	slot = weapon
@@ -150,7 +150,7 @@ spatha_tier_3_cold = {
 	active = {
 		is_adult = yes
 	}
-	flags = { combat_weapon sword created }
+	flags = { combat_weapon weapon sword created }
 	stacking = no
 	picture = "GFX_indoroman_cold_spatha"
 	slot = weapon
@@ -168,7 +168,7 @@ spatha_tier_3_sheogorath = {
 	active = {
 		is_adult = yes
 	}
-	flags = { combat_weapon sword created }
+	flags = { combat_weapon weapon sword created }
 	stacking = no
 	picture = "GFX_indoroman_jack_spatha"
 	slot = weapon
@@ -311,7 +311,7 @@ muramarius = {
 	active = {
 		is_adult = yes
 	}
-	flags = { combat_weapon sword created }
+	flags = { combat_weapon weapon sword created }
 	stacking = no
 	indestructible = yes
 	picture = "GFX_muramarius"

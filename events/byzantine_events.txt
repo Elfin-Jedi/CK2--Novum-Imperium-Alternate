@@ -1472,6 +1472,7 @@ character_event = {
 	min_age = 16
 	
 	trigger = {
+		rtp_is_lower_baron = no
 		has_dlc = "Legacy of Rome"
 		in_command = no
 		NOT = { religion_group = indian_group }

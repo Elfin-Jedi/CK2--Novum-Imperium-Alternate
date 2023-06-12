@@ -20,7 +20,7 @@ character_event = {
 	trigger = {
 		is_devil_worshiper_trigger = yes
 		days_in_society > 1095
-		has_dlc = Mystics
+		has_dlc = "Mystics"
 	}
 
 	immediate = {
@@ -90,7 +90,7 @@ character_event = {
 
 	prisoner = no
 
-	trigger = { has_dlc = Mystics }
+	trigger = { has_dlc = "Mystics" }
 
 	immediate = {
 		if = {
@@ -7218,7 +7218,7 @@ character_event = {
 
 	desc = {
 		trigger = {
-			has_dlc = Reapers
+			has_dlc = "Reapers"
 			FROM = { is_female = yes }
 		}
 		text = EVTDESC_MNM_7824
@@ -7227,7 +7227,7 @@ character_event = {
 	desc = {
 		trigger = {
 			NAND = {
-				has_dlc = Reapers
+				has_dlc = "Reapers"
 				FROM = { is_female = yes }
 			}
 		}

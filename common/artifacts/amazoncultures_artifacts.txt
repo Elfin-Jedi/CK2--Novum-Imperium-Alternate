@@ -13,7 +13,7 @@ heroines_sword = {
 	active = {
 		is_adult = yes
 	}
-	flags = { combat_weapon sword created }
+	flags = { combat_weapon weapon sword created }
 	stacking = no
 	indestructible = yes
 	picture = "GFX_sword_engraved"
@@ -54,7 +54,7 @@ themiskyran_spear = {
 	active = {
 		is_adult = yes
 	}
-	flags = { combat_weapon spear created }
+	flags = { combat_weapon weapon spear created }
 	stacking = no
 	indestructible = yes
 	picture = "GFX_the_impaler"
@@ -73,7 +73,7 @@ valkyrian_axe = {
 	active = {
 		is_adult = yes
 	}
-	flags = { combat_weapon axe created }
+	flags = { combat_weapon weapon axe created }
 	stacking = no
 	indestructible = yes
 	picture = "GFX_marauder"
@@ -92,7 +92,7 @@ scythian_bow = {
 	active = {
 		is_adult = yes
 	}
-	flags = { combat_weapon bow created }
+	flags = { combat_weapon weapon bow created }
 	stacking = no
 	indestructible = yes
 	picture = "GFX_eagle"
@@ -111,7 +111,7 @@ parthian_bow = {
 	active = {
 		is_adult = yes
 	}
-	flags = { combat_weapon bow created }
+	flags = { combat_weapon weapon bow created }
 	stacking = no
 	indestructible = yes
 	picture = "GFX_silent_wind"
@@ -130,7 +130,7 @@ kushite_scimitar = {
 	active = {
 		is_adult = yes
 	}
-	flags = { combat_weapon sword created }
+	flags = { combat_weapon weapon sword created }
 	stacking = no
 	indestructible = yes
 	picture = "GFX_scimitar_T3"
@@ -149,7 +149,7 @@ carthaginian_spear = {
 	active = {
 		is_adult = yes
 	}
-	flags = { combat_weapon spear created }
+	flags = { combat_weapon weapon spear created }
 	stacking = no
 	indestructible = yes
 	picture = "GFX_the_impaler"
@@ -168,7 +168,7 @@ etruscan_mace = {
 	active = {
 		is_adult = yes
 	}
-	flags = { combat_weapon mace created }
+	flags = { combat_weapon weapon mace created }
 	stacking = no
 	indestructible = yes
 	picture = "GFX_the_bone_breaker"
@@ -187,7 +187,7 @@ pritani_claymore = {
 	active = {
 		is_adult = yes
 	}
-	flags = { combat_weapon sword created }
+	flags = { combat_weapon weapon sword created }
 	stacking = no
 	indestructible = yes
 	picture = "GFX_zweihander_sword"
@@ -206,7 +206,7 @@ illyrian_axe = {
 	active = {
 		is_adult = yes
 	}
-	flags = { combat_weapon axe created }
+	flags = { combat_weapon weapon axe created }
 	stacking = no
 	indestructible = yes
 	picture = "GFX_axe_of_perun"
@@ -225,7 +225,7 @@ valascan_bow = {
 	active = {
 		is_adult = yes
 	}
-	flags = { combat_weapon bow created }
+	flags = { combat_weapon weapon bow created }
 	stacking = no
 	indestructible = yes
 	picture = "GFX_silent_wind"
@@ -473,7 +473,7 @@ amazonian_pitchfork = {
 			}
 		}
 	}
-	flags = { combat_weapon lance unique created }
+	flags = { combat_weapon weapon lance unique created }
 	stacking = no
 	picture = "GFX_the_trident"
 	slot = weapon
@@ -534,7 +534,7 @@ pritani_sling = {	# no longer the imperial weapon
 	active = {
 		is_adult = yes
 	}
-	flags = { combat_weapon created }
+	flags = { combat_weapon weapon created }
 	stacking = no
 	indestructible = yes
 	picture = "GFX_davids_sling"

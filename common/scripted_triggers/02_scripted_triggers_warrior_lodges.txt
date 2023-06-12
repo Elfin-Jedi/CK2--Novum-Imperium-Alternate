@@ -86,11 +86,11 @@ has_any_warrior_lodge_training_trait_trigger = {
 		trait = bon_leader
 		trait = hellenic_leader
 		trait = aztec_leader
-		# trait = cws_christian_leader
-		# trait = ws_mazdan_leader
-		# trait = ws_eastern_leader
-		# trait = ws_muslim_leader
-		# trait = ws_jewish_leader
+		trait = christian_leader
+		trait = zoroastrian_leader
+		trait = eastern_leader
+		trait = muslim_leader
+		trait = jewish_leader
 		trait = amazonian_leader
 		
 		### ACR ###
@@ -146,44 +146,24 @@ has_current_warrior_lodge_leader_trait_trigger = {
 				trait = aztec_leader
 				society_member_of = warrior_lodge_aztec
 			}
-			# AND = {
-				# trait = cws_christian_leader
-				# society_member_of = warrior_lodge_cws_christian
-			# }
 			AND = {
-				trait = hellenic_leader
+				trait = christian_leader
 				society_member_of = warrior_lodge_cws_christian
 			}
-			# AND = {
-				# trait = ws_mazdan_leader
-				# society_member_of = warrior_lodge_ws_mazdan
-			# }
 			AND = {
-				trait = zun_leader
+				trait = zoroastrian_leader
 				society_member_of = warrior_lodge_ws_mazdan
 			}
-			# AND = {
-				# trait = ws_eastern_leader
-				# society_member_of = warrior_lodge_ws_eastern
-			# }
 			AND = {
-				trait = bon_leader
+				trait = eastern_leader
 				society_member_of = warrior_lodge_ws_eastern
 			}
-			# AND = {
-				# trait = ws_muslim_leader
-				# society_member_of = warrior_lodge_ws_muslim
-			# }
 			AND = {
-				trait = zun_leader
+				trait = muslim_leader
 				society_member_of = warrior_lodge_ws_muslim
 			}
-			# AND = {
-				# trait = ws_jewish_leader
-				# society_member_of = warrior_lodge_ws_jewish
-			# }
 			AND = {
-				trait = zun_leader
+				trait = jewish_leader
 				society_member_of = warrior_lodge_ws_jewish
 			}
 			AND = {

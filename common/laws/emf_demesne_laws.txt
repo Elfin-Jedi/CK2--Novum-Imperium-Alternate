@@ -340,6 +340,7 @@ laws = {
 			owner = { is_tribal = yes }
 		}
 		allow = {
+			higher_tier_than = BARON
 			OR = {
 				has_law = tribal_organization_1
 				emf_laws_has_no_TO = yes
@@ -454,6 +455,7 @@ laws = {
 			}
 		}
 		allow = {
+			higher_tier_than = BARON
 			OR = {
 				has_law = tribal_organization_2
 				AND = {
@@ -628,6 +630,7 @@ laws = {
 		unreformed_tribal_opinion = -10
 
 		allow = {
+			higher_tier_than = COUNT
 			OR = {
 				has_law = tribal_organization_3
 				AND = {
@@ -814,6 +817,7 @@ laws = {
 		unreformed_tribal_opinion = -20
 
 		allow = {
+			higher_tier_than = COUNT
 			OR = {
 				has_law = tribal_organization_4
 				AND = {
@@ -986,6 +990,7 @@ laws = {
 			}
 		}
 		allow = {
+			higher_tier_than = DUKE
 			has_law = tribal_organization_3
 			trigger_if = {
 				limit = { owner = { emf_laws_is_exempt_from_TO_penalties = no } }

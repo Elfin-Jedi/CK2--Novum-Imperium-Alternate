@@ -48,6 +48,7 @@ character_event = {
 			if = {
 				limit = {
 					OR = {
+						religion = chalcedonian
 						religion = orthodox  # Jeru, Const, Antio
 						religion = iconoclast
 						religion = monothelite

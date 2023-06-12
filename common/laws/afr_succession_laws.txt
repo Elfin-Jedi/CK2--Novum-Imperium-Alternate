@@ -11,10 +11,12 @@ succession_laws = {
 					is_feudal = yes
 					is_tribal = yes
 				}
-				religion = bori
-                religion = a_tag_roog
-                culture = kanuri
-				has_religion_feature = religion_feature_a_tag_roog
+				OR = {
+					religion = bori
+					religion = a_tag_roog
+					culture = kanuri
+					has_religion_feature = religion_feature_a_tag_roog
+                }
 				NOR = {
                     AND = {
                         religion_group = muslim
@@ -36,9 +38,7 @@ succession_laws = {
 					}
 				}
 				trigger_else = {
-					OR = {
-						has_religion_feature = religion_feature_a_tag_roog
-					}
+					has_religion_feature = religion_feature_a_tag_roog
 				}
 			}
 		}

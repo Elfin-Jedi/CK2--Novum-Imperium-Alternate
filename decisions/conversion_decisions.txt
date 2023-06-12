@@ -137,7 +137,7 @@ targeted_decisions = {
 	}
 
 	convert_to_local_culture = {
-		only_playable = yes
+		only_rulers = yes
 		
 		filter = self
 		ai_target_filter = self
@@ -172,7 +172,7 @@ targeted_decisions = {
 	}
 
 	convert_to_local_religion = {
-		only_playable = yes
+		only_rulers = yes
 
 		filter = self
 		ai_target_filter = self
@@ -2450,7 +2450,7 @@ targeted_decisions = {
 	}
 
 	convert_to_spouse_religion = {
-		only_playable = yes
+		only_rulers = yes
 
 		filter = home_court
 		ai_target_filter = home_court
@@ -2552,6 +2552,7 @@ decisions = {
 			emf_can_convert_religion = yes
 		}
 		allow = {
+			rtp_is_capable_adult = yes
 			emf_has_roman_empire = yes
 			has_landed_title = c_byzantion
 			any_realm_province = { religion = orthodox }
@@ -2671,6 +2672,7 @@ decisions = {
 			}
 		}
 		allow = {
+			rtp_is_capable_adult = yes
 			show_only_failed_conditions = yes
 			OR = { 
 				religion_group = christian 

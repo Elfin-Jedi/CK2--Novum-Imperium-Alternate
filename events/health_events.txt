@@ -4160,12 +4160,12 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 
 	desc = {
-		trigger = { has_dlc = Reapers }
+		trigger = { has_dlc = "Reapers" }
 		picture = GFX_evt_cat
 		text = EVTDESC6360
 	}
 	desc = {
-		trigger = { NOT = { has_dlc = Reapers } }
+		trigger = { NOT = { has_dlc = "Reapers" } }
 		picture = GFX_evt_council
 		text = EVTDESC6360
 	}

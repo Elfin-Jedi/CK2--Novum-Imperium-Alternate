@@ -27,6 +27,7 @@ narrative_event = {
 	hide_new = yes
 
 	trigger = {
+		rtp_is_landless = no
 		OR = {
 			ai = no
 			has_game_rule = {

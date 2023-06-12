@@ -1238,6 +1238,7 @@ feudal_governments = {
 
 		capital_move_delay = 600
 	}
+	
 	#####################################################################################
     
     playable_republic_government = {

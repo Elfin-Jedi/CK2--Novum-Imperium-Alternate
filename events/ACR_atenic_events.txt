@@ -104,7 +104,7 @@ province_event = {
 		owner = {
 			795 = {
 				build_holding = {
-				   title = b_meir
+				   title = b_asyut
 				   type = temple
 				   holder = PREV
 				}

@@ -20,7 +20,7 @@ character_event = {
 							had_character_flag = { flag = chivalry_recent_duel days = 500 }
 							AND = {
 								had_character_flag = { flag = chivalry_recent_duel days = 365 }
-								AI = yes
+								ai = yes
 							}
 						}
 						society_rank == 2
@@ -32,7 +32,7 @@ character_event = {
 							had_character_flag = { flag = chivalry_recent_duel days = 500 }
 							AND = {
 								had_character_flag = { flag = chivalry_recent_duel days = 365 }
-								AI = yes
+								ai = yes
 							}
 						}
 						society_rank == 3
@@ -44,12 +44,12 @@ character_event = {
 							AND = {
 								had_character_flag = { flag = chivalry_recent_duel days = 180 }
 								# society_rank == 4
-								AI = no
+								ai = no
 							}
 							AND = {
 								had_character_flag = { flag = chivalry_recent_duel days = 90 }
 								# society_rank == 4
-								AI = yes
+								ai = yes
 							}
 						}
 						OR = {
@@ -97,7 +97,7 @@ character_event = {
 									had_character_flag = { flag = chivalry_recent_duel days = 500 }
 									AND = {
 										had_character_flag = { flag = chivalry_recent_duel days = 365 }
-										AI = yes
+										ai = yes
 									}
 								}
 								society_rank == 2
@@ -109,7 +109,7 @@ character_event = {
 									had_character_flag = { flag = chivalry_recent_duel days = 500 }
 									AND = {
 										had_character_flag = { flag = chivalry_recent_duel days = 365 }
-										AI = yes
+										ai = yes
 									}
 								}
 								society_rank == 3
@@ -121,12 +121,12 @@ character_event = {
 									AND = {
 										had_character_flag = { flag = chivalry_recent_duel days = 180 }
 										# society_rank == 4
-										AI = no
+										ai = no
 									}
 									AND = {
 										had_character_flag = { flag = chivalry_recent_duel days = 90 }
 										# society_rank == 4
-										AI = yes
+										ai = yes
 									}
 								}
 								OR = {
@@ -1639,7 +1639,7 @@ character_event = {
 		clr_character_flag = chivalry_duel_wounded
 		chivalry_duel_cleaning_final = yes
 	}
-	option = { #AI skip all duel
+	option = { #ai skip all duel
 		name = EVTOPTM_CHI_311 #no local
 		trigger = {
 			ai = yes
