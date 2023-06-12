@@ -5,6 +5,10 @@ Base:
 "HIP - Historical Immersion Project" - everything but ARKOpackInterface, ARKOpack Armoiries, MiniSWMH, and CPRPlus.
 "HIP - Comprehensive Annals of Five Dynasties"
 
+Large Mods:
+
+"Rise to Power"
+
 Medium Mods:
 
 "African Religions Overhaul"
@@ -12,6 +16,7 @@ Medium Mods:
 "Ancient Religions Reborn and Expanded"
 "Better Looking Garbs"
 "Better Looking Garbs (HIP)"
+"Better Looking Garbs (RTP)"
 "BoSB Patrum Scuta+ for HIP"
 "Crusader Amazons"
 "Dark Ages v.1.2.51"

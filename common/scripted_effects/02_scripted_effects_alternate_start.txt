@@ -335,21 +335,6 @@ random_government_effect = {
 				holy_order = yes
 				controls_religion = yes
 				government = theocratic_feudal_government
-<<<<<<< Updated upstream
-				limit = {
-					any_province = {
-						empire = {
-							has_title_flag = alternate_hre
-							has_title_flag = alternate_byz
-						}
-=======
-				any_province = {
-					empire = {
-						has_title_flag = alternate_hre
-						has_title_flag = alternate_byz
->>>>>>> Stashed changes
-					}
-				}
 			}
 		}
 		preferred_limit = {
@@ -426,28 +411,9 @@ random_government_effect = {
 				set_government_type = nomadic_government
 			}
 			16 = {
-				any_demesne_province = {
-					any_province_holding = {
-						limit = {
-							holding_type = city
-						}
-						grant_title = event_target:target_theocracy
-						make_capital_holding = yes
-					}
-				}
 				set_government_type = playable_republic_government
 			}
 			16 = {
-				remove_spouse = spouse
-				any_demesne_province = {
-					any_province_holding = {
-						limit = {
-							holding_type = temple
-						}
-						grant_title = event_target:target_theocracy
-						make_capital_holding = yes
-					}
-				}
 				set_government_type = playable_theocracy_government
 			}
 			16 = {
@@ -468,17 +434,28 @@ random_government_effect = {
 				}
 			}
 			4 = {
-				remove_spouse = spouse
-				any_demesne_province = {
-					any_province_holding = {
-						limit = {
-							holding_type = temple
+				random_list = {
+					25 = {
+						set_government_type = order_government
+					}
+					25 = {
+						set_government_type = rtp_confederation_g
+					}
+					25 = {
+						set_government_type = rtp_mercenary_g
+					}
+					25 = {
+						if = {
+							limit = {
+								is_government_potential = rtp_privateer_g
+							}
+							set_government_type = rtp_privateer_g
 						}
-						grant_title = event_target:target_theocracy
-						make_capital_holding = yes
+						else = {
+							set_government_type = merchant_republic_government
+						}
 					}
 				}
-				set_government_type = playable_theocracy_government
 			}
 		}
 	}
