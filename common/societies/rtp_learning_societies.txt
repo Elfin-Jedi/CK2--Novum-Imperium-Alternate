@@ -47,6 +47,11 @@ rtp_learning_reformed_pagan = {
 		OR = {
 			religion = hellenic_pagan_reformed
 			religion = hellenic_pagan
+			religion = hereclemasculist_pagan
+			religion = romist_pagan
+			religion = vieti_mithras_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
 		}
 	}
 
@@ -55,6 +60,11 @@ rtp_learning_reformed_pagan = {
 		OR = {
 			religion = hellenic_pagan_reformed
 			religion = hellenic_pagan
+			religion = hereclemasculist_pagan
+			religion = romist_pagan
+			religion = vieti_mithras_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
 		}
 	}
 	
@@ -211,6 +221,15 @@ rtp_learning_reformed_pagan = {
 				religion = bori
 				religion = a_tag_roog_reformed
 				religion = amazigh_reformed
+				religion = hereclemasculist_pagan
+				religion = romist_pagan
+				religion = vieti_mithras_pagan
+				religion = titan_pagan
+				religion = promethean_pagan
+				religion = celtic_pagan_reformed
+				religion = britannic_pagan
+				religion = egyptian_pagan_reformed
+				religion = aten_pagan
 			}
 		}
 	}
@@ -276,6 +295,13 @@ rtp_learning_pagan = {
 			religion = bori
 			religion = a_tag_roog_reformed
 			religion = amazigh_reformed
+			religion = britannic_hyperborean_pagan
+			religion = celtic_pagan_reformed
+			religion = celtic_pagan
+			religion = britannic_pagan
+			religion = egyptian_pagan_reformed
+			religion = egyptian_pagan
+			religion = aten_pagan
 		}
 	}
 
@@ -305,6 +331,13 @@ rtp_learning_pagan = {
 			religion = bori
 			religion = a_tag_roog_reformed
 			religion = amazigh_reformed
+			religion = britannic_hyperborean_pagan
+			religion = celtic_pagan_reformed
+			religion = celtic_pagan
+			religion = britannic_pagan
+			religion = egyptian_pagan_reformed
+			religion = egyptian_pagan
+			religion = aten_pagan
 		}
 	}
 	
@@ -461,6 +494,13 @@ rtp_learning_pagan = {
 				religion = bori
 				religion = a_tag_roog
 				religion = amazigh
+				religion = britannic_hyperborean_pagan
+				religion = celtic_pagan_reformed
+				religion = celtic_pagan
+				religion = britannic_pagan
+				religion = egyptian_pagan_reformed
+				religion = egyptian_pagan
+				religion = aten_pagan
 			}
 		}
 	}
@@ -935,6 +975,7 @@ rtp_learning_orthodox = {
 			religion = apostolic
 			religion = paulician
 			religion = tondrakian
+			religion = vieti_orthodox
 		}
 		NOR = {
 			AND = {
@@ -960,6 +1001,7 @@ rtp_learning_orthodox = {
 			religion = apostolic
 			religion = paulician
 			religion = tondrakian
+			religion = vieti_orthodox
 		}
 	}
 
@@ -973,6 +1015,7 @@ rtp_learning_orthodox = {
 			religion = apostolic
 			religion = paulician
 			religion = tondrakian
+			religion = vieti_orthodox
 		}
 	}
 	
@@ -1123,6 +1166,7 @@ rtp_learning_orthodox = {
 				religion = apostolic
 				religion = paulician
 				religion = tondrakian
+				religion = vieti_orthodox
 			}
 		}
 	}

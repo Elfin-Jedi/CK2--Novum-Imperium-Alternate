@@ -817,7 +817,7 @@ title_despot = {
 	allowed_to_hold = {
 		OR = {
 			is_close_relative = FROM
-			is_nibling_of = FROM
+			is_sibling_of = FROM
 			is_aunt_uncle_of = FROM
 			is_cousin_of = FROM
 		}
@@ -873,7 +873,7 @@ title_sebastokrator = {
 		emf_minor_title_basic_allowed_to_hold = yes
 		OR = {
 			is_close_relative = FROM
-			is_nibling_of = FROM
+			is_sibling_of = FROM
 			is_aunt_uncle_of = FROM
 			is_cousin_of = FROM
 		}
@@ -1565,8 +1565,16 @@ title_patrician_heir = {
 	patrician_heir = yes
 
 	allowed_to_hold = {
-		emf_can_inherit = yes
-		emf_can_be_patrician_heir_if_can_inherit_no_tooltip = yes
+		OR = { 
+			male_can_hold_minor_title_trigger = yes
+			female_can_hold_minor_title_trigger = yes
+		}
+		is_landed = no
+		dynasty = FROM
+		NOT = { trait = bastard }
+  		is_ascetic_trigger = no
+		NOT = { trait = eunuch }
+		is_theocracy = no
 	}
 
 	allowed_to_grant = {
@@ -4277,7 +4285,7 @@ title_augusta = {
 		is_female = yes
 		OR = {
 			is_close_relative = FROM
-			is_nibling_of = FROM
+			is_sibling_of = FROM
 			is_aunt_uncle_of = FROM
 			is_cousin_of = FROM
 			is_grandchild_of = FROM

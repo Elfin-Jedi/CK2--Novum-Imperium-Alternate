@@ -110,12 +110,12 @@ decisions = {
 		potential = {
 			is_adult = yes
 			is_playable = yes
+			is_landed = yes
 			OR = {
-				AND = {
-					is_landed = yes
-					higher_tier_than = BARON #Low nobility requires somebody else to ask the Papacy to Lift the Excommunication on their behalf.
-				}
+				higher_tier_than = BARON #Low nobility requires somebody else to ask the Papacy to Lift the Excommunication on their behalf.
 				is_patrician = yes
+				}
+				
 			}
 			#religion = catholic #Fraticelli, Reformed Pagans, etc.
 			rightful_religious_head_scope = {
@@ -2506,7 +2506,6 @@ decisions = {
 					any_unique_dynasty_vassal = { # gives random vassals a family palace
 						count = 4
 						limit = {
-							is_female = no
 							OR = {
 								is_republic = yes
 								is_tribal = yes

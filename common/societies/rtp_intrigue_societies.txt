@@ -229,6 +229,7 @@ rtp_intrigue_tengri = {
 		OR = {
 			religion = tengri_pagan
 			religion = tengri_pagan_reformed
+			religion = britannic_hyperborean_pagan
 		}
 		NOR = {
 			AND = {
@@ -249,6 +250,7 @@ rtp_intrigue_tengri = {
 		OR = {
 			religion = tengri_pagan
 			religion = tengri_pagan_reformed
+			religion = britannic_hyperborean_pagan
 		}
 	}
 
@@ -257,6 +259,7 @@ rtp_intrigue_tengri = {
 		OR = {
 			religion = tengri_pagan
 			religion = tengri_pagan_reformed
+			religion = britannic_hyperborean_pagan
 		}
 	}
 
@@ -403,6 +406,7 @@ rtp_intrigue_tengri = {
 			OR = {
 				religion = tengri_pagan
 				religion = tengri_pagan_reformed
+				religion = britannic_hyperborean_pagan
 			}
 		}
 	}
@@ -431,6 +435,9 @@ rtp_intrigue_baltic = {
 		OR = {
 			religion = baltic_pagan
 			religion = baltic_pagan_reformed
+			religion = celtic_pagan_reformed
+			religion = celtic_pagan
+			religion = britannic_pagan
 		}
 		NOR = {
 			AND = {
@@ -451,6 +458,9 @@ rtp_intrigue_baltic = {
 		OR = {
 			religion = baltic_pagan
 			religion = baltic_pagan_reformed
+			religion = celtic_pagan_reformed
+			religion = celtic_pagan
+			religion = britannic_pagan
 		}
 	}
 
@@ -605,6 +615,9 @@ rtp_intrigue_baltic = {
 			OR = {
 				religion = baltic_pagan
 				religion = baltic_pagan_reformed
+				religion = celtic_pagan_reformed
+				religion = celtic_pagan
+				religion = britannic_pagan
 			}
 		}
 	}
@@ -1042,6 +1055,9 @@ rtp_intrigue_west_african = {
 			religion = a_tag_roog_reformed
 			religion = amazigh
 			religion = amazigh_reformed
+			religion = egyptian_pagan_reformed
+			religion = egyptian_pagan
+			religion = aten_pagan
 		}
 		NOR = {
 			AND = {
@@ -1067,6 +1083,9 @@ rtp_intrigue_west_african = {
 			religion = a_tag_roog_reformed
 			religion = amazigh
 			religion = amazigh_reformed
+			religion = egyptian_pagan_reformed
+			religion = egyptian_pagan
+			religion = aten_pagan
 		}
 	}
 
@@ -1080,6 +1099,9 @@ rtp_intrigue_west_african = {
 			religion = a_tag_roog_reformed
 			religion = amazigh
 			religion = amazigh_reformed
+			religion = egyptian_pagan_reformed
+			religion = egyptian_pagan
+			religion = aten_pagan
 		}
 	}
 
@@ -1231,6 +1253,9 @@ rtp_intrigue_west_african = {
 				religion = a_tag_roog_reformed
 				religion = amazigh
 				religion = amazigh_reformed
+				religion = egyptian_pagan_reformed
+				religion = egyptian_pagan
+				religion = aten_pagan
 			}
 		}
 	}
@@ -1663,6 +1688,11 @@ rtp_intrigue_hellenic = {
 		OR = {
 			religion = hellenic_pagan
 			religion = hellenic_pagan_reformed
+			religion = hereclemasculist_pagan
+			religion = romist_pagan
+			religion = vieti_mithras_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
 		}
 		NOR = {
 			AND = {
@@ -1683,6 +1713,11 @@ rtp_intrigue_hellenic = {
 		OR = {
 			religion = hellenic_pagan
 			religion = hellenic_pagan_reformed
+			religion = hereclemasculist_pagan
+			religion = romist_pagan
+			religion = vieti_mithras_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
 		}
 	}
 
@@ -1691,6 +1726,11 @@ rtp_intrigue_hellenic = {
 		OR = {
 			religion = hellenic_pagan
 			religion = hellenic_pagan_reformed
+			religion = hereclemasculist_pagan
+			religion = romist_pagan
+			religion = vieti_mithras_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
 		}
 	}
 
@@ -1837,6 +1877,11 @@ rtp_intrigue_hellenic = {
 			OR = {
 				religion = hellenic_pagan
 				religion = hellenic_pagan_reformed
+				religion = hereclemasculist_pagan
+				religion = romist_pagan
+				religion = vieti_mithras_pagan
+				religion = titan_pagan
+				religion = promethean_pagan
 			}
 		}
 	}

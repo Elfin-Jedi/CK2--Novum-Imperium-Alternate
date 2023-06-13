@@ -150,7 +150,6 @@ decisions = {
 		}
 		allow = {
 			is_adult = yes
-			is_female = no
 			OR = {
 				is_feudal = yes
 				is_republic = yes
