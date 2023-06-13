@@ -713,7 +713,7 @@ character_event = {
 			factor = 5
 		}
 		piety = 100
-		emf_character_become_heretic = yes
+		usurpfix_become_heretic_effect = yes
 		if = {
 			limit = {
 				NOT = { has_character_modifier = religious_studies }

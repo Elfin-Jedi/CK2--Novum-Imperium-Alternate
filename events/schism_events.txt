@@ -353,7 +353,7 @@ narrative_event = {
 		trigger = {
 			emf_can_convert_religion = yes
 		}
-		emf_character_set_religion_to_FROM = yes
+		usurpfix_convert_religion_to_from_effect = yes
 		any_courtier = {
 			limit = {
 				OR = {
@@ -363,7 +363,7 @@ narrative_event = {
 				vassal_of = ROOT
 				emf_can_convert_religion = yes
 			}
-			emf_character_set_religion_to_FROM = yes
+			usurpfix_convert_religion_to_from_effect = yes
 		}
 		capital_scope = {
 			if = {

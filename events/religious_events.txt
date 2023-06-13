@@ -4997,7 +4997,7 @@ character_event = {
 					}
 				}
 			}
-			emf_character_set_religion_to_FROM = yes
+			usurpfix_convert_religion_to_from_effect = yes
 			prestige = -500
 			piety = 250
 			if = {
@@ -5015,7 +5015,7 @@ character_event = {
 					is_close_relative = ROOT
 					emf_can_convert_religion = yes
 				}
-				emf_character_set_religion_to_FROM = yes
+				usurpfix_convert_religion_to_from_effect = yes
 			}
 			any_spouse = {
 				limit = {
@@ -5216,20 +5216,20 @@ letter_event = {
 		}
 
 		prestige = -250
-		emf_character_set_religion_to_FROM = yes
+		usurpfix_convert_religion_to_from_effect = yes
 		any_courtier = {
 			limit = {
 				is_close_relative = ROOT
 				emf_can_convert_religion = yes
 			}
-			emf_character_set_religion_to_FROM = yes
+			usurpfix_convert_religion_to_from_effect = yes
 		}
 		any_spouse = {
 			limit = {
 				is_consort = no
 				emf_can_convert_religion = yes
 			}
-			emf_character_set_religion_to_FROM = yes
+			usurpfix_convert_religion_to_from_effect = yes
 		}
 		create_random_priest = {
 			random_traits = yes

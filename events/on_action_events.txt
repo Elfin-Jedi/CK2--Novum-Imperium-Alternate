@@ -5919,7 +5919,7 @@ narrative_event = {
 			}
 		}
 		
-		emf_character_set_religion_to_ROOT = yes
+		usurpfix_convert_religion_to_root_effect = yes
 		
 		hidden_tooltip = {
 			any_courtier = {
@@ -5928,7 +5928,7 @@ narrative_event = {
 					employer = { character = PREV }
 					emf_can_convert_religion = yes
 				}
-				emf_character_set_religion_to_ROOT = yes
+				usurpfix_convert_religion_to_root_effect = yes
 			}
 			any_dynasty_member = {
 				limit = {
@@ -5936,7 +5936,7 @@ narrative_event = {
 					is_playable = no
 					emf_can_convert_religion = yes
 				}
-				emf_character_set_religion_to_ROOT = yes
+				usurpfix_convert_religion_to_root_effect = yes
 			}
 			any_vassal = {
 				limit = {
@@ -5944,7 +5944,7 @@ narrative_event = {
 					is_heresy_of = ROOT
 					emf_can_convert_religion = yes
 				}
-				emf_character_set_religion_to_ROOT = yes
+				usurpfix_convert_religion_to_root_effect = yes
 			}
 			capital_scope = {
 				if = {
