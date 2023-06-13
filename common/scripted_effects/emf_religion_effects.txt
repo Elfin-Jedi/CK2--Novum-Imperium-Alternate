@@ -415,7 +415,7 @@ emf_character_set_religion_to_ROOT = {
 		}
 	}
 	else = {
-		religion = ROOT
+		usurpfix_convert_religion_to_root_effect = yes
 	}
 	hidden_tooltip = {
 		if = {
@@ -586,7 +586,7 @@ emf_character_set_religion_to_FROM = {
 		}
 	}
 	else = {
-		religion = FROM
+		usurpfix_convert_religion_to_from_effect = yes
 	}
 	hidden_tooltip = {
 		if = {
@@ -757,7 +757,7 @@ emf_character_set_religion_to_FROMFROM = {
 		}
 	}
 	else = {
-		religion = FROMFROM
+		usurpfix_convert_religion_to_fromfrom_effect = yes
 	}
 	hidden_tooltip = {
 		if = {

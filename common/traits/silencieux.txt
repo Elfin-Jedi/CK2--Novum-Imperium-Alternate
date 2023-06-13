@@ -14,7 +14,7 @@ birth = 50
   intrigue = 2
   
   opposites = {
-    trait = bavard 
+			bavard 
             gregarious      
   }
   

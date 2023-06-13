@@ -60,7 +60,7 @@ emf_character_become_heretic = {
 				has_random_cultures = yes
 			}
 		}
-		become_heretic = yes
+		usurpfix_become_heretic_effect = yes
 	}
 	else = {
 		if = {
@@ -145,7 +145,7 @@ emf_province_become_heretic = {
 				has_random_cultures = yes
 			}
 		}
-		become_heretic = yes
+		usurpfix_become_heretic_effect = yes
 	}
 	else = {
 		save_event_target_as = heretic_province
@@ -311,7 +311,7 @@ emf_become_heretic = {
 	}
 	if = {
 		limit = { religion = event_target:old_religion }
-		become_heretic = yes
+		usurpfix_become_heretic_effect = yes
 	}
 }
 

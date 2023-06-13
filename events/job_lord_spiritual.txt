@@ -2137,7 +2137,7 @@ letter_event = {
 			clr_flag = needs_fake_feudal_government
 		}
 		else = {
-			religion = FROM
+			usurpfix_convert_religion_to_from_effect = yes
 		}
 		if = {
 			limit = { higher_tier_than = BARON }

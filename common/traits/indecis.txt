@@ -15,7 +15,7 @@ birth = 100
   learning = 1
 
   opposites = {
-    trait = influencable
+			influencable
             arbitrary
             just
             brave

@@ -11,7 +11,6 @@ birth = 25
   intrigue = 2
 
   opposites = {
-    trait =
   }
 
   sex_appeal_opinion = -5

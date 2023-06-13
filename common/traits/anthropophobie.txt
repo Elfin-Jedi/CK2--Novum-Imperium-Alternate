@@ -11,13 +11,13 @@ both_parent_has_trait_inherit_chance = 70
   diplomacy = -5
 
   opposites = {
-    trait = gregarious
-            socializer
-            brave
-            agoraphobie
-            baratineur
-            bavard
-            charismatique
+		gregarious
+        socializer
+        brave
+        agoraphobie
+        baratineur
+        bavard
+        charismatique
 
 
   }

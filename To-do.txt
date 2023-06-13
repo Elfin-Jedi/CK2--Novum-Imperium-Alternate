@@ -37,21 +37,52 @@ Does rtp_no_loans_st include emf loans?
 
 Do I need have_gender_laws = yes etc. from TiaraMod in: !!!rtp_landless_governments, !!rtp_baron_governments, !rtp_governments, chivalry_governments etc.
 
-Next:
-
-"Improved Genetics 2.0"
+Extra Traits/Equality Edition:
 
 Republic Equality for HIP
+"Idiosyncrasy"
 Make it so with game rule full equality of women they can take consorts if men can
+
+Prisoner Edition:
+
+"MTA - Specific Punishments"
+"MTA - Vice and Virtue"
+"Prisoner Marriage"
+"Send Prisoner"
+"Visit Chambers TD"
+
+Queer Edition:
+
+"Legalized Gay Marriage"
+"Seduction and Romance Revamped"
+"Born This Way"
+
+Bloodline Edition:
 
 Forge Unlimited Bloodlines + Bloodline fix (compare with HIP version of Forge Unlimited Bloodlines)
 Extended Bloodlines (HF)
 VIET Events Reborn
 
-Societies: Guilds, Sufis.
+Societies & Resources Edition:
 
+Societies: Guilds, Sufis.
 Rowan's mod thingy (I forgot the name, Buildings and Resources?)
 Medieval Trade Routes
+
+Artifacts & Wonders Edition:
+
+"Caesar's Books"
+"Caesar's Wonders"
+"Cities of Wonders"
+"More Buildable Wonders"
+"More Pagan Artifacts"
+"MTA - New Artifacts"
+"WOWGAG's More Artifacts & Bloodlines" [Contains "Historical and Fantastical Artifacts" & "Mythic Artifacts"]
+"More Artifacts Submod - BLG Compatibility Mod"
+"An Antique Land"
+
+Always Dedicate Temple
+LF - Custom Religion
 
 Lux Invicta
 

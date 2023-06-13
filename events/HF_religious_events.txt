@@ -6382,12 +6382,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		if = {
-			limit = {
-				NOT = { event_target:scoped_temple_barony = { always = yes } }
-			}
-			FROM = { save_event_target_as = scoped_temple_barony } #Only does this on the first go
-		}
+		FROM = { save_event_target_as = scoped_temple_barony }
 	}
 	option = { #The Three brothers.
 		name = EVTOPTAHF23200
@@ -6481,21 +6476,13 @@ character_event = {
 			add_character_modifier = { 
 				name = dedicated_to_zeus 
 				duration = 3650
-				stacking = yes #In case a player invests enough money to dedicate multiple temples within a lifetime.
+				stacking = no #In case a player invests enough money to dedicate multiple temples within a lifetime.
 			} 
 		}
 		event_target:scoped_temple_barony = { 
 			show_scope_change = no
 			set_flag = flag_dedicated_to_zeus
 			add_building = tp_shrine_zeus 
-		}
-		hidden_tooltip = { 
-			clr_character_flag = flag_dedicating_temple
-			add_character_modifier = { 
-				name = recently_dedicated_temple_cooldown
-				duration = 1250 
-				hidden = yes
-			}
 		}
 		ai_chance = { 
 			factor = 25 
@@ -6513,21 +6500,13 @@ character_event = {
 			add_character_modifier = { 
 				name = dedicated_to_poseidon
 				duration = 3650
-				stacking = yes #In case a player invests enough money to dedicate multiple temples within a lifetime.
+				stacking = no #In case a player invests enough money to dedicate multiple temples within a lifetime.
 			} 
 		}
 		event_target:scoped_temple_barony = { 
 			show_scope_change = no
 			set_flag = flag_dedicated_to_poseidon
 			add_building = tp_shrine_poseidon
-		}
-		hidden_tooltip = { 
-			clr_character_flag = flag_dedicating_temple
-			add_character_modifier = { 
-				name = recently_dedicated_temple_cooldown
-				duration = 1250 
-				hidden = yes
-			}
 		}
 		ai_chance = { 
 			factor = 25 
@@ -6545,21 +6524,13 @@ character_event = {
 			add_character_modifier = { 
 				name = dedicated_to_hades
 				duration = 3650
-				stacking = yes #In case a player invests enough money to dedicate multiple temples within a lifetime.
+				stacking = no #In case a player invests enough money to dedicate multiple temples within a lifetime.
 			} 
 		}
 		event_target:scoped_temple_barony = { 
 			show_scope_change = no
 			set_flag = flag_dedicated_to_hades
 			add_building = tp_shrine_hades
-		}
-		hidden_tooltip = { 
-			clr_character_flag = flag_dedicating_temple
-			add_character_modifier = { 
-				name = recently_dedicated_temple_cooldown
-				duration = 1250 
-				hidden = yes
-			}
 		}
 		ai_chance = { 
 			factor = 25 
@@ -6574,6 +6545,14 @@ character_event = {
 		custom_tooltip = { text = EVTOPT_TEMPLE_BACK_TO_SELECTION_TT }
 		hidden_effect = { character_event = { id = HF.23200 } }
 		trigger = { ai = no }
+	}
+	after = {
+		clr_character_flag = flag_dedicating_temple
+		add_character_modifier = { 
+			name = recently_dedicated_temple_cooldown
+			duration = 1250 
+			hidden = yes
+		}
 	}
 }
 
@@ -6597,21 +6576,13 @@ character_event = {
 			add_character_modifier = { 
 				name = dedicated_to_athena
 				duration = 3650
-				stacking = yes #In case a player invests enough money to dedicate multiple temples within a lifetime.
+				stacking = no #In case a player invests enough money to dedicate multiple temples within a lifetime.
 			} 
 		}
 		event_target:scoped_temple_barony = { 
 			show_scope_change = no
 			set_flag = flag_dedicated_to_athena
 			add_building = tp_shrine_athena
-		}
-		hidden_tooltip = { 
-			clr_character_flag = flag_dedicating_temple
-			add_character_modifier = { 
-				name = recently_dedicated_temple_cooldown
-				duration = 1250 
-				hidden = yes
-			}
 		}
 		ai_chance = { 
 			factor = 25 
@@ -6632,21 +6603,13 @@ character_event = {
 			add_character_modifier = { 
 				name = dedicated_to_ares
 				duration = 3650
-				stacking = yes #In case a player invests enough money to dedicate multiple temples within a lifetime.
+				stacking = no #In case a player invests enough money to dedicate multiple temples within a lifetime.
 			} 
 		}
 		event_target:scoped_temple_barony = { 
 			show_scope_change = no
 			set_flag = flag_dedicated_to_ares
 			add_building = tp_shrine_ares
-		}
-		hidden_tooltip = { 
-			clr_character_flag = flag_dedicating_temple
-			add_character_modifier = { 
-				name = recently_dedicated_temple_cooldown
-				duration = 1250 
-				hidden = yes
-			}
 		}
 		ai_chance = { 
 			factor = 25 
@@ -6667,21 +6630,13 @@ character_event = {
 			add_character_modifier = { 
 				name = dedicated_to_ephaestus
 				duration = 3650
-				stacking = yes #In case a player invests enough money to dedicate multiple temples within a lifetime.
+				stacking = no #In case a player invests enough money to dedicate multiple temples within a lifetime.
 			} 
 		}
 		event_target:scoped_temple_barony = { 
 			show_scope_change = no
 			set_flag = flag_dedicated_to_ephaestus
 			add_building = tp_shrine_ephaestus
-		}
-		hidden_tooltip = { 
-			clr_character_flag = flag_dedicating_temple
-			add_character_modifier = { 
-				name = recently_dedicated_temple_cooldown
-				duration = 1250 
-				hidden = yes
-			}
 		}
 		ai_chance = { 
 			factor = 25 
@@ -6696,6 +6651,14 @@ character_event = {
 		custom_tooltip = { text = EVTOPT_TEMPLE_BACK_TO_SELECTION_TT }
 		hidden_effect = { character_event = { id = HF.23200 } }
 		trigger = { ai = no }
+	}
+	after = {
+		clr_character_flag = flag_dedicating_temple 
+		add_character_modifier = { 
+			name = recently_dedicated_temple_cooldown
+			duration = 1250 
+			hidden = yes
+		}
 	}
 }
 
@@ -6719,21 +6682,13 @@ character_event = {
 			add_character_modifier = { 
 				name = dedicated_to_hestia
 				duration = 3650
-				stacking = yes #In case a player invests enough money to dedicate multiple temples within a lifetime.
+				stacking = no #In case a player invests enough money to dedicate multiple temples within a lifetime.
 			} 
 		}
 		event_target:scoped_temple_barony = { 
 			show_scope_change = no
 			set_flag = flag_dedicated_to_hestia
 			add_building = tp_shrine_hestia
-		}
-		hidden_tooltip = { 
-			clr_character_flag = flag_dedicating_temple
-			add_character_modifier = { 
-				name = recently_dedicated_temple_cooldown
-				duration = 1250 
-				hidden = yes
-			}
 		}
 		ai_chance = { 
 			factor = 25 
@@ -6754,21 +6709,13 @@ character_event = {
 			add_character_modifier = { 
 				name = dedicated_to_demeter
 				duration = 3650
-				stacking = yes #In case a player invests enough money to dedicate multiple temples within a lifetime.
+				stacking = no #In case a player invests enough money to dedicate multiple temples within a lifetime.
 			} 
 		}
 		event_target:scoped_temple_barony = { 
 			show_scope_change = no
 			set_flag = flag_dedicated_to_demeter
 			add_building = tp_shrine_demeter
-		}
-		hidden_tooltip = { 
-			clr_character_flag = flag_dedicating_temple
-			add_character_modifier = { 
-				name = recently_dedicated_temple_cooldown
-				duration = 1250 
-				hidden = yes
-			}
 		}
 		ai_chance = { 
 			factor = 25 
@@ -6789,21 +6736,13 @@ character_event = {
 			add_character_modifier = { 
 				name = dedicated_to_aphrodite
 				duration = 3650
-				stacking = yes #In case a player invests enough money to dedicate multiple temples within a lifetime.
+				stacking = no #In case a player invests enough money to dedicate multiple temples within a lifetime.
 			} 
 		}
 		event_target:scoped_temple_barony = { 
 			show_scope_change = no
 			set_flag = flag_dedicated_to_aphrodite
 			add_building = tp_shrine_aphrodite
-		}
-		hidden_tooltip = { 
-			clr_character_flag = flag_dedicating_temple
-			add_character_modifier = { 
-				name = recently_dedicated_temple_cooldown
-				duration = 1250 
-				hidden = yes
-			}
 		}
 		ai_chance = { 
 			factor = 25 
@@ -6818,6 +6757,14 @@ character_event = {
 		custom_tooltip = { text = EVTOPT_TEMPLE_BACK_TO_SELECTION_TT }
 		hidden_effect = { character_event = { id = HF.23200 } }
 		trigger = { ai = no }
+	}
+	after = {
+		clr_character_flag = flag_dedicating_temple
+		add_character_modifier = { 
+			name = recently_dedicated_temple_cooldown
+			duration = 1250 
+			hidden = yes
+		}
 	}
 }
 
@@ -6841,21 +6788,13 @@ character_event = {
 			add_character_modifier = { 
 				name = dedicated_to_apollo
 				duration = 3650
-				stacking = yes #In case a player invests enough money to dedicate multiple temples within a lifetime.
+				stacking = no #In case a player invests enough money to dedicate multiple temples within a lifetime.
 			} 
 		}
 		event_target:scoped_temple_barony = { 
 			show_scope_change = no
 			set_flag = flag_dedicated_to_apollo
 			add_building = tp_shrine_apollo
-		}
-		hidden_tooltip = { 
-			clr_character_flag = flag_dedicating_temple
-			add_character_modifier = { 
-				name = recently_dedicated_temple_cooldown
-				duration = 1250 
-				hidden = yes
-			}
 		}
 		ai_chance = { 
 			factor = 25 
@@ -6876,21 +6815,13 @@ character_event = {
 			add_character_modifier = { 
 				name = dedicated_to_arthemis
 				duration = 3650
-				stacking = yes #In case a player invests enough money to dedicate multiple temples within a lifetime.
+				stacking = no #In case a player invests enough money to dedicate multiple temples within a lifetime.
 			} 
 		}
 		event_target:scoped_temple_barony = { 
 			show_scope_change = no
 			set_flag = flag_dedicated_to_arthemis
 			add_building = tp_shrine_arthemis
-		}
-		hidden_tooltip = { 
-			clr_character_flag = flag_dedicating_temple
-			add_character_modifier = { 
-				name = recently_dedicated_temple_cooldown
-				duration = 1250 
-				hidden = yes
-			}
 		}
 		ai_chance = { 
 			factor = 25 
@@ -6911,21 +6842,13 @@ character_event = {
 			add_character_modifier = { 
 				name = dedicated_to_hermes
 				duration = 3650
-				stacking = yes #In case a player invests enough money to dedicate multiple temples within a lifetime.
+				stacking = no #In case a player invests enough money to dedicate multiple temples within a lifetime.
 			} 
 		}
 		event_target:scoped_temple_barony = { 
 			show_scope_change = no
 			set_flag = flag_dedicated_to_hermes
 			add_building = tp_shrine_hermes
-		}
-		hidden_tooltip = { 
-			clr_character_flag = flag_dedicating_temple
-			add_character_modifier = { 
-				name = recently_dedicated_temple_cooldown
-				duration = 1250 
-				hidden = yes
-			}
 		}
 		ai_chance = { 
 			factor = 25 
@@ -6940,6 +6863,14 @@ character_event = {
 		custom_tooltip = { text = EVTOPT_TEMPLE_BACK_TO_SELECTION_TT }
 		hidden_effect = { character_event = { id = HF.23200 } }
 		trigger = { ai = no }
+	}
+	after = {
+		clr_character_flag = flag_dedicating_temple
+		add_character_modifier = { 
+			name = recently_dedicated_temple_cooldown
+			duration = 1250 
+			hidden = yes
+		}
 	}
 }
 
@@ -15905,6 +15836,7 @@ character_event = {
 	immediate = { 
 		120 = { 
 			set_province_flag = flag_great_pillar_norse_irminsul
+			province_event = { id = HF.23478 days = 1 }
 		}
 		b_paderborn = { 
 			add_building = tp_great_pillar_norse
@@ -15916,6 +15848,18 @@ character_event = {
 	}
 }
 
+province_event = {
+	id = HF.23478
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = { 
+		b_paderborn = { 
+			add_building = tp_great_pillar_norse_empty
+		}
+	}
+}
 
 #on_siege_over_winner: Destroying a Great Pillar. (ROOT is besieger, FROM is besieged holding)
 character_event = {

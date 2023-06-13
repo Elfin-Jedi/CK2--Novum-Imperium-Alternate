@@ -13,7 +13,7 @@ birth = 100
   stewardship = 3
     
   opposites = {
-    trait = goodwithnumbers
+			goodwithnumbers
             architect
             nonscientifique 
             slow

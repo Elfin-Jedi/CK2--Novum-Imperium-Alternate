@@ -13,7 +13,7 @@ birth = 30
   martial = 1
 
   opposites = {
-    trait = celibate
+			celibate
             chaste
             monk
             nun

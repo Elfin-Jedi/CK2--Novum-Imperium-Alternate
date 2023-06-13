@@ -11,7 +11,7 @@ birth = 100
 
 
   opposites = {
-    trait = obese
+			obese
             surpoids
             robust    
             anorexique
