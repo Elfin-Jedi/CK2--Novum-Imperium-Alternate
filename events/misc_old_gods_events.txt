@@ -1427,7 +1427,6 @@ character_event = {
 		if = {
 			limit = {
 				OR = {
-					NOT = { lifestyle_traits = 1 }
 					NOT = { has_dlc = "Way of Life" }
 				}
 			}

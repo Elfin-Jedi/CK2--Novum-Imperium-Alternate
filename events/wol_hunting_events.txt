@@ -643,10 +643,7 @@ character_event = {
 	option = {
 		name = EVTOPTA_WoL_5030 # Kill and get hunter trait
 		prestige = 200
-		if = {
-			limit = { NOT = { lifestyle_traits = 1 } }
-			add_trait = hunter
-		}
+		add_trait = hunter
 		if = {
 			limit = {
 				ai = no
@@ -748,7 +745,7 @@ character_event = {
 	option = {
 		name = EVTOPTA_WoL_5035
 		trigger = {
-			NOT = { lifestyle_traits = 1 }
+			always = yes
 		}
 		add_trait = hunter
 		if = {

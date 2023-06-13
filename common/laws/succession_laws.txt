@@ -1755,6 +1755,7 @@ gender_laws = {
 			}
 		}
 		allow = {
+			has_law = enatic_cognatic_succession
 			holder_scope = {
 				OR = {
 					has_game_rule = { name = gender value = all }

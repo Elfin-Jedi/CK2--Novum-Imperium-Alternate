@@ -4905,7 +4905,6 @@ narrative_event = {
 		name = EVTOPTB_RoI_402
 		if = {
 			limit = {
-				NOT = { lifestyle_traits = 1 }
 				NOT = { has_dlc = "Way of Life" }
 			}
 			random = {

@@ -3226,7 +3226,6 @@ character_event = {
 		name = EVTOPTA_WOL_11140
 		trigger = {
 			has_character_modifier = adept_of_strategy
-			NOT = { lifestyle_traits = 1 }
 			OR = {
 				has_character_flag = wargame_win1
 				has_character_flag = wargame_win2
@@ -3464,7 +3463,6 @@ character_event = {
 
 	trigger = {
 		has_character_modifier = wol_great_warrior
-		NOT = { lifestyle_traits = 1 }
 	}
 
 	option = {

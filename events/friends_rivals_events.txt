@@ -7963,9 +7963,6 @@ character_event = {
 		NOT = {
 			trait = celibate
 		}
-		NOT = {
-			has_character_flag = LE_ST
-		}
 		is_inaccessible_trigger = no
 		num_of_children = 2
 		any_friend = {
@@ -8157,12 +8154,6 @@ character_event = {
 		in_command = no
 		NOT = {
 			uses_decadence = yes
-		}
-		NOT = {
-			lifestyle_traits = 1
-		}
-		NOT = {
-			has_character_flag = LE_ST
 		}
 		is_inaccessible_trigger = no
 		num_of_children = 2
@@ -8371,12 +8362,6 @@ character_event = {
 
 	trigger = {
 		in_command = no
-		NOT = {
-			lifestyle_traits = 1
-		}
-		NOT = {
-			has_character_flag = LE_ST
-		}
 		#num_of_children = 1
 		any_friend = {
 			war = no

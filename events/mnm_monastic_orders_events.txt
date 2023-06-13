@@ -7400,7 +7400,6 @@ character_event = {
         	add_trait = gardener
         }
         trigger = {
-        	NOT = { lifestyle_traits = 1 }
         	NOT = { trait = gardener }
         	has_character_modifier = green_fingers
 		}

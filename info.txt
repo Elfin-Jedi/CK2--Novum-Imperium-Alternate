@@ -39,6 +39,7 @@ Small Mods:
 "Demigod Trait"
 "Epic Music Pack"
 "Everything Playable! China Edition!" [no offmap China]
+"Expanded Traits"
 "Favor Improve"
 "Friend Mod"
 "Gift Troops"
@@ -58,5 +59,6 @@ Small Mods:
 "The Orders of Chivalry"
 "Theocratic Kings"
 "Unique Government Type for Viceroys"
+"Unlimited Lifestyle Traits"
 "Visible Health And Fertility"
 "Wedding Anniversaries"

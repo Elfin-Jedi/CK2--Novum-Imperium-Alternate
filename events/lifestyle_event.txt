@@ -55,7 +55,6 @@ character_event = {
 
 	trigger = {
 		has_character_modifier = illumination
-		NOT = { lifestyle_traits = 1 }
 	}
 
 	mean_time_to_happen = {
@@ -171,9 +170,6 @@ character_event = {
 
 	trigger = {
 		NOT = {
-			lifestyle_traits = 1
-		}
-		NOT = {
 			has_character_flag = red_rose
 		}
 		has_character_flag = stake_pole
@@ -252,9 +248,6 @@ character_event = {
 	has_character_flag = LE_ST
 
 	trigger = {
-		NOT = {
-			lifestyle_traits = 1
-		}
 		NOT = {
 			has_character_flag = stake_pole
 		}
@@ -347,9 +340,6 @@ character_event = {
 	has_character_flag = LE_ST
 
 	trigger = {
-		NOT = {
-			lifestyle_traits = 1
-		}
 		has_character_flag = vlad_impaler
 		NOT = {
 			has_character_modifier = the_impaler
@@ -396,9 +386,6 @@ character_event = {
 	has_character_flag = LE_ST
 
 	trigger = {
-		NOT = {
-			lifestyle_traits = 1
-		}
 		has_character_flag = rose_gardener
 		NOT = {
 			has_character_modifier = the_gardener
@@ -683,9 +670,6 @@ character_event = {
 
 	trigger = {
 		in_command = no
-		NOT = {
-			lifestyle_traits = 1
-		}
 		OR = {
 			has_character_flag = never_giveup
 			has_character_modifier = aspiring_duelist
@@ -742,9 +726,6 @@ character_event = {
 
 	trigger = {
 		in_command = no
-		NOT = {
-			lifestyle_traits = 1
-		}
 		OR = {
 			has_character_flag = never_giveup
 			has_character_modifier = aspiring_poet
@@ -1032,7 +1013,6 @@ character_event = {
 	trigger = {
 		has_character_modifier = aspiring_hunter
 		in_command = no
-		NOT = { lifestyle_traits = 1 }
 	}
 
 	mean_time_to_happen = {
@@ -1452,9 +1432,6 @@ character_event = {
 
 	trigger = {
 		has_character_modifier = one_hedonist
-		NOT = {
-			lifestyle_traits = 1
-		}
 		OR = {
 			trait = chaste
 			trait = lustful
@@ -1517,9 +1494,6 @@ character_event = {
 			trait = chaste
 			trait = lustful
 		}
-		NOT = {
-			lifestyle_traits = 1
-		}
 	}
 
 	mean_time_to_happen = {
@@ -1574,9 +1548,6 @@ character_event = {
 
 	trigger = {
 		has_character_modifier = sweet_temptation
-		NOT = {
-			lifestyle_traits = 1
-		}
 	}
 
 	mean_time_to_happen = {
@@ -1627,9 +1598,6 @@ character_event = {
 		OR = {
 			AND = {
 				has_character_modifier = stay_strong
-				NOT = {
-					lifestyle_traits = 1
-				}
 			}
 			has_ambition = obj_buddhist_abstain_sexual_excess
 		}
@@ -1778,9 +1746,6 @@ character_event = {
 
 	trigger = {
 		NOT = {
-			lifestyle_traits = 1
-		}
-		NOT = {
 			has_character_modifier = muslim_poet
 		}
 		OR = {
@@ -1868,9 +1833,6 @@ character_event = {
 	has_character_flag = LE_ST
 
 	trigger = {
-		NOT = {
-			lifestyle_traits = 1
-		}
 		NOT = {
 			has_character_modifier = muslim_hedonist
 		}

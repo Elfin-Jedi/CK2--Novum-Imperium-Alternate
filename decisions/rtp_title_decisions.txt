@@ -63,7 +63,7 @@ title_decisions = {
 						ROOT = {
 							holder_scope = {
 								top_liege = {
-									higher_tier_than = COUNT
+									higher_tier_than = BARON
 								}
 							}
 						}

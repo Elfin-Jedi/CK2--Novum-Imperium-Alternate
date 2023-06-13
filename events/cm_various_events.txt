@@ -270,13 +270,9 @@ character_event = {
 	desc = EVTDESC_CM_2026
 	picture = GFX_evt_child_sword
 	
-	lacks_dlc = "Way of Life"
-
 	is_triggered_only = yes
-
-	trigger = {
-		FROM = { NOT = { lifestyle_traits = 1 } }
-	}
+	
+	lacks_dlc = "Way of Life"
 
 	option = {
 		name = EVTOPTA_CM_2026

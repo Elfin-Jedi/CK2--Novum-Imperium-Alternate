@@ -10010,7 +10010,6 @@ character_event = {
 			limit = {
 				OR = {
 					NOT = { trait = cruel }
-					NOT = { lifestyle_traits = 1 }
 				}
 			}
 			random = {
@@ -10206,7 +10205,6 @@ character_event = {
 			if = {
 				limit = {
 					trait = cruel
-					NOT = { lifestyle_traits = 1 }
 				}
 				add_trait = impaler
 			}
@@ -10367,7 +10365,6 @@ character_event = {
 			if = {
 				limit = {
 					trait = cruel
-					NOT = { lifestyle_traits = 1 }
 				}
 				add_trait = impaler
 			}
@@ -12866,7 +12863,6 @@ narrative_event = {
 		if = {
 			limit = {
 				trait = cruel
-				NOT = { lifestyle_traits = 1 }
 			}
 			add_trait = impaler
 		}

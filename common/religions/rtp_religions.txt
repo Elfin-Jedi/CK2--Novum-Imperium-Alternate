@@ -10,8 +10,8 @@ christian = {
 	chalcedonian = {
 		graphical_culture = westerngfx
 
-		icon = 49
-		heresy_icon = 50
+		icon = 46
+		heresy_icon = 47
 		color = { 0.7 1 1 }
 		crusade_name = CRUSADE
 		scripture_name = THE_BIBLE

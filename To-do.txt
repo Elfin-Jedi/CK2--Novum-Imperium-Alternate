@@ -15,17 +15,10 @@ Testing:
 
 Zunbils still have 2 caste types. Check?
 Need to test joining the coven as a hellenic male or gay female
-Does it notify me if I develop sympathy for African religions?
-%Find the un-iconed trait(s). Probably multiples from Acid's mods.
 
 Fixes:
 
 Make Egyptian pagan and African religions have African shield in character view.
-*Add coa's for Indo-Rome religions. (Vietimithraic, Heraclemasculist, Romantic = Hellenic; Borealic = Tengri).
-*Add debug options to Sketchy's cheat menu.
-*Playable Republic still isn't using the correct icon.
-?Reformed pagan theocracies use playable republic.
-*Make Sketchy's Education traits acquireable in game play. Builder = Stewardship, Politician = Diplomacy and Intrigue, Commander = Martial.
 
 Rise to Power:
 
@@ -40,22 +33,14 @@ OR = {
 	gender_equality_trigger = yes
 }
 
-Add warrior lodge leader traits to Warrior Societies (HIP).
 Does rtp_no_loans_st include emf loans?
-Do we need domestic_law.gfx or province.gfx?
 
 Do I need have_gender_laws = yes etc. from TiaraMod in: !!!rtp_landless_governments, !!rtp_baron_governments, !rtp_governments, chivalry_governments etc.
 
 Next:
 
-Rise to Power
-
 Republic Equality for HIP
-Enatic Kingdoms
-Better Gender Law
 Make it so with game rule full equality of women they can take consorts if men can
-
-Landless Courts and Kings?
 
 Unlimited Lifestyle Events
 Forge Unlimited Bloodlines + Bloodline fix (compare with HIP version of Forge Unlimited Bloodlines)
@@ -67,10 +52,13 @@ Societies: Guilds, Sufis.
 Rowan's mod thingy (I forgot the name, Buildings and Resources?)
 Medieval Trade Routes
 
+Lux Invicta
+
+Landless Courts and Kings?
+Better Gender Law?
+
 Reformation Reform
 Monastic Feudal for Pagan Temporal Heads
-
-Lux Invicta
 
 Usurpation Fix
 The Rise of the New Churches

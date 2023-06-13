@@ -1292,6 +1292,7 @@ society_decisions = {
 					OR = {
 						has_artifact_flag = combat
 						has_artifact_flag = combat_weapon
+						has_artifact_flag = weapon
 					}
 				}
 			}
@@ -1317,6 +1318,7 @@ society_decisions = {
 							OR = {
 								has_artifact_flag = combat
 								has_artifact_flag = combat_weapon
+								has_artifact_flag = weapon
 							}
 							NOT = { has_artifact_flag = chivalry_unsellable }
 						}
@@ -1337,6 +1339,7 @@ society_decisions = {
 								OR = {
 									has_artifact_flag = combat_weapon
 									has_artifact_flag = combat
+									has_artifact_flag = weapon
 								}
 								count = 2
 								NOT = { has_artifact_flag = chivalry_unsellable }

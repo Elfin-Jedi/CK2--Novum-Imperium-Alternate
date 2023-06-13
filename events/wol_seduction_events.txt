@@ -1546,7 +1546,6 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { lifestyle_traits = 1 }
 		NOT = { has_character_flag = wol_no_to_seducer_trait }
 	}
 

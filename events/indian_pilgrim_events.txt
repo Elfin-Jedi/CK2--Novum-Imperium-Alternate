@@ -1874,10 +1874,7 @@ character_event = {
 
 	option = {
 		name = EVTOPTA_MNM_8061
-		if = {
-			limit = { NOT = { lifestyle_traits = 1 } }
-			add_trait = scholar
-		}
+		add_trait = scholar
 		if = {
 			limit = { NOT = { trait = zealous } }
 			random = {
@@ -2211,7 +2208,6 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = { lifestyle_traits = 1 }
 				NOT = { has_dlc = "Way of Life" }
 			}
 			random = {

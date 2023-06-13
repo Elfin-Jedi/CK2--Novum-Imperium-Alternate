@@ -53,6 +53,16 @@ assassin = {
 	
 }
 
+silver_tongue_lifestyle = {	
+	lifestyle = yes
+	
+	intrigue = 1
+	diplomacy = 2
+	
+	random = yes
+	customizer = yes
+}
+
 cheerful = {
 	personality = yes
 	opposites =  {
