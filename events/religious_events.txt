@@ -5315,7 +5315,7 @@ character_event = {
                 }
 			}
 		}
-		usurpfix_convert_religion_to_from_effect = yes
+		religion = FROM
 		liege = {
 			character_event = { id = 39602 }
 		}

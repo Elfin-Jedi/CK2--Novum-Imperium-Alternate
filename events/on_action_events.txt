@@ -5532,21 +5532,21 @@ narrative_event = {
 				is_heresy_of = ROOT
 				employer = { character = ROOT }
 			}
-			usurpfix_convert_religion_to_root_effect = yes
+			religion = ROOT
 		}
 		any_dynasty_member = {
 			limit = {
 				is_heresy_of = ROOT
 				is_playable = no
 			}
-			usurpfix_convert_religion_to_root_effect = yes
+			religion = ROOT
 		}
 		any_vassal = {
 			limit = {
 				is_playable = no
 				is_heresy_of = ROOT
 			}
-			usurpfix_convert_religion_to_root_effect = yes
+			religion = ROOT
 		}
 		capital_scope = {
 			if = {
