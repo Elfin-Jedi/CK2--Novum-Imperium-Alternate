@@ -15,7 +15,7 @@ birth = 50
   
   
   opposites = {
-    trait = brave
+			brave
             blinded
            
   }

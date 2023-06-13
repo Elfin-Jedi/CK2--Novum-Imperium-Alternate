@@ -15,7 +15,7 @@ birth = 50
   martial = -3
 
   opposites = {
-    trait = maigre
+			maigre
             anorexique
             weak
             feeble

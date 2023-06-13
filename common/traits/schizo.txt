@@ -12,7 +12,6 @@ birth = 15
   learning = -2
 
   opposites = {
-    trait =
   }
 
   church_opinion = -25

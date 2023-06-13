@@ -2986,14 +2986,14 @@ character_event = {
 }
 
 #  Game Phase
-character_event = {
-	id = celtic.1251
-	desc = celtic.1251.desc
-	picture = GFX_evt_athlete
-	
-	is_triggered_only = yes
-
-	option = {
-		name = celtic.1211.a
-	}
-}
+#character_event = {
+#	id = celtic.1251
+#	desc = celtic.1251.desc
+#	picture = GFX_evt_athlete
+#	
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = celtic.1211.a
+#	}
+#}

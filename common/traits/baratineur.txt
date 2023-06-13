@@ -14,7 +14,7 @@ birth = 100
   intrigue = 1
 
   opposites = {
-    trait = imbecile
+			imbecile
             autiste
             influencable
             mauvaismenteur

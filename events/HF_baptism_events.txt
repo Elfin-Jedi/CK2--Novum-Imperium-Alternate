@@ -550,7 +550,7 @@ narrative_event = {
 					any_realm_character = {
 						is_theocracy = yes
 						liege = { character = event_target:sponsoring_king }
-						religion = event_target:sponsoring_king
+						usurpfix_convert_religion_to_sponsoring_king_effect
 						NOT = { block_general_event_trigger = yes }
 						OR = {
 							higher_tier_than = BARON
@@ -568,7 +568,7 @@ narrative_event = {
 						limit = {
 							liege = { character = event_target:sponsoring_king }
 							is_theocracy = yes
-							religion = event_target:sponsoring_king
+							usurpfix_convert_religion_to_sponsoring_king_effect
 							NOT = { block_general_event_trigger = yes }
 							OR = {
 								higher_tier_than = BARON
@@ -982,7 +982,7 @@ letter_event = {
 	}
 	desc = {
 		trigger = {
-			religion = event_target:sponsoring_king
+			usurpfix_convert_religion_to_sponsoring_king_effect
 		}
 		text = EVTDESCHFB20005
 	}

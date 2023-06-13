@@ -12,7 +12,7 @@ birth = 100
   combat_rating = 5
 
   opposites = {
-    trait = nonviolent
+			nonviolent
             content
             temperate
             tolerant

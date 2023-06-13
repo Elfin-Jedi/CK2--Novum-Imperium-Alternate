@@ -41,7 +41,6 @@ character_event = {
 		name = optaexpandedtraits.28
 		create_character = {
 			age =< 30
-			age <= 16
 			female = yes
 			religion = ROOT
 			culture = ROOT

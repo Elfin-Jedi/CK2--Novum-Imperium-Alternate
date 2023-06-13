@@ -10,8 +10,7 @@ both_parent_has_trait_inherit_chance = 70
   
   diplomacy = -3
   
-  opposites = {
-    trait =            
+  opposites = {           
   }
   
   vassal_opinion = -10

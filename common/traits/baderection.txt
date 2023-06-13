@@ -7,7 +7,7 @@ both_parent_has_trait_inherit_chance = 80
 birth = 50
 
   opposites = {
-    trait = gooderection
+			gooderection
             eunuch
   }
  

@@ -14,7 +14,7 @@ birth = 100
   learning = 2
 
   opposites = {
-    trait = etourdi
+			etourdi
             imbecile
             slow
  }

@@ -13,7 +13,7 @@ birth = 100
   intrigue = -2
 
   opposites = {
-    trait = raciste
+			raciste
             arbitrary
             zealous
             cruel

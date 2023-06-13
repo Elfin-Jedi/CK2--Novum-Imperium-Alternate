@@ -19,7 +19,7 @@ sex_appeal_opinion = -5
         fertility = -0.2
 
     opposites = {
-    trait = short
+			short
             dwarf
             tall
     }

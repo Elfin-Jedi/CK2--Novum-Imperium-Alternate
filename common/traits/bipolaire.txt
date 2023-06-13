@@ -12,7 +12,7 @@ birth = 25
     learning = 1
 
   opposites = {
-    trait = hypersensible
+			hypersensible
             wroth
             patient
             just

@@ -12,7 +12,7 @@ birth = 100
 
 
   opposites = {
-    trait = nonviolent
+			nonviolent
             content
             temperate
             imperialiste
