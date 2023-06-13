@@ -1990,7 +1990,6 @@ title_decisions = {
 		filter = sub_realm_owned
 		ai_target_filter = vassal_owned
 		is_high_prio = yes
-		ai_check_interval = 120 #check only once every 120 months.
 		
 		from_potential = {
 			has_dlc = "Holy Fury"
@@ -2038,16 +2037,6 @@ title_decisions = {
 					owner = { 
 						is_theocracy = yes 
 						religion = FROM 	#Temple must have an hellenic priest.
-					}
-				}
-			}
-			custom_tooltip = { 
-				text = tooltip_not_dedicated_temple_recently
-				hidden_tooltip = { 
-					FROM = { 
-						NOT = { 
-							has_character_modifier = recently_dedicated_temple_cooldown
-						}
 					}
 				}
 			}
@@ -2222,6 +2211,7 @@ settlement_decisions = {
 					if = { 
 						limit = { NOT = { has_building = tb_great_pillar_norse } } 
 						add_building = tb_great_pillar_norse
+						add_building = tb_great_pillar_norse_empty
 					}
 				}
 				if = {  
@@ -2234,6 +2224,7 @@ settlement_decisions = {
 					if = { 
 						limit = { NOT = { has_building = tb_great_pillar_tengri } } 
 						add_building = tb_great_pillar_tengri
+						add_building = tb_great_pillar_tengri_empty
 					}
 				}
 				if = {  
@@ -2246,6 +2237,7 @@ settlement_decisions = {
 					if = { 
 						limit = { NOT = { has_building = tb_great_pillar_slavic } } 
 						add_building = tb_great_pillar_slavic
+						add_building = tb_great_pillar_slavic_empty
 					}
 				}
 				if = {  
@@ -2258,6 +2250,7 @@ settlement_decisions = {
 					if = { 
 						limit = { NOT = { has_building = tb_great_pillar_baltic } } 
 						add_building = tb_great_pillar_baltic
+						add_building = tb_great_pillar_baltic_empty
 					}
 				}
 				if = {  
@@ -2270,6 +2263,7 @@ settlement_decisions = {
 					if = { 
 						limit = { NOT = { has_building = tb_great_pillar_finnish } } 
 						add_building = tb_great_pillar_finnish
+						add_building = tb_great_pillar_finnish_empty
 					}
 				}
 				if = {  
@@ -2282,6 +2276,7 @@ settlement_decisions = {
 					if = { 
 						limit = { NOT = { has_building = tb_great_pillar_west_african } } 
 						add_building = tb_great_pillar_west_african
+						add_building = tb_great_pillar_west_african_empty
 					}
 				}
 				if = {  
@@ -2294,6 +2289,7 @@ settlement_decisions = {
 					if = { 
 						limit = { NOT = { has_building = tb_great_pillar_aztec } } 
 						add_building = tb_great_pillar_aztec
+						add_building = tb_great_pillar_aztec_empty
 					}
 				}
 				if = {  
@@ -2306,6 +2302,7 @@ settlement_decisions = {
 					if = { 
 						limit = { NOT = { has_building = tb_great_pillar_zun } } 
 						add_building = tb_great_pillar_zun
+						add_building = tb_great_pillar_zun_empty
 					}
 				}
 				if = {  
@@ -2318,6 +2315,7 @@ settlement_decisions = {
 					if = { 
 						limit = { NOT = { has_building = tb_great_pillar_bon } } 
 						add_building = tb_great_pillar_bon
+						add_building = tb_great_pillar_bon_empty
 					}
 				}
 				if = {  
@@ -2330,6 +2328,7 @@ settlement_decisions = {
 					if = { 
 						limit = { NOT = { has_building = tb_great_pillar_hellenic } } 
 						add_building = tb_great_pillar_hellenic
+						add_building = tb_great_pillar_hellenic_empty
 					}
 				}
 			}
