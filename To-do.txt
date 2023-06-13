@@ -39,10 +39,11 @@ Do I need have_gender_laws = yes etc. from TiaraMod in: !!!rtp_landless_governme
 
 Next:
 
+"Improved Genetics 2.0"
+
 Republic Equality for HIP
 Make it so with game rule full equality of women they can take consorts if men can
 
-Unlimited Lifestyle Events
 Forge Unlimited Bloodlines + Bloodline fix (compare with HIP version of Forge Unlimited Bloodlines)
 Extended Bloodlines (HF)
 VIET Events Reborn
