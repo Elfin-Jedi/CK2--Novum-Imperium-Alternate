@@ -45,6 +45,7 @@ Small Mods:
 "Gift Troops"
 "Hellenic Bodpa Temple Fix"
 "Invite Locals ++"
+"Improved Genetics 2.0"
 "More Council Members"
 "No Pregnancy Cravings"
 "No Republic or Theocracy Limit"
