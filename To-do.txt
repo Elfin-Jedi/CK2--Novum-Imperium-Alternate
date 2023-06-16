@@ -42,7 +42,7 @@ Prisoner Edition:
 "MTA - Specific Punishments"
 "Prisoner Marriage"
 "Send Prisoner"
-"Visit Chambers TD"
+"Visit Chambers TD"?
 Make it so with game rule full equality of women they can take consorts if men can
 
 Queer Edition:
@@ -61,7 +61,7 @@ Societies & Resources Edition:
 
 Societies: Guilds, Sufis.
 Rowan's mod thingy (I forgot the name, Buildings and Resources?)
-Medieval Trade Routes
+"Medieval Trade Routes (HIP map)"
 
 Artifacts & Wonders Edition:
 
@@ -74,6 +74,13 @@ Artifacts & Wonders Edition:
 "WOWGAG's More Artifacts & Bloodlines" [Contains "Historical and Fantastical Artifacts" & "Mythic Artifacts"]
 "More Artifacts Submod - BLG Compatibility Mod"
 "An Antique Land"
+
+Nicknames & Renaming Edition
+
+"More Historical Nicknames"
+"Nicknames+++"
+"Rename Anyone"
+"Some Interesting NicknamesEN"
 
 LF - Custom Religion
 

@@ -48,20 +48,18 @@ slavery_enabled = {
 				text = mta_slavery_enabled_government
 				OR = {
 					is_nomadic = yes
-					government = roman_imperial_government
+					government = imperial_government
 					has_landed_title = e_byzantium # Compatibility for mods not using roman_imperial_government
 					has_landed_title = e_roman_empire # Compatibility for mods not using roman_imperial_government
-					# AGOT compatibility
-					trigger_if = { 
-						limit = { year >= 7996 } # AGOT start date
-						OR = {
-							has_law = slavery_1
-							has_law = slavery_2
-							has_law = slavery_3
-						}
+					OR = {
+						has_law = rtp_slavery_0_l
+						has_law = rtp_slavery_1_l
 					}
 				}
 			}
+		}
+		NOT = {
+			has_law = rtp_slavery_2_1
 		}
 	}
 }
@@ -94,14 +92,9 @@ is_slaver_group = {
 			government = roman_imperial_government
 			has_landed_title = e_byzantium # Compatibility for mods not using roman_imperial_government
 			has_landed_title = e_roman_empire # Compatibility for mods not using roman_imperial_government
-			# AGOT compatibility
-			trigger_if = { 
-				limit = { year >= 7996 } # AGOT start date
-				OR = {
-					has_law = slavery_1
-					has_law = slavery_2
-					has_law = slavery_3
-				}
+			OR = {
+				has_law = rtp_slavery_0_l
+				has_law = rtp_slavery_1_l
 			}
 		}
 	}
