@@ -37,19 +37,13 @@ Does rtp_no_loans_st include emf loans?
 
 Do I need have_gender_laws = yes etc. from TiaraMod in: !!!rtp_landless_governments, !!rtp_baron_governments, !rtp_governments, chivalry_governments etc.
 
-Extra Traits/Equality Edition:
-
-Republic Equality for HIP
-"Idiosyncrasy"
-Make it so with game rule full equality of women they can take consorts if men can
-
 Prisoner Edition:
 
 "MTA - Specific Punishments"
-"MTA - Vice and Virtue"
 "Prisoner Marriage"
 "Send Prisoner"
 "Visit Chambers TD"
+Make it so with game rule full equality of women they can take consorts if men can
 
 Queer Edition:
 
@@ -81,7 +75,6 @@ Artifacts & Wonders Edition:
 "More Artifacts Submod - BLG Compatibility Mod"
 "An Antique Land"
 
-Always Dedicate Temple
 LF - Custom Religion
 
 Lux Invicta
@@ -99,8 +92,6 @@ Easy Heresy
 Try to find Assassins societies.
 
 WTWSMS
-
-Performance by Trexeth - Right before Umbra Sapiens?
 
 Novum Imperium
 
