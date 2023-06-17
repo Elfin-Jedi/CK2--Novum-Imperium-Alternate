@@ -153,6 +153,12 @@ feudal_governments = {
 				}
 			}
 		}
+		
+		character_modifier = {
+			diplomacy = 1
+
+			martial = -1
+		}
 
 		color = { 91 133 207 }
 
@@ -321,6 +327,12 @@ feudal_governments = {
 					}
 				}
 			}
+		}
+		
+		character_modifier = {
+			diplomacy = 1
+
+			martial = -1
 		}
 
 		color = { 10 138 57 }
@@ -497,6 +509,12 @@ feudal_governments = {
 				}
 			}
 		}
+		
+		character_modifier = {
+			diplomacy = 1
+
+			martial = -1
+		}
 
 		color = { 121 103 77 }
 
@@ -597,6 +615,12 @@ feudal_governments = {
 					}
 				}
 			}
+		}
+		
+		character_modifier = {
+			diplomacy = 1
+
+			martial = -1
 		}
 		
 		color = { 207 145 90 }
@@ -701,6 +725,12 @@ feudal_governments = {
 					}
 				}
 			}
+		}
+		
+		character_modifier = {
+			diplomacy = 1
+
+			martial = -1
 		}
 
 		color = { 176 52 253 }
@@ -808,6 +838,12 @@ feudal_governments = {
 					}
 				}
 			}
+		}
+		
+		character_modifier = {
+			diplomacy = 1
+
+			martial = -1
 		}
 
 		color = { 206 82 255 }
@@ -923,6 +959,12 @@ feudal_governments = {
 				}
 			}
 		}
+		
+		character_modifier = {
+			diplomacy = 1
+
+			martial = -1
+		}
 
 		color = { 176 52 253 }
 
@@ -1032,6 +1074,12 @@ feudal_governments = {
 			}
 		}
 		
+		character_modifier = {
+			diplomacy = 1
+
+			martial = -1
+		}
+		
 		color = { 176 52 253 }
 		
 		uses_piety_for_law_change = yes
@@ -1086,6 +1134,12 @@ feudal_governments = {
 				primary_title = { has_title_flag = chinese_imperial_government_preserve }
 			}
 			is_patrician = no
+		}
+		
+		character_modifier = {
+			diplomacy = 1
+
+			martial = -1
 		}
 		
 		color = { 118 255 163 }
@@ -1186,6 +1240,12 @@ feudal_governments = {
 				}
 			}
 		}
+		
+		character_modifier = {
+			learning = 1
+
+			diplomacy = -1
+		}
 
 		color = { 169 169 169 }
 
@@ -1265,6 +1325,12 @@ feudal_governments = {
 	    NOT = { is_government_potential = merchant_republic_government }
             NOT = {tier = baron}
 		}
+		
+		character_modifier = {
+			stewardship = 1
+
+			intrigue = -1
+		}
 	
 		color = { 209 125 130 }
         
@@ -1301,6 +1367,12 @@ feudal_governments = {
 			is_patrician = no
             NOT = {	tier = baron }
 
+		}
+		
+		character_modifier = {
+			learning = 1
+
+			stewardship = -1
 		}
 		
 		color = { 220 220 220 }

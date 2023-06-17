@@ -36,13 +36,6 @@ OR = {
 Does rtp_no_loans_st include emf loans?
 
 Do I need have_gender_laws = yes etc. from TiaraMod in: !!!rtp_landless_governments, !!rtp_baron_governments, !rtp_governments, chivalry_governments etc.
-
-Prisoner Edition:
-
-"MTA - Specific Punishments"
-"Prisoner Marriage"
-"Send Prisoner"
-"Visit Chambers TD"?
 Make it so with game rule full equality of women they can take consorts if men can
 
 Queer Edition:

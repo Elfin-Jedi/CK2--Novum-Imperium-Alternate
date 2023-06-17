@@ -32,6 +32,7 @@ k_hellenic_pagan = {
 	# Controls a religion
 	controls_religion = hellenic_pagan_reformed
 	religion = hellenic_pagan_reformed
+	is_theocracy = yes
 	assimilate = no
 	title = PONTIFEX_MAXIMUS
 	title_female = PONTIFEX_MAXIMA
@@ -49,6 +50,7 @@ k_papal_state = { # Status Pontificius
 	# Controls a religion
 	controls_religion = catholic
 	religion = catholic
+	is_theocracy = yes
 	# Cannot be held as a secondary title
 	primary = yes
 	assimilate = no
@@ -76,6 +78,7 @@ k_orthodox = { # The Ecumenical Patriarchate
 	# Controls a religion
 	controls_religion = orthodox
 	religion = orthodox
+	is_theocracy = yes
 	# Cannot be held as a secondary title
 	primary = yes
 	assimilate = no
@@ -182,6 +185,7 @@ d_miaphysite = { # The Miaphysite Papacy
 	# Controls a religion
 	controls_religion = miaphysite
 	religion = miaphysite
+	is_theocracy = yes
 	# Cannot be held as a secondary title
 	primary = yes
 	title = COPTIC_POPE
@@ -205,6 +209,7 @@ d_monophysite = { # The Monophysite Papacy
 	# Controls a religion
 	controls_religion = monophysite
 	religion = monophysite
+	is_theocracy = yes
 	# Cannot be held as a secondary title
 	primary = yes
 	title = MONOPHYSITE_POPE
@@ -228,6 +233,7 @@ d_nestorian = { # The Patriarchate of the East
 	# Controls a religion
 	controls_religion = nestorian
 	religion = nestorian
+	is_theocracy = yes
 	# Cannot be held as a secondary title
 	primary = yes
 	title = PATRIARCH_IN_THE_EAST
@@ -250,6 +256,7 @@ d_paulician = { # The Paulician Patriarchate
 	# Controls a religion
 	controls_religion = paulician
 	religion = paulician
+	is_theocracy = yes
 	# Cannot be held as a secondary title
 	primary = yes
 	title = PAULICIAN_PATRIARCH
@@ -276,6 +283,7 @@ d_monothelite = { # The Monothelite Patriarchate
 	# Controls a religion
 	controls_religion = monothelite
 	religion = monothelite
+	is_theocracy = yes
 	# Cannot be held as a secondary title
 	primary = yes
 	title = MONOTHELITE_PATRIARCH
@@ -302,6 +310,7 @@ d_fraticelli = { # The Fraticelli Papacy
 	# Controls a religion
 	controls_religion = fraticelli
 	religion = fraticelli
+	is_theocracy = yes
 	# Cannot be held as a secondary title
 	primary = yes
 	allow = {
@@ -330,6 +339,7 @@ d_iconoclast = { # The Iconoclast Patriarchate
 	# Controls a religion
 	controls_religion = iconoclast
 	religion = iconoclast
+	is_theocracy = yes
 	# Cannot be held as a secondary title
 	primary = yes
 	allow = {
@@ -354,6 +364,7 @@ d_yazidi = { # The Yazidi Sheikhdom
 	capital = 697 # Mosul
 	dignity = 80 # Counted as having this many more counties than it does
 	religion = yazidi
+	is_theocracy = yes
 	# Controls a religion
 	controls_religion = yazidi
 	caliphate = yes
@@ -375,6 +386,7 @@ d_ibadi = { # The Ibadi Imamate
 	creation_requires_capital = no
 	dignity = 80 # Counted as having this many more counties than it does
 	religion = ibadi
+	is_theocracy = yes
 	# Controls a religion
 	controls_religion = ibadi
 	caliphate = yes
@@ -474,6 +486,7 @@ d_kharijite = { # The Kharijite Caliphate
 	creation_requires_capital = no
 	dignity = 80 # Counted as having this many more counties than it does
 	religion = kharijite
+	is_theocracy = yes
 	# Controls a religion
 	controls_religion = kharijite
 	caliphate = yes
@@ -548,6 +561,7 @@ d_hurufi = { # The Hurufi Skeikhdom
 	creation_requires_capital = no
 	dignity = 100 # Counted as having this many more counties than it does
 	religion = hurufi
+	is_theocracy = yes
 	# Controls a religion
 	controls_religion = hurufi
 	caliphate = yes
@@ -631,6 +645,7 @@ d_jewish = { # The Jewish High Priesthood
 	# Controls a religion
 	controls_religion = jewish
 	religion = jewish
+	is_theocracy = yes
 	# Cannot be held as a secondary title
 	primary = yes
 	title = HEAD_KOHEN_GADOL
@@ -652,6 +667,7 @@ d_norse_pagan_reformed = { # The Fylkirate
 	# Controls a religion
 	controls_religion = norse_pagan_reformed
 	religion = norse_pagan_reformed
+	is_theocracy = yes
 	allow = {
 		religion = norse_pagan_reformed
 		num_of_holy_sites = 3
@@ -673,6 +689,7 @@ d_tengri_pagan_reformed = { # The Tengri Church
 	# Controls a religion
 	controls_religion = tengri_pagan_reformed
 	religion = tengri_pagan_reformed
+	is_theocracy = yes
 	# Cannot be held as a secondary title
 	primary = yes
 	title = HEAD_PRIEST
@@ -691,6 +708,7 @@ d_baltic_pagan_reformed = { # The Romuvan Church
 	# Controls a religion
 	controls_religion = baltic_pagan_reformed
 	religion = baltic_pagan_reformed
+	is_theocracy = yes
 	# Cannot be held as a secondary title
 	primary = yes
 	title = HEAD_PRIEST
@@ -709,6 +727,7 @@ d_finnish_pagan_reformed = { # The Suomenusko Church
 	# Controls a religion
 	controls_religion = finnish_pagan_reformed
 	religion = finnish_pagan_reformed
+	is_theocracy = yes
 	# Cannot be held as a secondary title
 	primary = yes
 	title = HEAD_PRIEST
@@ -727,6 +746,7 @@ d_slavic_pagan_reformed = { # The Slavic Church
 	# Controls a religion
 	controls_religion = slavic_pagan_reformed
 	religion = slavic_pagan_reformed
+	is_theocracy = yes
 	# Cannot be held as a secondary title
 	primary = yes
 	title = HEAD_PRIEST
@@ -745,6 +765,7 @@ d_aztec_reformed = { # The Aztec Church
 	# Controls a religion
 	controls_religion = aztec_reformed
 	religion = aztec_reformed
+	is_theocracy = yes
 	# Cannot be held as a secondary title
 	primary = yes
 	title = HEAD_PRIEST
@@ -763,6 +784,7 @@ d_west_african_pagan_reformed = { # West African Church
 	# Controls a religion
 	controls_religion = west_african_pagan_reformed
 	religion = west_african_pagan_reformed
+	is_theocracy = yes
 	# Cannot be held as a secondary title
 	primary = yes
 	title = HEAD_PRIEST
@@ -781,6 +803,7 @@ d_zun_pagan_reformed = { # The Church of Zun
 	# Controls a religion
 	controls_religion = zun_pagan_reformed
 	religion = zun_pagan_reformed
+	is_theocracy = yes
 	# Cannot be held as a secondary title
 	primary = yes
 	title = HEAD_PRIEST
@@ -798,6 +821,7 @@ d_bon_reformed = {
 	# Controls a religion
 	controls_religion = bon_reformed
 	religion = bon_reformed
+	is_theocracy = yes
 	# Cannot be held as a secondary title
 	primary = yes
 	title = HEAD_DALAI_LAMA
@@ -816,6 +840,7 @@ d_zoroastrian = { # The Zoroastrian Church
 	# Controls a religion
 	controls_religion = zoroastrian
 	religion = zoroastrian
+	is_theocracy = yes
 	# Cannot be held as a secondary title
 	primary = yes
 	title = HEAD_MOABADAN_MOABAD
