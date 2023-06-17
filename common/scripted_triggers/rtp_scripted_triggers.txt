@@ -541,7 +541,9 @@ rtp_is_republic_government = {
 	OR = {
 		government = rtp_baron_republic_g
 		government = rtp_republic_g
+		government = playable_republic_government
 		government = republic_government
+		government = bureaucratic_government
 	}
 }
 
@@ -550,6 +552,7 @@ rtp_is_theocracy_government = {
 	OR = {
 		government = rtp_baron_theocracy_g
 		government = rtp_theocracy_g
+		government = playable_theocracy_government
 		government = theocracy_government
 	}
 }
@@ -581,6 +584,7 @@ rtp_is_order_government = {
 		government = rtp_landless_order_g
 		government = rtp_baron_order_g
 		government = order_government
+		government = holy_order_government
 	}
 }
 

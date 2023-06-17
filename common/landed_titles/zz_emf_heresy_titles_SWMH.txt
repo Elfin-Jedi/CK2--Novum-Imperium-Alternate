@@ -21,6 +21,7 @@ d_apostolic = {
 	controls_religion = apostolic
 	religion = apostolic
 	culture = armenian
+	is_theocracy = yes
 
 	# Cannot be held as a secondary title
 	primary = yes
@@ -56,6 +57,7 @@ d_bogomilist = {
 	# Controls a religion
 	controls_religion = bogomilist
 	religion = bogomilist
+	is_theocracy = yes
 
 	# Cannot be held as a secondary title
 	primary = yes
@@ -84,6 +86,7 @@ d_paulician = {
 
 	religion = paulician
 	culture = armenian
+	is_theocracy = yes
 
 	dynasty_title_names = no	 # Will not be named "Seljuk", etc.
 

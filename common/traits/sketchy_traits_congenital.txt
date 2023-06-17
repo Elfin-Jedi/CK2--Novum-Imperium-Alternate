@@ -9,7 +9,6 @@ short = {
 
 	sex_appeal_opinion = -5
 	combat_rating = -5
-	intrigue = 3
 
 	opposites = { tall dwarf giant }
 }
@@ -22,7 +21,6 @@ tall = {
 	sex_appeal_opinion = 5
     vassal_opinion = 5
 	tribal_opinion = 5
-    intrigue = -3
 	combat_rating = 5
 
 	opposites = { short dwarf giant }

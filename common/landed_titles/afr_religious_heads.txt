@@ -5,6 +5,7 @@ k_bori = {
     controls_religion = bori
     short_name = yes
     religion = bori
+	is_theocracy = yes
     
     title_female = "INNA"
     foa = "INNA_FOA"
@@ -21,6 +22,7 @@ d_a_tag_roog = {
     controls_religion = a_tag_roog_reformed
     short_name = yes
     religion = a_tag_roog_reformed
+	is_theocracy = yes
     
     title = "SUPREME_SALTIGUE"
     title_female = "SUPREME_SALTIGUE"
@@ -38,6 +40,7 @@ d_amazigh = {
     controls_religion = amazigh_reformed
     short_name = yes
     religion = amazigh_reformed
+	is_theocracy = yes
     
     title = "GUANAMENE"
     title_female = "GUANAMENE"

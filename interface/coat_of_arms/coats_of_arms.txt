@@ -2723,6 +2723,8 @@ culture = {
 	religion = {
 		"west_african_pagan_reformed"
 		"west_african_pagan"
+		"zun_pagan"
+		"zun_pagan_reformed"
 		"bori"
 		"amazigh"
 		"amazigh_reformed"

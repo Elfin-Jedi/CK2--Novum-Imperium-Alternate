@@ -64,10 +64,6 @@ succession_laws = {
 			#		emf_laws_succ_gavelkind_reactions = yes
 			#	}
 			#}
-			if = {
-				limit = { emf_laws_penalty = yes }
-				pf_save_old_succ_law_effect = yes
-			}
 			succession = gavelkind
 		}
 	}
@@ -126,10 +122,6 @@ succession_laws = {
 			#		emf_laws_succ_elective_gavelkind_reactions = yes
 			#	}
 			#}
-			if = {
-				limit = { emf_laws_penalty = yes }
-				pf_save_old_succ_law_effect = yes
-			}
 			succession = { base_type = elective_gavelkind voting_rules = elective_gavelkind }
 		}
 	}
@@ -167,6 +159,7 @@ succession_laws = {
 					has_religion_feature = religion_feature_west_african
 					has_religion_feature = religion_feature_slavic
 				}
+				NOT = { government = bureaucratic_government }
 			}
 			rebel = no
 		}
@@ -227,7 +220,19 @@ succession_laws = {
 		potential = {
 			emf_laws_succ_basic_potential = yes
 			emf_laws_potential_not_for_byzantium = yes
-			holder_scope = {
+			OR = {
+				is_landless_type_title = no
+				is_tribal_type_title = yes
+				temporary = yes
+			}
+			is_primary_type_title = no
+			owner = {
+				OR = {
+					independent = yes
+					is_patrician = yes # Prevents a weird bug where patrician houses in an MR under a holy order keep spawning, despawning, and filling their neighbor's courts with exiles
+					NOT = { any_liege = { holy_order = yes } }
+	  
+				}
 				OR = {
 					is_merchant_republic = no
 					primary_title = {
@@ -235,34 +240,26 @@ succession_laws = {
 					}
 				}
 				OR = {
+					emf_unreformed_pagan = no
+					religion = hellenic_pagan
+				}
+				OR = {
+					is_merchant_republic = no
+					PREV = { is_primary_holder_title = no }
+				}
+				is_nomadic = no
+				is_theocracy = no
+				trigger_if = {
+					limit = { is_patrician = no }
 					NOR = {
 						religion_group = muslim
 						religion_group = indian_group
 					}
-					is_patrician = yes
-				}
-				OR = {
-					emf_unreformed_pagan = no
-					is_patrician = yes
-				}
-				OR = {
 					is_republic = no
-					is_patrician = yes
+					NOT = { PREV = { tier = BARON } }
 				}
+				NOT = { government = bureaucratic_government }
 			}
-			OR = {
-				AND = {
-					tier = BARON
-					is_feudal = yes
-				}
-				holder_scope = { is_feudal = yes }
-				holder_scope = { is_patrician = yes }
-			}
-			OR = {
-				NOT = { tier = BARON }
-				holder_scope = { is_patrician = yes }
-			}
-			NOT = { holder_scope = { government = bureaucratic_government } }
 		}
 		allow = {
 			emf_laws_allow_switch_away_from_hre_elective = yes
@@ -270,18 +267,15 @@ succession_laws = {
 				emf_laws_no_crown_law_title = yes
 				emf_laws_crownlaw_title_medium_ca_plus = yes
 				emf_laws_holder_has_late_administration_plus = yes
-				holder_scope = {
+				owner = {
+					show_scope_change = no
 					is_patrician = yes
 					OR = {
 						is_merchant_republic = no
-						PREV = {
-							is_primary_holder_title = no
-						}
+						PREV = { is_primary_holder_title = no }
 						NOR = {
 							in_revolt = yes
-							succ_law_title = {
-								title = PREVPREV
-							}
+							succ_law_title = { title = PREVPREV }
 						}
 					}
 				}
@@ -308,10 +302,6 @@ succession_laws = {
 			#		emf_laws_succ_seniority_reactions = yes
 			#	}
 			#}
-			if = {
-				limit = { emf_laws_penalty = yes }
-				pf_save_old_succ_law_effect = yes
-			}
 			succession = seniority
 		}
 	}
@@ -402,10 +392,6 @@ succession_laws = {
 			#		emf_laws_succ_primogeniture_reactions = yes
 			#	}
 			#}
-			if = {
-				limit = { emf_laws_penalty = yes }
-				pf_save_old_succ_law_effect = yes
-			}
 			succession = primogeniture
 		}
 	}
@@ -420,6 +406,7 @@ succession_laws = {
 		potential = {
 			emf_laws_potential_not_for_byzantium = yes
 			emf_laws_succ_basic_potential = yes
+			NOT = { tier = BARON }
 			rtp_is_landless = no
 			rtp_is_feudal_government = yes
 			OR = {
@@ -434,7 +421,7 @@ succession_laws = {
 					emf_unreformed_pagan = no
 					religion = hellenic_pagan
 				}
-				NOT = { government = confucian_bureaucracy }
+				NOT = { government = bureaucratic_government }
 				NOT = { government = chinese_imperial_government }
 			}
 		}
@@ -470,10 +457,6 @@ succession_laws = {
 			#		emf_laws_succ_feudal_elective_reactions = yes
 			#	}
 			#}
-			if = {
-				limit = { emf_laws_penalty = yes }
-				pf_save_old_succ_law_effect = yes
-			}
 			succession = { base_type = feudal_elective voting_rules = feudal_elective }
 		}
 	}
@@ -531,10 +514,6 @@ succession_laws = {
 			#		emf_laws_succ_hre_elective_reactions = yes
 			#	}
 			#}
-			if = {
-				limit = { emf_laws_penalty = yes }
-				pf_save_old_succ_law_effect = yes
-			}
 			succession = { base_type = feudal_elective voting_rules = hre_feudal_elective }
 		}
 	}
@@ -623,10 +602,6 @@ succession_laws = {
 			#		emf_laws_succ_byzantine_elective_reactions = yes
 			#	}
 			#}
-			if = {
-				limit = { emf_laws_penalty = yes }
-				pf_save_old_succ_law_effect = yes
-			}
 			succession = { base_type = feudal_elective voting_rules = byzantine_elective }
 		}
 	}
@@ -753,10 +728,6 @@ succession_laws = {
 			#		emf_laws_succ_tanistry_reactions = yes
 			#	}
 			#}
-			if = {
-				limit = { emf_laws_penalty = yes }
-				pf_save_old_succ_law_effect = yes
-			}
 			succession = { base_type = tanistry voting_rules = tanistry }
 		}
 	}
@@ -776,7 +747,6 @@ succession_laws = {
 					emf_unreformed_pagan = no
 					religion = hellenic_pagan
 				}
-				NOT = { government = confucian_bureaucracy }
 				NOT = { government = bureaucratic_government }
 				NOT = { government = chinese_imperial_government }
 			}
@@ -835,7 +805,6 @@ succession_laws = {
 				}
 				NOR = {
 					religion_group = muslim
-					government = confucian_bureaucracy
 					government = bureaucratic_government
 					government = chinese_imperial_government
 				}
@@ -878,7 +847,6 @@ succession_laws = {
 				}
 			}
 			is_primary_type_title = no
-			NOT = { holder_scope = { government = confucian_bureaucracy } }
 		}
 		allow = {
 			OR = {
@@ -908,10 +876,6 @@ succession_laws = {
 			#		emf_laws_succ_ultimogeniture_reactions = yes
 			#	}
 			#}
-			if = {
-				limit = { emf_laws_penalty = yes }
-				pf_save_old_succ_law_effect = yes
-			}
 			succession = ultimogeniture
 		}
 	}
@@ -973,10 +937,6 @@ succession_laws = {
 			#		emf_laws_succ_turkish_succession_reactions = yes
 			#	}
 			#}
-			if = {
-				limit = { emf_laws_penalty = yes }
-				pf_save_old_succ_law_effect = yes
-			}
 			succession = turkish_succession
 		}
 	}
@@ -1108,6 +1068,13 @@ succession_laws = {
 
 	succ_catholic_bishopric = {
 		potential = {
+			OR = {
+				AND = {
+					tier = BARON
+					is_theocracy = yes
+				}
+				holder_scope = { is_theocracy = yes }
+			}
 			holder_scope = {
 				rtp_is_theocracy_government = yes
 				any_liege = {
@@ -1127,7 +1094,7 @@ succession_laws = {
 					NOT = { any_liege = { holy_order = yes } }
 				}
 				NOR = {
-					government = confucian_bureaucracy
+					government = bureaucratic_government
 					government = chinese_imperial_government
 				}
 			}
