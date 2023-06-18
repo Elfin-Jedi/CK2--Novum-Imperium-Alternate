@@ -38,13 +38,7 @@ Does rtp_no_loans_st include emf loans?
 Do I need have_gender_laws = yes etc. from TiaraMod in: !!!rtp_landless_governments, !!rtp_baron_governments, !rtp_governments, chivalry_governments etc.
 Make it so with game rule full equality of women they can take consorts if men can
 
-Queer Edition:
-
-"Legalized Gay Marriage"
-"Seduction and Romance Revamped"
-"Born This Way"
-
-Bloodline Edition:
+Bloodlines & Events Edition:
 
 Forge Unlimited Bloodlines + Bloodline fix (compare with HIP version of Forge Unlimited Bloodlines)
 Extended Bloodlines (HF)
