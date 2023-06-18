@@ -488,6 +488,18 @@ character_event = {
 		
 		FROMFROM = { character_event = { id = WoL.1005 tooltip = EVTTOOLTIP_WoL_1005 } } # Lover notified
 		remove_lover = FROMFROM
+		FROMFROM = {
+			opinion = {
+				modifier = opinion_recent_breakup
+				who = ROOT
+			}
+		}
+		ROOT = {
+			opinion = {
+				modifier = opinion_recent_breakup
+				who = FROMFROM
+			}
+		}
 		
 		FROM = { character_event = { id = WoL.1006 days = 2 tooltip = EVTTOOLTIP_WoL_1006 } }
 	}
@@ -1102,6 +1114,18 @@ character_event = {
 		if = {
 			limit = { is_lover = FROM }
 			remove_lover = FROM
+			FROM = {
+			opinion = {
+					modifier = opinion_recent_breakup
+					who = ROOT
+				}
+			}
+			ROOT = {
+				opinion = {
+					modifier = opinion_recent_breakup
+					who = FROM
+				}
+			}
 		}
 		
 		hidden_tooltip = {
@@ -3836,6 +3860,18 @@ character_event = {
 			factor = 100
 		}
 		remove_lover = FROM
+		FROM = {
+			opinion = {
+				modifier = opinion_recent_breakup
+				who = ROOT
+			}
+		}
+		ROOT = {
+			opinion = {
+				modifier = opinion_recent_breakup
+				who = FROM
+			}
+		}
 		clr_character_flag = lost_loving_feeling # Set in chief Qadi event chain (105035). Zina.
 	}
 	
@@ -3846,6 +3882,18 @@ character_event = {
 			factor = 100
 		}
 		remove_lover = FROM
+		FROM = {
+			opinion = {
+				modifier = opinion_recent_breakup
+				who = ROOT
+			}
+		}
+		ROOT = {
+			opinion = {
+				modifier = opinion_recent_breakup
+				who = FROM
+			}
+		}
 		clr_character_flag = lost_loving_feeling # Set in chief Qadi event chain (105035). Zina.
 	}
 	
@@ -3936,6 +3984,18 @@ character_event = {
 		}
 		
 		remove_lover = FROM
+		FROM = {
+			opinion = {
+				modifier = opinion_recent_breakup
+				who = ROOT
+			}
+		}
+		ROOT = {
+			opinion = {
+				modifier = opinion_recent_breakup
+				who = FROM
+			}
+		}
 		hidden_tooltip = {
 			FROM = { character_event = { id = WoL.1106 days = 3 } }
 		}
