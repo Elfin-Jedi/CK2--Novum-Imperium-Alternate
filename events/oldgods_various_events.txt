@@ -4194,9 +4194,6 @@ character_event = {
 		prestige = -50
 		if = {
 			limit = {
-				NOT = {
-					lifestyle_traits = 1
-				}
 				NOT = { has_dlc = "Way of Life" }
 			}
 			add_trait = hunter

@@ -1540,8 +1540,7 @@ character_event = {
 		name = EVTOPTA_SoA_5031
 		if = {
 			limit = {
-				NOR = {
-					lifestyle_traits = 1
+				NOT = {
 					has_dlc = "Way of Life"
 				}
 			}
@@ -1568,10 +1567,7 @@ character_event = {
 		}
 		if = {
 			limit = {
-				OR = {
-					lifestyle_traits = 1
-					has_dlc = "Way of Life"
-				}
+				has_dlc = "Way of Life"
 			}
 			random_list = {
 				20 = {

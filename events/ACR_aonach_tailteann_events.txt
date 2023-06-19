@@ -2466,9 +2466,6 @@ character_event = {
 			has_character_flag = tailteann_has_ended
 		}
 		NOT = { has_character_flag = attending_tailteann_event }
-		NOT = {
-			lifestyle_traits = 1
-		}
 	}
 	
 	mean_time_to_happen = {

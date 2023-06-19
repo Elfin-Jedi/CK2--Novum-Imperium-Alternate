@@ -163,10 +163,7 @@ character_event = {
 						20 = {
 							modifier = {
 								factor = 0
-								OR = {
-									trait = socializer
-									lifestyle_traits = 1
-								}
+								trait = socializer
 							}
 							add_trait = socializer
 							random = {
@@ -178,10 +175,7 @@ character_event = {
 						20 = {
 							modifier = {
 								factor = 0
-								OR = {
-									trait = gamer
-									lifestyle_traits = 1
-								}
+								trait = gamer
 							}
 							add_trait = gamer
 							random = {
@@ -200,7 +194,6 @@ character_event = {
 								chance = 50
 								modifier = {
 									factor = 0
-									lifestyle_traits = 1
 								}
 								add_trait = seductress
 							}
@@ -385,10 +378,7 @@ character_event = {
 						25 = {
 							modifier = {
 								factor = 0
-								OR = {
-									trait = administrator
-									lifestyle_traits = 1
-								}
+								trait = administrator
 							}
 							add_trait = administrator
 							random = {
@@ -400,10 +390,7 @@ character_event = {
 						25 = {
 							modifier = {
 								factor = 0
-								OR = {
-									trait = architect
-									lifestyle_traits = 1
-								}
+								trait = architect
 							}
 							add_trait = architect
 							random = {
@@ -415,10 +402,7 @@ character_event = {
 						25 = {
 							modifier = {
 								factor = 0
-								OR = {
-									trait = gardener
-									lifestyle_traits = 1
-								}
+								trait = gardener
 							}
 							add_trait = gardener
 							random = {
@@ -529,7 +513,6 @@ character_event = {
 								factor = 0
 								OR = {
 									trait = schemer
-									lifestyle_traits = 1
 								}
 							}
 							add_trait = schemer
@@ -547,10 +530,7 @@ character_event = {
 						33 = {
 							modifier = {
 								factor = 0
-								OR = {
-									trait = impaler
-									lifestyle_traits = 1
-								}
+								trait = impaler
 							}
 							add_trait = impaler
 							random = {
@@ -570,10 +550,7 @@ character_event = {
 						33 = {
 							modifier = {
 								factor = 0
-								OR = {
-									trait = seductress
-									lifestyle_traits = 1
-								}
+								trait = seductress
 							}
 							add_trait = seductress
 							add_trait = lustful

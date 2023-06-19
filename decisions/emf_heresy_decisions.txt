@@ -4530,7 +4530,6 @@ decisions = {
 				is_incapable = yes
 				trait = cynical
 				is_dumb_trigger = yes
-				lifestyle_traits = 1
 			}
 		}
 		allow = {
@@ -4608,7 +4607,6 @@ decisions = {
 				is_incapable = yes
 				trait = cynical
 				is_dumb_trigger = yes
-				lifestyle_traits = 1
 			}
 		}
 		allow = {

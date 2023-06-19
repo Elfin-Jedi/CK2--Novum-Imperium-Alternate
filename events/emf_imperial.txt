@@ -2677,7 +2677,6 @@ character_event = {
 	has_character_flag = serving_empire
 
 	trigger = {
-		NOT = { lifestyle_traits = 1 }
 		NAND = {
 			liege = { real_tier = EMPEROR }
 			OR = {

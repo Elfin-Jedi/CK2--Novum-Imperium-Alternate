@@ -503,17 +503,10 @@ character_event = {		#INTRIGUER IS SUCCESSFUL - POSSIBLE NEW TRAIT
 
 		hidden_tooltip = {
 
-			if = { 
-				limit = {
-					NOT = { lifestyle_traits = 1 }
-				}	
-				random = {
-					chance = 33
-					character_event = { id = darkages.72143 }
-				}
-				
-			}
-		
+			random = {
+				chance = 33
+				character_event = { id = darkages.72143 }
+			}		
 		}		
 		
 	}	
@@ -597,7 +590,6 @@ character_event = {		#ADD NEW TRAIT - SILVER TONGUE
 	is_triggered_only = yes
 	
 	trigger = {
-		NOT = { lifestyle_traits = 1 }
 	}
 	
 	immediate = {

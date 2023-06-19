@@ -18,8 +18,7 @@ character_event = {
 
 	trigger = {
 		in_command = no
-		NAND = {
-			lifestyle_traits = 1
+		NOT = {
 			has_flag = LE_ST
 		}
 	}

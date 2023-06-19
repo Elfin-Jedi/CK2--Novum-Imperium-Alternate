@@ -1075,8 +1075,7 @@ character_event = {
 		name = EVTOPTA_MNM_8026
 		if = {
 			limit = {
-				NOR = {
-					lifestyle_traits = 1
+				NOT = {
 					has_dlc = "Way of Life"
 				}
 			}
@@ -1103,10 +1102,7 @@ character_event = {
 		}
 		if = {
 			limit = {
-				OR = {
-					lifestyle_traits = 1
-					has_dlc = "Way of Life"
-				}
+				has_dlc = "Way of Life"
 			}
 			random_list = {
 				20 = {
@@ -2112,7 +2108,6 @@ narrative_event = {
 	option = {
 		name = EVTOPTC_MNM_8068
 		trigger = {
-			NOT = { lifestyle_traits = 1 }
 			NOT = { has_dlc = "Way of Life" }
 		}
 		ai_chance = {

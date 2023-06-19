@@ -8975,7 +8975,6 @@ character_event = { 		#Spouse is convinced by player to give up on the voyage
 	option = {
 		name = EVTOPTB1972531
 		trigger = {
-			NOT = { lifestyle_traits = 1 }
 		}		
 		
 		prestige = 10
@@ -11165,7 +11164,6 @@ character_event = {
 	option = {
 		name = EVTOPTB1972540
 		trigger = {
-			NOT = { lifestyle_traits = 1 }
 		}
 
 		if = {

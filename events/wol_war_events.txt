@@ -3370,7 +3370,6 @@ character_event = {
 							has_character_modifier = wol_great_warrior
 						}
 						has_character_flag = denied_duelist_trait
-						lifestyle_traits = 1
 					}
 					factor = 0
 				}

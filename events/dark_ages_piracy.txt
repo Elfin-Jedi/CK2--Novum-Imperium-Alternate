@@ -516,7 +516,6 @@ character_event = {	#Yearly revenue 1
 		if = {
 			limit = {
 				NOT = { has_character_flag = da_pirate_lord_refused }
-				NOT = { lifestyle_traits = 1 }
 			}
 		
 		}		
@@ -626,7 +625,6 @@ character_event = {	#Yearly revenue 2
 		if = {
 			limit = {
 				NOT = { has_character_flag = da_pirate_lord_refused }
-				NOT = { lifestyle_traits = 1 }
 			}
 		
 		}		
@@ -736,7 +734,6 @@ character_event = {	#Yearly revenue 3
 		if = {
 			limit = {
 				NOT = { has_character_flag = da_pirate_lord_refused }
-				NOT = { lifestyle_traits = 1 }
 			}
 		
 		}		
@@ -846,7 +843,6 @@ character_event = {	#Yearly revenue 4
 		if = {
 			limit = {
 				NOT = { has_character_flag = da_pirate_lord_refused }
-				NOT = { lifestyle_traits = 1 }
 			}
 		
 			random = {
@@ -961,7 +957,6 @@ character_event = {	#Yearly revenue 5
 		if = {
 			limit = {
 				NOT = { has_character_flag = da_pirate_lord_refused }
-				NOT = { lifestyle_traits = 1 }
 			}
 		
 			random = {
@@ -1076,7 +1071,6 @@ character_event = {	#Yearly revenue 6
 		if = {
 			limit = {
 				NOT = { has_character_flag = da_pirate_lord_refused }
-				NOT = { lifestyle_traits = 1 }
 			}
 		
 			random = {
@@ -1191,7 +1185,6 @@ character_event = {	#Yearly revenue 7
 		if = {
 			limit = {
 				NOT = { has_character_flag = da_pirate_lord_refused }
-				NOT = { lifestyle_traits = 1 }
 			}
 		
 			random = {
@@ -1306,7 +1299,6 @@ character_event = {	#Yearly revenue 8
 		if = {
 			limit = {
 				NOT = { has_character_flag = da_pirate_lord_refused }
-				NOT = { lifestyle_traits = 1 }
 			}
 		
 			random = {
@@ -1421,7 +1413,6 @@ character_event = {	#Yearly revenue 9
 		if = {
 			limit = {
 				NOT = { has_character_flag = da_pirate_lord_refused }
-				NOT = { lifestyle_traits = 1 }
 			}
 		
 			random = {
@@ -1537,7 +1528,6 @@ character_event = {	#Yearly revenue 10 - JACKPOT!
 		if = {
 			limit = {
 				NOT = { has_character_flag = da_pirate_lord_refused }
-				NOT = { lifestyle_traits = 1 }
 			}
 		
 			random = {
