@@ -322,23 +322,23 @@ obj_forge_bloodline = {
 		has_dlc = "Holy Fury"
 		NOT = {
 			any_owned_bloodline = { # Should not already have a created bloodline.
-				has_bloodline_flag = created_bloodline
+				#has_bloodline_flag = created_bloodline
+				founder = {
+						character = ROOT
+				}
 			}
 		}
-		NAND = { # The AI shouldn't create bloodlines when they already have a historical one
-			ai = yes
-			any_owned_bloodline = {
-				has_bloodline_flag = historical_bloodline
-			}
-		}
-		trigger_if = {
-			limit = { has_dynasty_flag = flag_dynasty_forged_bloodline }
-			trigger_if = {
-				limit = { is_adult = yes }
-				prestige = 20000 #Adults
-			}
-			trigger_else = {
-				prestige = 15000 #Child facilitation
+		# NAND = { # The AI shouldn't create bloodlines when they already have a historical one
+			# ai = yes
+			# any_owned_bloodline = {
+				# has_bloodline_flag = historical_bloodline
+			# }
+		# }
+		OR = {
+			prestige = 5000 #Adults
+			AND = { #Child facilitation
+				prestige = 2500
+				is_adult = no
 				OR = {
 					trait = willful
 					trait = proud
@@ -346,20 +346,6 @@ obj_forge_bloodline = {
 					trait = quick
 					trait = genius 
 				}
-			}
-		}
-		trigger_else_if = {
-			limit = { is_adult = yes }
-			prestige = 5000 #Adults
-		}
-		trigger_else = {
-			prestige = 2500 #Child facilitation
-			OR = {
-				trait = willful
-				trait = proud
-				trait = ambitious
-				trait = quick
-				trait = genius 
 			}
 		}
 		OR = {
@@ -432,7 +418,10 @@ obj_forge_bloodline = {
 			text = obj_forge_bloodline_condition_tooltip		
 			hidden_tooltip = { 
 				any_owned_bloodline = { # Could be either one of the Bloodlines tied to this ambition or one of the other earned bloodlines scattered throughout the game.
-					has_bloodline_flag = created_bloodline
+					#has_bloodline_flag = created_bloodline
+					founder = {
+						character = ROOT
+					}
 				}
 				# Possible Bloodlines specifically tied to this ambition:
 				# Murder Bloodline (assassinate 30 people) 	---> 	(Little Killer/Dreaded/Feast Macabre/Silent)		
