@@ -1572,15 +1572,6 @@ character_event = {
             text = EVTOPTA_HF_10024_C
             trigger = { has_character_flag = opt_C }
         }
-        
-        hidden_tooltip = {
-            if = {
-                limit = {
-                    lifestyle_traits = 1
-                }
-                remove_lifestyle_trait_effect = yes
-            }
-        }
         add_trait = duelist
         add_legend_progress_trivial_effect = yes
         clr_character_flag = choosing_military_aspect
@@ -1679,15 +1670,7 @@ character_event = {
     option = {
         name = EVTOPTA_HF_10026
         custom_tooltip = { text = EVTOPTA_HF_10026_tt }
-
-        hidden_tooltip = {
-            if = {
-                limit = {
-                    lifestyle_traits = 1
-                }
-                remove_lifestyle_trait_effect = yes
-            }
-        }
+		
         add_trait = strategist
         add_legend_progress_trivial_effect = yes
         clr_character_flag = choosing_military_aspect
@@ -1761,14 +1744,6 @@ character_event = {
     option = {
         name = EVTOPTA_HF_10031
         
-        hidden_tooltip = {
-            if = {
-                limit = {
-                    lifestyle_traits = 1
-                }
-                remove_lifestyle_trait_effect = yes
-            }
-        }
         if = {
             limit = { has_nickname = no }
             give_nickname = nick_the_hunter

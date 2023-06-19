@@ -2794,7 +2794,6 @@ character_event = {
 		has_focus = focus_business
 		NOR = {
 			NOT = { has_character_modifier = trader }
-			lifestyle_traits = 1
 			has_character_flag = tower_start
 			has_character_flag = hedge_maze
 			has_character_flag = maze_end

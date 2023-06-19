@@ -6076,9 +6076,8 @@ character_event = { # Chance for Duelist
 	is_triggered_only = yes
 	
 	trigger = {
-		NOR = {
+		NOT = {
 			has_character_flag = denied_duelist_trait
-			lifestyle_traits = 1
 		}
 		any_kill_list_character = {
 			death_reason = death_duel
@@ -6113,9 +6112,8 @@ character_event = { # Chance for Strategist
 	is_triggered_only = yes
 	
 	trigger = {
-		NOR = {
+		NOT = {
 			has_character_flag = denied_strategist_trait
-			lifestyle_traits = 1
 		}
 	}
 

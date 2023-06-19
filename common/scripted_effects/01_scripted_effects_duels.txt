@@ -3476,7 +3476,6 @@ increase_duel_exp_modifier_effect = {
 				check_variable = { which = duel_experience_level value = 15 }
 				NOR = {
 					has_character_flag = denied_duelist_trait
-					lifestyle_traits = 1
 				}
 				any_kill_list_character = {
 					death_reason = death_duel
@@ -3593,7 +3592,6 @@ increase_battle_experience_effect = { # This effect is called from Duel Experien
 					check_variable = { which = battlefield_experience_level value = 10 }
 					NOR = {
 						has_character_flag = denied_strategist_trait
-						lifestyle_traits = 1
 					}
 				}
 				random = {

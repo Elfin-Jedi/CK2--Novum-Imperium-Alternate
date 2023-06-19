@@ -3450,6 +3450,9 @@ character_event = {
 			trait = homosexual
 		}
 		NOT = {
+			trait = bisexual
+		}
+		NOT = {
 			trait = chaste
 		}
 		NOT = {
@@ -3497,11 +3500,26 @@ character_event = {
 			}
 		}
 		
+		modifier = {
+			factor = 0.5
+			OR = {
+				has_game_rule = { name = queer_characters value = more_queer }
+				has_game_rule = { name = queer_characters value = ultra_queer }
+			}
+		}
+		
 	}
 	
 	option = {
 		name = "EVTOPTA1980"
-		add_trait = homosexual
+		random_list  = {
+			50 = {
+				add_trait = homosexual
+			}
+			50 = {
+				add_trait = bisexual
+			}
+		}
 	}
 }
 
@@ -3533,6 +3551,13 @@ character_event = {
 		modifier = {
 			factor = 0.1
 			trait = zealous
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_game_rule = { name = queer_characters value = more_queer }
+				has_game_rule = { name = queer_characters value = ultra_queer }
+			}
 		}
 	}
 	
@@ -3572,6 +3597,13 @@ character_event = {
 			factor = 0.1
 			trait = zealous
 		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_game_rule = { name = queer_characters value = more_queer }
+				has_game_rule = { name = queer_characters value = ultra_queer }
+			}
+		}
 	}
 	
 	option = {
@@ -3605,6 +3637,9 @@ character_event = {
 			trait = homosexual
 		}
 		NOT = {
+			trait = bisexual
+		}
+		NOT = {
 			trait = chaste
 		}
 		NOT = {
@@ -3625,11 +3660,25 @@ character_event = {
 			factor = 0.5
 			trait = lustful
 		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				has_game_rule = { name = queer_characters value = more_queer }
+				has_game_rule = { name = queer_characters value = ultra_queer }
+			}
+		}
 	}
 	
 	option = {
 		name = "EVTOPTA1980"
-		add_trait = homosexual
+		random_list  = {
+			50 = {
+				add_trait = homosexual
+			}
+			50 = {
+				add_trait = bisexual
+			}
+		}
 	}
 }
 
@@ -3660,6 +3709,13 @@ character_event = {
 		modifier = {
 			factor = 0.1
 			trait = zealous
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_game_rule = { name = queer_characters value = more_queer }
+				has_game_rule = { name = queer_characters value = ultra_queer }
+			}
 		}
 	}
 	

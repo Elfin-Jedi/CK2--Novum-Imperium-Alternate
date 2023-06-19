@@ -1639,7 +1639,6 @@ character_event = {
 						trait = kind
 						trait = craven
 						is_weak_trigger = yes
-						lifestyle_traits = 1
 					}
 				}
 				character_event = { id = emf_tournament.167 days = 1 random = 25 }
@@ -4147,7 +4146,6 @@ character_event = {
 		event_target:tournament_host = { has_flag = emf_holding_tournament }
 		same_realm = event_target:tournament_host
 		NOR = {
-			lifestyle_traits = 1
 			is_ill = yes
 			is_pregnant = yes
 			has_injury_trigger = yes
@@ -4202,8 +4200,7 @@ character_event = {
 	trigger = {
 		event_target:tournament_host = { has_flag = emf_holding_tournament }
 		same_realm = event_target:tournament_host
-		NOR = {
-			lifestyle_traits = 1
+		NOT = {
 			is_ill = yes
 		}
 	}
@@ -4254,8 +4251,7 @@ character_event = {
 	trigger = {
 		event_target:tournament_host = { has_flag = emf_holding_tournament }
 		same_realm = event_target:tournament_host
-		NOR = {
-			lifestyle_traits = 1
+		NOT = {
 			is_ill = yes
 		}
 	}

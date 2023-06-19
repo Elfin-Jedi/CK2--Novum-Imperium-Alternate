@@ -20,6 +20,7 @@ targetted_decisions = {
 		ai_target_filter = court
 
 		from_potential = {
+			ai = no
 			has_dlc = "Way of Life"
 			has_lover = yes
 		}
@@ -70,8 +71,13 @@ targetted_decisions = {
 		ai_check_interval = 6
 
 		from_potential = {
-			has_focus = focus_seduction
+			is_playable = yes
 			is_marriage_adult = yes
+			OR = {			
+				has_focus = focus_seduction
+				trait = seducer
+				trait = seductress
+			}
 			prisoner = no
 			NOR = {
 				is_incapable = yes
@@ -92,6 +98,7 @@ targetted_decisions = {
 						trait = lustful
 						trait = hedonist
 						trait = homosexual
+						trait = bisexual
 						AND = {
 							any_spouse = { trait = homosexual }
 							NOT = { any_spouse = { NOT = { trait = homosexual } } }
@@ -129,6 +136,23 @@ targetted_decisions = {
 				is_consort = FROM
 				FROM = { is_consort = PREV }
 				is_married = FROM
+			}
+			NOT = { 
+				is_former_lover = FROM 
+			}
+			NOT = {
+				has_opinion_modifier = {
+					who = FROM
+					modifier = SRR_embarrassed
+				}
+			}
+			FROM = {
+				NOT = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = SRR_embarrassed
+					}
+				}
 			}
 			rtp_is_capable_adult = yes
 			from_mutual_attraction_trigger = yes
@@ -198,7 +222,7 @@ targetted_decisions = {
 					if = {
 						limit = {
 							is_close_relative = ROOT
-							emf_divine_blood_religion = no
+							SRR_incest_accepting = no
 						}
 						character_event = { id = WoL.102 days = 1 } # Warning - Incest scandal risk
 					}
@@ -208,9 +232,11 @@ targetted_decisions = {
 							trigger_if = {
 								limit = { is_female = yes }
 								emf_female_homosexual_indifferent_religion = no
+								SRR_gay_accepting = no
 							}
 							trigger_else = {
 								emf_male_homosexual_indifferent_religion = no
+								SRR_gay_accepting = no
 							}
 						}
 						character_event = { id = WoL.104 days = 1 } # Warning - Homosexual scandal risk
@@ -246,7 +272,7 @@ targetted_decisions = {
 		ai_will_do = {
 			factor = 1		 # 1 = 100% chance every month (for each allowed target!)
 			modifier = {
-				factor = 0.25
+				factor = 0.05
 			}
 			modifier = {
 				factor = 0
@@ -519,11 +545,15 @@ targetted_decisions = {
 	stop_seduce_decision = {
 		filter = self
 		ai_target_filter = self
-		ai = no
 
 		potential = {
+			ai = no
 			is_marriage_adult = yes
-			has_focus = focus_seduction
+			OR = {			
+				has_focus = focus_seduction
+				trait = seducer
+				trait = seductress
+			}
 			OR = {
 				has_character_flag = seduction_confirmed
 				has_any_opinion_modifier = opinion_seducing
@@ -551,11 +581,15 @@ targetted_decisions = {
 
 	stop_seduce_decision_target = {
 		ai_target_filter = realm
-		ai = no
 
 		from_potential = {
+			ai = no
 			is_marriage_adult = yes
-			has_focus = focus_seduction
+			OR = {			
+				has_focus = focus_seduction
+				trait = seducer
+				trait = seductress
+			}
 			has_character_flag = seduction_confirmed
 			has_any_opinion_modifier = opinion_seducing
 		}
@@ -587,7 +621,10 @@ targetted_decisions = {
 
 		from_potential = {
 			is_playable = yes
-			has_focus = focus_intrigue
+			OR = { 
+				has_focus = focus_intrigue
+				trait = schemer 
+			}
 			is_incapable = no
 			rtp_is_capable_adult = yes
 			prisoner = no
@@ -657,7 +694,7 @@ targetted_decisions = {
 		ai_will_do = {
 			factor = 1		 # 1 = 100% chance every month (for each allowed target!)
 			modifier = {
-				factor = 0.25
+				factor = 0.
 			}
 			modifier = {
 				factor = 0
@@ -701,10 +738,13 @@ targetted_decisions = {
 	stop_spy_on_decision = {
 		filter = self
 		ai_target_filter = self
-		ai = no
 
 		potential = {
-			has_focus = focus_intrigue
+			ai = no
+			OR = { 
+				has_focus = focus_intrigue
+				trait = schemer 
+			}
 			has_any_opinion_modifier = opinion_spying_on
 		}
 
@@ -730,10 +770,13 @@ targetted_decisions = {
 
 	stop_spy_on_decision_target = {
 		ai_target_filter = realm
-		ai = no
 
 		from_potential = {
-			has_focus = focus_intrigue
+			ai = no
+			OR = { 
+				has_focus = focus_intrigue
+				trait = schemer 
+			}
 			has_any_opinion_modifier = opinion_spying_on
 		}
 
@@ -763,11 +806,15 @@ targetted_decisions = {
 		is_high_prio = yes
 		ai_check_interval = 6
 
+		filter = sub_realm
 		ai_target_filter = dynasty
 
 		from_potential = {
 			is_playable = yes
-			has_focus = focus_intrigue
+			OR = { 
+				has_focus = focus_intrigue
+				trait = schemer 
+			}
 			is_incapable = no
 			NOT = { has_any_opinion_modifier = opinion_breaking_out }
 			NOT = { has_any_opinion_modifier = opinion_spying_on }
@@ -824,7 +871,7 @@ targetted_decisions = {
 		ai_will_do = {
 			factor = 1		 # 1 = 100% chance every month (for each allowed target!)
 			modifier = {
-				factor = 0.5
+				factor = 0.1
 			}
 			modifier = {
 				factor = 10
@@ -868,7 +915,10 @@ targetted_decisions = {
 		from_potential = {
 			is_playable = yes
 			is_adult = yes
-			has_focus = focus_carousing
+			OR = {
+				has_focus = focus_carousing
+				trait = socializer
+			}
 			prisoner = no
 			is_incapable = no
 			rtp_is_capable_adult = yes

@@ -1095,7 +1095,7 @@ character_event = {
 					character_event = { id = TOG.152 days = 2 }
 				}
 				if = {
-					limit = { NOT = { lifestyle_traits = 1 } }
+					limit = { NOT = { trait = hunter } }
 					random = {
 						chance = 25
 
@@ -1127,7 +1127,7 @@ character_event = {
 					character_event = { id = TOG.152 days = 2 }
 				}
 				if = {
-					limit = { NOT = { lifestyle_traits = 1 } }
+					limit = { NOT = { trait = hunter } }
 					random = {
 						chance = 25
 
