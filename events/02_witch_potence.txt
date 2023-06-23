@@ -12,6 +12,7 @@ character_event = {  # Potence Witch
 		AND = {
 			has_focus = focus_family
 			age >= 40
+			is_female = no
 		}
 	}
 
@@ -31,6 +32,7 @@ character_event = {  # Potence Witch
 				learning > 20
 				trait = mystic
 			}
+			is_female = no
 		}
 		name = optbexpandedtraits.2
 		tooltip_info_custom = tooltipexpandedtraits.2
