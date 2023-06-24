@@ -1713,11 +1713,6 @@ narrative_event = {
 					religion = hellenic_pagan
 					religion = hellenic_pagan_reformed
 				}
-	    		NOT = {
-	    			any_owned_bloodline = {
-    					has_bloodline_flag = roman_bloodline #Not if already member of a famous historical Roman Bloodline.
-    				}
-    			}
 			}
 			create_bloodline = {
 				type = roman_emperor_male
@@ -1736,11 +1731,6 @@ narrative_event = {
 					religion_group = christian
 					religion = hellenic_pagan
 					religion = hellenic_pagan_reformed
-				}
-    			NOT = {
-    				any_owned_bloodline = {
-						has_bloodline_flag = roman_bloodline #Not if already member of a famous historical Roman Bloodline.
-					}
 				}
 			}
 			create_bloodline = {
