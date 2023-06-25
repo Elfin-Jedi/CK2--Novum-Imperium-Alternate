@@ -38,12 +38,6 @@ Does rtp_no_loans_st include emf loans?
 Do I need have_gender_laws = yes etc. from TiaraMod in: !!!rtp_landless_governments, !!rtp_baron_governments, !rtp_governments, chivalry_governments etc.
 Make it so with game rule full equality of women they can take consorts if men can
 
-Bloodlines & Events Edition:
-
-Forge Unlimited Bloodlines + Bloodline fix (compare with HIP version of Forge Unlimited Bloodlines)
-Extended Bloodlines (HF)
-VIET Events Reborn
-
 Societies & Resources Edition:
 
 Societies: Guilds, Sufis.
@@ -69,9 +63,19 @@ Nicknames & Renaming Edition
 "Rename Anyone"
 "Some Interesting NicknamesEN"
 
-LF - Custom Religion
-
 Lux Invicta
+
+More Historical Bloodlines Edition
+
+"Bunch of Bloodlines"
+"Extra Bloodlines 1.4"
+"HIP - More Bloodlines"
+"Legendary Bloodlines"
+"More Bloodlines"
+"More Historical Bloodlines"
+"Muslim Bloodlines"
+
+LF - Custom Religion
 
 Landless Courts and Kings?
 Better Gender Law?
